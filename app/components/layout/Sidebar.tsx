@@ -1,4 +1,4 @@
-import { Home, Search, Bell, Mail, User, PenSquare } from 'lucide-react';
+import { Home, Search, Bell, CircleHelp } from 'lucide-react';
 
 interface SidebarProps {
   mobile?: boolean;
@@ -8,8 +8,7 @@ const menuItems = [
   { icon: Home, label: 'Anasayfa', active: true },
   { icon: Search, label: 'Keşfet', active: false },
   { icon: Bell, label: 'Bildirimler', active: false },
-  { icon: Mail, label: 'Mesajlar', active: false },
-  { icon: User, label: 'Profil', active: false },
+  { icon: CircleHelp, label: 'Nasıl Kullanılır', active: false },
 ];
 
 export default function Sidebar({ mobile = false }: SidebarProps) {
@@ -21,7 +20,7 @@ export default function Sidebar({ mobile = false }: SidebarProps) {
           <button
             key={index}
             className="p-2 rounded-full hover:bg-white/10 transition-colors"
-            aria-label={item.label} // Doc B: Erişilebilirlik
+            aria-label={item.label}
           >
             <item.icon size={26} strokeWidth={item.active ? 3 : 2} />
           </button>
@@ -52,12 +51,6 @@ export default function Sidebar({ mobile = false }: SidebarProps) {
             </span>
           </a>
         ))}
-
-        {/* Post Butonu */}
-        <button className="mt-4 bg-white text-black font-bold rounded-full h-13 w-13 xl:w-[90%] flex items-center justify-center hover:opacity-90 transition-opacity shadow-lg">
-          <PenSquare className="xl:hidden" />
-          <span className="hidden xl:block text-lg">Gönderi yayınla</span>
-        </button>
       </div>
       
       {/* User Mini Profile */}
