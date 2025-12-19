@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-/* v4 ile tema ayarları doğrudan CSS içinde yapılır. 
-   Aşağıdaki ayarlar Neo-Brutalist siyah temanı korur.
-*/
 :root {
   --color-foreground: #ffffff;
   --color-background: #000000;
