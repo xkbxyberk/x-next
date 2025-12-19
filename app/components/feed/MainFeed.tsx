@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import PostCard from './PostCard';
 import Toast from '../ui/Toast';
-import { Globe, Music, Settings2, Moon, Sun, CloudMoon, Check, Loader2, Download, Video, FileAudio } from 'lucide-react';
+import { Globe, Music, Settings2, Moon, Sun, CloudMoon, Check, Loader2, Download, Video, FileAudio, X } from 'lucide-react';
 import { useTheme } from '../ThemeProvider';
 import Image from 'next/image';
 import { useVideoDownload, SelectionType } from '@/lib/hooks/use-video-download';
@@ -49,11 +49,11 @@ export default function MainFeed() {
 
   const [displayPosts, setDisplayPosts] = useState(staticPosts);
 
-  // --- 1. İYİLEŞTİRME: PASTE SORUNU ÇÖZÜMÜ ---
+  // --- PASTE HANDLER (Manuel Yapıştırma İçin) ---
   const handlePaste = async (e: React.ClipboardEvent) => {
     const pastedText = e.clipboardData.getData('text');
     
-    // URL'yi hemen inputa yaz ki kaybolmasın
+    // URL'yi hemen inputa yaz
     setInputUrl(pastedText);
 
     if (pastedText.includes('x.com') || pastedText.includes('twitter.com')) {
@@ -70,20 +70,66 @@ export default function MainFeed() {
      if(success) setIsSettingsMenuOpen(true);
   };
 
+  // --- BUTON FONKSİYONU: GÜVENLİ YAPIŞTIR VE ANALİZ ET ---
+  const handlePasteAndAnalyze = async () => {
+    // 1. Güvenlik Kontrolü
+    if (typeof navigator === 'undefined' || !navigator.clipboard || !navigator.clipboard.readText) {
+       console.warn("Clipboard API kullanılamıyor.");
+       if (inputRef.current) inputRef.current.focus();
+       return;
+    }
+
+    try {
+      // 2. Panodan oku
+      const text = await navigator.clipboard.readText();
+      
+      if (!text) {
+        inputRef.current?.focus();
+        return;
+      }
+
+      setInputUrl(text);
+      
+      // Link kontrolü ve analiz
+      if (text.includes('x.com') || text.includes('twitter.com')) {
+          const success = await handleAnalyze(text);
+          if (success) {
+              setIsSettingsMenuOpen(true);
+          }
+      } else {
+          inputRef.current?.focus();
+      }
+
+    } catch (err) {
+      console.error('Pano okuma hatası:', err);
+      if (inputRef.current) inputRef.current.focus();
+    }
+  };
+
+  // --- BUTON FONKSİYONU: TEMİZLE ---
+  const handleClearInput = () => {
+    setInputUrl('');
+    reset();
+    setIsSettingsMenuOpen(false);
+    if (inputRef.current) {
+        inputRef.current.focus();
+    }
+  };
+
   const handleSelectFormat = (sel: SelectionType) => {
     setSelection(sel);
   };
 
-  // --- 3. İYİLEŞTİRME: URL SİLİNİNCE HER ŞEYİ UNUTMA ---
+  // --- INPUT BOŞALINCA RESETLEME ---
   useEffect(() => {
     if (!inputUrl.trim()) {
-        reset(); // Hook tarafındaki datayı sıfırla
-        setDisplayPosts(staticPosts); // Postları eski haline döndür
-        setIsSettingsMenuOpen(false); // Menüyü kapat
+        reset();
+        setDisplayPosts(staticPosts);
+        setIsSettingsMenuOpen(false);
     }
   }, [inputUrl]);
 
-  // Data gelince post listesine ekle
+  // Data gelince post ekle
   useEffect(() => {
     if (data) {
       const newPost = {
@@ -94,7 +140,6 @@ export default function MainFeed() {
         timestamp: 'Şimdi',
         metrics: { likes: 0, reposts: 0, replies: 0 },
       };
-      // Sadece static postların üstüne ekle (önceki analizleri temizle)
       setDisplayPosts([newPost, ...staticPosts]);
     }
   }, [data]);
@@ -113,11 +158,10 @@ export default function MainFeed() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // --- 2. İYİLEŞTİRME: RENK MANTIĞI ---
-  // Data varsa (başarılı) -> Yeşil/Mavi, Hata varsa -> Kırmızı, Yoksa -> Varsayılan
+  // Renk mantığı
   const getTextAreaColorClass = () => {
     if (error) return 'text-red-500 placeholder-red-500/50';
-    if (data) return 'text-(--accent) font-medium'; // Başarılıysa yeşil
+    if (data) return 'text-(--accent) font-medium';
     return 'text-(--text-primary) placeholder-(--text-secondary)';
   };
 
@@ -135,11 +179,11 @@ export default function MainFeed() {
       <div className="sticky top-0 z-10 bg-(--background)/80 backdrop-blur-md border-b border-(--border)">
         <div className="flex">
           <button onClick={() => setActiveTab('foryou')} className="flex-1 py-4 text-center font-semibold hover:bg-(--background-secondary) transition-colors relative flex items-center justify-center cursor-pointer">
-            <span className={activeTab === 'foryou' ? 'font-bold text-(--text-primary)' : 'text-(--text-secondary)'}>İndirici</span>
+            <span className={activeTab === 'foryou' && 'font-bold text-(--text-primary)' || 'text-(--text-secondary)'}>İndirici</span>
             {activeTab === 'foryou' && <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1 bg-(--accent) rounded-full w-16" />}
           </button>
           <button onClick={() => setActiveTab('following')} className="flex-1 py-4 text-center font-semibold hover:bg-(--background-secondary) transition-colors relative flex items-center justify-center cursor-pointer">
-            <span className={activeTab === 'following' ? 'font-bold text-(--text-primary)' : 'text-(--text-secondary)'}>Geçmiş</span>
+            <span className={activeTab === 'following' && 'font-bold text-(--text-primary)' || 'text-(--text-secondary)'}>Geçmiş</span>
             {activeTab === 'following' && <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1 bg-(--accent) rounded-full w-12" />}
           </button>
         </div>
@@ -168,22 +212,35 @@ export default function MainFeed() {
                     }
                   }}
                   placeholder="X.com veya Twitter video linkini yapıştır..."
-                  // RENK SINIFINI BURAYA EKLİYORUZ
                   className={`w-full bg-transparent text-xl outline-none resize-none min-h-12 transition-colors duration-300 ${getTextAreaColorClass()}`}
                   rows={2}
                   disabled={loading || downloading}
                 />
               </div>
               
-              {/* ODAKLANINCA ÇIKAN BUTON */}
-              {isFocused && !loading && !data && !error && (
-                <button 
-                  onClick={handleManualAnalyze}
-                  className="flex items-center gap-2 text-(--accent) font-semibold text-sm hover:bg-(--accent)/10 rounded-full px-3 py-1 w-fit transition-colors cursor-pointer"
-                >
-                  <Globe size={16} />
-                  <span>Linki yapıştırın ve indirin</span>
-                </button>
+              {/* --- GÜNCELLENMİŞ BUTON MANTIĞI --- */}
+              {!loading && (
+                 inputUrl ? (
+                    // DURUM 1: Input Dolu -> HER ZAMAN "Temizle" (Focus fark etmez)
+                    <button 
+                      onClick={handleClearInput}
+                      className="flex items-center gap-2 text-(--text-secondary) hover:text-red-500 font-semibold text-sm hover:bg-red-500/10 rounded-full px-3 py-1 w-fit transition-all cursor-pointer"
+                    >
+                      <X size={16} />
+                      <span>Temizle</span>
+                    </button>
+                 ) : (
+                    // DURUM 2: Input Boş -> SADECE ODAKLIYSA "Yapıştır"
+                    isFocused && (
+                      <button 
+                        onClick={handlePasteAndAnalyze}
+                        className="flex items-center gap-2 text-(--accent) font-semibold text-sm hover:bg-(--accent)/10 rounded-full px-3 py-1 w-fit transition-colors cursor-pointer"
+                      >
+                        <Globe size={16} />
+                        <span>Linki yapıştırın ve indirin</span>
+                      </button>
+                    )
+                 )
               )}
 
                {loading && (
@@ -194,9 +251,8 @@ export default function MainFeed() {
               )}
               
               <div className="flex items-center justify-between pt-3 border-t border-(--border)">
+                {/* Alt Kısım (İkonlar ve İndir Butonu) - Değişiklik yok */}
                 <div className="flex items-center gap-2">
-                  
-                  {/* --- SETTINGS / DROPDOWN --- */}
                   <div className="relative" ref={settingsRef}>
                     <button 
                         onClick={() => setIsSettingsMenuOpen(!isSettingsMenuOpen)}
@@ -287,7 +343,6 @@ export default function MainFeed() {
                     )}
                   </div>
                   
-                  {/* --- MÜZİK İKONU --- */}
                   <div 
                     className={`p-2 rounded-full transition-all duration-300
                         ${selection?.type === 'audio' 
@@ -301,12 +356,10 @@ export default function MainFeed() {
                 
                 <div className="flex items-center gap-3">
                     <div className="flex items-center gap-1 relative">
-                        {/* --- GLOBE İKONU --- */}
                         <button className="p-2 rounded-full hover:bg-(--accent)/10 text-(--accent) transition-colors cursor-pointer">
                             <Globe size={20} />
                         </button>
                         
-                        {/* --- TEMA MENÜSÜ --- */}
                         <div className="relative" ref={themeRef}>
                           <button
                               onClick={() => setIsThemeMenuOpen(!isThemeMenuOpen)}
@@ -342,7 +395,6 @@ export default function MainFeed() {
 
                     <div className="h-8 w-px bg-(--border) mx-1"></div>
 
-                    {/* --- İNDİR BUTONU --- */}
                     <button
                       onClick={executeDownload}
                       disabled={!selection || downloading || loading}
