@@ -19,7 +19,7 @@ export default function Sidebar({ mobile = false }: SidebarProps) {
         {menuItems.map((item, index) => (
           <button
             key={index}
-            className="p-2 rounded-full hover:bg-white/10 transition-colors"
+            className="p-2 rounded-full hover:bg-(--background-secondary) transition-colors text-(--text-primary)"
             aria-label={item.label}
           >
             <item.icon size={26} strokeWidth={item.active ? 3 : 2} />
@@ -34,9 +34,9 @@ export default function Sidebar({ mobile = false }: SidebarProps) {
       <div className="mb-2 px-2">
         <Link 
           href="/" 
-          className="flex items-center justify-center w-12 h-12 rounded-full hover:bg-white/10 transition-colors"
+          className="flex items-center justify-center w-12 h-12 rounded-full hover:bg-(--background-secondary) transition-colors"
         >
-          <span className="text-3xl font-bold">X</span>
+          <span className="text-3xl font-bold text-(--text-primary)">X</span>
         </Link>
       </div>
 
@@ -45,21 +45,21 @@ export default function Sidebar({ mobile = false }: SidebarProps) {
           <a
             key={index}
             href="#"
-            className="flex items-center gap-4 px-4 py-3 rounded-full hover:bg-white/10 transition-all w-fit xl:w-full group"
+            className="flex items-center gap-4 px-4 py-3 rounded-full hover:bg-(--background-secondary) transition-all w-fit xl:w-full group"
           >
-            <item.icon size={26} strokeWidth={item.active ? 3 : 2} />
-            <span className={`text-xl hidden xl:block ${item.active ? 'font-bold' : 'font-normal'}`}>
+            <item.icon size={26} strokeWidth={item.active ? 3 : 2} className="text-(--text-primary)" />
+            <span className={`text-xl hidden xl:block text-(--text-primary) ${item.active ? 'font-bold' : 'font-normal'}`}>
               {item.label}
             </span>
           </a>
         ))}
       </div>
       
-      <div className="mb-4 p-3 hover:bg-white/10 rounded-full cursor-pointer flex items-center gap-3">
+      <div className="mb-4 p-3 hover:bg-(--background-secondary) rounded-full cursor-pointer flex items-center gap-3 transition-colors">
          <div className="w-10 h-10 rounded-full bg-gray-600" />
          <div className="hidden xl:block">
-            <p className="font-bold text-sm">Kullanıcı Adı</p>
-            <p className="text-gray-500 text-sm">@kullanici</p>
+            <p className="font-bold text-sm text-(--text-primary)">Kullanıcı Adı</p>
+            <p className="text-(--text-secondary) text-sm">@kullanici</p>
          </div>
       </div>
     </div>

@@ -1,31 +1,52 @@
 @import "tailwindcss";
 
 :root {
-  --color-foreground: #ffffff;
-  --color-background: #000000;
+  --background: #ffffff;
+  --background-secondary: #f7f9f9;
+  --text-primary: #0f1419;
+  --text-secondary: #536471;
+  --border: #eff3f4;
+  --accent: #1d9bf0;
+  --accent-hover: #1a8cd8;
+  --input-background: #eff3f4;
+}
+
+[data-theme='dim'] {
+  --background: #15202b;
+  --background-secondary: #192734;
+  --text-primary: #ffffff;
+  --text-secondary: #8899a6;
+  --border: #38444d;
+  --accent: #1d9bf0;
+  --accent-hover: #1a8cd8;
+  --input-background: #253341;
+}
+
+[data-theme='lights-out'] {
+  --background: #000000;
+  --background-secondary: #16181c;
+  --text-primary: #e7e9ea;
+  --text-secondary: #71767b;
+  --border: #2f3336;
+  --accent: #1d9bf0;
+  --accent-hover: #1a8cd8;
+  --input-background: #202327;
 }
 
 body {
-  color: var(--color-foreground);
-  background: var(--color-background);
-}
-
-/* Genel Sayfa Ayarları */
-body {
-  color: var(--color-foreground);
-  background: var(--color-background);
+  background-color: var(--background);
+  color: var(--text-primary);
   font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden; /* Yatay kaydırmayı engelle */
+  overflow-x: hidden;
 }
 
-/* Scrollbar'ı Güzelleştir (İsteğe bağlı) */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: var(--background);
 }
 ::-webkit-scrollbar-thumb {
-  background: #333333;
+  background: var(--border);
   border-radius: 4px;
 }

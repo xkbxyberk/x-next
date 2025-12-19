@@ -15,7 +15,6 @@ interface PostProps {
 }
 
 export default function PostCard({ data }: PostProps) {
-  // Optimistic UI State
   const [isLiked, setIsLiked] = useState(false);
   const [likeCount, setLikeCount] = useState(data.metrics.likes);
 
@@ -26,9 +25,8 @@ export default function PostCard({ data }: PostProps) {
   };
 
   return (
-    <article className="border-b border-gray-800 p-4 hover:bg-white/5 transition-colors cursor-pointer">
+    <article className="border-b border-(--border) p-4 hover:bg-(--background-secondary) transition-colors cursor-pointer">
       <div className="flex gap-4">
-        {/* Avatar */}
         <div className="shrink-0">
           <img
             src={data.author.avatar}
@@ -38,25 +36,21 @@ export default function PostCard({ data }: PostProps) {
         </div>
 
         <div className="flex-1 flex flex-col gap-1">
-          {/* Header */}
-          <div className="flex items-center gap-2 text-gray-500 text-sm">
-            <span className="font-bold text-white hover:underline">
+          <div className="flex items-center gap-2 text-(--text-secondary) text-sm">
+            <span className="font-bold text-(--text-primary) hover:underline">
               {data.author.name}
             </span>
             <span>{data.author.handle}</span>
             <span>·</span>
-            {/* DÜZELTME: Burası data.data.timestamp idi, data.timestamp yapıldı */}
             <time>{data.timestamp}</time>
           </div>
 
-          {/* Text Content */}
-          <p className="text-[15px] leading-normal whitespace-pre-wrap">
+          <p className="text-[15px] leading-normal whitespace-pre-wrap text-(--text-primary)">
             {data.content}
           </p>
 
-          {/* Media */}
           {data.image && (
-            <div className="mt-3 rounded-2xl overflow-hidden border border-gray-800 max-h-125">
+            <div className="mt-3 rounded-2xl overflow-hidden border border-(--border) max-h-125">
               <img
                 src={data.image}
                 alt="Post media"
@@ -66,8 +60,7 @@ export default function PostCard({ data }: PostProps) {
             </div>
           )}
 
-          {/* Action Bar */}
-          <div className="flex justify-between mt-3 text-gray-500 max-w-100">
+          <div className="flex justify-between mt-3 text-(--text-secondary) max-w-100">
             <button className="group flex items-center gap-2 hover:text-blue-400 transition-colors">
               <div className="p-2 rounded-full group-hover:bg-blue-400/10">
                 <MessageCircle size={18} />
