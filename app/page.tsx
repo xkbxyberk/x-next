@@ -2,9 +2,8 @@
 
 import { useState } from 'react';
 import PostCard from './components/feed/PostCard';
-import { Image, Smile, BarChart3, Calendar, MapPin, Globe } from 'lucide-react';
+import { Globe, Music, Settings2, Moon } from 'lucide-react';
 
-// Mock Data
 const posts = [
   {
     id: '1',
@@ -53,7 +52,6 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       
-      {/* Sticky Header with Tabs */}
       <div className="sticky top-0 z-10 bg-black/80 backdrop-blur-md border-b border-gray-800">
         <div className="flex">
           <button
@@ -81,9 +79,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* İçerik Akışı */}
       <div className="flex flex-col">
-        {/* Enhanced Input Area */}
         <div className="p-4 border-b border-gray-800">
           <div className="flex gap-4">
             <div className="w-10 h-10 rounded-full bg-gray-700 overflow-hidden shrink-0">
@@ -100,7 +96,6 @@ export default function Home() {
                 rows={3}
               />
               
-              {/* Herkes indirebilir - Sadece focus olduğunda göster */}
               {isFocused && (
                 <button className="flex items-center gap-2 text-blue-500 font-semibold text-sm hover:bg-blue-500/10 rounded-full px-3 py-1 w-fit transition-colors">
                   <Globe size={16} />
@@ -108,59 +103,52 @@ export default function Home() {
                 </button>
               )}
               
-              {/* Toolbar */}
               <div className="flex items-center justify-between pt-3 border-t border-gray-800">
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-2">
                   <button
                     className="p-2 rounded-full hover:bg-blue-500/10 text-blue-500 transition-colors"
-                    aria-label="Görsel ekle"
+                    aria-label="Video Kalitesi"
                   >
-                    <Image size={20} />
+                    <Settings2 size={20} />
                   </button>
                   <button
                     className="p-2 rounded-full hover:bg-blue-500/10 text-blue-500 transition-colors"
-                    aria-label="GIF ekle"
+                    aria-label="Ses İçeriği"
                   >
-                    <span className="text-sm font-bold">GIF</span>
-                  </button>
-                  <button
-                    className="p-2 rounded-full hover:bg-blue-500/10 text-blue-500 transition-colors"
-                    aria-label="Anket oluştur"
-                  >
-                    <BarChart3 size={20} />
-                  </button>
-                  <button
-                    className="p-2 rounded-full hover:bg-blue-500/10 text-blue-500 transition-colors"
-                    aria-label="Emoji ekle"
-                  >
-                    <Smile size={20} />
-                  </button>
-                  <button
-                    className="p-2 rounded-full hover:bg-blue-500/10 text-blue-500 transition-colors"
-                    aria-label="Tarih ekle"
-                  >
-                    <Calendar size={20} />
-                  </button>
-                  <button
-                    className="p-2 rounded-full hover:bg-blue-500/10 text-blue-500 transition-colors"
-                    aria-label="Konum ekle"
-                  >
-                    <MapPin size={20} />
+                    <Music size={20} />
                   </button>
                 </div>
                 
-                <button
-                  disabled={!postContent.trim()}
-                  className="bg-blue-500 text-white font-bold px-4 py-2 rounded-full hover:bg-blue-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  Gönderi yayınla
-                </button>
+                <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-1">
+                        <button
+                            className="p-2 rounded-full hover:bg-blue-500/10 text-blue-500 transition-colors"
+                            aria-label="Dil Seçimi"
+                        >
+                            <Globe size={20} />
+                        </button>
+                        <button
+                            className="p-2 rounded-full hover:bg-blue-500/10 text-blue-500 transition-colors"
+                            aria-label="Tema Değiştir"
+                        >
+                            <Moon size={20} />
+                        </button>
+                    </div>
+
+                    <div className="h-8 w-px bg-gray-800 mx-1"></div>
+
+                    <button
+                    disabled={!postContent.trim()}
+                    className="bg-blue-500 text-white font-bold px-4 py-2 rounded-full hover:bg-blue-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                    Gönderi yayınla
+                    </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Post Listesi */}
         {posts.map((post) => (
           <PostCard key={post.id} data={post} />
         ))}
