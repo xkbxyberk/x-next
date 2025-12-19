@@ -1,18 +1,26 @@
+'use client';
+
 import { Home, Search, Bell, CircleHelp } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
+import { useTheme } from '../ThemeProvider';
 
 interface SidebarProps {
   mobile?: boolean;
 }
 
 const menuItems = [
-  { icon: Home, label: 'Anasayfa', active: true },
-  { icon: Search, label: 'Keşfet', active: false },
-  { icon: Bell, label: 'Bildirimler', active: false },
-  { icon: CircleHelp, label: 'Nasıl Kullanılır', active: false },
+  { icon: Home, label: 'İndir', active: true }, // "Anasayfa" yerine "İndir" daha eylem odaklı
+  { icon: Search, label: 'Özellikler', active: false },
+  { icon: Bell, label: 'Güncellemeler', active: false },
+  { icon: CircleHelp, label: 'Nasıl Çalışır?', active: false },
 ];
 
 export default function Sidebar({ mobile = false }: SidebarProps) {
+  const { theme } = useTheme();
+  // Logo mantığı: Tema default ise siyah, değilse beyaz
+  const logoSrc = theme === 'default' ? '/logo.avif' : '/logo-white.avif';
+
   if (mobile) {
     return (
       <div className="flex justify-around items-center h-13.25 px-2">
@@ -25,6 +33,17 @@ export default function Sidebar({ mobile = false }: SidebarProps) {
             <item.icon size={26} strokeWidth={item.active ? 3 : 2} />
           </button>
         ))}
+        <div className="p-2">
+            <div className="w-8 h-8 rounded-full overflow-hidden relative">
+                <Image 
+                    src={logoSrc} 
+                    alt="X Downloader Profil" 
+                    fill 
+                    className="object-cover"
+                    sizes="32px"
+                />
+            </div>
+        </div>
       </div>
     );
   }
@@ -34,9 +53,18 @@ export default function Sidebar({ mobile = false }: SidebarProps) {
       <div className="mb-2 px-2">
         <Link 
           href="/" 
-          className="flex items-center justify-center w-12 h-12 rounded-full hover:bg-(--background-secondary) transition-colors"
+          className="flex items-center justify-center w-14 h-14 rounded-full hover:bg-(--background-secondary) transition-colors relative"
+          aria-label="X Downloader Ana Sayfa"
         >
-          <span className="text-3xl font-bold text-(--text-primary)">X</span>
+          <Image 
+            src={logoSrc} 
+            alt="X Downloader Logo" 
+            width={32} 
+            height={32} 
+            className="object-contain"
+            priority={true} 
+            fetchPriority="high"
+          />
         </Link>
       </div>
 
@@ -56,10 +84,19 @@ export default function Sidebar({ mobile = false }: SidebarProps) {
       </div>
       
       <div className="mb-4 p-3 hover:bg-(--background-secondary) rounded-full cursor-pointer flex items-center gap-3 transition-colors">
-         <div className="w-10 h-10 rounded-full bg-gray-600" />
+         <div className="w-10 h-10 rounded-full overflow-hidden relative border border-(--border)">
+            <Image 
+                src={logoSrc} 
+                alt="X Downloader" 
+                fill
+                className="object-cover"
+                sizes="40px"
+            />
+         </div>
          <div className="hidden xl:block">
-            <p className="font-bold text-sm text-(--text-primary)">Kullanıcı Adı</p>
-            <p className="text-(--text-secondary) text-sm">@kullanici</p>
+            {/* BURASI GÜNCELLENDİ: Marka Kimliği */}
+            <p className="font-bold text-sm text-(--text-primary)">X Downloader</p>
+            <p className="text-(--text-secondary) text-sm">@xdownloaderz</p>
          </div>
       </div>
     </div>

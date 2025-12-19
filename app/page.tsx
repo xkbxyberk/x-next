@@ -4,39 +4,45 @@ import { useState } from 'react';
 import PostCard from './components/feed/PostCard';
 import { Globe, Music, Settings2, Moon, Sun, CloudMoon, Check } from 'lucide-react';
 import { useTheme } from './components/ThemeProvider';
-
-const posts = [
-  {
-    id: '1',
-    author: {
-      name: 'Dear Self.',
-      handle: '@Dearme2_',
-      avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026024d',
-    },
-    content: "In 2026, we're gonna be so rich.",
-    image: 'https://images.unsplash.com/photo-1553481187-be93c21490a9?w=800&auto=format&fit=crop&q=60',
-    timestamp: '10s',
-    metrics: { likes: 9000, reposts: 1000, replies: 66 },
-  },
-  {
-    id: '2',
-    author: {
-      name: 'Elon Musk',
-      handle: '@elonmusk',
-      avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026704d',
-    },
-    content: 'Optimistic UI is the future of perceived performance. Make it fast.',
-    timestamp: '2h',
-    metrics: { likes: 42000, reposts: 5000, replies: 1200 },
-  },
-];
+import Image from 'next/image';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<'foryou' | 'following'>('foryou');
   const [postContent, setPostContent] = useState('');
   const [isFocused, setIsFocused] = useState(false);
   const [isThemeMenuOpen, setIsThemeMenuOpen] = useState(false);
+  
   const { theme, setTheme } = useTheme();
+  
+  // Dinamik Logo: Tema default ise siyah, değilse beyaz
+  const logoSrc = theme === 'default' ? '/logo.avif' : '/logo-white.avif';
+
+  // POST VERİLERİ: Hepsi marka logosunu kullanıyor
+  const posts = [
+    {
+      id: '1',
+      author: {
+        name: 'X Downloader',
+        handle: '@xdownloaderz',
+        avatar: logoSrc, // Marka logosu
+      },
+      content: "Favori X videolarınızı kaybetmeyin. Linki yukarıya yapıştırın, saniyeler içinde cihazınıza indirin. \n\nReklamsız. Ücretsiz. Sınırsız. 🚀",
+      image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&auto=format&fit=crop&q=60', 
+      timestamp: 'Sabitlenmiş',
+      metrics: { likes: 14500, reposts: 2300, replies: 142 },
+    },
+    {
+      id: '2',
+      author: {
+        name: 'MP3 Converter',
+        handle: '@music_saver',
+        avatar: logoSrc, // BURASI GÜNCELLENDİ: Artık marka logosunu kullanıyor
+      },
+      content: 'Sadece sesi mi istiyorsunuz? Videoları otomatik olarak yüksek kaliteli MP3 dosyalarına dönüştürüyoruz. 🎵\n\nVideo linkini yapıştırın > Müzik ikonuna tıklayın > İndirin.',
+      timestamp: '1s',
+      metrics: { likes: 850, reposts: 120, replies: 45 },
+    },
+  ];
 
   return (
     <>
@@ -47,7 +53,7 @@ export default function Home() {
             className="flex-1 py-4 text-center font-semibold hover:bg-(--background-secondary) transition-colors relative flex items-center justify-center cursor-pointer"
           >
             <span className={activeTab === 'foryou' ? 'font-bold text-(--text-primary)' : 'text-(--text-secondary)'}>
-              Sana özel
+              İndirici
             </span>
             {activeTab === 'foryou' && (
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1 bg-(--accent) rounded-full w-16" />
@@ -58,7 +64,7 @@ export default function Home() {
             className="flex-1 py-4 text-center font-semibold hover:bg-(--background-secondary) transition-colors relative flex items-center justify-center cursor-pointer"
           >
             <span className={activeTab === 'following' ? 'font-bold text-(--text-primary)' : 'text-(--text-secondary)'}>
-              Takip
+              Geçmiş
             </span>
             {activeTab === 'following' && (
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1 bg-(--accent) rounded-full w-12" />
@@ -70,8 +76,14 @@ export default function Home() {
       <div className="flex flex-col">
         <div className="p-4 border-b border-(--border)">
           <div className="flex gap-4">
-            <div className="w-10 h-10 rounded-full bg-gray-700 overflow-hidden shrink-0">
-              <img src="https://i.pravatar.cc/150?u=me" alt="Me" className="w-full h-full object-cover" />
+            <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 relative border border-(--border)">
+              <Image 
+                src={logoSrc} 
+                alt="Profilim" 
+                fill 
+                className="object-cover"
+                sizes="40px"
+              />
             </div>
             <div className="flex-1 flex flex-col gap-3">
               <textarea
@@ -79,7 +91,7 @@ export default function Home() {
                 onChange={(e) => setPostContent(e.target.value)}
                 onFocus={() => setIsFocused(true)}
                 onBlur={() => setIsFocused(false)}
-                placeholder="Neler oluyor?"
+                placeholder="X.com veya Twitter video linkini yapıştır..."
                 className="w-full bg-transparent text-xl outline-none placeholder-(--text-secondary) text-(--text-primary) resize-none min-h-12"
                 rows={3}
               />
@@ -87,23 +99,27 @@ export default function Home() {
               {isFocused && (
                 <button className="flex items-center gap-2 text-(--accent) font-semibold text-sm hover:bg-(--accent)/10 rounded-full px-3 py-1 w-fit transition-colors cursor-pointer">
                   <Globe size={16} />
-                  <span>Herkes indirebilir</span>
+                  <span>.mp4 / .mp3 Hazırlanıyor</span>
                 </button>
               )}
               
               <div className="flex items-center justify-between pt-3 border-t border-(--border)">
                 <div className="flex items-center gap-2">
-                  <button className="p-2 rounded-full hover:bg-(--accent)/10 text-(--accent) transition-colors cursor-pointer">
+                  <button className="p-2 rounded-full hover:bg-(--accent)/10 text-(--accent) transition-colors cursor-pointer" title="Ayarlar">
                     <Settings2 size={20} />
                   </button>
-                  <button className="p-2 rounded-full hover:bg-(--accent)/10 text-(--accent) transition-colors cursor-pointer">
+                  <button className="p-2 rounded-full hover:bg-(--accent)/10 text-(--accent) transition-colors cursor-pointer" title="MP3 Modu">
                     <Music size={20} />
                   </button>
                 </div>
                 
                 <div className="flex items-center gap-3">
                     <div className="flex items-center gap-1 relative">
-                        <button className="p-2 rounded-full hover:bg-(--accent)/10 text-(--accent) transition-colors cursor-pointer">
+                        {/* BURASI GERİ GELDİ: Gelecekteki dil seçeneği için Dünya ikonu */}
+                        <button 
+                            className="p-2 rounded-full hover:bg-(--accent)/10 text-(--accent) transition-colors cursor-pointer" 
+                            aria-label="Dil Seçimi"
+                        >
                             <Globe size={20} />
                         </button>
                         
@@ -111,6 +127,7 @@ export default function Home() {
                           <button
                               onClick={() => setIsThemeMenuOpen(!isThemeMenuOpen)}
                               className="p-2 rounded-full hover:bg-(--accent)/10 text-(--accent) transition-colors cursor-pointer"
+                              aria-label="Tema Değiştir"
                           >
                               <Moon size={20} />
                           </button>
@@ -160,7 +177,7 @@ export default function Home() {
                     disabled={!postContent.trim()}
                     className="bg-(--accent) text-white font-bold px-4 py-2 rounded-full hover:bg-(--accent-hover) transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                     >
-                    Gönderi yayınla
+                    İndir
                     </button>
                 </div>
               </div>
