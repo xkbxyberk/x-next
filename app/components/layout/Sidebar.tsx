@@ -1,4 +1,5 @@
 import { Home, Search, Bell, CircleHelp } from 'lucide-react';
+import Link from 'next/link';
 
 interface SidebarProps {
   mobile?: boolean;
@@ -12,7 +13,6 @@ const menuItems = [
 ];
 
 export default function Sidebar({ mobile = false }: SidebarProps) {
-  // Mobil Tasarım (Thumb Zone - Bottom Bar)
   if (mobile) {
     return (
       <div className="flex justify-around items-center h-13.25 px-2">
@@ -29,15 +29,17 @@ export default function Sidebar({ mobile = false }: SidebarProps) {
     );
   }
 
-  // Masaüstü Tasarım (Left Sidebar)
   return (
-    <div className="flex flex-col h-full px-2 py-4">
-      {/* Logo */}
-      <div className="mb-6 px-3">
-        <div className="text-3xl font-bold">X</div>
+    <div className="flex flex-col h-full px-2 pt-1 pb-4">
+      <div className="mb-2 px-2">
+        <Link 
+          href="/" 
+          className="flex items-center justify-center w-12 h-12 rounded-full hover:bg-white/10 transition-colors"
+        >
+          <span className="text-3xl font-bold">X</span>
+        </Link>
       </div>
 
-      {/* Navigasyon Linkleri */}
       <div className="flex flex-col gap-2 flex-1">
         {menuItems.map((item, index) => (
           <a
@@ -53,7 +55,6 @@ export default function Sidebar({ mobile = false }: SidebarProps) {
         ))}
       </div>
       
-      {/* User Mini Profile */}
       <div className="mb-4 p-3 hover:bg-white/10 rounded-full cursor-pointer flex items-center gap-3">
          <div className="w-10 h-10 rounded-full bg-gray-600" />
          <div className="hidden xl:block">
