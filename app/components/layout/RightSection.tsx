@@ -14,28 +14,20 @@ export default function RightSection() {
         />
       </div>
 
-      <section className="bg-(--background-secondary) rounded-2xl overflow-hidden border border-(--border)">
-        <h2 className="text-xl font-bold px-4 py-3 text-(--text-primary)">İlginizi çekebilir</h2>
-        
-        <div className="px-4 py-3 hover:bg-(--background)/50 cursor-pointer transition-colors">
-          <div className="flex justify-between items-start">
-            <span className="text-xs text-(--text-secondary)">Türkiye konumunda gündem</span>
-            <span className="text-(--text-secondary) text-xs">...</span>
-          </div>
-          <p className="font-bold text-(--text-primary)">#Teknoloji</p>
-          <span className="text-xs text-(--text-secondary)">12,5 B posts</span>
+      <section className="flex flex-col gap-4">
+        {/* Reklam Alanı 1 */}
+        <div className="bg-(--background-secondary) rounded-2xl overflow-hidden border border-(--border) min-h-62.5 flex items-center justify-center">
+            <span className="text-(--text-secondary) text-xs font-bold tracking-widest opacity-50">REKLAM ALANI 1</span>
         </div>
 
-        <div className="px-4 py-3 hover:bg-(--background)/50 cursor-pointer transition-colors">
-          <div className="flex justify-between items-start">
-             <span className="text-xs text-(--text-secondary)">Yazılım · Gündemdekiler</span>
-          </div>
-          <p className="font-bold text-(--text-primary)">Next.js 15</p>
-          <span className="text-xs text-(--text-secondary)">45 B posts</span>
+        {/* Reklam Alanı 2 */}
+        <div className="bg-(--background-secondary) rounded-2xl overflow-hidden border border-(--border) min-h-62.5 flex items-center justify-center">
+            <span className="text-(--text-secondary) text-xs font-bold tracking-widest opacity-50">REKLAM ALANI 2</span>
         </div>
-        
-        <div className="px-4 py-3 text-(--accent) text-sm cursor-pointer hover:bg-(--background)/50">
-           Daha fazla göster
+
+        {/* Reklam Alanı 3 */}
+        <div className="bg-(--background-secondary) rounded-2xl overflow-hidden border border-(--border) min-h-62.5 flex items-center justify-center">
+            <span className="text-(--text-secondary) text-xs font-bold tracking-widest opacity-50">REKLAM ALANI 3</span>
         </div>
       </section>
     </div>
