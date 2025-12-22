@@ -25,7 +25,11 @@ export default function PostCard({ data }: PostProps) {
   };
 
   return (
-    <article className="border-b border-(--border) p-4 hover:bg-(--background-secondary) transition-colors cursor-pointer">
+    // BURASI DEĞİŞTİ: id prop'u eklendi
+    <article 
+      id={data.id} 
+      className="border-b border-(--border) p-4 hover:bg-(--background-secondary) transition-colors cursor-pointer scroll-mt-20"
+    >
       <div className="flex gap-4">
         <div className="shrink-0">
           <img

@@ -1,6 +1,6 @@
 'use client';
 
-import { Home, Search, Bell, CircleHelp } from 'lucide-react';
+import { Home, BookOpen, Zap, CircleHelp } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTheme } from '../ThemeProvider';
@@ -9,11 +9,12 @@ interface SidebarProps {
   mobile?: boolean;
 }
 
+// HEDEFLERİ BURADA BELİRLİYORUZ
 const menuItems = [
-  { icon: Home, label: 'İndir', active: true },
-  { icon: Search, label: 'Özellikler', active: false },
-  { icon: Bell, label: 'Güncellemeler', active: false },
-  { icon: CircleHelp, label: 'Nasıl Çalışır?', active: false },
+  { icon: Home, label: 'İndir', href: '#download-area' }, // Input alanı
+  { icon: BookOpen, label: 'Nasıl Kullanılır?', href: '#guide-step1-4' }, // Adım 1 Postu
+  { icon: Zap, label: 'Nasıl Çalışır?', href: '#seo-info-2' }, // Genel Tanıtım Postu
+  { icon: CircleHelp, label: 'S.S.S.', href: '#faq-private-7' }, // İlk SSS Postu
 ];
 
 export default function Sidebar({ mobile = false }: SidebarProps) {
@@ -21,17 +22,40 @@ export default function Sidebar({ mobile = false }: SidebarProps) {
   
   const logoSrc = theme === 'default' ? '/logo.avif' : '/logo-white.avif';
 
+  // YARDIMCI FONKSİYON: Tıklanınca yumuşak kaydırma tetikler
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
+    e.preventDefault(); // Standart atlamayı engelle
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
+    if (element) {
+        // Header payı bırakarak kaydır (Sticky header olduğu için üstte kalmasın)
+        const headerOffset = 80; 
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+    } else {
+        // Eğer element yoksa (henüz yüklenmediyse) sayfa başına git
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   if (mobile) {
     return (
       <div className="flex justify-around items-center h-13.25 px-2">
         {menuItems.map((item, index) => (
-          <button
+          <a
             key={index}
+            href={item.href}
+            onClick={(e) => handleScroll(e, item.href)}
             className="p-2 rounded-full hover:bg-(--background-secondary) transition-colors text-(--text-primary)"
             aria-label={item.label}
           >
-            <item.icon size={24} strokeWidth={item.active ? 3 : 2} />
-          </button>
+            <item.icon size={24} strokeWidth={2} />
+          </a>
         ))}
         <div className="p-2">
             <div className="w-8 h-8 rounded-full overflow-hidden relative">
@@ -51,12 +75,9 @@ export default function Sidebar({ mobile = false }: SidebarProps) {
   return (
     <div className="flex flex-col h-full px-2 pt-0 pb-4">
       
-      {/* Logo Alanı */}
-      {/* mb-0 korundu: Logo ile menü arası sıkı */}
       <div className="mb-0 px-2">
         <Link 
           href="/" 
-          /* p-2 ve w-fit korundu: Hover alanı logoyu sarıyor */
           className="flex items-center justify-center p-2 w-fit rounded-full hover:bg-(--background-secondary) transition-colors relative"
           aria-label="X Downloader Ana Sayfa"
         >
@@ -72,24 +93,21 @@ export default function Sidebar({ mobile = false }: SidebarProps) {
         </Link>
       </div>
 
-      {/* Menü ve Reklam Kapsayıcısı */}
-      {/* BURASI DÜZELTİLDİ: gap-1 -> gap-2 yapıldı (Eski haline döndü) */}
       <div className="flex flex-col gap-2 flex-1 min-h-0">
         {menuItems.map((item, index) => (
           <a
             key={index}
-            href="#"
-            /* BURASI DÜZELTİLDİ: py-2 -> py-3 yapıldı (Eski ferah haline döndü) */
-            className="flex items-center gap-4 px-4 py-3 rounded-full hover:bg-(--background-secondary) transition-all w-fit xl:w-full group shrink-0"
+            href={item.href}
+            onClick={(e) => handleScroll(e, item.href)}
+            className="flex items-center gap-4 px-4 py-3 rounded-full hover:bg-(--background-secondary) transition-all w-fit xl:w-full group shrink-0 cursor-pointer"
           >
-            <item.icon size={24} strokeWidth={item.active ? 3 : 2} className="text-(--text-primary)" />
-            <span className={`text-xl hidden xl:block text-(--text-primary) ${item.active ? 'font-bold' : 'font-normal'}`}>
+            <item.icon size={24} strokeWidth={2} className="text-(--text-primary)" />
+            <span className="text-xl hidden xl:block text-(--text-primary) font-normal group-hover:font-medium">
               {item.label}
             </span>
           </a>
         ))}
 
-        {/* DİKEY REKLAM ALANI (SKYSCRAPER) */}
         <div className="hidden xl:flex w-full my-2 px-2 flex-1 min-h-75">
             <div className="w-full bg-(--background-secondary) rounded-2xl border border-(--border) h-full flex flex-col items-center justify-center relative overflow-hidden group">
                  <span className="text-(--text-secondary) text-[10px] font-bold tracking-widest opacity-40 absolute top-2 right-2">REKLAM</span>
@@ -100,7 +118,6 @@ export default function Sidebar({ mobile = false }: SidebarProps) {
         </div>
       </div>
       
-      {/* Profil Alanı */}
       <div className="mb-4 mt-2 p-3 hover:bg-(--background-secondary) rounded-full cursor-pointer flex items-center gap-3 transition-colors shrink-0">
          <div className="w-10 h-10 rounded-full overflow-hidden relative border border-(--border)">
             <Image 
