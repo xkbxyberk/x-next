@@ -1,8 +1,9 @@
 // lib/hooks/use-video-download.ts
 import { useState } from 'react';
-import { resolveTweet } from '@/app/actions/download';
-import { ClientConverter } from '@/lib/services/client-converter';
-import { TweetVideo } from '@/lib/core/types';
+import { resolveTweetAction } from '@/app/actions/resolve-tweet';
+import { FFmpegManager } from '@/lib/client/ffmpeg-manager';
+import { TweetVideoEntity } from '@/lib/core/schemas';
+import { fetchFile } from '@ffmpeg/util';
 
 export type SelectionType = {
   type: 'video' | 'audio';
@@ -13,18 +14,14 @@ export type SelectionType = {
 
 export function useVideoDownload() {
   const [inputUrl, setInputUrl] = useState('');
-  const [data, setData] = useState<TweetVideo | null>(null);
-  const [error, setError] = useState<string | null>(null); // Hata durumu için state eklendi
+  const [data, setData] = useState<TweetVideoEntity | null>(null);
+  const [error, setError] = useState<string | null>(null);
   
-  // Durum Yönetimi
   const [loading, setLoading] = useState(false);
   const [downloading, setDownloading] = useState(false);
   const [progress, setProgress] = useState(0);
   
-  // Kullanıcı Seçimi
   const [selection, setSelection] = useState<SelectionType | null>(null);
-  
-  // Bildirim Yönetimi
   const [notification, setNotification] = useState<{ msg: string; type: 'success' | 'error' | 'info' } | null>(null);
 
   const showNotification = (msg: string, type: 'success' | 'error' | 'info') => {
@@ -33,16 +30,14 @@ export function useVideoDownload() {
 
   const closeNotification = () => setNotification(null);
 
-  // Her şeyi sıfırla (URL silindiğinde çağrılacak)
   const reset = () => {
     setData(null);
     setSelection(null);
     setError(null);
     setLoading(false);
-    // inputUrl'i burada sıfırlamıyoruz çünkü onu input'un kendisi kontrol ediyor
   };
 
-  // URL Analizi
+  // 1. ANALİZ İŞLEMİ
   const handleAnalyze = async (urlToAnalyze?: string) => {
     const targetUrl = urlToAnalyze || inputUrl;
     if (!targetUrl.trim()) return;
@@ -50,18 +45,30 @@ export function useVideoDownload() {
     setLoading(true);
     setData(null);
     setSelection(null);
-    setError(null); // Önceki hataları temizle
+    setError(null);
 
     try {
-      const result = await resolveTweet(targetUrl);
-      if (!result.success || !result.data) {
+      const result = await resolveTweetAction(targetUrl);
+      
+      // DÜZELTME BURADA:
+      // TypeScript'e "Eğer success false ise bu bloğa gir" diyoruz.
+      // Böylece bu bloğun içinde result.error'a erişmemize izin veriyor.
+      if (!result.success) {
         throw new Error(result.error || 'Video bulunamadı');
       }
+
+      // Buraya geldiyse TypeScript artık başarısız olmadığını biliyor.
+      // Dolayısıyla result.data'ya güvenle erişebiliriz.
       setData(result.data);
+      
+      if (result.fromCache) {
+         console.log('⚡ Veri Cache\'den ışık hızında geldi!');
+      }
+
       showNotification('Video başarıyla bulundu. Format seçin.', 'success');
       return true;
     } catch (err: any) {
-      setError(err.message); // Hatayı state'e işle (Kırmızı renk için)
+      setError(err.message);
       showNotification(err.message || 'Analiz başarısız oldu.', 'error');
       return false;
     } finally {
@@ -69,7 +76,7 @@ export function useVideoDownload() {
     }
   };
 
-  // İndirme İşlemi
+  // 2. İNDİRME İŞLEMİ
   const executeDownload = async () => {
     if (!selection || !data) return;
 
@@ -77,58 +84,57 @@ export function useVideoDownload() {
     setProgress(0);
 
     try {
-      // Bildirim göster
       if (typeof showNotification === 'function') {
          showNotification(`${selection.type === 'audio' ? 'Ses' : 'Video'} indiriliyor...`, 'info');
       }
 
       let blob: Blob;
-      let filename = `${data.user.screen_name}-${data.id}`;
+      let filename = `${data.author.screenName}-${data.id}`;
 
-      // --- SES İNDİRME İŞLEMİ (Eski yöntemi koruyoruz) ---
       if (selection.type === 'audio') {
-        // Ses dönüştürücü zaten ffmpeg kullanıyor, buraya dokunmuyoruz
-        blob = await ClientConverter.convertToMp3(selection.url, (p) => setProgress(p));
-        filename += '.mp3';
-      } 
-      
-      // --- VİDEO İNDİRME İŞLEMİ (GÜNCELLENDİ) ---
-      else {
-        // BURASI KRİTİK NOKTA:
-        // Eski 'fetch' yöntemini kullanıyoruz AMA içine 'no-referrer' ekliyoruz.
-        // Bu sayede hem dosya olarak paketliyoruz hem de Twitter'a yakalanmıyoruz.
+        const ffmpeg = await FFmpegManager.getInstance();
+
+        ffmpeg.on('progress', ({ progress }) => {
+          setProgress(Math.round(progress * 100));
+        });
+
+        await ffmpeg.writeFile('input.mp4', await fetchFile(selection.url));
+        await ffmpeg.exec(['-i', 'input.mp4', '-vn', '-ab', '192k', 'output.mp3']);
+        const fileData = await ffmpeg.readFile('output.mp3');
         
+        await ffmpeg.deleteFile('input.mp4');
+        await ffmpeg.deleteFile('output.mp3');
+
+        blob = new Blob([fileData as any], { type: 'audio/mp3' });
+        filename += '.mp3';
+      } else {
         const response = await fetch(selection.url, {
-            referrerPolicy: 'no-referrer' // <--- SİHİRLİ SATIR
+            referrerPolicy: 'no-referrer'
         });
 
         if (!response.ok) throw new Error('Video dosyası çekilemedi.');
         
+        setProgress(50);
         blob = await response.blob();
+        setProgress(100);
         filename += '.mp4';
       }
 
-      // --- DOSYAYI İNDİRME (Link Oluşturma) ---
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = filename; // Bu özellik artık çalışacak çünkü blob bizim elimizde
+      a.download = filename;
       document.body.appendChild(a);
       a.click();
       
-      // Temizlik
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
 
-      if (typeof showNotification === 'function') {
-        showNotification('İndirme tamamlandı!', 'success');
-      }
+      showNotification('İndirme tamamlandı!', 'success');
       
     } catch (err: any) {
       console.error(err);
-      if (typeof showNotification === 'function') {
-         showNotification('İndirme hatası: ' + (err.message || 'Bilinmeyen hata'), 'error');
-      }
+      showNotification('İndirme hatası: ' + (err.message || 'Bilinmeyen hata'), 'error');
     } finally {
       setDownloading(false);
       setProgress(0);
@@ -139,7 +145,7 @@ export function useVideoDownload() {
     inputUrl,
     setInputUrl,
     data,
-    error, // Dışarı aktarıldı
+    error,
     loading,
     downloading,
     progress,
@@ -149,6 +155,6 @@ export function useVideoDownload() {
     closeNotification,
     handleAnalyze,
     executeDownload,
-    reset // Dışarı aktarıldı
+    reset
   };
 }

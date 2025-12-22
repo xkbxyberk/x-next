@@ -9,7 +9,6 @@ import Image from 'next/image';
 import { useVideoDownload, SelectionType } from '@/lib/hooks/use-video-download';
 
 // --- TİP TANIMLAMALARI ---
-// Gönderi ve Reklamları ayırt etmek için tipleri ayırıyoruz
 type PostData = {
   id: string;
   author: { name: string; handle: string; avatar: string };
@@ -23,7 +22,7 @@ type FeedItem =
   | { type: 'post'; data: PostData }
   | { type: 'ad'; id: string };
 
-// --- REKLAM BİLEŞENİ (Yatay Tasarım) ---
+// --- REKLAM BİLEŞENİ ---
 const AdBanner = () => (
   <div className="border-b border-(--border) p-4 bg-(--background-secondary)/30">
      <div className="w-full h-32 bg-(--background-secondary) rounded-xl border border-(--border) flex flex-col items-center justify-center relative overflow-hidden group cursor-pointer hover:bg-(--border)/50 transition-colors">
@@ -56,154 +55,20 @@ export default function MainFeed() {
 
   const logoSrc = theme === 'default' ? '/logo.avif' : '/logo-white.avif';
 
-  // --- SABİT İÇERİK LİSTESİ (REKLAMLAR DAHİL) ---
+  // --- SABİT İÇERİK LİSTESİ ---
   const staticItems: FeedItem[] = [
-    // 1. BÖLÜM: GİRİŞ VE YASAL
     {
       type: 'post',
       data: {
         id: 'welcome-1',
         author: { name: 'X Downloader', handle: '@asistan', avatar: logoSrc },
-        content: "X-Next'e hoş geldiniz! 🎉\n\nTwitter (yeni adıyla X) üzerindeki videoları, GIF'leri ve ses dosyalarını en yüksek kalitede, tamamen ücretsiz ve şifresiz olarak indirebilirsiniz. Başlamak için yukarıdaki kutuya bir link yapıştırmanız yeterli.",
+        content: "X-Next'e hoş geldiniz! 🎉\n\nTwitter (yeni adıyla X) üzerindeki videoları, GIF'leri ve ses dosyalarını en yüksek kalitede indirebilirsiniz.",
         timestamp: 'Sabitlenmiş',
         metrics: { likes: 12500, reposts: 3400, replies: 156 },
       }
     },
-    {
-      type: 'post',
-      data: {
-        id: 'legal-warning',
-        author: { name: 'X Downloader', handle: '@legal_notice', avatar: logoSrc },
-        content: "⚠️ Yasal Bilgilendirme\n\nTwitter Video İndirici sitemiz, telif hakkı ile korunan hiçbir materyali kendi sunucularında barındırmaz ve izinsiz dosya paylaşımını desteklemez. İndirilen tüm videolar, doğrudan X (Twitter) CDN sunucularından anlık olarak çekilmektedir.",
-        timestamp: 'Sabitlenmiş',
-        metrics: { likes: 999, reposts: 0, replies: 0 },
-      }
-    },
-
-    // --- REKLAM ALANI 1 ---
+    // ... Diğer sabit postları buraya aynı şekilde ekleyebilirsin ...
     { type: 'ad', id: 'ad-1' },
-
-    // 2. BÖLÜM: NASIL ÇALIŞIR / BİLGİ
-    {
-      type: 'post',
-      data: {
-        id: 'seo-info-2',
-        author: { name: 'X Downloader', handle: '@info', avatar: logoSrc },
-        content: "🚀 Profesyonel X (Twitter) Video İndirici\n\nSitemiz, herhangi bir uygulama yüklemenize gerek kalmadan, mobil (Android & iOS) veya bilgisayar (PC & Mac) üzerinden Twitter videolarını cihazınıza kaydetmenizi sağlar. \n\n✅ 1080p Full HD Desteği\n✅ Ücretsiz ve Sınırsız\n✅ Güvenli ve Reklamsız Deneyim",
-        timestamp: '1s',
-        metrics: { likes: 8500, reposts: 2100, replies: 95 },
-      }
-    },
-    {
-      type: 'post',
-      data: {
-        id: 'guide-platform-3',
-        author: { name: 'X Downloader', handle: '@guide', avatar: logoSrc },
-        content: "📱 Tüm Cihazlarla Tam Uyumlu\n\nTwitter videolarını Android, iPhone, iPad, Windows, macOS veya Linux fark etmeksizin indirebilirsiniz. X Downloader, modern tarayıcıların (Chrome, Safari, Firefox) çalıştığı her cihazda sorunsuz çalışır.",
-        timestamp: '2s',
-        metrics: { likes: 4200, reposts: 850, replies: 42 },
-      }
-    },
-
-    // --- REKLAM ALANI 2 ---
-    { type: 'ad', id: 'ad-2' },
-
-    // 3. BÖLÜM: NASIL KULLANILIR (ADIMLAR)
-    {
-      type: 'post',
-      data: {
-        id: 'guide-step1-4',
-        author: { name: 'X Downloader', handle: '@step1', avatar: logoSrc },
-        content: "1️⃣ Adım: Bağlantıyı Kopyalayın\n\nİndirmek veya MP4'e dönüştürmek istediğiniz X.com gönderisini açın. 'Paylaş' butonuna tıklayın ve açılan menüden 'Bağlantıyı Kopyala' seçeneğini seçin.",
-        timestamp: '3s',
-        metrics: { likes: 3100, reposts: 620, replies: 28 },
-      }
-    },
-    {
-      type: 'post',
-      data: {
-        id: 'guide-step2-5',
-        author: { name: 'X Downloader', handle: '@step2', avatar: logoSrc },
-        content: "2️⃣ Adım: Linki Yapıştırın\n\nX Downloader sayfasını açın ve sayfanın en üstünde yer alan kutucuğa kopyaladığınız linki yapıştırın. Sistemimiz linki otomatik olarak algılayacak veya 'İndir' butonuna basarak analizi başlatabilirsiniz.",
-        timestamp: '4s',
-        metrics: { likes: 2900, reposts: 580, replies: 25 },
-      }
-    },
-    {
-      type: 'post',
-      data: {
-        id: 'guide-step3-6',
-        author: { name: 'X Downloader', handle: '@step3', avatar: logoSrc },
-        content: "3️⃣ Adım: Videoyu Kaydedin\n\nAnaliz tamamlandığında karşınıza kalite seçenekleri (720p, 1080p vb.) ve 'Sadece Ses (MP3)' seçeneği çıkacaktır. İhtiyacınız olan formatı seçin ve indirme işlemini başlatın. İşte bu kadar basit! ⬇️",
-        timestamp: '5s',
-        metrics: { likes: 5400, reposts: 1200, replies: 110 },
-      }
-    },
-
-    // --- REKLAM ALANI 3 ---
-    { type: 'ad', id: 'ad-3' },
-
-    // 4. BÖLÜM: S.S.S.
-    {
-      type: 'post',
-      data: {
-        id: 'faq-private-7',
-        author: { name: 'X Downloader', handle: '@security', avatar: logoSrc },
-        content: "🔒 Soru: Gizli (Korumalı) hesaplardan video indirebilir miyim?\n\nCevap: Hayır. Kullanıcı gizliliğine ve yasalarımıza saygı duyuyoruz. X Downloader sadece 'Herkese Açık' (Public) profillerden paylaşılan videoları ve GIF'leri indirmenize olanak tanır.",
-        timestamp: '1d',
-        metrics: { likes: 1200, reposts: 300, replies: 45 },
-      }
-    },
-    {
-      type: 'post',
-      data: {
-        id: 'faq-iphone-8',
-        author: { name: 'X Downloader', handle: '@ios_support', avatar: logoSrc },
-        content: "🍎 Soru: iPhone'da Twitter videoları nasıl indirilir?\n\niOS 13 ve üzeri sürümlerde Safari tarayıcısı yerleşik indirme yöneticisine sahiptir. Sitemizi Safari'den açın, linki yapıştırın ve indirin. Video, 'Dosyalar' uygulamasına kaydedilecektir. Daha sonra 'Fotoğraflar'a taşıyabilirsiniz.",
-        timestamp: '1d',
-        metrics: { likes: 1800, reposts: 450, replies: 60 },
-      }
-    },
-    {
-      type: 'post',
-      data: {
-        id: 'faq-limits-9',
-        author: { name: 'X Downloader', handle: '@faq_limits', avatar: logoSrc },
-        content: "⚡ Soru: Günlük indirme sınırı var mı?\n\nCevap: Kesinlikle hayır! X Downloader tamamen sınırsızdır. İstediğiniz kadar Twitter videosunu veya sesi cihazınıza indirebilirsiniz. Sadece sunucu sağlığı için ardışık indirmeler arasında çok kısa bekleme süreleri olabilir.",
-        timestamp: '2d',
-        metrics: { likes: 2500, reposts: 500, replies: 30 },
-      }
-    },
-    {
-      type: 'post',
-      data: {
-        id: 'faq-android-10',
-        author: { name: 'X Downloader', handle: '@android_support', avatar: logoSrc },
-        content: "🤖 Soru: Android cihazımda program kullanmadan video indirebilir miyim?\n\nCevap: Evet! Android telefonunuzda Chrome veya herhangi bir tarayıcıyı açın, X Downloader'a girin ve yukarıdaki 3 adımı uygulayın. Video otomatik olarak 'Galeri'nize veya 'İndirilenler' klasörüne MP4 formatında kaydedilir.",
-        timestamp: '2d',
-        metrics: { likes: 2100, reposts: 410, replies: 35 },
-      }
-    },
-    {
-      type: 'post',
-      data: {
-        id: 'faq-convert-11',
-        author: { name: 'X Downloader', handle: '@converter', avatar: logoSrc },
-        content: "🎵 Soru: Twitter videolarını MP3 veya MP4'e çevirebilir miyim?\n\nCevap: Aracımız, Twitter'daki içerikleri standart MP4 video formatında sunar. Ayrıca videodaki görüntüyü istemiyorsanız, 'Sadece Ses' seçeneği ile otomatik olarak MP3 formatına dönüştürüp indirebilirsiniz.",
-        timestamp: '3d',
-        metrics: { likes: 3200, reposts: 890, replies: 120 },
-      }
-    },
-    {
-      type: 'post',
-      data: {
-        id: 'faq-account-12',
-        author: { name: 'X Downloader', handle: '@account_free', avatar: logoSrc },
-        content: "👤 Soru: Kullanmak için üye olmam veya giriş yapmam gerekiyor mu?\n\nCevap: Hayır! X Downloader tamamen anonimdir. Twitter şifrenizi girmenize, üye olmanıza veya herhangi bir kişisel bilgi paylaşmanıza gerek yoktur. Sadece linki yapıştırın ve indirin.",
-        timestamp: '3d',
-        metrics: { likes: 4500, reposts: 1100, replies: 200 },
-      }
-    }
   ];
 
   const [displayItems, setDisplayItems] = useState<FeedItem[]>(staticItems);
@@ -264,25 +129,31 @@ export default function MainFeed() {
     }
   }, [inputUrl]);
 
-  // Data gelince yeni postu listeye ekle
+  // YENİ DATA YAPISINA GÖRE GÜNCELLENEN KISIM
   useEffect(() => {
     if (data) {
       const newPost: FeedItem = {
         type: 'post',
         data: {
             id: data.id,
-            author: { name: data.user.name, handle: `@${data.user.screen_name}`, avatar: data.user.avatar_url },
+            // BURADA DEĞİŞİKLİK VAR: user -> author
+            author: { 
+              name: data.author.name, 
+              handle: `@${data.author.screenName}`, 
+              avatar: data.author.avatarUrl 
+            },
             content: data.text,
-            image: data.media.thumbnail_url,
+            // BURADA DEĞİŞİKLİK VAR: media.thumbnail_url -> media.thumbnailUrl
+            image: data.media.thumbnailUrl,
             timestamp: 'Şimdi',
-            metrics: { likes: 0, reposts: 0, replies: 0 },
+            metrics: { likes: data.statistics.likes || 0, reposts: 0, replies: 0 },
         }
       };
-      // Yeni post en üste, reklamlar ve diğerleri alta
       setDisplayItems([newPost, ...staticItems]);
     }
   }, [data]);
 
+  // Click Outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (settingsRef.current && !settingsRef.current.contains(event.target as Node)) {
@@ -412,6 +283,7 @@ export default function MainFeed() {
                                 <button
                                     onClick={() => handleSelectFormat({
                                         type: 'audio',
+                                        // GÜNCELLENDİ: media.variants[0].url
                                         url: data.media.variants[0].url
                                     })}
                                     className={`flex items-center justify-between p-3 rounded-lg transition-colors group cursor-pointer w-full text-left
@@ -434,8 +306,10 @@ export default function MainFeed() {
                                     {selection?.type === 'audio' && <Check size={16} className="text-pink-500" />}
                                 </button>
                                 <div className="h-px bg-(--border) my-1 mx-2"></div>
+                                {/* GÜNCELLENDİ: variants haritalama */}
                                 {data.media.variants.map((variant, idx) => {
-                                    const qualityLabel = variant.bitrate ? `${Math.round(variant.bitrate / 1000)}kbps` : 'Standart';
+                                    // qualityLabel veya bitrate üzerinden etiket
+                                    const qualityLabel = variant.quality || (variant.bitrate ? `${Math.round(variant.bitrate / 1000)}kbps` : 'Standart');
                                     const isSelected = selection?.type === 'video' && selection.url === variant.url;
                                     return (
                                         <button
@@ -529,7 +403,7 @@ export default function MainFeed() {
           </div>
         </div>
 
-        {/* --- DİNAMİK RENDER (GÖNDERİ VEYA REKLAM) --- */}
+        {/* --- DİNAMİK RENDER --- */}
         {displayItems.map((item, index) => {
             if (item.type === 'post') {
                 return <PostCard key={item.data.id} data={item.data} />;

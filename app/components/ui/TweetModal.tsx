@@ -1,11 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { createPortal } from 'react-dom'; // Teleport özelliği eklendi
+import { createPortal } from 'react-dom';
 import { X, Heart, MessageCircle, Repeat, Share, Loader2 } from 'lucide-react';
 import Image from 'next/image';
-import { resolveTweet } from '@/app/actions/download'; 
-import { TweetVideo } from '@/lib/core/types';
+import { resolveTweetAction } from '@/app/actions/resolve-tweet';
+import { TweetVideoEntity } from '@/lib/core/schemas';
 
 interface TweetModalProps {
   isOpen: boolean;
@@ -16,10 +16,9 @@ interface TweetModalProps {
 export default function TweetModal({ isOpen, onClose, url }: TweetModalProps) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [data, setData] = useState<TweetVideo | null>(null);
+  const [data, setData] = useState<TweetVideoEntity | null>(null);
   const [mounted, setMounted] = useState(false);
 
-  // Portal'ın çalışması için sayfanın yüklenmesini bekle
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -27,17 +26,13 @@ export default function TweetModal({ isOpen, onClose, url }: TweetModalProps) {
   useEffect(() => {
     if (isOpen && url) {
       loadTweetData();
-      // Modal açıldığında arkaplanı kaydırmayı engelle
       document.body.style.overflow = 'hidden';
     } else {
       setData(null);
       setError(null);
       setLoading(true);
-      // Modal kapanınca kaydırmayı geri aç
       document.body.style.overflow = 'unset';
     }
-
-    // Temizlik
     return () => {
       document.body.style.overflow = 'unset';
     };
@@ -48,13 +43,19 @@ export default function TweetModal({ isOpen, onClose, url }: TweetModalProps) {
       setLoading(true);
       setError(null);
       
-      const result = await resolveTweet(url);
+      const result = await resolveTweetAction(url);
       
-      if (result.success && result.data) {
-        setData(result.data);
-      } else {
+      // DÜZELTME BURADA:
+      // Önce başarısız mı diye bakıyoruz.
+      if (!result.success) {
+        // Başarısız ise hata mesajını alıp fonksiyonu bitiriyoruz (return).
         setError(result.error || 'Tweet bilgileri alınamadı.');
+        return;
       }
+
+      // Eğer buraya geldiyse, result.success kesinlikle true demektir.
+      setData(result.data);
+
     } catch (err) {
       setError('Bir bağlantı hatası oluştu.');
     } finally {
@@ -62,23 +63,18 @@ export default function TweetModal({ isOpen, onClose, url }: TweetModalProps) {
     }
   };
 
-  // Eğer sayfa yüklenmediyse veya modal kapalıysa hiçbir şey gösterme
   if (!mounted || !isOpen) return null;
 
-  // Modal içeriği
   const modalContent = (
+    // DÜZELTME: z-[99999] yerine z-99999 (Tailwind v4 syntax uyarısı giderildi)
     <div className="fixed inset-0 z-99999 flex items-center justify-center p-4">
-      
-      {/* Arkaplan Karartma (Overlay) */}
       <div 
         className="absolute inset-0 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200" 
         onClick={onClose} 
       />
 
-      {/* Modal Penceresi */}
       <div className="relative w-full max-w-xl bg-(--background) rounded-2xl border border-(--border) shadow-2xl overflow-hidden flex flex-col max-h-[90vh] animate-in zoom-in-95 duration-200 z-10">
         
-        {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-(--border)">
           <h3 className="font-bold text-lg text-(--text-primary)">Gönderi Önizleme</h3>
           <button 
@@ -89,7 +85,6 @@ export default function TweetModal({ isOpen, onClose, url }: TweetModalProps) {
           </button>
         </div>
 
-        {/* Body */}
         <div className="p-0 overflow-y-auto custom-scrollbar bg-(--background)">
           {loading ? (
             <div className="flex flex-col items-center justify-center py-20 gap-4">
@@ -109,18 +104,18 @@ export default function TweetModal({ isOpen, onClose, url }: TweetModalProps) {
               <div className="flex items-start gap-3">
                 <div className="relative w-10 h-10 rounded-full overflow-hidden shrink-0 border border-(--border)">
                   <Image 
-                    src={data.user.avatar_url} 
-                    alt={data.user.name} 
+                    src={data.author.avatarUrl} 
+                    alt={data.author.name} 
                     fill 
                     className="object-cover"
                   />
                 </div>
                 <div className="flex flex-col leading-tight">
                   <span className="font-bold text-(--text-primary) hover:underline cursor-pointer">
-                    {data.user.name}
+                    {data.author.name}
                   </span>
                   <span className="text-(--text-secondary) text-sm">
-                    @{data.user.screen_name}
+                    @{data.author.screenName}
                   </span>
                 </div>
               </div>
@@ -133,7 +128,7 @@ export default function TweetModal({ isOpen, onClose, url }: TweetModalProps) {
                 <div className="mt-2 rounded-2xl overflow-hidden border border-(--border) bg-black relative aspect-video group">
                   <video 
                     controls 
-                    poster={data.media.thumbnail_url}
+                    poster={data.media.thumbnailUrl}
                     className="w-full h-full object-contain"
                     playsInline
                   >
@@ -166,7 +161,5 @@ export default function TweetModal({ isOpen, onClose, url }: TweetModalProps) {
     </div>
   );
 
-  // Magic here: createPortal ile içeriği 'body' etiketine ışınlıyoruz.
-  // Böylece tüm z-index, sticky veya overflow sorunlarından kurtuluyoruz.
   return createPortal(modalContent, document.body);
 }
