@@ -77,34 +77,58 @@ export function useVideoDownload() {
     setProgress(0);
 
     try {
-      showNotification(`${selection.type === 'audio' ? 'Ses' : 'Video'} indiriliyor...`, 'info');
+      // Bildirim göster
+      if (typeof showNotification === 'function') {
+         showNotification(`${selection.type === 'audio' ? 'Ses' : 'Video'} indiriliyor...`, 'info');
+      }
 
       let blob: Blob;
       let filename = `${data.user.screen_name}-${data.id}`;
 
+      // --- SES İNDİRME İŞLEMİ (Eski yöntemi koruyoruz) ---
       if (selection.type === 'audio') {
+        // Ses dönüştürücü zaten ffmpeg kullanıyor, buraya dokunmuyoruz
         blob = await ClientConverter.convertToMp3(selection.url, (p) => setProgress(p));
         filename += '.mp3';
-      } else {
-        const response = await fetch(selection.url);
+      } 
+      
+      // --- VİDEO İNDİRME İŞLEMİ (GÜNCELLENDİ) ---
+      else {
+        // BURASI KRİTİK NOKTA:
+        // Eski 'fetch' yöntemini kullanıyoruz AMA içine 'no-referrer' ekliyoruz.
+        // Bu sayede hem dosya olarak paketliyoruz hem de Twitter'a yakalanmıyoruz.
+        
+        const response = await fetch(selection.url, {
+            referrerPolicy: 'no-referrer' // <--- SİHİRLİ SATIR
+        });
+
         if (!response.ok) throw new Error('Video dosyası çekilemedi.');
+        
         blob = await response.blob();
         filename += '.mp4';
       }
 
+      // --- DOSYAYI İNDİRME (Link Oluşturma) ---
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = filename;
+      a.download = filename; // Bu özellik artık çalışacak çünkü blob bizim elimizde
       document.body.appendChild(a);
       a.click();
+      
+      // Temizlik
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
 
-      showNotification('İndirme tamamlandı!', 'success');
+      if (typeof showNotification === 'function') {
+        showNotification('İndirme tamamlandı!', 'success');
+      }
       
     } catch (err: any) {
-      showNotification('İndirme sırasında hata: ' + err.message, 'error');
+      console.error(err);
+      if (typeof showNotification === 'function') {
+         showNotification('İndirme hatası: ' + (err.message || 'Bilinmeyen hata'), 'error');
+      }
     } finally {
       setDownloading(false);
       setProgress(0);
