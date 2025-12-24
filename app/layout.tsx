@@ -8,8 +8,8 @@ import { ThemeProvider } from './components/ThemeProvider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'X-Next | 2025 Web Experience',
-  description: 'AI-First, SSR-Powered Social Platform Prototype.',
+  title: 'XDownloaderz | X (Twitter) Video İndirici',
+  description: 'X (Twitter) videolarını ücretsiz, hızlı ve güvenli bir şekilde indirin. 1080p Full HD kalite desteği, MP3 dönüştürücü. Tüm cihazlarda çalışır.',
 };
 
 export default function RootLayout({

@@ -14,46 +14,64 @@ export default function RightSection() {
     if (e.key === 'Enter' && inputValue.trim().length > 0) {
       setModalUrl(inputValue.trim());
       setIsModalOpen(true);
-      // İsteğe bağlı: Inputu temizle
-      // setInputValue(''); 
     }
   };
 
   return (
     <>
-      <div className="flex flex-col gap-4">
-        {/* Arama / URL Yapıştırma Alanı */}
-        <div className="group relative">
-          <div className="absolute left-3 top-3 text-(--text-secondary) group-focus-within:text-(--accent)">
-             <Search size={20} />
+      <div className="flex flex-col h-full justify-between py-2">
+        {/* Üst Kısım: Arama + Reklamlar */}
+        <div className="flex flex-col gap-3">
+          {/* Arama / URL Yapıştırma Alanı */}
+          <div className="group relative">
+            <div className="absolute left-3 top-3 text-(--text-secondary) group-focus-within:text-(--accent)">
+               <Search size={20} />
+            </div>
+            <input 
+              type="text" 
+              placeholder="Ara" 
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              onKeyDown={handleKeyDown}
+              className="w-full bg-(--input-background) rounded-full py-3 pl-12 pr-4 text-sm text-(--text-primary) focus:outline-none focus:bg-(--background) focus:ring-1 focus:ring-(--accent) border border-transparent focus:border-(--accent) transition-all placeholder:text-(--text-secondary)/70"
+            />
           </div>
-          <input 
-            type="text" 
-            placeholder="Ara" 
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
-            onKeyDown={handleKeyDown}
-            className="w-full bg-(--input-background) rounded-full py-3 pl-12 pr-4 text-sm text-(--text-primary) focus:outline-none focus:bg-(--background) focus:ring-1 focus:ring-(--accent) border border-transparent focus:border-(--accent) transition-all placeholder:text-(--text-secondary)/70"
-          />
+
+          {/* Reklam Alanları */}
+          <div className="flex flex-col gap-3">
+            {/* Reklam Alanı 1 */}
+            <div className="bg-(--background-secondary) rounded-2xl overflow-hidden border border-(--border) h-59.5 flex items-center justify-center group relative">
+                <span className="text-(--text-secondary) text-xs font-bold tracking-widest opacity-50">REKLAM ALANI 1</span>
+            </div>
+
+            {/* Reklam Alanı 2 */}
+            <div className="bg-(--background-secondary) rounded-2xl overflow-hidden border border-(--border) h-59.5 flex items-center justify-center">
+                <span className="text-(--text-secondary) text-xs font-bold tracking-widest opacity-50">REKLAM ALANI 2</span>
+            </div>
+
+            {/* Reklam Alanı 3 */}
+            <div className="bg-(--background-secondary) rounded-2xl overflow-hidden border border-(--border) h-59.5 flex items-center justify-center">
+                <span className="text-(--text-secondary) text-xs font-bold tracking-widest opacity-50">REKLAM ALANI 3</span>
+            </div>
+          </div>
         </div>
 
-        <section className="flex flex-col gap-4">
-          {/* Reklam Alanı 1 */}
-          <div className="bg-(--background-secondary) rounded-2xl overflow-hidden border border-(--border) min-h-62.5 flex items-center justify-center group relative">
-              <span className="text-(--text-secondary) text-xs font-bold tracking-widest opacity-50">REKLAM ALANI 1</span>
-              <div className="absolute inset-0 bg-linear-to-b from-transparent to-black/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-          </div>
-
-          {/* Reklam Alanı 2 */}
-          <div className="bg-(--background-secondary) rounded-2xl overflow-hidden border border-(--border) min-h-62.5 flex items-center justify-center">
-              <span className="text-(--text-secondary) text-xs font-bold tracking-widest opacity-50">REKLAM ALANI 2</span>
-          </div>
-
-          {/* Reklam Alanı 3 */}
-          <div className="bg-(--background-secondary) rounded-2xl overflow-hidden border border-(--border) min-h-62.5 flex items-center justify-center">
-              <span className="text-(--text-secondary) text-xs font-bold tracking-widest opacity-50">REKLAM ALANI 3</span>
-          </div>
-        </section>
+        {/* Footer - Her Zaman En Altta Görünür */}
+        <footer className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs text-(--text-secondary) py-3 shrink-0">
+          <span>© 2025 XDownloaderz</span>
+          <a href="/privacy" className="hover:underline hover:text-(--text-primary) transition-colors">
+            Privacy Policy
+          </a>
+          <a href="/terms" className="hover:underline hover:text-(--text-primary) transition-colors">
+            Terms of Service
+          </a>
+          <a href="/contact" className="hover:underline hover:text-(--text-primary) transition-colors">
+            Contact
+          </a>
+          <a href="/about" className="hover:underline hover:text-(--text-primary) transition-colors">
+            About
+          </a>
+        </footer>
       </div>
 
       {/* Modal Bileşeni - Sayfanın üzerine açılır */}
