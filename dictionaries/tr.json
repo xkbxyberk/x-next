@@ -1,0 +1,296 @@
+{
+    "common": {
+        "title": "XDownloaderz | X (Twitter) Video İndirici",
+        "description": "X (Twitter) videolarını ücretsiz, hızlı ve güvenli bir şekilde indirin. 1080p Full HD kalite desteği, MP3 dönüştürücü. Tüm cihazlarda çalışır.",
+        "footerText": "© 2025 XDownloaderz",
+        "privacyPolicy": "Gizlilik Politikası",
+        "termsOfService": "Hizmet Şartları",
+        "contact": "İletişim",
+        "about": "Hakkında"
+    },
+    "sidebar": {
+        "download": "İndir",
+        "howToUse": "Nasıl Kullanılır?",
+        "howItWorks": "Nasıl Çalışır?",
+        "faq": "S.S.S.",
+        "adLabel": "REKLAM",
+        "verticalAd": "DİKEY REKLAM ALANI"
+    },
+    "rightSection": {
+        "searchPlaceholder": "Ara",
+        "adLabel1": "REKLAM ALANI 1",
+        "adLabel2": "REKLAM ALANI 2",
+        "adLabel3": "REKLAM ALANI 3"
+    },
+    "feed": {
+        "tabs": {
+            "download": "İndirici",
+            "history": "Geçmiş"
+        },
+        "inputPlaceholder": "X (Twitter) video linkini buraya yapıştırın...",
+        "pasteButton": "Linki yapıştırın ve indirin",
+        "clearButton": "Temizle",
+        "analyzing": "Video analiz ediliyor...",
+        "downloadButton": "İndir",
+        "downloading": "İniyor...",
+        "settings": {
+            "title": "Format Seçin",
+            "audio": "Sadece Ses",
+            "autoConvert": "Otomatik Dönüştürme",
+            "highQuality": "En Yüksek Kalite",
+            "dataSaver": "Veri Tasarrufu",
+            "standard": "Standart"
+        },
+        "theme": {
+            "default": "Varsayılan",
+            "dim": "Loş",
+            "lightsOut": "Işıklar Kapalı"
+        },
+        "ad": {
+            "sponsored": "SPONSORLU",
+            "label": "REKLAM ALANI",
+            "provider": "(Google Adsense / Özel Reklam)"
+        }
+    },
+    "about": {
+        "title": "Hakkımızda",
+        "handle": "@xdownloaderz",
+        "logoTitle": "XDownloaderz",
+        "whatWeDo": {
+            "title": "Ne Yapıyoruz?",
+            "p1": "XDownloaderz, sosyal medya akışları ile kişisel cihazlarınız arasındaki boşluğu doldurmak için tasarlanmış, güçlü ve ücretsiz bir web aracıdır. X (eski adıyla Twitter) üzerindeki videoları ve medyaları doğrudan bilgisayarınıza, tabletinize veya akıllı telefonunuza indirmeniz için sorunsuz bir yol sunuyoruz.",
+            "p2": "Yazılım kurulumu veya üyelik gerektiren diğer hizmetlerin aksine, aracımız gelişmiş web teknolojilerini kullanarak tamamen tarayıcınızda çalışır. <strong>1080p Full HD</strong> kalitesine kadar mevcut en yüksek çözünürlüğü bulur ve medya formatlarını anında dönüştürme seçenekleri sunar."
+        },
+        "howItWorks": {
+            "title": "Nasıl Çalışır?",
+            "step1": {
+                "title": "1. Yapıştır",
+                "desc": "İndirmek istediğiniz videoyu içeren X (Twitter) gönderisinin bağlantısını kopyalayın ve arama kutumuza yapıştırın."
+            },
+            "step2": {
+                "title": "2. Çözümle",
+                "desc": "Akıllı motorumuz, video dosyasını ve mevcut kalite seçeneklerini (örn. 720p, 1080p) bulmak için platformun halka açık altyapısıyla iletişim kurar."
+            },
+            "step3": {
+                "title": "3. İndir",
+                "desc": "Tercih ettiğiniz kaliteyi seçersiniz ve dosya, sunucularımızda depolanmadan doğrudan cihazınıza kaydedilir."
+            }
+        },
+        "whyUs": {
+            "title": "Neden Biz?",
+            "items": [
+                {
+                    "title": "Üyelik Gerekmez:",
+                    "desc": "Zamanınıza ve gizliliğinize saygı duyuyoruz. Özelliklerimizi kullanmak için hesap oluşturmanıza veya e-posta adresi vermenize gerek yoktur."
+                },
+                {
+                    "title": "Yüksek Kalite:",
+                    "desc": "Her video için mevcut olan en yüksek bit hızını (kaliteyi) bulmaya öncelik veriyoruz."
+                },
+                {
+                    "title": "İstemci Taraflı İşleme:",
+                    "desc": "Videoları verimli bir şekilde işlemek için modern tarayıcı yeteneklerini (FFmpeg teknolojisi dahil) kullanıyoruz; bu sayede güvenlikten ödün vermeden hızlı indirme sağlıyoruz."
+                },
+                {
+                    "title": "%100 Ücretsiz:",
+                    "desc": "Aracımız herkes için tamamen ücretsizdir."
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "İletişim",
+        "subtitle": "Bize Ulaşın",
+        "heading": "Görüşlerinizi Önemsiyoruz",
+        "description": "Hatalı bir indirme işlemi bildirmek, telif hakkı ihlali iletmek veya sadece merhaba demek için bize e-posta gönderebilirsiniz.",
+        "button": "E-Posta Gönder",
+        "footerText": "Veya",
+        "aboutLink": "Hakkımızda",
+        "footerSuffix": "sayfasını ziyaret ederek projemiz hakkında daha fazla bilgi alabilirsiniz."
+    },
+    "privacy": {
+        "title": "Gizlilik Politikası",
+        "lastUpdated": "Son Güncelleme: 01/12/2025",
+        "intro": {
+            "title": "Giriş",
+            "p1": "XDownloaderz (\"biz\", \"bizim\") olarak gizliliğinize önem veriyoruz. Bu Gizlilik Politikası, X (eski adıyla Twitter) platformundan medya indirmenizi sağlayan web tabanlı aracımızı kullandığınızda bilgilerinizin nasıl ele alındığını açıklar.",
+            "p2": "Hizmetimizi kullanarak, bu politikayı okuduğunuzu ve anladığınızı kabul etmiş sayılırsınız."
+        },
+        "collection": {
+            "title": "Topladığımız Bilgiler",
+            "personal": {
+                "title": "1. Kişisel Bilgiler",
+                "desc": "Hizmetimiz <strong>kayıt tutmama (non-retention)</strong> esasına göre çalışır. Aşağıdakiler gibi hiçbir \"Kişisel Tanımlanabilir Bilgiyi\" (PII) toplamıyor, saklamıyor ve paylaşmıyoruz:",
+                "list": [
+                    "İsim veya E-posta adresleri.",
+                    "Telefon numaraları.",
+                    "Sosyal medya giriş şifreleri."
+                ],
+                "note": "Hizmetimizi kullanmak için üye olmanız veya giriş yapmanız gerekmemektedir."
+            },
+            "usage": {
+                "title": "2. Kullanım Verileri ve Log Dosyaları",
+                "desc": "Çoğu standart web sunucusu gibi, biz de log (günlük) dosyaları kullanırız. Bu dosyalar; internet protokolü (IP) adresleri, tarayıcı türü, İnternet Servis Sağlayıcısı (ISP), yönlendirme/çıkış sayfaları, platform türü, tarih/saat damgası ve tıklama sayıları gibi verileri içerebilir. Bu bilgiler, trendleri analiz etmek, siteyi yönetmek ve kullanıcı hareketlerini toplu halde izlemek için kullanılır. Bu veriler, kimliğinizi belirleyebilecek hiçbir bilgiyle eşleştirilmez."
+            },
+            "urls": {
+                "title": "3. URL'ler ve Medya İçerikleri",
+                "desc": "Arama çubuğumuza bir bağlantı (URL) yapıştırdığınızda, bu bağlantı sunucularımız tarafından yalnızca ilgili medya dosyasını bulmak amacıyla geçici olarak işlenir. Gönderdiğiniz linklerin kalıcı bir geçmişini tutmayız."
+            }
+        },
+        "cookies": {
+            "title": "Çerezler ve Yerel Depolama",
+            "local": {
+                "title": "1. Zorunlu Yerel Depolama",
+                "desc": "Tarayıcınızın yerel depolama (Local Storage) özelliklerini, yalnızca arayüz tercihlerinizi (örneğin, Karanlık/Aydınlık mod seçimi) hatırlamak amacıyla kullanırız."
+            },
+            "analytics": {
+                "title": "2. Üçüncü Taraf Analitikleri",
+                "desc": "Şu anda Google Analytics gibi üçüncü taraf izleme kodları kullanmıyoruz. Ancak, web sitemizin performansını artırmak amacıyla gelecekte anonim analitik araçları ekleme hakkımızı saklı tutarız."
+            }
+        },
+        "thirdParty": {
+            "title": "Üçüncü Taraf Hizmetleri",
+            "desc": "Hizmetimiz, <strong>X (Twitter)</strong> üzerindeki halka açık verilere erişim sağlayarak çalışır. Bir video indirdiğinizde, üçüncü taraf sunucularında barındırılan içeriğe erişmiş olursunuz. Etkileşimde bulunduğunuz platformların gizlilik politikalarını incelemenizi öneririz."
+        },
+        "gdpr": {
+            "title": "KVKK ve GDPR Uyumluluğu",
+            "desc": "Kişisel veri toplamadığımız ve bireysel kullanıcıları takip etmediğimiz için, Kişisel Verilerin Korunması Kanunu (KVKK) ve Genel Veri Koruma Tüzüğü (GDPR) kapsamındaki \"veri minimizasyonu\" (veriyi en azda tutma) ilkelerine tam uyumluyuz."
+        },
+        "contact": {
+            "title": "İletişim",
+            "desc": "Bu Gizlilik Politikası hakkında sorularınız varsa, lütfen web sitemiz üzerinden veya",
+            "link": "iletişim sayfamızdan",
+            "suffix": "bizimle iletişime geçin."
+        }
+    },
+    "terms": {
+        "title": "Kullanım Koşulları",
+        "lastUpdated": "Son Güncelleme: 01/12/2025",
+        "sections": [
+            {
+                "title": "1. Şartların Kabulü",
+                "content": "XDownloaderz web sitesine erişerek ve kullanarak, bu anlaşmanın şartlarını ve hükümlerini kabul etmiş sayılırsınız. Eğer bu şartları kabul etmiyorsanız, lütfen hizmeti kullanmayınız."
+            },
+            {
+                "title": "2. Bağlılık Reddi (Disclaimer)",
+                "content": "XDownloaderz; X Corp. (eski adıyla Twitter), yan kuruluşları veya iştirakleri ile <strong>HİÇBİR ŞEKİLDE</strong> bağlantılı değildir, bu kurumlar tarafından yetkilendirilmemiştir veya desteklenmemektedir. Resmi X web sitesine twitter.com veya x.com adreslerinden ulaşılabilir. \"X\", \"Twitter\" isimleri ve ilgili markalar, amblemler ve görseller ilgili hak sahiplerinin tescilli ticari markalarıdır."
+            },
+            {
+                "title": "4. Yasaklanmış Faaliyetler",
+                "subcontent": "Hizmeti aşağıdaki amaçlarla kullanmamayı kabul edersiniz:",
+                "list": [
+                    "Telif hakkıyla korunan materyalleri izinsiz dağıtmak veya ticari kazanç sağlamak.",
+                    "Virüs veya kötü amaçlı kod yüklemek veya iletmek.",
+                    "Sunucularımızı aşırı yüklemeye, spam yapmaya veya kilitlemeye çalışmak."
+                ]
+            },
+            {
+                "title": "5. \"Olduğu Gibi\" ve Sorumluluk Sınırlaması",
+                "content": "Hizmet, \"OLDUĞU GİBİ\" ve \"MEVCUT OLDUĞU ŞEKİLDE\" sağlanmaktadır. Hizmetin kesintisiz, hatasız veya tamamen güvenli olacağını garanti etmeyiz. <br/><br/> XDownloaderz, hizmetin kullanımı veya kullanılamaması sonucunda ortaya çıkan veri kaybı veya telif hakkı anlaşmazlıkları dahil ancak bunlarla sınırlı olmamak üzere, doğrudan veya dolaylı hiçbir zarardan sorumlu tutulamaz."
+            },
+            {
+                "title": "6. Şartlarda Değişiklik",
+                "content": "Bu şartları dilediğimiz zaman değiştirme hakkımız saklıdır. Yapılan değişikliklerden sonra web sitesini kullanmaya devam etmeniz, yeni Hizmet Şartlarını kabul ettiğiniz anlamına gelir."
+            }
+        ],
+        "ip": {
+            "title": "3. Fikri Mülkiyet ve Telif Hakkı",
+            "items": [
+                {
+                    "title": "Kullanıcı Sorumluluğu",
+                    "desc": "XDownloaderz'ın sadece halka açık medyaları indirmeyi sağlayan teknik bir araç olduğunu kabul edersiniz. Hizmetimiz aracılığıyla indirilen hiçbir içeriğin mülkiyetini talep etmeyiz."
+                },
+                {
+                    "title": "Telif Hakkı Uyumluluğu",
+                    "desc": "Bu hizmeti yalnızca indirme hakkına sahip olduğunuz içerikler için veya kişisel kullanım (Adil Kullanım) amacıyla kullanmayı kabul edersiniz. Bu aracı başkalarının telif haklarını ihlal etmek için kullanamazsınız."
+                },
+                {
+                    "title": "İçerik Hakları",
+                    "desc": "Videolar, görseller ve seslerle ilgili tüm fikri mülkiyet hakları, içerik oluşturucularına ve barındırma platformuna aittir."
+                }
+            ]
+        }
+    },
+    "staticPosts": [
+        {
+            "id": "welcome-1",
+            "authorName": "XDownloaderz",
+            "content": "🎉 XDownloaderz'e Hoş Geldiniz!\n\nX (Twitter) videolarını ve GIF'lerini tek tıkla, tamamen ücretsiz olarak en yüksek kalitede indirin. MP4 veya MP3 formatında kaydedin, hiçbir uygulama yüklemeden doğrudan tarayıcınızdan kullanın.\n\n✨ Hızlı, güvenli ve sınırsız!"
+        },
+        {
+            "id": "legal-warning",
+            "authorName": "XDownloaderz",
+            "content": "⚖️ Yasal Uyarı ve Kullanım Şartları\n\nXDownloaderz.com, telif hakkıyla korunan içerikleri kendi sunucularında barındırmaz. Tüm videolar doğrudan X (Twitter) CDN'inden anlık olarak indirilir. İndirilen içeriklerin kullanımı tamamen kullanıcının sorumluluğundadır.\n\n⚠️ İçerikleri sadece izin verilen amaçlar için kullanınız."
+        },
+        {
+            "id": "seo-info-2",
+            "authorName": "XDownloaderz",
+            "content": "🚀 En Gelişmiş X (Twitter) Video İndirici\n\n✅ 1080p Full HD Kalite Desteği\n✅ MP3 Ses Çıkarma (Müzik İndirme)\n✅ Hızlı ve Güvenli İndirme\n✅ Sınırsız Kullanım\n✅ Reklamsız Deneyim\n✅ Kayıt veya Giriş Gerektirmez\n\nXDownloaderz.com ile X (Twitter) videolarını saniyeler içinde cihazınıza kaydedin!"
+        },
+        {
+            "id": "platform-compatibility",
+            "authorName": "XDownloaderz",
+            "content": "📱 Tüm Cihazlarla Tam Uyumlu\n\nXDownloaderz, her platformda sorunsuz çalışır:\n\n🤖 Android (Chrome, Samsung Internet)\n🍎 iPhone & iPad (Safari)\n💻 Windows PC (Chrome, Edge, Firefox)\n🖥️ Mac (Safari, Chrome)\n🐧 Linux (Firefox, Chromium)\n\nModern tarayıcınızla xdownloaderz.com'u ziyaret edin, X (Twitter) video linkini yapıştırın ve indirin!"
+        },
+        {
+            "id": "guide-step1-4",
+            "authorName": "XDownloaderz Rehber",
+            "content": "📖 Kullanım Kılavuzu: Adım 1\n\n1️⃣ Video Linkini Kopyalayın\n\nX (Twitter) uygulamasında veya web sitesinde indirmek istediğiniz videoyu açın. Gönderi üzerindeki 'Paylaş' ikonuna dokunun ve 'Bağlantıyı Kopyala' seçeneğini seçin.\n\n💡 İpucu: Video tweet'inin URL'si şu formatta olmalıdır:\nx.com/kullanici/status/1234567890"
+        },
+        {
+            "id": "guide-step2",
+            "authorName": "XDownloaderz Rehber",
+            "content": "📖 Kullanım Kılavuzu: Adım 2\n\n2️⃣ Linki XDownloaderz'e Yapıştırın\n\nxdownloaderz.com sayfasını açın. Sayfanın üst kısmındaki metin kutusuna kopyaladığınız X (Twitter) video linkini yapıştırın.\n\nSistemimiz linki otomatik olarak algılayacak ve video bilgilerini anında yükleyecektir."
+        },
+        {
+            "id": "guide-step3",
+            "authorName": "XDownloaderz Rehber",
+            "content": "📖 Kullanım Kılavuzu: Adım 3\n\n3️⃣ Kalite ve Format Seçin\n\nVideo analiz edildikten sonra, ayarlar menüsünden (⚙️ ikonu) istediğiniz kaliteyi seçin:\n\n• 1080p / 720p / 480p (MP4 Video)\n• MP3 (Sadece Ses)\n\nDaha yüksek çözünürlük = Daha iyi görüntü kalitesi ancak büyük dosya boyutu."
+        },
+        {
+            "id": "guide-step4",
+            "authorName": "XDownloaderz Rehber",
+            "content": "📖 Kullanım Kılavuzu: Adım 4\n\n4️⃣ İndirme İşlemini Başlatın\n\nFormat ve kalite seçiminizi yaptıktan sonra mavi 'İndir' butonuna tıklayın. Video veya ses dosyanız otomatik olarak cihazınıza indirilecektir.\n\n⚡ İndirme hızı internet bağlantınıza ve video boyutuna bağlıdır."
+        },
+        {
+            "id": "faq-private-7",
+            "authorName": "XDownloaderz SSS",
+            "content": "❓ Sık Sorulan Sorular\n\n🔒 Özel/Kilitli hesaplardan video indirebilir miyim?\n\nHayır. XDownloaderz yalnızca herkese açık X (Twitter) gönderilerinden video indirebilir. Özel hesaplardaki içerikler X (Twitter) API'si tarafından korunmaktadır ve erişilemez.\n\n💡 Çözüm: İndirmek istediğiniz içeriğin sahibinden izin isteyebilirsiniz."
+        },
+        {
+            "id": "faq-quality",
+            "authorName": "XDownloaderz SSS",
+            "content": "❓ Sık Sorulan Sorular\n\n📹 1080p seçeneği neden bazen görünmüyor?\n\nBazı X (Twitter) videoları yalnızca 720p veya daha düşük kalitede yüklenmiş olabilir. XDownloaderz, videonun orijinal kalitesinden daha yüksek çözünürlük üretemez.\n\nMevcut en yüksek kalite seçeneği size sunulacaktır."
+        },
+        {
+            "id": "faq-mp3-conversion",
+            "authorName": "XDownloaderz SSS",
+            "content": "❓ Sık Sorulan Sorular\n\n🎵 MP3 dönüşümü nasıl çalışır?\n\nXDownloaderz, X (Twitter) videosunu indirirken ses kaydını otomatik olarak ayıklayıp MP3 formatına dönüştürür. Bu işlem tarayıcınızda gerçekleşir, tamamen güvenlidir.\n\n⏱️ Dönüşüm süresi video uzunluğuna bağlı olarak 5-30 saniye arası sürebilir."
+        },
+        {
+            "id": "faq-security",
+            "authorName": "XDownloaderz SSS",
+            "content": "❓ Sık Sorulan Sorular\n\n🛡️ XDownloaderz güvenli mi? Virüs bulaşır mı?\n\nEvet, %100 güvenlidir. XDownloaderz hiçbir dosya yüklemez, reklam yazılımı veya virüs içermez. Videolar doğrudan X (Twitter) CDN sunucularından indirilir.\n\n✅ Tarayıcınızda SSL (HTTPS) şifrelemesi ile çalışır.\n✅ Kişisel bilgileriniz hiçbir şekilde toplanmaz."
+        },
+        {
+            "id": "faq-pricing",
+            "authorName": "XDownloaderz SSS",
+            "content": "❓ Sık Sorulan Sorular\n\n💰 XDownloaderz ücretli mi? Abonelik gerekiyor mu?\n\nHayır! XDownloaderz tamamen ücretsizdir ve sonsuza kadar öyle kalacaktır. Hiçbir ücret, gizli maliyet veya abonelik sistemi yoktur.\n\n🎁 Sınırsız sayıda video indirebilir, istediğiniz kadar kullanabilirsiniz."
+        },
+        {
+            "id": "faq-legal-use",
+            "authorName": "XDownloaderz SSS",
+            "content": "❓ Sık Sorulan Sorular\n\n⚖️ İndirilen videoları kullanmak yasal mı?\n\nİndirilen içerikleri kişisel, eğitim amaçlı veya adil kullanım kapsamında kullanabilirsiniz. Ancak:\n\n❌ Ticari amaçla yeniden yayınlamak\n❌ Telif hakkı ihlali yapmak\n❌ İçerik sahibinin iznini almadan paylaşmak\n\nYasalara uygun davranmak kullanıcının sorumluluğundadır."
+        },
+        {
+            "id": "seo-info-benefits",
+            "authorName": "XDownloaderz",
+            "content": "🌟 Neden XDownloaderz?\n\n🚀 En Hızlı İndirme: Saniyeler içinde X (Twitter) videolarını kaydedin\n🎯 Kolay Kullanım: Sadece 3 adımda video indirin\n💎 Yüksek Kalite: 1080p Full HD desteği\n🔄 MP3 Dönüştürücü: Videodan sadece sesi çıkarın\n🌍 Evrensel Erişim: Tüm cihazlarda çalışır\n\nxdownloaderz.com - X (Twitter) Video İndirme'nin En İyi Yolu!"
+        },
+        {
+            "id": "seo-keywords",
+            "authorName": "XDownloaderz",
+            "content": "🔍 XDownloaderz ile Yapabilecekleriniz:\n\n• X (Twitter) video indir MP4\n• X (Twitter) GIF indir\n• X (Twitter) video indirici online\n• X (Twitter) MP3 dönüştürücü\n• 1080p X (Twitter) video download\n• Mobil X (Twitter) video kaydetme\n• Ücretsiz X (Twitter) downloader\n\nEn iyi X (Twitter) video indirme deneyimi için xdownloaderz.com"
+        }
+    ]
+}
