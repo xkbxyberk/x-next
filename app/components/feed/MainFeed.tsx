@@ -57,18 +57,212 @@ export default function MainFeed() {
 
   // --- SABİT İÇERİK LİSTESİ ---
   const staticItems: FeedItem[] = [
+    // 1. HOŞ GELDİN MESAJI
     {
       type: 'post',
       data: {
         id: 'welcome-1',
-        author: { name: 'X Downloader', handle: '@asistan', avatar: logoSrc },
-        content: "X-Next'e hoş geldiniz! 🎉\n\nTwitter (yeni adıyla X) üzerindeki videoları, GIF'leri ve ses dosyalarını en yüksek kalitede indirebilirsiniz.",
+        author: { name: 'XDownloaderz', handle: '@xdownloaderz', avatar: logoSrc },
+        content: "🎉 XDownloaderz'e Hoş Geldiniz!\n\nX (Twitter) videolarını ve GIF'lerini tek tıkla, tamamen ücretsiz olarak en yüksek kalitede indirin. MP4 veya MP3 formatında kaydedin, hiçbir uygulama yüklemeden doğrudan tarayıcınızdan kullanın.\n\n✨ Hızlı, güvenli ve sınırsız!",
         timestamp: 'Sabitlenmiş',
-        metrics: { likes: 12500, reposts: 3400, replies: 156 },
+        metrics: { likes: 15200, reposts: 4100, replies: 187 },
       }
     },
-    // ... Diğer sabit postları buraya aynı şekilde ekleyebilirsin ...
+
+    // 2. YASAL BİLGİLENDİRME
+    {
+      type: 'post',
+      data: {
+        id: 'legal-warning',
+        author: { name: 'XDownloaderz', handle: '@xdownloaderz', avatar: logoSrc },
+        content: "⚖️ Yasal Uyarı ve Kullanım Şartları\n\nXDownloaderz.com, telif hakkıyla korunan içerikleri kendi sunucularında barındırmaz. Tüm videolar doğrudan X (Twitter) CDN'inden anlık olarak indirilir. İndirilen içeriklerin kullanımı tamamen kullanıcının sorumluluğundadır.\n\n⚠️ İçerikleri sadece izin verilen amaçlar için kullanınız.",
+        timestamp: 'Sabitlenmiş',
+        metrics: { likes: 2400, reposts: 310, replies: 42 },
+      }
+    },
+
+    // --- REKLAM ALANI 1 ---
     { type: 'ad', id: 'ad-1' },
+
+    // 3. ÖZELLİKLER TANITIMI
+    {
+      type: 'post',
+      data: {
+        id: 'seo-info-2',
+        author: { name: 'XDownloaderz', handle: '@xdownloaderz', avatar: logoSrc },
+        content: "🚀 En Gelişmiş X (Twitter) Video İndirici\n\n✅ 1080p Full HD Kalite Desteği\n✅ MP3 Ses Çıkarma (Müzik İndirme)\n✅ Hızlı ve Güvenli İndirme\n✅ Sınırsız Kullanım\n✅ Reklamsız Deneyim\n✅ Kayıt veya Giriş Gerektirmez\n\nXDownloaderz.com ile X (Twitter) videolarını saniyeler içinde cihazınıza kaydedin!",
+        timestamp: '2d',
+        metrics: { likes: 9800, reposts: 2650, replies: 124 },
+      }
+    },
+
+    // 4. PLATFORM UYUMLULUK BİLGİSİ
+    {
+      type: 'post',
+      data: {
+        id: 'platform-compatibility',
+        author: { name: 'XDownloaderz', handle: '@xdownloaderz', avatar: logoSrc },
+        content: "📱 Tüm Cihazlarla Tam Uyumlu\n\nXDownloaderz, her platformda sorunsuz çalışır:\n\n🤖 Android (Chrome, Samsung Internet)\n🍎 iPhone & iPad (Safari)\n💻 Windows PC (Chrome, Edge, Firefox)\n🖥️ Mac (Safari, Chrome)\n🐧 Linux (Firefox, Chromium)\n\nModern tarayıcınızla xdownloaderz.com'u ziyaret edin, X (Twitter) video linkini yapıştırın ve indirin!",
+        timestamp: '3d',
+        metrics: { likes: 5600, reposts: 1420, replies: 78 },
+      }
+    },
+
+    // --- REKLAM ALANI 2 ---
+    { type: 'ad', id: 'ad-2' },
+
+    // 5. NASIL KULLANILIR - ADIM 1
+    {
+      type: 'post',
+      data: {
+        id: 'guide-step1-4',
+        author: { name: 'XDownloaderz Rehber', handle: '@guide', avatar: logoSrc },
+        content: "📖 Kullanım Kılavuzu: Adım 1\n\n1️⃣ Video Linkini Kopyalayın\n\nX (Twitter) uygulamasında veya web sitesinde indirmek istediğiniz videoyu açın. Gönderi üzerindeki 'Paylaş' ikonuna dokunun ve 'Bağlantıyı Kopyala' seçeneğini seçin.\n\n💡 İpucu: Video tweet'inin URL'si şu formatta olmalıdır:\nx.com/kullanici/status/1234567890",
+        timestamp: '5d',
+        metrics: { likes: 4200, reposts: 980, replies: 56 },
+      }
+    },
+
+    // 6. NASIL KULLANILIR - ADIM 2
+    {
+      type: 'post',
+      data: {
+        id: 'guide-step2',
+        author: { name: 'XDownloaderz Rehber', handle: '@guide', avatar: logoSrc },
+        content: "📖 Kullanım Kılavuzu: Adım 2\n\n2️⃣ Linki XDownloaderz'e Yapıştırın\n\nxdownloaderz.com sayfasını açın. Sayfanın üst kısmındaki metin kutusuna kopyaladığınız X (Twitter) video linkini yapıştırın.\n\nSistemimiz linki otomatik olarak algılayacak ve video bilgilerini anında yükleyecektir.",
+        timestamp: '5d',
+        metrics: { likes: 3800, reposts: 890, replies: 48 },
+      }
+    },
+
+    // 7. NASIL KULLANILIR - ADIM 3
+    {
+      type: 'post',
+      data: {
+        id: 'guide-step3',
+        author: { name: 'XDownloaderz Rehber', handle: '@guide', avatar: logoSrc },
+        content: "📖 Kullanım Kılavuzu: Adım 3\n\n3️⃣ Kalite ve Format Seçin\n\nVideo analiz edildikten sonra, ayarlar menüsünden (⚙️ ikonu) istediğiniz kaliteyi seçin:\n\n• 1080p / 720p / 480p (MP4 Video)\n• MP3 (Sadece Ses)\n\nDaha yüksek çözünürlük = Daha iyi görüntü kalitesi ancak büyük dosya boyutu.",
+        timestamp: '5d',
+        metrics: { likes: 3500, reposts: 820, replies: 44 },
+      }
+    },
+
+    // 8. NASIL KULLANILIR - ADIM 4
+    {
+      type: 'post',
+      data: {
+        id: 'guide-step4',
+        author: { name: 'XDownloaderz Rehber', handle: '@guide', avatar: logoSrc },
+        content: "📖 Kullanım Kılavuzu: Adım 4\n\n4️⃣ İndirme İşlemini Başlatın\n\nFormat ve kalite seçiminizi yaptıktan sonra mavi 'İndir' butonuna tıklayın. Video veya ses dosyanız otomatik olarak cihazınıza indirilecektir.\n\n⚡ İndirme hızı internet bağlantınıza ve video boyutuna bağlıdır.",
+        timestamp: '5d',
+        metrics: { likes: 3200, reposts: 750, replies: 39 },
+      }
+    },
+
+    // --- REKLAM ALANI 3 ---
+    { type: 'ad', id: 'ad-3' },
+
+    // 9. SSS - ÖZEL VİDEOLAR
+    {
+      type: 'post',
+      data: {
+        id: 'faq-private-7',
+        author: { name: 'XDownloaderz SSS', handle: '@faq', avatar: logoSrc },
+        content: "❓ Sık Sorulan Sorular\n\n🔒 Özel/Kilitli hesaplardan video indirebilir miyim?\n\nHayır. XDownloaderz yalnızca herkese açık X (Twitter) gönderilerinden video indirebilir. Özel hesaplardaki içerikler X (Twitter) API'si tarafından korunmaktadır ve erişilemez.\n\n💡 Çözüm: İndirmek istediğiniz içeriğin sahibinden izin isteyebilirsiniz.",
+        timestamp: '1w',
+        metrics: { likes: 2100, reposts: 420, replies: 67 },
+      }
+    },
+
+    // 10. SSS - KALİTE SORUNU
+    {
+      type: 'post',
+      data: {
+        id: 'faq-quality',
+        author: { name: 'XDownloaderz SSS', handle: '@faq', avatar: logoSrc },
+        content: "❓ Sık Sorulan Sorular\n\n📹 1080p seçeneği neden bazen görünmüyor?\n\nBazı X (Twitter) videoları yalnızca 720p veya daha düşük kalitede yüklenmiş olabilir. XDownloaderz, videonun orijinal kalitesinden daha yüksek çözünürlük üretemez.\n\nMevcut en yüksek kalite seçeneği size sunulacaktır.",
+        timestamp: '1w',
+        metrics: { likes: 1800, reposts: 360, replies: 52 },
+      }
+    },
+
+    // 11. SSS - MP3 DÖNÜŞÜMÜ
+    {
+      type: 'post',
+      data: {
+        id: 'faq-mp3-conversion',
+        author: { name: 'XDownloaderz SSS', handle: '@faq', avatar: logoSrc },
+        content: "❓ Sık Sorulan Sorular\n\n🎵 MP3 dönüşümü nasıl çalışır?\n\nXDownloaderz, X (Twitter) videosunu indirirken ses kaydını otomatik olarak ayıklayıp MP3 formatına dönüştürür. Bu işlem tarayıcınızda gerçekleşir, tamamen güvenlidir.\n\n⏱️ Dönüşüm süresi video uzunluğuna bağlı olarak 5-30 saniye arası sürebilir.",
+        timestamp: '1w',
+        metrics: { likes: 2800, reposts: 710, replies: 94 },
+      }
+    },
+
+    // 12. SSS - GÜVENLİK
+    {
+      type: 'post',
+      data: {
+        id: 'faq-security',
+        author: { name: 'XDownloaderz SSS', handle: '@faq', avatar: logoSrc },
+        content: "❓ Sık Sorulan Sorular\n\n🛡️ XDownloaderz güvenli mi? Virüs bulaşır mı?\n\nEvet, %100 güvenlidir. XDownloaderz hiçbir dosya yüklemez, reklam yazılımı veya virüs içermez. Videolar doğrudan X (Twitter) CDN sunucularından indirilir.\n\n✅ Tarayıcınızda SSL (HTTPS) şifrelemesi ile çalışır.\n✅ Kişisel bilgileriniz hiçbir şekilde toplanmaz.",
+        timestamp: '1w',
+        metrics: { likes: 3400, reposts: 890, replies: 103 },
+      }
+    },
+
+    // 13. SSS - ÜCRET
+    {
+      type: 'post',
+      data: {
+        id: 'faq-pricing',
+        author: { name: 'XDownloaderz SSS', handle: '@faq', avatar: logoSrc },
+        content: "❓ Sık Sorulan Sorular\n\n💰 XDownloaderz ücretli mi? Abonelik gerekiyor mu?\n\nHayır! XDownloaderz tamamen ücretsizdir ve sonsuza kadar öyle kalacaktır. Hiçbir ücret, gizli maliyet veya abonelik sistemi yoktur.\n\n🎁 Sınırsız sayıda video indirebilir, istediğiniz kadar kullanabilirsiniz.",
+        timestamp: '1w',
+        metrics: { likes: 5200, reposts: 1340, replies: 156 },
+      }
+    },
+
+    // 14. SSS - YASAL KULLANIM
+    {
+      type: 'post',
+      data: {
+        id: 'faq-legal-use',
+        author: { name: 'XDownloaderz SSS', handle: '@faq', avatar: logoSrc },
+        content: "❓ Sık Sorulan Sorular\n\n⚖️ İndirilen videoları kullanmak yasal mı?\n\nİndirilen içerikleri kişisel, eğitim amaçlı veya adil kullanım kapsamında kullanabilirsiniz. Ancak:\n\n❌ Ticari amaçla yeniden yayınlamak\n❌ Telif hakkı ihlali yapmak\n❌ İçerik sahibinin iznini almadan paylaşmak\n\nYasalara uygun davranmak kullanıcının sorumluluğundadır.",
+        timestamp: '2w',
+        metrics: { likes: 2600, reposts: 580, replies: 89 },
+      }
+    },
+
+    // --- REKLAM ALANI 4 ---
+    { type: 'ad', id: 'ad-4' },
+
+    // 15. SEO ODAKLI BİLGİLENDİRME
+    {
+      type: 'post',
+      data: {
+        id: 'seo-info-benefits',
+        author: { name: 'XDownloaderz', handle: '@xdownloaderz', avatar: logoSrc },
+        content: "🌟 Neden XDownloaderz?\n\n🚀 En Hızlı İndirme: Saniyeler içinde X (Twitter) videolarını kaydedin\n🎯 Kolay Kullanım: Sadece 3 adımda video indirin\n💎 Yüksek Kalite: 1080p Full HD desteği\n🔄 MP3 Dönüştürücü: Videodan sadece sesi çıkarın\n🌍 Evrensel Erişim: Tüm cihazlarda çalışır\n\nxdownloaderz.com - X (Twitter) Video İndirme'nin En İyi Yolu!",
+        timestamp: '2w',
+        metrics: { likes: 7100, reposts: 1890, replies: 142 },
+      }
+    },
+
+    // --- REKLAM ALANI 5 ---
+    { type: 'ad', id: 'ad-5' },
+
+    // 16. SEO - ANAHTAR KELİMELER
+    {
+      type: 'post',
+      data: {
+        id: 'seo-keywords',
+        author: { name: 'XDownloaderz', handle: '@xdownloaderz', avatar: logoSrc },
+        content: "🔍 XDownloaderz ile Yapabilecekleriniz:\n\n• X (Twitter) video indir MP4\n• X (Twitter) GIF indir\n• X (Twitter) video indirici online\n• X (Twitter) MP3 dönüştürücü\n• 1080p X (Twitter) video download\n• Mobil X (Twitter) video kaydetme\n• Ücretsiz X (Twitter) downloader\n\nEn iyi X (Twitter) video indirme deneyimi için xdownloaderz.com",
+        timestamp: '3w',
+        metrics: { likes: 4800, reposts: 1230, replies: 95 },
+      }
+    },
   ];
 
   const [displayItems, setDisplayItems] = useState<FeedItem[]>(staticItems);
@@ -129,29 +323,29 @@ export default function MainFeed() {
     }
   }, [inputUrl]);
 
-  // YENİ DATA YAPISINA GÖRE GÜNCELLENEN KISIM
+  // Tema değiştiğinde veya data değiştiğinde displayItems'ı güncelle
   useEffect(() => {
     if (data) {
       const newPost: FeedItem = {
         type: 'post',
         data: {
             id: data.id,
-            // BURADA DEĞİŞİKLİK VAR: user -> author
             author: { 
               name: data.author.name, 
               handle: `@${data.author.screenName}`, 
               avatar: data.author.avatarUrl 
             },
             content: data.text,
-            // BURADA DEĞİŞİKLİK VAR: media.thumbnail_url -> media.thumbnailUrl
             image: data.media.thumbnailUrl,
             timestamp: 'Şimdi',
             metrics: { likes: data.statistics.likes || 0, reposts: 0, replies: 0 },
         }
       };
       setDisplayItems([newPost, ...staticItems]);
+    } else {
+      setDisplayItems(staticItems);
     }
-  }, [data]);
+  }, [theme, data]);
 
   // Click Outside
   useEffect(() => {
@@ -201,7 +395,7 @@ export default function MainFeed() {
         <div id="download-area" className="p-4 border-b border-(--border) scroll-mt-24">
           <div className="flex gap-4">
             <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 relative border border-(--border)">
-              <Image src={logoSrc} alt="Profilim" fill className="object-cover" sizes="40px" />
+              <Image src={logoSrc} alt="XDownloaderz" fill className="object-cover" sizes="40px" />
             </div>
             <div className="flex-1 flex flex-col gap-3">
               
@@ -219,7 +413,7 @@ export default function MainFeed() {
                       handleManualAnalyze();
                     }
                   }}
-                  placeholder="X.com veya Twitter video linkini yapıştır..."
+                  placeholder="X (Twitter) video linkini buraya yapıştırın..."
                   className={`w-full bg-transparent text-xl outline-none resize-none min-h-12 transition-colors duration-300 ${getTextAreaColorClass()}`}
                   rows={2}
                   disabled={loading || downloading}
@@ -283,7 +477,6 @@ export default function MainFeed() {
                                 <button
                                     onClick={() => handleSelectFormat({
                                         type: 'audio',
-                                        // GÜNCELLENDİ: media.variants[0].url
                                         url: data.media.variants[0].url
                                     })}
                                     className={`flex items-center justify-between p-3 rounded-lg transition-colors group cursor-pointer w-full text-left
@@ -306,9 +499,7 @@ export default function MainFeed() {
                                     {selection?.type === 'audio' && <Check size={16} className="text-pink-500" />}
                                 </button>
                                 <div className="h-px bg-(--border) my-1 mx-2"></div>
-                                {/* GÜNCELLENDİ: variants haritalama */}
                                 {data.media.variants.map((variant, idx) => {
-                                    // qualityLabel veya bitrate üzerinden etiket
                                     const qualityLabel = variant.quality || (variant.bitrate ? `${Math.round(variant.bitrate / 1000)}kbps` : 'Standart');
                                     const isSelected = selection?.type === 'video' && selection.url === variant.url;
                                     return (
