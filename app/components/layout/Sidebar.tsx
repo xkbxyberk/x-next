@@ -4,6 +4,7 @@ import { Home, BookOpen, Zap, CircleHelp } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTheme } from '../ThemeProvider';
+import { usePathname, useRouter } from 'next/navigation'; // YENİ: Navigasyon hook'ları
 
 interface SidebarProps {
   mobile?: boolean;
@@ -19,12 +20,22 @@ const menuItems = [
 
 export default function Sidebar({ mobile = false }: SidebarProps) {
   const { theme } = useTheme();
+  const pathname = usePathname(); // YENİ: Şu an hangi sayfadayız?
+  const router = useRouter();     // YENİ: Sayfa değiştirmek için
   
   const logoSrc = theme === 'default' ? '/logo.avif' : '/logo-white.avif';
 
-  // YARDIMCI FONKSİYON: Tıklanınca yumuşak kaydırma tetikler
+  // YARDIMCI FONKSİYON: Tıklanınca akıllı yönlendirme yapar
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
     e.preventDefault(); // Standart atlamayı engelle
+
+    // 1. DURUM: Eğer ana sayfada DEĞİLSEK, ana sayfaya ilgili bölümle git
+    if (pathname !== '/') {
+        router.push(`/${href}`); // Örn: /#download-area adresine git
+        return;
+    }
+
+    // 2. DURUM: Zaten ana sayfadaysak, yumuşak kaydırma (Smooth Scroll) yap
     const targetId = href.replace('#', '');
     const element = document.getElementById(targetId);
     if (element) {

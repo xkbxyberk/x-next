@@ -431,7 +431,8 @@ export default function MainFeed() {
                     </button>
                  ) : (
                     isFocused && (
-                      <button 
+                      <button
+                        onMouseDown={(e) => e.preventDefault()} 
                         onClick={handlePasteAndAnalyze}
                         className="flex items-center gap-2 text-(--accent) font-semibold text-sm hover:bg-(--accent)/10 rounded-full px-3 py-1 w-fit transition-colors cursor-pointer"
                       >
