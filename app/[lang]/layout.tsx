@@ -8,13 +8,27 @@ import { getDictionary } from '@/app/get-dictionary';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'XDownloaderz | X (Twitter) Video İndirici',
-  description: 'X (Twitter) videolarını ücretsiz, hızlı ve güvenli bir şekilde indirin. 1080p Full HD kalite desteği, MP3 dönüştürücü. Tüm cihazlarda çalışır.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = await getDictionary(lang as "en" | "tr");
+
+  return {
+    title: dict.common.title,
+    description: dict.common.description,
+  };
+}
 
 export async function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'tr' }];
+  return [
+    { lang: 'en' }, { lang: 'tr' }, { lang: 'ar' }, { lang: 'bg' }, { lang: 'bn' },
+    { lang: 'br' }, { lang: 'cs' }, { lang: 'da' }, { lang: 'de' }, { lang: 'el' },
+    { lang: 'es' }, { lang: 'fa' }, { lang: 'fi' }, { lang: 'fr' }, { lang: 'he' },
+    { lang: 'hi' }, { lang: 'hr' }, { lang: 'hu' }, { lang: 'id' }, { lang: 'it' },
+    { lang: 'ja' }, { lang: 'km' }, { lang: 'ko' }, { lang: 'ms' }, { lang: 'ne' },
+    { lang: 'nl' }, { lang: 'no' }, { lang: 'pl' }, { lang: 'pt' }, { lang: 'ro' },
+    { lang: 'ru' }, { lang: 'sr' }, { lang: 'sv' }, { lang: 'sw' }, { lang: 'th' },
+    { lang: 'tl' }, { lang: 'uk' }, { lang: 'ur' }, { lang: 'vi' }, { lang: 'zh' }
+  ];
 }
 
 export default async function RootLayout({

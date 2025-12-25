@@ -1,0 +1,296 @@
+{
+    "common": {
+        "title": "XDownloaderz | Descarregador de Vídeo do X (twitter)",
+        "description": "Descarregue vídeos do X (Twitter) gratuitamente, de forma rápida e segura. Suporta qualidade 1080p Full HD e conversão para MP3. Funciona em todos os dispositivos.",
+        "footerText": "© 2025 XDownloaderz",
+        "privacyPolicy": "Política de Privacidade",
+        "termsOfService": "Termos de Serviço",
+        "contact": "Contacto",
+        "about": "Sobre"
+    },
+    "sidebar": {
+        "download": "Descarregar",
+        "howToUse": "Como Usar?",
+        "howItWorks": "Como Funciona?",
+        "faq": "Perguntas Frequentes",
+        "adLabel": "PUBLICIDADE",
+        "verticalAd": "ESPAÇO DE ANÚNCIO VERTICAL"
+    },
+    "rightSection": {
+        "searchPlaceholder": "Pesquisar",
+        "adLabel1": "ESPAÇO DE ANÚNCIO 1",
+        "adLabel2": "ESPAÇO DE ANÚNCIO 2",
+        "adLabel3": "ESPAÇO DE ANÚNCIO 3"
+    },
+    "feed": {
+        "tabs": {
+            "download": "Descarregador",
+            "history": "Histórico"
+        },
+        "inputPlaceholder": "Cole o link do vídeo do X (Twitter) aqui...",
+        "pasteButton": "Colar link e descarregar",
+        "clearButton": "Limpar",
+        "analyzing": "A analisar vídeo...",
+        "downloadButton": "Descarregar",
+        "downloading": "A descarregar...",
+        "settings": {
+            "title": "Selecionar Formato",
+            "audio": "Apenas Áudio",
+            "autoConvert": "Conversão Automática",
+            "highQuality": "Qualidade Máxima",
+            "dataSaver": "Poupança de Dados",
+            "standard": "Padrão"
+        },
+        "theme": {
+            "default": "Predefinição",
+            "dim": "Escuro",
+            "lightsOut": "Apagado"
+        },
+        "ad": {
+            "sponsored": "PATROCINADO",
+            "label": "ESPAÇO DE ANÚNCIO",
+            "provider": "(Google Adsense / Anúncio Personalizado)"
+        }
+    },
+    "about": {
+        "title": "Sobre Nós",
+        "handle": "@xdownloaderz",
+        "logoTitle": "XDownloaderz",
+        "whatWeDo": {
+            "title": "O Que Fazemos?",
+            "p1": "O XDownloaderz é uma ferramenta web poderosa e gratuita concebida para preencher a lacuna entre os feeds das redes sociais e os seus dispositivos pessoais. Oferecemos uma forma perfeita de descarregar vídeos e multimédia do X (anteriormente Twitter) diretamente para o seu computador, tablet ou smartphone.",
+            "p2": "Ao contrário de outros serviços que requerem instalação de software ou registo, a nossa ferramenta funciona inteiramente no seu navegador utilizando tecnologias web avançadas. Encontra a resolução mais alta disponível até <strong>1080p Full HD</strong> e oferece opções de conversão instantânea de formatos multimédia."
+        },
+        "howItWorks": {
+            "title": "Como Funciona?",
+            "step1": {
+                "title": "1. Colar",
+                "desc": "Copie o link da publicação do X (Twitter) contendo o vídeo que deseja descarregar e cole-o na nossa caixa de pesquisa."
+            },
+            "step2": {
+                "title": "2. Analisar",
+                "desc": "O nosso motor inteligente comunica com a infraestrutura pública da plataforma para encontrar o ficheiro de vídeo e as opções de qualidade disponíveis (ex: 720p, 1080p)."
+            },
+            "step3": {
+                "title": "3. Descarregar",
+                "desc": "Seleciona a sua qualidade preferida e o ficheiro é guardado diretamente no seu dispositivo sem ser armazenado nos nossos servidores."
+            }
+        },
+        "whyUs": {
+            "title": "Porquê Nós?",
+            "items": [
+                {
+                    "title": "Sem Registo:",
+                    "desc": "Respeitamos o seu tempo e privacidade. Não precisa de criar uma conta ou fornecer um endereço de e-mail para utilizar as nossas funcionalidades."
+                },
+                {
+                    "title": "Alta Qualidade:",
+                    "desc": "Damos prioridade a encontrar a taxa de bits (qualidade) mais alta disponível para cada vídeo."
+                },
+                {
+                    "title": "Processamento do Lado do Cliente:",
+                    "desc": "Utilizamos capacidades modernas do navegador (incluindo tecnologia FFmpeg) para processar vídeos de forma eficiente, garantindo downloads rápidos sem comprometer a segurança."
+                },
+                {
+                    "title": "100% Grátis:",
+                    "desc": "A nossa ferramenta é completamente gratuita para todos."
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "Contacto",
+        "subtitle": "Fale Connosco",
+        "heading": "Valorizamos o seu Feedback",
+        "description": "Pode enviar-nos um e-mail para reportar um download com falha, enviar um aviso de direitos de autor ou apenas dizer olá.",
+        "button": "Enviar E-mail",
+        "footerText": "Ou visite a nossa página",
+        "aboutLink": "Sobre Nós",
+        "footerSuffix": "para saber mais sobre o nosso projeto."
+    },
+    "privacy": {
+        "title": "Política de Privacidade",
+        "lastUpdated": "Última Atualização: 01/12/2025",
+        "intro": {
+            "title": "Introdução",
+            "p1": "No XDownloaderz (\"nós\", \"nosso\"), valorizamos a sua privacidade. Esta Política de Privacidade explica como as suas informações são tratadas quando utiliza a nossa ferramenta baseada na web para descarregar multimédia do X (anteriormente Twitter).",
+            "p2": "Ao utilizar o nosso serviço, concorda que leu e compreendeu esta política."
+        },
+        "collection": {
+            "title": "Informações que Recolhemos",
+            "personal": {
+                "title": "1. Informações Pessoais",
+                "desc": "O nosso serviço opera numa base de <strong>não retenção</strong>. Nós NÃO recolhemos, armazenamos ou partilhamos qualquer \"Informação de Identificação Pessoal\" (PII), como:",
+                "list": [
+                    "Nomes ou endereços de e-mail.",
+                    "Números de telefone.",
+                    "Palavras-passe de login de redes sociais."
+                ],
+                "note": "Não precisa de se registar ou fazer login para utilizar o nosso serviço."
+            },
+            "usage": {
+                "title": "2. Dados de Utilização e Ficheiros de Log",
+                "desc": "Como a maioria dos servidores web padrão, utilizamos ficheiros de log. Estes ficheiros podem conter dados como endereços de protocolo de internet (IP), tipo de navegador, fornecedor de serviços de internet (ISP), páginas de referência/saída, tipo de plataforma, carimbo de data/hora e contagem de cliques. Esta informação é utilizada para analisar tendências, administrar o site e rastrear movimentos de utilizadores de forma agregada. Estes dados não estão associados a nenhuma informação que seja pessoalmente identificável."
+            },
+            "urls": {
+                "title": "3. URLs e Conteúdo Multimédia",
+                "desc": "Quando cola um link (URL) na nossa barra de pesquisa, esse link é processado temporariamente pelos nossos servidores apenas com a finalidade de localizar o ficheiro multimédia relevante. Não mantemos um histórico permanente dos links que envia."
+            }
+        },
+        "cookies": {
+            "title": "Cookies e Armazenamento Local",
+            "local": {
+                "title": "1. Armazenamento Local Obrigatório",
+                "desc": "Utilizamos as funcionalidades de Armazenamento Local do seu navegador apenas para lembrar as suas preferências de interface (por exemplo, seleção do modo Escuro/Claro)."
+            },
+            "analytics": {
+                "title": "2. Análises de Terceiros",
+                "desc": "Atualmente, não utilizamos códigos de rastreio de terceiros, como o Google Analytics. No entanto, reservamo-nos o direito de adicionar ferramentas de análise anónimas no futuro para melhorar o desempenho do nosso site."
+            }
+        },
+        "thirdParty": {
+            "title": "Serviços de Terceiros",
+            "desc": "O nosso serviço funciona acedendo a dados públicos no <strong>X (Twitter)</strong>. Ao descarregar um vídeo, está a aceder a conteúdo alojado em servidores de terceiros. Recomendamos que reveja as políticas de privacidade das plataformas com as quais interage."
+        },
+        "gdpr": {
+            "title": "Conformidade com o RGPD",
+            "desc": "Como não recolhemos dados pessoais e não rastreamos utilizadores individuais, estamos em total conformidade com os princípios de \"minimização de dados\" ao abrigo do Regulamento Geral sobre a Proteção de Dados (RGPD)."
+        },
+        "contact": {
+            "title": "Contacto",
+            "desc": "Se tiver dúvidas sobre esta Política de Privacidade, entre em contacto connosco através do nosso site ou da nossa",
+            "link": "página de contacto",
+            "suffix": "."
+        }
+    },
+    "terms": {
+        "title": "Termos de Serviço",
+        "lastUpdated": "Última Atualização: 01/12/2025",
+        "sections": [
+            {
+                "title": "1. Aceitação dos Termos",
+                "content": "Ao aceder e utilizar o site XDownloaderz, concorda com os termos e condições deste acordo. Se não concordar com estes termos, por favor não utilize o serviço."
+            },
+            {
+                "title": "2. Isenção de Responsabilidade",
+                "content": "O XDownloaderz <strong>NÃO</strong> é afiliado, associado, autorizado, endossado ou de qualquer forma oficialmente ligado à X Corp. (anteriormente Twitter), ou a qualquer uma das suas subsidiárias ou afiliadas. O site oficial do X pode ser encontrado em twitter.com ou x.com. Os nomes \"X\", \"Twitter\", bem como nomes, marcas, emblemas e imagens relacionados são marcas registadas dos seus respetivos proprietários."
+            },
+            {
+                "title": "4. Atividades Proibidas",
+                "subcontent": "Concorda em não utilizar o Serviço para:",
+                "list": [
+                    "Distribuir material protegido por direitos de autor sem permissão ou para ganho comercial.",
+                    "Carregar ou transmitir vírus ou código malicioso.",
+                    "Tentar sobrecarregar, fazer spam ou bloquear os nossos servidores."
+                ]
+            },
+            {
+                "title": "5. \"Como Está\" e Limitação de Responsabilidade",
+                "content": "O Serviço é fornecido \"COMO ESTÁ\" e \"CONFORME DISPONÍVEL\". Não garantimos que o Serviço será ininterrupto, livre de erros ou completamente seguro. <br/><br/> O XDownloaderz não será responsável por quaisquer danos diretos ou indiretos, incluindo, mas não se limitando a perda de dados ou disputas de direitos de autor, decorrentes da utilização ou incapacidade de utilizar o Serviço."
+            },
+            {
+                "title": "6. Alterações nos Termos",
+                "content": "Reservamo-nos o direito de alterar estes termos a qualquer momento. A sua utilização contínua do site após as alterações significa que aceita os novos Termos de Serviço."
+            }
+        ],
+        "ip": {
+            "title": "3. Propriedade Intelectual e Direitos de Autor",
+            "items": [
+                {
+                    "title": "Responsabilidade do Utilizador",
+                    "desc": "Reconhece que o XDownloaderz é uma ferramenta técnica que permite descarregar apenas multimédia disponível publicamente. Não reivindicamos propriedade de nenhum conteúdo descarregado através do nosso serviço."
+                },
+                {
+                    "title": "Conformidade com Direitos de Autor",
+                    "desc": "Concorda em utilizar este serviço apenas para conteúdo que tem o direito de descarregar ou para uso pessoal (Uso Justo). Não pode utilizar esta ferramenta para infringir os direitos de autor de terceiros."
+                },
+                {
+                    "title": "Direitos de Conteúdo",
+                    "desc": "Todos os direitos de propriedade intelectual relacionados a vídeos, imagens e áudio pertencem aos seus respetivos criadores de conteúdo e à plataforma de alojamento."
+                }
+            ]
+        }
+    },
+    "staticPosts": [
+        {
+            "id": "welcome-1",
+            "authorName": "XDownloaderz",
+            "content": "🎉 Bem-vindo ao XDownloaderz!\n\nDescarregue vídeos e GIFs do X (Twitter) com um clique, totalmente grátis e na mais alta qualidade. Guarde como MP4 ou MP3, utilize diretamente do seu navegador sem instalar nenhuma aplicação.\n\n✨ Rápido, seguro e ilimitado!"
+        },
+        {
+            "id": "legal-warning",
+            "authorName": "XDownloaderz",
+            "content": "⚖️ Aviso Legal e Termos de Uso\n\nO XDownloaderz.com não aloja conteúdo protegido por direitos de autor nos seus servidores. Todos os vídeos são descarregados instantânea e diretamente da CDN do X (Twitter). A utilização do conteúdo descarregado é da inteira responsabilidade do utilizador.\n\n⚠️ Por favor, utilize o conteúdo apenas para fins permitidos."
+        },
+        {
+            "id": "seo-info-2",
+            "authorName": "XDownloaderz",
+            "content": "🚀 O Descarregador de Vídeos do X (Twitter) Mais Avançado\n\n✅ Suporte a Qualidade 1080p Full HD\n✅ Extração de MP3 (Download de Música)\n✅ Download Rápido e Seguro\n✅ Uso Ilimitado\n✅ Experiência Sem Anúncios\n✅ Sem Registo ou Login Necessário\n\nGuarde vídeos do X (Twitter) no seu dispositivo em segundos com o XDownloaderz.com!"
+        },
+        {
+            "id": "platform-compatibility",
+            "authorName": "XDownloaderz",
+            "content": "📱 Totalmente Compatível com Todos os Dispositivos\n\nO XDownloaderz funciona perfeitamente em todas as plataformas:\n\n🤖 Android (Chrome, Samsung Internet)\n🍎 iPhone e iPad (Safari)\n💻 PC Windows (Chrome, Edge, Firefox)\n🖥️ Mac (Safari, Chrome)\n🐧 Linux (Firefox, Chromium)\n\nVisite xdownloaderz.com com o seu navegador moderno, cole o link do vídeo do X (Twitter) e descarregue!"
+        },
+        {
+            "id": "guide-step1-4",
+            "authorName": "Guia XDownloaderz",
+            "content": "📖 Guia do Utilizador: Passo 1\n\n1️⃣ Copie o Link do Vídeo\n\nAbra o vídeo que deseja descarregar na aplicação ou site do X (Twitter). Toque no ícone 'Partilhar' na publicação e selecione 'Copiar Link'.\n\n💡 Dica: O URL do tweet do vídeo deve ser parecido com este:\nx.com/utilizador/status/1234567890"
+        },
+        {
+            "id": "guide-step2",
+            "authorName": "Guia XDownloaderz",
+            "content": "📖 Guia do Utilizador: Passo 2\n\n2️⃣ Cole o Link no XDownloaderz\n\nAbra xdownloaderz.com. Cole o link do vídeo do X (Twitter) copiado na caixa de texto no topo da página.\n\nO nosso sistema detetará automaticamente o link e carregará as informações do vídeo instantaneamente."
+        },
+        {
+            "id": "guide-step3",
+            "authorName": "Guia XDownloaderz",
+            "content": "📖 Guia do Utilizador: Passo 3\n\n3️⃣ Selecione Qualidade e Formato\n\nApós o vídeo ser analisado, selecione a sua qualidade desejada no menu de configurações (ícone ⚙️):\n\n• 1080p / 720p / 480p (Vídeo MP4)\n• MP3 (Apenas Áudio)\n\nMaior resolução = Melhor qualidade de imagem, mas maior tamanho de ficheiro."
+        },
+        {
+            "id": "guide-step4",
+            "authorName": "Guia XDownloaderz",
+            "content": "📖 Guia do Utilizador: Passo 4\n\n4️⃣ Iniciar Download\n\nApós selecionar o formato e a qualidade, clique no botão azul 'Descarregar'. O seu ficheiro de vídeo ou áudio será descarregado automaticamente para o seu dispositivo.\n\n⚡ A velocidade de download depende da sua ligação à internet e do tamanho do vídeo."
+        },
+        {
+            "id": "faq-private-7",
+            "authorName": "FAQ XDownloaderz",
+            "content": "❓ Perguntas Frequentes\n\n🔒 Posso descarregar vídeos de contas privadas/trancadas?\n\nNão. O XDownloaderz só pode descarregar vídeos de publicações públicas do X (Twitter). O conteúdo em contas privadas está protegido pela API do X (Twitter) e não pode ser acedido.\n\n💡 Solução: Pode pedir permissão ao proprietário do conteúdo."
+        },
+        {
+            "id": "faq-quality",
+            "authorName": "FAQ XDownloaderz",
+            "content": "❓ Perguntas Frequentes\n\n📹 Porque é que a opção 1080p nem sempre está visível?\n\nAlguns vídeos do X (Twitter) podem ter sido carregados apenas em 720p ou qualidade inferior. O XDownloaderz não pode produzir uma resolução maior do que a qualidade original do vídeo.\n\nA opção de maior qualidade disponível será apresentada."
+        },
+        {
+            "id": "faq-mp3-conversion",
+            "authorName": "FAQ XDownloaderz",
+            "content": "❓ Perguntas Frequentes\n\n🎵 Como funciona a conversão para MP3?\n\nAo descarregar um vídeo do X (Twitter), o XDownloaderz extrai automaticamente a faixa de áudio e converte-a para o formato MP3. Este processo acontece no seu navegador e é totalmente seguro.\n\n⏱️ O tempo de conversão pode levar de 5 a 30 segundos, dependendo da duração do vídeo."
+        },
+        {
+            "id": "faq-security",
+            "authorName": "FAQ XDownloaderz",
+            "content": "❓ Perguntas Frequentes\n\n🛡️ O XDownloaderz é seguro? Vou apanhar um vírus?\n\nSim, é 100% seguro. O XDownloaderz não aloja nenhum ficheiro e não contém adware ou vírus. Os vídeos são descarregados diretamente dos servidores CDN do X (Twitter).\n\n✅ Funciona com encriptação SSL (HTTPS) no seu navegador.\n✅ As suas informações pessoais nunca são recolhidas."
+        },
+        {
+            "id": "faq-pricing",
+            "authorName": "FAQ XDownloaderz",
+            "content": "❓ Perguntas Frequentes\n\n💰 O XDownloaderz é gratuito? É necessária uma assinatura?\n\nNão! O XDownloaderz é completamente gratuito e permanecerá assim para sempre. Não há taxas, custos ocultos ou sistemas de assinatura.\n\n🎁 Pode descarregar vídeos ilimitados e utilizá-lo o quanto quiser."
+        },
+        {
+            "id": "faq-legal-use",
+            "authorName": "FAQ XDownloaderz",
+            "content": "❓ Perguntas Frequentes\n\n⚖️ É legal utilizar vídeos descarregados?\n\nPode utilizar conteúdo descarregado para fins pessoais, educacionais ou de uso justo (Fair Use). No entanto:\n\n❌ Republicar para fins comerciais\n❌ Cometer violação de direitos de autor\n❌ Partilhar sem a permissão do proprietário do conteúdo\n\nAgir de acordo com a lei é responsabilidade do utilizador."
+        },
+        {
+            "id": "seo-info-benefits",
+            "authorName": "XDownloaderz",
+            "content": "🌟 Porquê XDownloaderz?\n\n🚀 Download Mais Rápido: Guarde vídeos do X (Twitter) em segundos\n🎯 Fácil de Usar: Descarregue vídeos em apenas 3 passos\n💎 Alta Qualidade: Suporte a 1080p Full HD\n🔄 Conversor de MP3: Extraia apenas o áudio do vídeo\n🌍 Acesso Universal: Funciona em todos os dispositivos\n\nxdownloaderz.com - A Melhor Forma de Descarregar Vídeos do X (Twitter)!"
+        },
+        {
+            "id": "seo-keywords",
+            "authorName": "XDownloaderz",
+            "content": "🔍 O Que Pode Fazer Com o XDownloaderz:\n\n• Descarregar vídeo do X (Twitter) MP4\n• Descarregar GIF do X (Twitter)\n• Descarregador de vídeo do X (Twitter) online\n• Conversor de MP3 do X (Twitter)\n• Download de vídeo do X (Twitter) 1080p\n• Guardar vídeo do X (Twitter) no telemóvel\n• Descarregador do X (Twitter) grátis\n\nPara a melhor experiência de download de vídeo do X (Twitter): xdownloaderz.com"
+        }
+    ]
+}

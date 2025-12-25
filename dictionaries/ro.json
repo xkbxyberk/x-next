@@ -1,0 +1,296 @@
+{
+    "common": {
+        "title": "XDownloaderz | Descărcător Video X (twitter)",
+        "description": "Descarcă videoclipuri X (Twitter) gratuit, rapid și sigur. Suportă calitatea 1080p Full HD și conversia MP3. Funcționează pe toate dispozitivele.",
+        "footerText": "© 2025 XDownloaderz",
+        "privacyPolicy": "Politica de Confidențialitate",
+        "termsOfService": "Termeni și Condiții",
+        "contact": "Contact",
+        "about": "Despre noi"
+    },
+    "sidebar": {
+        "download": "Descarcă",
+        "howToUse": "Cum se folosește?",
+        "howItWorks": "Cum funcționează?",
+        "faq": "Întrebări frecvente",
+        "adLabel": "PUBLICITATE",
+        "verticalAd": "SPAȚIU PUBLICITAR VERTICAL"
+    },
+    "rightSection": {
+        "searchPlaceholder": "Caută",
+        "adLabel1": "SPAȚIU PUBLICITAR 1",
+        "adLabel2": "SPAȚIU PUBLICITAR 2",
+        "adLabel3": "SPAȚIU PUBLICITAR 3"
+    },
+    "feed": {
+        "tabs": {
+            "download": "Descărcător",
+            "history": "Istoric"
+        },
+        "inputPlaceholder": "Lipește link-ul video X (Twitter) aici...",
+        "pasteButton": "Lipește link și descarcă",
+        "clearButton": "Șterge",
+        "analyzing": "Se analizează videoclipul...",
+        "downloadButton": "Descarcă",
+        "downloading": "Se descarcă...",
+        "settings": {
+            "title": "Selectează Format",
+            "audio": "Doar Audio",
+            "autoConvert": "Conversie Automată",
+            "highQuality": "Cea mai bună calitate",
+            "dataSaver": "Economisire date",
+            "standard": "Standard"
+        },
+        "theme": {
+            "default": "Implicit",
+            "dim": "Întunecat",
+            "lightsOut": "Beznă"
+        },
+        "ad": {
+            "sponsored": "SPONSORIZAT",
+            "label": "SPAȚIU PUBLICITAR",
+            "provider": "(Google Adsense / Anunț Personalizat)"
+        }
+    },
+    "about": {
+        "title": "Despre noi",
+        "handle": "@xdownloaderz",
+        "logoTitle": "XDownloaderz",
+        "whatWeDo": {
+            "title": "Ce facem?",
+            "p1": "XDownloaderz este un instrument web puternic și gratuit, conceput pentru a reduce decalajul dintre fluxurile de social media și dispozitivele tale personale. Oferim o modalitate simplă de a descărca videoclipuri și conținut media de pe X (fostul Twitter) direct pe computerul, tableta sau smartphone-ul tău.",
+            "p2": "Spre deosebire de alte servicii care necesită instalarea de software sau abonament, instrumentul nostru rulează complet în browserul tău, folosind tehnologii web avansate. Găsește cea mai mare rezoluție disponibilă, până la <strong>1080p Full HD</strong>, și oferă opțiuni pentru conversia instantanee a formatelor media."
+        },
+        "howItWorks": {
+            "title": "Cum funcționează?",
+            "step1": {
+                "title": "1. Lipește",
+                "desc": "Copiază link-ul postării X (Twitter) care conține videoclipul pe care dorești să-l descarci și lipește-l în caseta noastră de căutare."
+            },
+            "step2": {
+                "title": "2. Analizează",
+                "desc": "Motorul nostru inteligent comunică cu infrastructura publică a platformei pentru a găsi fișierul video și opțiunile de calitate disponibile (ex: 720p, 1080p)."
+            },
+            "step3": {
+                "title": "3. Descarcă",
+                "desc": "Selectezi calitatea preferată, iar fișierul este salvat direct pe dispozitivul tău, fără a fi stocat pe serverele noastre."
+            }
+        },
+        "whyUs": {
+            "title": "De ce noi?",
+            "items": [
+                {
+                    "title": "Fără înregistrare:",
+                    "desc": "Îți respectăm timpul și confidențialitatea. Nu trebuie să creezi un cont sau să furnizezi o adresă de e-mail pentru a utiliza funcțiile noastre."
+                },
+                {
+                    "title": "Calitate înaltă:",
+                    "desc": "Prioritizăm găsirea celui mai mare bitrate (calitate) disponibil pentru fiecare videoclip."
+                },
+                {
+                    "title": "Procesare pe partea clientului:",
+                    "desc": "Folosim capacități moderne ale browserului (inclusiv tehnologia FFmpeg) pentru a procesa videoclipurile eficient, asigurând descărcări rapide fără a compromite securitatea."
+                },
+                {
+                    "title": "100% Gratuit:",
+                    "desc": "Instrumentul nostru este complet gratuit pentru toată lumea."
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": "Ia legătura",
+        "heading": "Apreciem feedback-ul tău",
+        "description": "Ne poți trimite un e-mail pentru a raporta o descărcare eșuată, pentru a trimite o notificare privind drepturile de autor sau pur și simplu pentru a saluta.",
+        "button": "Trimite E-mail",
+        "footerText": "Sau vizitează pagina noastră",
+        "aboutLink": "Despre noi",
+        "footerSuffix": "pentru a afla mai multe despre proiectul nostru."
+    },
+    "privacy": {
+        "title": "Politica de Confidențialitate",
+        "lastUpdated": "Ultima actualizare: 01/12/2025",
+        "intro": {
+            "title": "Introducere",
+            "p1": "La XDownloaderz („noi”, „nouă”), îți prețuim confidențialitatea. Această Politică de Confidențialitate explică modul în care sunt gestionate informațiile tale atunci când folosești instrumentul nostru web pentru a descărca conținut media de pe X (fostul Twitter).",
+            "p2": "Prin utilizarea serviciului nostru, ești de acord că ai citit și înțeles această politică."
+        },
+        "collection": {
+            "title": "Informațiile pe care le colectăm",
+            "personal": {
+                "title": "1. Informații personale",
+                "desc": "Serviciul nostru funcționează pe o bază de <strong>non-retenție</strong>. NU colectăm, stocăm sau partajăm nicio „Informație de Identificare Personală” (PII), cum ar fi:",
+                "list": [
+                    "Nume sau adrese de e-mail.",
+                    "Numere de telefon.",
+                    "Parole de conectare la rețelele sociale."
+                ],
+                "note": "Nu trebuie să te înregistrezi sau să te conectezi pentru a utiliza serviciul nostru."
+            },
+            "usage": {
+                "title": "2. Date de utilizare și fișiere jurnal",
+                "desc": "Ca majoritatea serverelor web standard, folosim fișiere jurnal. Aceste fișiere pot conține date precum adresele de protocol internet (IP), tipul browserului, furnizorul de servicii internet (ISP), paginile de referință/ieșire, tipul platformei, data/ora și numărul de clicuri. Aceste informații sunt utilizate pentru a analiza tendințele, a administra site-ul și a urmări mișcările utilizatorilor în ansamblu. Aceste date nu sunt legate de nicio informație care să permită identificarea personală."
+            },
+            "urls": {
+                "title": "3. URL-uri și conținut media",
+                "desc": "Când lipești un link (URL) în bara noastră de căutare, acel link este procesat temporar de serverele noastre exclusiv în scopul localizării fișierului media relevant. Nu păstrăm un istoric permanent al link-urilor pe care le trimiți."
+            }
+        },
+        "cookies": {
+            "title": "Cookie-uri și stocare locală",
+            "local": {
+                "title": "1. Stocare locală obligatorie",
+                "desc": "Folosim funcțiile de Stocare Locală ale browserului tău doar pentru a reține preferințele tale de interfață (de exemplu, selectarea modului Întunecat/Luminos)."
+            },
+            "analytics": {
+                "title": "2. Analize terțe",
+                "desc": "În prezent, nu folosim coduri de urmărire de la terți, cum ar fi Google Analytics. Cu toate acestea, ne rezervăm dreptul de a adăuga instrumente de analiză anonime în viitor pentru a îmbunătăți performanța site-ului nostru."
+            }
+        },
+        "thirdParty": {
+            "title": "Servicii terțe",
+            "desc": "Serviciul nostru funcționează prin accesarea datelor publice pe <strong>X (Twitter)</strong>. Când descarci un videoclip, accesezi conținut găzduit pe servere terțe. Te încurajăm să consulți politicile de confidențialitate ale platformelor cu care interacționezi."
+        },
+        "gdpr": {
+            "title": "Conformitate GDPR",
+            "desc": "Deoarece nu colectăm date personale și nu urmărim utilizatorii individuali, respectăm pe deplin principiile „minimizării datelor” conform Regulamentului General privind Protecția Datelor (GDPR)."
+        },
+        "contact": {
+            "title": "Contact",
+            "desc": "Dacă ai întrebări despre această Politică de Confidențialitate, te rugăm să ne contactezi prin intermediul site-ului nostru sau al paginii noastre de",
+            "link": "contact",
+            "suffix": "."
+        }
+    },
+    "terms": {
+        "title": "Termeni și Condiții",
+        "lastUpdated": "Ultima actualizare: 01/12/2025",
+        "sections": [
+            {
+                "title": "1. Acceptarea Termenilor",
+                "content": "Prin accesarea și utilizarea site-ului XDownloaderz, ești de acord cu termenii și condițiile acestui acord. Dacă nu ești de acord cu acești termeni, te rugăm să nu utilizezi serviciul."
+            },
+            {
+                "title": "2. Declinarea responsabilității",
+                "content": "XDownloaderz <strong>NU</strong> este afiliat, asociat, autorizat, susținut sau în vreun fel conectat oficial cu X Corp. (fostul Twitter), sau cu oricare dintre filialele sau afiliații săi. Site-ul oficial X poate fi găsit la twitter.com sau x.com. Numele „X”, „Twitter”, precum și numele, mărcile, emblemele și imaginile conexe sunt mărci înregistrate ale proprietarilor lor respectivi."
+            },
+            {
+                "title": "4. Activități interzise",
+                "subcontent": "Ești de acord să nu folosești Serviciul pentru:",
+                "list": [
+                    "Distribuirea de materiale protejate prin drepturi de autor fără permisiune sau pentru câștig comercial.",
+                    "Încărcarea sau transmiterea de viruși sau cod malițios.",
+                    "Încercarea de a suprasolicita, spamma sau bloca serverele noastre."
+                ]
+            },
+            {
+                "title": "5. „Așa cum este” și Limitarea răspunderii",
+                "content": "Serviciul este furnizat „AȘA CUM ESTE” și „AȘA CUM ESTE DISPONIBIL”. Nu garantăm că Serviciul va fi neîntrerupt, fără erori sau complet sigur. <br/><br/> XDownloaderz nu va fi răspunzător pentru niciun fel de daune directe sau indirecte, inclusiv, dar fără a se limita la, pierderi de date sau litigii privind drepturile de autor, care rezultă din utilizarea sau incapacitatea de a utiliza Serviciul."
+            },
+            {
+                "title": "6. Modificări ale termenilor",
+                "content": "Ne rezervăm dreptul de a modifica acești termeni în orice moment. Utilizarea continuă a site-ului după efectuarea modificărilor înseamnă că accepți noii Termeni și Condiții."
+            }
+        ],
+        "ip": {
+            "title": "3. Proprietate intelectuală și drepturi de autor",
+            "items": [
+                {
+                    "title": "Responsabilitatea utilizatorului",
+                    "desc": "Recunoști că XDownloaderz este un instrument tehnic care permite descărcarea doar a conținutului media disponibil public. Nu revendicăm proprietatea asupra niciunui conținut descărcat prin serviciul nostru."
+                },
+                {
+                    "title": "Respectarea drepturilor de autor",
+                    "desc": "Ești de acord să utilizezi acest serviciu doar pentru conținut pe care ai dreptul să îl descarci sau pentru uz personal (Fair Use). Nu poți folosi acest instrument pentru a încălca drepturile de autor ale altora."
+                },
+                {
+                    "title": "Drepturile asupra conținutului",
+                    "desc": "Toate drepturile de proprietate intelectuală legate de videoclipuri, imagini și audio aparțin creatorilor de conținut respectivi și platformei de găzduire."
+                }
+            ]
+        }
+    },
+    "staticPosts": [
+        {
+            "id": "welcome-1",
+            "authorName": "XDownloaderz",
+            "content": "🎉 Bine ai venit la XDownloaderz!\n\nDescarcă videoclipuri și GIF-uri X (Twitter) cu un singur clic, complet gratuit și la cea mai înaltă calitate. Salvează ca MP4 sau MP3, folosește direct din browserul tău fără a instala vreo aplicație.\n\n✨ Rapid, sigur și nelimitat!"
+        },
+        {
+            "id": "legal-warning",
+            "authorName": "XDownloaderz",
+            "content": "⚖️ Declinare legală și Termeni de utilizare\n\nXDownloaderz.com nu găzduiește conținut protejat prin drepturi de autor pe serverele sale. Toate videoclipurile sunt descărcate instantaneu și direct din CDN-ul X (Twitter). Utilizarea conținutului descărcat este în întregime responsabilitatea utilizatorului.\n\n⚠️ Te rugăm să utilizezi conținutul doar în scopuri permise."
+        },
+        {
+            "id": "seo-info-2",
+            "authorName": "XDownloaderz",
+            "content": "🚀 Cel mai avansat descărcător video X (Twitter)\n\n✅ Suport calitate 1080p Full HD\n✅ Extragere MP3 (Descărcare muzică)\n✅ Descărcare rapidă și sigură\n✅ Utilizare nelimitată\n✅ Experiență fără reclame\n✅ Nu este necesară înregistrarea sau autentificarea\n\nSalvează videoclipurile X (Twitter) pe dispozitivul tău în câteva secunde cu XDownloaderz.com!"
+        },
+        {
+            "id": "platform-compatibility",
+            "authorName": "XDownloaderz",
+            "content": "📱 Complet compatibil cu toate dispozitivele\n\nXDownloaderz funcționează fără probleme pe orice platformă:\n\n🤖 Android (Chrome, Samsung Internet)\n🍎 iPhone & iPad (Safari)\n💻 PC Windows (Chrome, Edge, Firefox)\n🖥️ Mac (Safari, Chrome)\n🐧 Linux (Firefox, Chromium)\n\nVizitează xdownloaderz.com cu browserul tău modern, lipește link-ul video X (Twitter) și descarcă!"
+        },
+        {
+            "id": "guide-step1-4",
+            "authorName": "Ghid XDownloaderz",
+            "content": "📖 Ghid de utilizare: Pasul 1\n\n1️⃣ Copiază link-ul video\n\nDeschide videoclipul pe care vrei să-l descarci în aplicația sau pe site-ul X (Twitter). Atinge pictograma „Partajare” de pe postare și selectează „Copiază link-ul”.\n\n💡 Sfat: URL-ul tweet-ului video ar trebui să arate cam așa:\nx.com/utilizator/status/1234567890"
+        },
+        {
+            "id": "guide-step2",
+            "authorName": "Ghid XDownloaderz",
+            "content": "📖 Ghid de utilizare: Pasul 2\n\n2️⃣ Lipește link-ul în XDownloaderz\n\nDeschide xdownloaderz.com. Lipește link-ul video X (Twitter) copiat în caseta text din partea de sus a paginii.\n\nSistemul nostru va detecta automat link-ul și va încărca informațiile video instantaneu."
+        },
+        {
+            "id": "guide-step3",
+            "authorName": "Ghid XDownloaderz",
+            "content": "📖 Ghid de utilizare: Pasul 3\n\n3️⃣ Selectează calitatea și formatul\n\nDupă ce videoclipul este analizat, selectează calitatea dorită din meniul de setări (pictograma ⚙️):\n\n• 1080p / 720p / 480p (Video MP4)\n• MP3 (Doar Audio)\n\nRezoluție mai mare = Calitate a imaginii mai bună, dar dimensiune a fișierului mai mare."
+        },
+        {
+            "id": "guide-step4",
+            "authorName": "Ghid XDownloaderz",
+            "content": "📖 Ghid de utilizare: Pasul 4\n\n4️⃣ Începe descărcarea\n\nDupă selectarea formatului și calității, fă clic pe butonul albastru „Descarcă”. Fișierul tău video sau audio se va descărca automat pe dispozitivul tău.\n\n⚡ Viteza de descărcare depinde de conexiunea ta la internet și de dimensiunea videoclipului."
+        },
+        {
+            "id": "faq-private-7",
+            "authorName": "Întrebări frecvente XDownloaderz",
+            "content": "❓ Întrebări frecvente\n\n🔒 Pot descărca videoclipuri de pe conturi private/blocate?\n\nNu. XDownloaderz poate descărca videoclipuri doar din postări publice X (Twitter). Conținutul din conturile private este protejat de API-ul X (Twitter) și nu poate fi accesat.\n\n💡 Soluție: Poți cere permisiunea proprietarului conținutului."
+        },
+        {
+            "id": "faq-quality",
+            "authorName": "Întrebări frecvente XDownloaderz",
+            "content": "❓ Întrebări frecvente\n\n📹 De ce opțiunea 1080p nu este întotdeauna vizibilă?\n\nUnele videoclipuri X (Twitter) pot fi fost încărcate doar la calitate 720p sau mai mică. XDownloaderz nu poate produce o rezoluție mai mare decât calitatea originală a videoclipului.\n\nȚi se va prezenta cea mai înaltă opțiune de calitate disponibilă."
+        },
+        {
+            "id": "faq-mp3-conversion",
+            "authorName": "Întrebări frecvente XDownloaderz",
+            "content": "❓ Întrebări frecvente\n\n🎵 Cum funcționează conversia MP3?\n\nCând descarci un videoclip X (Twitter), XDownloaderz extrage automat pista audio și o convertește în format MP3. Acest proces are loc în browserul tău și este complet sigur.\n\n⏱️ Timpul de conversie poate dura 5-30 secunde în funcție de lungimea videoclipului."
+        },
+        {
+            "id": "faq-security",
+            "authorName": "Întrebări frecvente XDownloaderz",
+            "content": "❓ Întrebări frecvente\n\n🛡️ Este XDownloaderz sigur? Voi lua un virus?\n\nDa, este 100% sigur. XDownloaderz nu găzduiește niciun fișier și nu conține adware sau viruși. Videoclipurile sunt descărcate direct de pe serverele CDN X (Twitter).\n\n✅ Funcționează cu criptare SSL (HTTPS) în browserul tău.\n✅ Informațiile tale personale nu sunt colectate niciodată."
+        },
+        {
+            "id": "faq-pricing",
+            "authorName": "Întrebări frecvente XDownloaderz",
+            "content": "❓ Întrebări frecvente\n\n💰 Este XDownloaderz gratuit? Este necesar un abonament?\n\nNu! XDownloaderz este complet gratuit și va rămâne așa pentru totdeauna. Nu există taxe, costuri ascunse sau sisteme de abonament.\n\n🎁 Poți descărca videoclipuri nelimitat și îl poți folosi cât dorești."
+        },
+        {
+            "id": "faq-legal-use",
+            "authorName": "Întrebări frecvente XDownloaderz",
+            "content": "❓ Întrebări frecvente\n\n⚖️ Este legal să folosesc videoclipurile descărcate?\n\nPoți folosi conținutul descărcat în scopuri personale, educaționale sau de utilizare echitabilă (Fair Use). Cu toate acestea:\n\n❌ Republicarea în scopuri comerciale\n❌ Încălcarea drepturilor de autor\n❌ Partajarea fără permisiunea proprietarului conținutului\n\nAcționarea în conformitate cu legea este responsabilitatea utilizatorului."
+        },
+        {
+            "id": "seo-info-benefits",
+            "authorName": "XDownloaderz",
+            "content": "🌟 De ce XDownloaderz?\n\n🚀 Cea mai rapidă descărcare: Salvează videoclipurile X (Twitter) în secunde\n🎯 Ușor de utilizat: Descarcă videoclipuri în doar 3 pași\n💎 Calitate înaltă: Suport 1080p Full HD\n🔄 Convertor MP3: Extrage doar audio din video\n🌍 Acces universal: Funcționează pe toate dispozitivele\n\nxdownloaderz.com - Cea mai bună modalitate de a descărca videoclipuri X (Twitter)!"
+        },
+        {
+            "id": "seo-keywords",
+            "authorName": "XDownloaderz",
+            "content": "🔍 Ce poți face cu XDownloaderz:\n\n• Descărcare video X (Twitter) MP4\n• Descărcare GIF X (Twitter)\n• Descărcător video X (Twitter) online\n• Convertor MP3 X (Twitter)\n• Descărcare video 1080p X (Twitter)\n• Salvare video X (Twitter) pe mobil\n• Descărcător X (Twitter) gratuit\n\nPentru cea mai bună experiență de descărcare video X (Twitter): xdownloaderz.com"
+        }
+    ]
+}

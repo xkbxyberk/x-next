@@ -1,0 +1,296 @@
+{
+    "common": {
+        "title": "XDownloaderz | X (twitter) Video Nedlaster",
+        "description": "Last ned X (Twitter)-videoer gratis, raskt og sikkert. Støtter 1080p Full HD-kvalitet og MP3-konvertering. Fungerer på alle enheter.",
+        "footerText": "© 2025 XDownloaderz",
+        "privacyPolicy": "Personvernerklæring",
+        "termsOfService": "Vilkår for bruk",
+        "contact": "Kontakt",
+        "about": "Om oss"
+    },
+    "sidebar": {
+        "download": "Last ned",
+        "howToUse": "Hvordan bruke?",
+        "howItWorks": "Hvordan fungerer det?",
+        "faq": "Ofte stilte spørsmål",
+        "adLabel": "ANNONSE",
+        "verticalAd": "VERTIKAL ANNONSEPLASS"
+    },
+    "rightSection": {
+        "searchPlaceholder": "Søk",
+        "adLabel1": "ANNONSEPLASS 1",
+        "adLabel2": "ANNONSEPLASS 2",
+        "adLabel3": "ANNONSEPLASS 3"
+    },
+    "feed": {
+        "tabs": {
+            "download": "Nedlaster",
+            "history": "Historikk"
+        },
+        "inputPlaceholder": "Lim inn X (Twitter) videolenke her...",
+        "pasteButton": "Lim inn lenke og last ned",
+        "clearButton": "Tøm",
+        "analyzing": "Analyserer video...",
+        "downloadButton": "Last ned",
+        "downloading": "Laster ned...",
+        "settings": {
+            "title": "Velg format",
+            "audio": "Kun lyd",
+            "autoConvert": "Automatisk konvertering",
+            "highQuality": "Høyeste kvalitet",
+            "dataSaver": "Datasparing",
+            "standard": "Standard"
+        },
+        "theme": {
+            "default": "Standard",
+            "dim": "Dempet",
+            "lightsOut": "Mørk"
+        },
+        "ad": {
+            "sponsored": "SPONSET",
+            "label": "ANNONSEPLASS",
+            "provider": "(Google Adsense / Tilpasset annonse)"
+        }
+    },
+    "about": {
+        "title": "Om oss",
+        "handle": "@xdownloaderz",
+        "logoTitle": "XDownloaderz",
+        "whatWeDo": {
+            "title": "Hva gjør vi?",
+            "p1": "XDownloaderz er et kraftig og gratis webverktøy designet for å bygge bro mellom sosiale medier og dine personlige enheter. Vi tilbyr en sømløs måte å laste ned videoer og medier fra X (tidligere Twitter) direkte til din datamaskin, nettbrett eller smarttelefon.",
+            "p2": "I motsetning til andre tjenester som krever programvareinstallasjon eller medlemskap, kjører verktøyet vårt helt i nettleseren din ved hjelp av avanserte webteknologier. Det finner den høyeste tilgjengelige oppløsningen opptil <strong>1080p Full HD</strong> og tilbyr alternativer for umiddelbar konvertering av medieformater."
+        },
+        "howItWorks": {
+            "title": "Hvordan fungerer det?",
+            "step1": {
+                "title": "1. Lim inn",
+                "desc": "Kopier lenken til X (Twitter)-innlegget som inneholder videoen du vil laste ned, og lim den inn i søkefeltet vårt."
+            },
+            "step2": {
+                "title": "2. Analyser",
+                "desc": "Vår smarte motor kommuniserer med plattformens offentlige infrastruktur for å finne videofilen og de tilgjengelige kvalitetsalternativene (f.eks. 720p, 1080p)."
+            },
+            "step3": {
+                "title": "3. Last ned",
+                "desc": "Du velger din foretrukne kvalitet, og filen lagres direkte på enheten din uten å bli lagret på våre servere."
+            }
+        },
+        "whyUs": {
+            "title": "Hvorfor oss?",
+            "items": [
+                {
+                    "title": "Ingen registrering:",
+                    "desc": "Vi respekterer din tid og ditt personvern. Du trenger ikke å opprette en konto eller oppgi en e-postadresse for å bruke funksjonene våre."
+                },
+                {
+                    "title": "Høy kvalitet:",
+                    "desc": "Vi prioriterer å finne den høyeste tilgjengelige bitraten (kvalitet) for hver video."
+                },
+                {
+                    "title": "Klientside-behandling:",
+                    "desc": "Vi bruker moderne nettleserfunksjoner (inkludert FFmpeg-teknologi) for å behandle videoer effektivt, noe som sikrer raske nedlastinger uten å gå på kompromiss med sikkerheten."
+                },
+                {
+                    "title": "100% Gratis:",
+                    "desc": "Verktøyet vårt er helt gratis for alle."
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "Kontakt",
+        "subtitle": "Ta kontakt",
+        "heading": "Vi verdsetter din tilbakemelding",
+        "description": "Du kan sende oss en e-post for å rapportere en ødelagt nedlasting, sende inn et varsel om opphavsrett eller bare si hei.",
+        "button": "Send e-post",
+        "footerText": "Eller besøk vår",
+        "aboutLink": "Om oss",
+        "footerSuffix": "-side for å lære mer om prosjektet vårt."
+    },
+    "privacy": {
+        "title": "Personvernerklæring",
+        "lastUpdated": "Sist oppdatert: 01.12.2025",
+        "intro": {
+            "title": "Introduksjon",
+            "p1": "Hos XDownloaderz (\"vi\", \"oss\"), verdsetter vi ditt personvern. Denne personvernerklæringen forklarer hvordan informasjonen din håndteres når du bruker vårt nettbaserte verktøy for å laste ned medier fra X (tidligere Twitter).",
+            "p2": "Ved å bruke tjenesten vår godtar du at du har lest og forstått denne policyen."
+        },
+        "collection": {
+            "title": "Informasjon vi samler inn",
+            "personal": {
+                "title": "1. Personlig informasjon",
+                "desc": "Tjenesten vår opererer på en <strong>ikke-lagringsbasis</strong>. Vi samler IKKE inn, lagrer eller deler noen \"Personlig identifiserbar informasjon\" (PII) som:",
+                "list": [
+                    "Navn eller e-postadresser.",
+                    "Telefonnumre.",
+                    "Innloggingspassord for sosiale medier."
+                ],
+                "note": "Du trenger ikke å registrere deg eller logge inn for å bruke tjenesten vår."
+            },
+            "usage": {
+                "title": "2. Bruksdata og loggfiler",
+                "desc": "Som de fleste standard webservere bruker vi loggfiler. Disse filene kan inneholde data som internettprotokoll (IP)-adresser, nettlesertype, internettleverandør (ISP), henvisnings-/utgangssider, plattformtype, dato/tidsstempel og antall klikk. Denne informasjonen brukes til å analysere trender, administrere nettstedet og spore brukerbevegelser samlet sett. Disse dataene er ikke knyttet til informasjon som er personlig identifiserbar."
+            },
+            "urls": {
+                "title": "3. URL-er og medieinnhold",
+                "desc": "Når du limer inn en lenke (URL) i søkefeltet vårt, behandles den lenken midlertidig av serverne våre utelukkende for å finne den relevante mediefilen. Vi beholder ikke en permanent historikk over lenkene du sender inn."
+            }
+        },
+        "cookies": {
+            "title": "Informasjonskapsler og lokal lagring",
+            "local": {
+                "title": "1. Obligatorisk lokal lagring",
+                "desc": "Vi bruker nettleserens lokale lagringsfunksjoner utelukkende for å huske grensesnittpreferansene dine (f.eks. valg av mørk/lys modus)."
+            },
+            "analytics": {
+                "title": "2. Tredjepartsanalyse",
+                "desc": "Vi bruker for tiden ikke tredjeparts sporingskoder som Google Analytics. Vi forbeholder oss imidlertid retten til å legge til anonyme analyseverktøy i fremtiden for å forbedre ytelsen til nettstedet vårt."
+            }
+        },
+        "thirdParty": {
+            "title": "Tredjepartstjenester",
+            "desc": "Tjenesten vår fungerer ved å få tilgang til offentlige data på <strong>X (Twitter)</strong>. Når du laster ned en video, får du tilgang til innhold som er vert på tredjepartsservere. Vi oppfordrer deg til å gjennomgå personvernreglene for plattformene du samhandler med."
+        },
+        "gdpr": {
+            "title": "GDPR-samsvar",
+            "desc": "Siden vi ikke samler inn personlige data og ikke sporer individuelle brukere, overholder vi fullt ut prinsippene om \"dataminimering\" under General Data Protection Regulation (GDPR)."
+        },
+        "contact": {
+            "title": "Kontakt",
+            "desc": "Hvis du har spørsmål om denne personvernerklæringen, vennligst kontakt oss via nettstedet vårt eller vår",
+            "link": "kontaktside",
+            "suffix": "."
+        }
+    },
+    "terms": {
+        "title": "Vilkår for bruk",
+        "lastUpdated": "Sist oppdatert: 01.12.2025",
+        "sections": [
+            {
+                "title": "1. Aksept av vilkår",
+                "content": "Ved å få tilgang til og bruke XDownloaderz-nettstedet godtar du vilkårene og betingelsene i denne avtalen. Hvis du ikke godtar disse vilkårene, vennligst ikke bruk tjenesten."
+            },
+            {
+                "title": "2. Ansvarsfraskrivelse",
+                "content": "XDownloaderz er <strong>IKKE</strong> tilknyttet, assosiert, autorisert, godkjent av eller på noen måte offisielt knyttet til X Corp. (tidligere Twitter), eller noen av dets datterselskaper eller tilknyttede selskaper. Det offisielle X-nettstedet finner du på twitter.com eller x.com. Navnene \"X\", \"Twitter\" samt relaterte navn, merker, emblemer og bilder er registrerte varemerker for sine respektive eiere."
+            },
+            {
+                "title": "4. Forbudte aktiviteter",
+                "subcontent": "Du godtar å ikke bruke tjenesten til:",
+                "list": [
+                    "Distribuere opphavsrettsbeskyttet materiale uten tillatelse eller for kommersiell gevinst.",
+                    "Laste opp eller overføre virus eller ondsinnet kode.",
+                    "Forsøke å overbelaste, spamme eller krasje serverne våre."
+                ]
+            },
+            {
+                "title": "5. \"Som den er\" og ansvarsbegrensning",
+                "content": "Tjenesten leveres \"SOM DEN ER\" og \"SOM TILGJENGELIG\". Vi garanterer ikke at tjenesten vil være uavbrutt, feilfri eller helt sikker. <br/><br/> XDownloaderz skal ikke holdes ansvarlig for noen direkte eller indirekte skader, inkludert men ikke begrenset til tap av data eller tvister om opphavsrett, som oppstår ved bruk eller manglende evne til å bruke tjenesten."
+            },
+            {
+                "title": "6. Endringer i vilkår",
+                "content": "Vi forbeholder oss retten til å endre disse vilkårene når som helst. Din fortsatte bruk av nettstedet etter at endringer er gjort betyr at du godtar de nye vilkårene for bruk."
+            }
+        ],
+        "ip": {
+            "title": "3. Immaterielle rettigheter og opphavsrett",
+            "items": [
+                {
+                    "title": "Brukeransvar",
+                    "desc": "Du erkjenner at XDownloaderz er et teknisk verktøy som kun tillater nedlasting av offentlig tilgjengelige medier. Vi krever ikke eierskap til noe innhold som lastes ned via tjenesten vår."
+                },
+                {
+                    "title": "Overholdelse av opphavsrett",
+                    "desc": "Du godtar å bruke denne tjenesten kun for innhold du har rett til å laste ned eller for personlig bruk (Fair Use). Du kan ikke bruke dette verktøyet til å krenke andres opphavsrett."
+                },
+                {
+                    "title": "Innholdsrettigheter",
+                    "desc": "Alle immaterielle rettigheter knyttet til videoer, bilder og lyd tilhører deres respektive innholdsskapere og vertsplattformen."
+                }
+            ]
+        }
+    },
+    "staticPosts": [
+        {
+            "id": "welcome-1",
+            "authorName": "XDownloaderz",
+            "content": "🎉 Velkommen til XDownloaderz!\n\nLast ned X (Twitter)-videoer og GIF-er med ett klikk, helt gratis og i høyeste kvalitet. Lagre som MP4 eller MP3, bruk direkte fra nettleseren din uten å installere noen app.\n\n✨ Raskt, sikkert og ubegrenset!"
+        },
+        {
+            "id": "legal-warning",
+            "authorName": "XDownloaderz",
+            "content": "⚖️ Juridisk ansvarsfraskrivelse og bruksvilkår\n\nXDownloaderz.com er ikke vert for opphavsrettsbeskyttet innhold på serverne sine. Alle videoer lastes ned umiddelbart og direkte fra X (Twitter) CDN. Bruk av nedlastet innhold er helt og holdent brukerens ansvar.\n\n⚠️ Vennligst bruk innhold kun til tillatte formål."
+        },
+        {
+            "id": "seo-info-2",
+            "authorName": "XDownloaderz",
+            "content": "🚀 Den mest avanserte X (Twitter) Video Downloader\n\n✅ 1080p Full HD-kvalitetsstøtte\n✅ MP3-utvinning (Musikknedlasting)\n✅ Rask og sikker nedlasting\n✅ Ubegrenset bruk\n✅ Annonsefri opplevelse\n✅ Ingen registrering eller innlogging kreves\n\nLagre X (Twitter)-videoer på enheten din på sekunder med XDownloaderz.com!"
+        },
+        {
+            "id": "platform-compatibility",
+            "authorName": "XDownloaderz",
+            "content": "📱 Fullt kompatibel med alle enheter\n\nXDownloaderz fungerer jevnt på alle plattformer:\n\n🤖 Android (Chrome, Samsung Internet)\n🍎 iPhone & iPad (Safari)\n💻 Windows PC (Chrome, Edge, Firefox)\n🖥️ Mac (Safari, Chrome)\n🐧 Linux (Firefox, Chromium)\n\nBesøk xdownloaderz.com med din moderne nettleser, lim inn X (Twitter)-videolenken og last ned!"
+        },
+        {
+            "id": "guide-step1-4",
+            "authorName": "XDownloaderz Guide",
+            "content": "📖 Brukerhåndbok: Trinn 1\n\n1️⃣ Kopier videolenke\n\nÅpne videoen du vil laste ned på X (Twitter)-appen eller nettstedet. Trykk på 'Del'-ikonet på innlegget og velg 'Kopier lenke'.\n\n💡 Tips: URL-en til videotweeten skal se slik ut:\nx.com/bruker/status/1234567890"
+        },
+        {
+            "id": "guide-step2",
+            "authorName": "XDownloaderz Guide",
+            "content": "📖 Brukerhåndbok: Trinn 2\n\n2️⃣ Lim inn lenke i XDownloaderz\n\nÅpne xdownloaderz.com. Lim inn den kopierte X (Twitter)-videolenken i tekstboksen øverst på siden.\n\nSystemet vårt vil automatisk oppdage lenken og laste inn videoinformasjonen umiddelbart."
+        },
+        {
+            "id": "guide-step3",
+            "authorName": "XDownloaderz Guide",
+            "content": "📖 Brukerhåndbok: Trinn 3\n\n3️⃣ Velg kvalitet og format\n\nEtter at videoen er analysert, velg ønsket kvalitet fra innstillingsmenyen (⚙️ ikon):\n\n• 1080p / 720p / 480p (MP4 Video)\n• MP3 (Kun lyd)\n\nHøyere oppløsning = Bedre bildekvalitet, men større filstørrelse."
+        },
+        {
+            "id": "guide-step4",
+            "authorName": "XDownloaderz Guide",
+            "content": "📖 Brukerhåndbok: Trinn 4\n\n4️⃣ Start nedlasting\n\nEtter å ha valgt format og kvalitet, klikk på den blå 'Last ned'-knappen. Video- eller lydfilen din vil automatisk lastes ned til enheten din.\n\n⚡ Nedlastingshastighet avhenger av internettforbindelsen din og videostørrelsen."
+        },
+        {
+            "id": "faq-private-7",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Ofte stilte spørsmål\n\n🔒 Kan jeg laste ned videoer fra private/låste kontoer?\n\nNei. XDownloaderz kan kun laste ned videoer fra offentlige X (Twitter)-innlegg. Innhold i private kontoer er beskyttet av X (Twitter) API og kan ikke nås.\n\n💡 Løsning: Du kan be om tillatelse fra innholdseieren."
+        },
+        {
+            "id": "faq-quality",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Ofte stilte spørsmål\n\n📹 Hvorfor er 1080p-alternativet ikke alltid synlig?\n\nNoen X (Twitter)-videoer kan ha blitt lastet opp bare i 720p eller lavere kvalitet. XDownloaderz kan ikke produsere en høyere oppløsning enn den originale videokvaliteten.\n\nDu vil bli presentert for det høyeste tilgjengelige kvalitetsalternativet."
+        },
+        {
+            "id": "faq-mp3-conversion",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Ofte stilte spørsmål\n\n🎵 Hvordan fungerer MP3-konvertering?\n\nNår du laster ned en X (Twitter)-video, trekker XDownloaderz automatisk ut lydsporet og konverterer det til MP3-format. Denne prosessen skjer i nettleseren din og er helt sikker.\n\n⏱️ Konverteringstid kan ta 5-30 sekunder avhengig av videolengde."
+        },
+        {
+            "id": "faq-security",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Ofte stilte spørsmål\n\n🛡️ Er XDownloaderz trygt? Får jeg virus?\n\nJa, det er 100% trygt. XDownloaderz er ikke vert for noen filer og inneholder ingen adware eller virus. Videoer lastes ned direkte fra X (Twitter) CDN-servere.\n\n✅ Fungerer med SSL (HTTPS)-kryptering i nettleseren din.\n✅ Din personlige informasjon samles aldri inn."
+        },
+        {
+            "id": "faq-pricing",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Ofte stilte spørsmål\n\n💰 Er XDownloaderz gratis? Kreves et abonnement?\n\nNei! XDownloaderz er helt gratis og vil forbli det for alltid. Det er ingen gebyrer, skjulte kostnader eller abonnementssystemer.\n\n🎁 Du kan laste ned ubegrenset med videoer og bruke det så mye du vil."
+        },
+        {
+            "id": "faq-legal-use",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Ofte stilte spørsmål\n\n⚖️ Er det lovlig å bruke nedlastede videoer?\n\nDu kan bruke nedlastet innhold til personlige, pedagogiske formål eller rimelig bruk (Fair Use). Men:\n\n❌ Republisering for kommersielle formål\n❌ Begå brudd på opphavsretten\n❌ Deling uten innholdseierens tillatelse\n\nÅ handle i samsvar med loven er brukerens ansvar."
+        },
+        {
+            "id": "seo-info-benefits",
+            "authorName": "XDownloaderz",
+            "content": "🌟 Hvorfor XDownloaderz?\n\n🚀 Raskeste nedlasting: Lagre X (Twitter)-videoer på sekunder\n🎯 Enkel å bruke: Last ned videoer i bare 3 trinn\n💎 Høy kvalitet: 1080p Full HD-støtte\n🔄 MP3-konverter: Trekk ut kun lyd fra video\n🌍 Universell tilgang: Fungerer på alle enheter\n\nxdownloaderz.com - Den beste måten å laste ned X (Twitter)-videoer på!"
+        },
+        {
+            "id": "seo-keywords",
+            "authorName": "XDownloaderz",
+            "content": "🔍 Hva du kan gjøre med XDownloaderz:\n\n• Last ned X (Twitter) video MP4\n• Last ned X (Twitter) GIF\n• X (Twitter) video nedlaster online\n• X (Twitter) MP3-konverter\n• 1080p X (Twitter) video nedlasting\n• Mobil X (Twitter) video lagre\n• Gratis X (Twitter) nedlaster\n\nFor den beste X (Twitter) videonedlastingsopplevelsen: xdownloaderz.com"
+        }
+    ]
+}

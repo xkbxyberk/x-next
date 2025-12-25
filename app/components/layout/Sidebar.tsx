@@ -66,7 +66,7 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
             <item.icon size={24} strokeWidth={2} />
           </a>
         ))}
-        <div className="p-2">
+        <div className="p-2 flex items-center gap-3">
           <div className="w-8 h-8 rounded-full overflow-hidden relative">
             <Image
               src={logoSrc}
@@ -76,6 +76,7 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
               sizes="32px"
             />
           </div>
+          <h1 className="text-sm font-bold text-(--text-primary) hidden sm:block">{dict.common.title}</h1>
         </div>
       </div>
     );
@@ -84,21 +85,25 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
   return (
     <div className="flex flex-col h-full px-2 pt-0 pb-4">
 
-      <div className="mb-0 px-2">
+      <div className="mb-2 px-2">
         <Link
           href={`/${lang}`}
-          className="flex items-center justify-center p-2 w-fit rounded-full hover:bg-(--background-secondary) transition-colors relative"
+          className="flex items-center gap-3 p-2 w-fit xl:w-full rounded-full hover:bg-(--background-secondary) transition-colors relative group"
           aria-label="X Downloader Ana Sayfa"
         >
-          <Image
-            src={logoSrc}
-            alt="X Downloader Logo"
-            width={52}
-            height={52}
-            className="object-contain"
-            priority={true}
-            fetchPriority="high"
-          />
+          <div className="relative shrink-0 w-[52px] h-[52px]">
+            <Image
+              src={logoSrc}
+              alt="X Downloader Logo"
+              fill
+              className="object-contain"
+              priority={true}
+              fetchPriority="high"
+            />
+          </div>
+          <h1 className="hidden xl:block text-sm font-bold text-(--text-primary) leading-tight">
+            {dict.common.title}
+          </h1>
         </Link>
       </div>
 

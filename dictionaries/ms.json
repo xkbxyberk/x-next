@@ -1,0 +1,296 @@
+{
+    "common": {
+        "title": "XDownloaderz | Pemuat Turun Video X (twitter)",
+        "description": "Muat turun video X (Twitter) secara percuma, pantas dan selamat. Menyokong kualiti 1080p Full HD dan penukaran MP3. Berfungsi pada semua peranti.",
+        "footerText": "© 2025 XDownloaderz",
+        "privacyPolicy": "Dasar Privasi",
+        "termsOfService": "Syarat Perkhidmatan",
+        "contact": "Hubungi",
+        "about": "Tentang"
+    },
+    "sidebar": {
+        "download": "Muat Turun",
+        "howToUse": "Cara Menggunakan?",
+        "howItWorks": "Bagaimana Ia Berfungsi?",
+        "faq": "Soalan Lazim",
+        "adLabel": "IKLAN",
+        "verticalAd": "RUANG IKLAN MENEGAK"
+    },
+    "rightSection": {
+        "searchPlaceholder": "Cari",
+        "adLabel1": "RUANG IKLAN 1",
+        "adLabel2": "RUANG IKLAN 2",
+        "adLabel3": "RUANG IKLAN 3"
+    },
+    "feed": {
+        "tabs": {
+            "download": "Pemuat Turun",
+            "history": "Sejarah"
+        },
+        "inputPlaceholder": "Tampal pautan video X (Twitter) di sini...",
+        "pasteButton": "Tampal pautan dan muat turun",
+        "clearButton": "Kosongkan",
+        "analyzing": "Menganalisis video...",
+        "downloadButton": "Muat Turun",
+        "downloading": "Sedang memuat turun...",
+        "settings": {
+            "title": "Pilih Format",
+            "audio": "Audio Sahaja",
+            "autoConvert": "Penukaran Auto",
+            "highQuality": "Kualiti Tertinggi",
+            "dataSaver": "Penjimat Data",
+            "standard": "Standard"
+        },
+        "theme": {
+            "default": "Lalai",
+            "dim": "Malap",
+            "lightsOut": "Gelap"
+        },
+        "ad": {
+            "sponsored": "DITAJA",
+            "label": "RUANG IKLAN",
+            "provider": "(Google Adsense / Iklan Tersuai)"
+        }
+    },
+    "about": {
+        "title": "Tentang Kami",
+        "handle": "@xdownloaderz",
+        "logoTitle": "XDownloaderz",
+        "whatWeDo": {
+            "title": "Apa Yang Kami Lakukan?",
+            "p1": "XDownloaderz ialah alat web berkuasa dan percuma yang direka untuk merapatkan jurang antara suapan media sosial dan peranti peribadi anda. Kami menawarkan cara yang lancar untuk memuat turun video dan media daripada X (dahulunya Twitter) terus ke komputer, tablet atau telefon pintar anda.",
+            "p2": "Tidak seperti perkhidmatan lain yang memerlukan pemasangan perisian atau keahlian, alat kami berjalan sepenuhnya dalam penyemak imbas anda menggunakan teknologi web termaju. Ia mencari resolusi tertinggi yang tersedia sehingga <strong>1080p Full HD</strong> dan menawarkan pilihan untuk penukaran format media segera."
+        },
+        "howItWorks": {
+            "title": "Bagaimana Ia Berfungsi?",
+            "step1": {
+                "title": "1. Tampal",
+                "desc": "Salin pautan siaran X (Twitter) yang mengandungi video yang ingin anda muat turun dan tampalkannya ke dalam kotak carian kami."
+            },
+            "step2": {
+                "title": "2. Analisis",
+                "desc": "Enjin pintar kami berkomunikasi dengan infrastruktur awam platform untuk mencari fail video dan pilihan kualiti yang tersedia (cth. 720p, 1080p)."
+            },
+            "step3": {
+                "title": "3. Muat Turun",
+                "desc": "Anda memilih kualiti pilihan anda, dan fail disimpan terus ke peranti anda tanpa disimpan pada pelayan kami."
+            }
+        },
+        "whyUs": {
+            "title": "Kenapa Kami?",
+            "items": [
+                {
+                    "title": "Tiada Pendaftaran:",
+                    "desc": "Kami menghormati masa dan privasi anda. Anda tidak perlu membuat akaun atau memberikan alamat e-mel untuk menggunakan ciri kami."
+                },
+                {
+                    "title": "Kualiti Tinggi:",
+                    "desc": "Kami mengutamakan mencari kadar bit (kualiti) tertinggi yang tersedia untuk setiap video."
+                },
+                {
+                    "title": "Pemprosesan Bahagian Pelanggan:",
+                    "desc": "Kami menggunakan keupayaan penyemak imbas moden (termasuk teknologi FFmpeg) untuk memproses video dengan cekap, memastikan muat turun pantas tanpa menjejaskan keselamatan."
+                },
+                {
+                    "title": "100% Percuma:",
+                    "desc": "Alat kami adalah percuma sepenuhnya untuk semua orang."
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "Hubungi",
+        "subtitle": "Hubungi Kami",
+        "heading": "Kami Menghargai Maklum Balas Anda",
+        "description": "Anda boleh menghantar e-mel kepada kami untuk melaporkan muat turun yang rosak, menyerahkan notis hak cipta atau hanya bertanya khabar.",
+        "button": "Hantar E-mel",
+        "footerText": "Atau lawati halaman",
+        "aboutLink": "Tentang Kami",
+        "footerSuffix": "kami untuk mengetahui lebih lanjut tentang projek kami."
+    },
+    "privacy": {
+        "title": "Dasar Privasi",
+        "lastUpdated": "Kemas Kini Terakhir: 01/12/2025",
+        "intro": {
+            "title": "Pengenalan",
+            "p1": "Di XDownloaderz (\"kami\"), kami menghargai privasi anda. Dasar Privasi ini menerangkan cara maklumat anda dikendalikan apabila anda menggunakan alat berasaskan web kami untuk memuat turun media daripada X (dahulunya Twitter).",
+            "p2": "Dengan menggunakan perkhidmatan kami, anda bersetuju bahawa anda telah membaca dan memahami dasar ini."
+        },
+        "collection": {
+            "title": "Maklumat yang Kami Kumpul",
+            "personal": {
+                "title": "1. Maklumat Peribadi",
+                "desc": "Perkhidmatan kami beroperasi berdasarkan <strong>bukan pengekalan</strong>. Kami TIDAK mengumpul, menyimpan atau berkongsi sebarang \"Maklumat Pengenalan Peribadi\" (PII) seperti:",
+                "list": [
+                    "Nama atau alamat e-mel.",
+                    "Nombor telefon.",
+                    "Kata laluan log masuk media sosial."
+                ],
+                "note": "Anda tidak perlu mendaftar atau log masuk untuk menggunakan perkhidmatan kami."
+            },
+            "usage": {
+                "title": "2. Data Penggunaan dan Fail Log",
+                "desc": "Seperti kebanyakan pelayan web standard, kami menggunakan fail log. Fail ini mungkin mengandungi data seperti alamat protokol internet (IP), jenis penyemak imbas, penyedia perkhidmatan internet (ISP), halaman merujuk/keluar, jenis platform, cap tarikh/masa dan bilangan klik. Maklumat ini digunakan untuk menganalisis aliran, mentadbir tapak dan menjejak pergerakan pengguna secara agregat. Data ini tidak dipautkan kepada sebarang maklumat yang boleh dikenal pasti secara peribadi."
+            },
+            "urls": {
+                "title": "3. URL dan Kandungan Media",
+                "desc": "Apabila anda menampal pautan (URL) dalam bar carian kami, pautan itu diproses buat sementara waktu oleh pelayan kami semata-mata untuk tujuan mencari fail media yang berkaitan. Kami tidak menyimpan sejarah kekal pautan yang anda serahkan."
+            }
+        },
+        "cookies": {
+            "title": "Kuki dan Storan Tempatan",
+            "local": {
+                "title": "1. Storan Tempatan Wajib",
+                "desc": "Kami menggunakan ciri Storan Tempatan penyemak imbas anda semata-mata untuk mengingati keutamaan antara muka anda (cth. pemilihan mod Gelap/Terang)."
+            },
+            "analytics": {
+                "title": "2. Analitis Pihak Ketiga",
+                "desc": "Kami kini tidak menggunakan kod penjejakan pihak ketiga seperti Google Analytics. Walau bagaimanapun, kami berhak untuk menambah alat analitik tanpa nama pada masa hadapan untuk meningkatkan prestasi tapak web kami."
+            }
+        },
+        "thirdParty": {
+            "title": "Perkhidmatan Pihak Ketiga",
+            "desc": "Perkhidmatan kami berfungsi dengan mengakses data awam di <strong>X (Twitter)</strong>. Apabila anda memuat turun video, anda sedang mengakses kandungan yang dihoskan pada pelayan pihak ketiga. Kami menggalakkan anda menyemak dasar privasi platform yang anda berinteraksi."
+        },
+        "gdpr": {
+            "title": "Pematuhan GDPR",
+            "desc": "Oleh kerana kami tidak mengumpul data peribadi dan tidak menjejaki pengguna individu, kami mematuhi sepenuhnya prinsip \"pengurangan data\" di bawah Peraturan Perlindungan Data Umum (GDPR)."
+        },
+        "contact": {
+            "title": "Hubungi",
+            "desc": "Jika anda mempunyai soalan tentang Dasar Privasi ini, sila hubungi kami melalui laman web kami atau",
+            "link": "halaman kenalan",
+            "suffix": "kami."
+        }
+    },
+    "terms": {
+        "title": "Syarat Perkhidmatan",
+        "lastUpdated": "Kemas Kini Terakhir: 01/12/2025",
+        "sections": [
+            {
+                "title": "1. Penerimaan Syarat",
+                "content": "Dengan mengakses dan menggunakan laman web XDownloaderz, anda bersetuju dengan terma dan syarat perjanjian ini. Jika anda tidak bersetuju dengan syarat ini, sila jangan gunakan perkhidmatan ini."
+            },
+            {
+                "title": "2. Penafian",
+                "content": "XDownloaderz <strong>TIDAK</strong> bergabung, dikaitkan, dibenarkan, disokong oleh, atau dalam apa jua cara disambungkan secara rasmi dengan X Corp. (dahulunya Twitter), atau mana-mana anak syarikat atau gabungannya. Laman web rasmi X boleh didapati di twitter.com atau x.com. Nama \"X\", \"Twitter\" serta nama, tanda, lambang dan imej yang berkaitan adalah tanda dagangan berdaftar pemilik masing-masing."
+            },
+            {
+                "title": "4. Aktiviti Larangan",
+                "subcontent": "Anda bersetuju untuk tidak menggunakan Perkhidmatan untuk:",
+                "list": [
+                    "Mengedarkan bahan berhak cipta tanpa kebenaran atau untuk keuntungan komersial.",
+                    "Memuat naik atau menghantar virus atau kod berniat jahat.",
+                    "Cuba membebankan, melakukan spam atau merosakkan pelayan kami."
+                ]
+            },
+            {
+                "title": "5. \"Sebagaimana Adanya\" dan Had Liabiliti",
+                "content": "Perkhidmatan disediakan \"SEBAGAIMANA ADANYA\" dan \"SEBAGAIMANA TERSEDIA\". Kami tidak menjamin bahawa Perkhidmatan tidak akan terganggu, bebas ralat atau selamat sepenuhnya. <br/><br/> XDownloaderz tidak akan bertanggungjawab ke atas sebarang kerosakan langsung atau tidak langsung, termasuk tetapi tidak terhad kepada kehilangan data atau pertikaian hak cipta, yang timbul daripada penggunaan atau ketidakupayaan untuk menggunakan Perkhidmatan."
+            },
+            {
+                "title": "6. Perubahan Syarat",
+                "content": "Kami berhak untuk menukar syarat ini pada bila-bila masa. Penggunaan berterusan laman web anda selepas perubahan dibuat bermakna anda menerima Syarat Perkhidmatan baharu."
+            }
+        ],
+        "ip": {
+            "title": "3. Harta Intelek dan Hak Cipta",
+            "items": [
+                {
+                    "title": "Tanggungjawab Pengguna",
+                    "desc": "Anda mengakui bahawa XDownloaderz ialah alat teknikal yang membenarkan memuat turun media yang tersedia secara terbuka sahaja. Kami tidak menuntut pemilikan mana-mana kandungan yang dimuat turun melalui perkhidmatan kami."
+                },
+                {
+                    "title": "Pematuhan Hak Cipta",
+                    "desc": "Anda bersetuju untuk menggunakan perkhidmatan ini hanya untuk kandungan yang anda berhak memuat turun atau untuk kegunaan peribadi (Penggunaan Adil). Anda tidak boleh menggunakan alat ini untuk melanggar hak cipta orang lain."
+                },
+                {
+                    "title": "Hak Kandungan",
+                    "desc": "Semua hak harta intelek yang berkaitan dengan video, imej dan audio adalah milik pencipta kandungan masing-masing dan platform pengehosan."
+                }
+            ]
+        }
+    },
+    "staticPosts": [
+        {
+            "id": "welcome-1",
+            "authorName": "XDownloaderz",
+            "content": "🎉 Selamat Datang ke XDownloaderz!\n\nMuat turun video dan GIF X (Twitter) dengan satu klik, percuma sepenuhnya dan dalam kualiti tertinggi. Simpan sebagai MP4 atau MP3, gunakan terus dari penyemak imbas anda tanpa memasang sebarang aplikasi.\n\n✨ Pantas, selamat dan tanpa had!"
+        },
+        {
+            "id": "legal-warning",
+            "authorName": "XDownloaderz",
+            "content": "⚖️ Penafian Undang-undang & Syarat Penggunaan\n\nXDownloaderz.com tidak mengehos kandungan berhak cipta pada pelayannya. Semua video dimuat turun serta-merta dan terus daripada CDN X (Twitter). Penggunaan kandungan yang dimuat turun adalah tanggungjawab pengguna sepenuhnya.\n\n⚠️ Sila gunakan kandungan untuk tujuan yang dibenarkan sahaja."
+        },
+        {
+            "id": "seo-info-2",
+            "authorName": "XDownloaderz",
+            "content": "🚀 Pemuat Turun Video X (Twitter) Paling Canggih\n\n✅ Sokongan kualiti 1080p Full HD\n✅ Pengekstrakan MP3 (Muat turun muzik)\n✅ Muat turun pantas dan selamat\n✅ Penggunaan tanpa had\n✅ Pengalaman bebas iklan\n✅ Tiada pendaftaran atau log masuk diperlukan\n\nSimpan video X (Twitter) ke peranti anda dalam beberapa saat dengan XDownloaderz.com!"
+        },
+        {
+            "id": "platform-compatibility",
+            "authorName": "XDownloaderz",
+            "content": "📱 Serasi Sepenuhnya dengan Semua Peranti\n\nXDownloaderz berfungsi dengan lancar pada setiap platform:\n\n🤖 Android (Chrome, Samsung Internet)\n🍎 iPhone & iPad (Safari)\n💻 PC Windows (Chrome, Edge, Firefox)\n🖥️ Mac (Safari, Chrome)\n🐧 Linux (Firefox, Chromium)\n\nLawati xdownloaderz.com dengan penyemak imbas moden anda, tampal pautan video X (Twitter), dan muat turun!"
+        },
+        {
+            "id": "guide-step1-4",
+            "authorName": "Panduan XDownloaderz",
+            "content": "📖 Panduan Pengguna: Langkah 1\n\n1️⃣ Salin Pautan Video\n\nBuka video yang anda ingin muat turun pada apl atau tapak web X (Twitter). Ketik pada ikon 'Kongsi' pada siaran dan pilih 'Salin pautan'.\n\n💡 Petua: URL tweet video sepatutnya kelihatan seperti ini:\nx.com/pengguna/status/1234567890"
+        },
+        {
+            "id": "guide-step2",
+            "authorName": "Panduan XDownloaderz",
+            "content": "📖 Panduan Pengguna: Langkah 2\n\n2️⃣ Tampal Pautan dalam XDownloaderz\n\nBuka xdownloaderz.com. Tampal pautan video X (Twitter) yang disalin ke dalam kotak teks di bahagian atas halaman.\n\nSistem kami akan mengesan pautan secara automatik dan memuatkan maklumat video serta-merta."
+        },
+        {
+            "id": "guide-step3",
+            "authorName": "Panduan XDownloaderz",
+            "content": "📖 Panduan Pengguna: Langkah 3\n\n3️⃣ Pilih Kualiti dan Format\n\nSelepas video dianalisis, pilih kualiti yang anda inginkan daripada menu tetapan (ikon ⚙️):\n\n• 1080p / 720p / 480p (Video MP4)\n• MP3 (Audio Sahaja)\n\nResolusi lebih tinggi = Kualiti imej yang lebih baik tetapi saiz fail yang lebih besar."
+        },
+        {
+            "id": "guide-step4",
+            "authorName": "Panduan XDownloaderz",
+            "content": "📖 Panduan Pengguna: Langkah 4\n\n4️⃣ Mulakan Muat Turun\n\nSelepas memilih format dan kualiti, klik butang biru 'Muat Turun'. Fail video atau audio anda akan dimuat turun secara automatik ke peranti anda.\n\n⚡ Kelajuan muat turun bergantung pada sambungan internet anda dan saiz video."
+        },
+        {
+            "id": "faq-private-7",
+            "authorName": "Soalan Lazim XDownloaderz",
+            "content": "❓ Soalan Lazim\n\n🔒 Bolehkah saya memuat turun video daripada akaun peribadi/terkunci?\n\nTidak. XDownloaderz hanya boleh memuat turun video daripada siaran X (Twitter) awam. Kandungan dalam akaun peribadi dilindungi oleh API X (Twitter) dan tidak boleh diakses.\n\n💡 Penyelesaian: Anda boleh meminta kebenaran daripada pemilik kandungan."
+        },
+        {
+            "id": "faq-quality",
+            "authorName": "Soalan Lazim XDownloaderz",
+            "content": "❓ Soalan Lazim\n\n📹 Mengapa pilihan 1080p tidak sentiasa kelihatan?\n\nSesetengah video X (Twitter) mungkin telah dimuat naik dalam kualiti 720p atau lebih rendah sahaja. XDownloaderz tidak boleh menghasilkan resolusi yang lebih tinggi daripada kualiti video asal.\n\nPilihan kualiti tertinggi yang tersedia akan dibentangkan kepada anda."
+        },
+        {
+            "id": "faq-mp3-conversion",
+            "authorName": "Soalan Lazim XDownloaderz",
+            "content": "❓ Soalan Lazim\n\n🎵 Bagaimanakah penukaran MP3 berfungsi?\n\nApabila memuat turun video X (Twitter), XDownloaderz mengekstrak trek audio secara automatik dan menukarnya kepada format MP3. Proses ini berlaku dalam penyemak imbas anda dan benar-benar selamat.\n\n⏱️ Masa penukaran boleh mengambil masa 5-30 saat bergantung pada panjang video."
+        },
+        {
+            "id": "faq-security",
+            "authorName": "Soalan Lazim XDownloaderz",
+            "content": "❓ Soalan Lazim\n\n🛡️ Adakah XDownloaderz selamat? Adakah saya akan mendapat virus?\n\nYa, ia 100% selamat. XDownloaderz tidak mengehos sebarang fail dan tidak mengandungi perisian iklan atau virus. Video dimuat turun terus daripada pelayan CDN X (Twitter).\n\n✅ Berfungsi dengan penyulitan SSL (HTTPS) dalam penyemak imbas anda.\n✅ Maklumat peribadi anda tidak pernah dikumpul."
+        },
+        {
+            "id": "faq-pricing",
+            "authorName": "Soalan Lazim XDownloaderz",
+            "content": "❓ Soalan Lazim\n\n💰 Adakah XDownloaderz percuma? Adakah langganan diperlukan?\n\nTidak! XDownloaderz adalah percuma sepenuhnya dan akan kekal begitu selama-lamanya. Tiada yuran, kos tersembunyi atau sistem langganan.\n\n🎁 Anda boleh memuat turun video tanpa had dan menggunakannya seberapa banyak yang anda mahu."
+        },
+        {
+            "id": "faq-legal-use",
+            "authorName": "Soalan Lazim XDownloaderz",
+            "content": "❓ Soalan Lazim\n\n⚖️ Adakah sah menggunakan video yang dimuat turun?\n\nAnda boleh menggunakan kandungan yang dimuat turun untuk tujuan peribadi, pendidikan atau penggunaan adil (Fair Use). Walau bagaimanapun:\n\n❌ Menerbitkan semula untuk tujuan komersial\n❌ Melakukan pelanggaran hak cipta\n❌ Berkongsi tanpa kebenaran pemilik kandungan\n\nBertindak mengikut undang-undang adalah tanggungjawab pengguna."
+        },
+        {
+            "id": "seo-info-benefits",
+            "authorName": "XDownloaderz",
+            "content": "🌟 Mengapa XDownloaderz?\n\n🚀 Muat Turun Terpantas: Simpan video X (Twitter) dalam beberapa saat\n🎯 Mudah Digunakan: Muat turun video dalam hanya 3 langkah\n💎 Kualiti Tinggi: Sokongan 1080p Full HD\n🔄 Penukar MP3: Ekstrak audio sahaja daripada video\n🌍 Akses Sejagat: Berfungsi pada semua peranti\n\nxdownloaderz.com - Cara Terbaik untuk Memuat Turun Video X (Twitter)!"
+        },
+        {
+            "id": "seo-keywords",
+            "authorName": "XDownloaderz",
+            "content": "🔍 Perkara Yang Anda Boleh Lakukan Dengan XDownloaderz:\n\n• Muat turun video X (Twitter) MP4\n• Muat turun GIF X (Twitter)\n• Pemuat turun video X (Twitter) dalam talian\n• Penukar MP3 X (Twitter)\n• Muat turun video 1080p X (Twitter)\n• Simpan video X (Twitter) mudah alih\n• Pemuat turun X (Twitter) percuma\n\nUntuk pengalaman muat turun video X (Twitter) terbaik: xdownloaderz.com"
+        }
+    ]
+}

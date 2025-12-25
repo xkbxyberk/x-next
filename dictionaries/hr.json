@@ -1,0 +1,296 @@
+{
+    "common": {
+        "title": "XDownloaderz | X (twitter) Video Downloader",
+        "description": "Preuzmite X (Twitter) videozapise besplatno, brzo i sigurno. Podrška za kvalitetu 1080p Full HD i MP3 konverziju. Radi na svim uređajima.",
+        "footerText": "© 2025 XDownloaderz",
+        "privacyPolicy": "Politika privatnosti",
+        "termsOfService": "Uvjeti pružanja usluge",
+        "contact": "Kontakt",
+        "about": "O nama"
+    },
+    "sidebar": {
+        "download": "Preuzimanje",
+        "howToUse": "Kako koristiti?",
+        "howItWorks": "Kako radi?",
+        "faq": "ČPP",
+        "adLabel": "OGLAS",
+        "verticalAd": "OKOMITI OGLASNI PROSTOR"
+    },
+    "rightSection": {
+        "searchPlaceholder": "Pretraži",
+        "adLabel1": "OGLASNI PROSTOR 1",
+        "adLabel2": "OGLASNI PROSTOR 2",
+        "adLabel3": "OGLASNI PROSTOR 3"
+    },
+    "feed": {
+        "tabs": {
+            "download": "Downloader",
+            "history": "Povijest"
+        },
+        "inputPlaceholder": "Zalijepite poveznicu na X (Twitter) video ovdje...",
+        "pasteButton": "Zalijepi poveznicu i preuzmi",
+        "clearButton": "Očisti",
+        "analyzing": "Analiziranje videozapisa...",
+        "downloadButton": "Preuzmi",
+        "downloading": "Preuzimanje...",
+        "settings": {
+            "title": "Odaberite format",
+            "audio": "Samo zvuk",
+            "autoConvert": "Automatska konverzija",
+            "highQuality": "Najviša kvaliteta",
+            "dataSaver": "Ušteda podataka",
+            "standard": "Standardno"
+        },
+        "theme": {
+            "default": "Zadano",
+            "dim": "Prigušeno",
+            "lightsOut": "Tamno"
+        },
+        "ad": {
+            "sponsored": "SPONZORIRANO",
+            "label": "OGLASNI PROSTOR",
+            "provider": "(Google Adsense / Prilagođeni oglas)"
+        }
+    },
+    "about": {
+        "title": "O nama",
+        "handle": "@xdownloaderz",
+        "logoTitle": "XDownloaderz",
+        "whatWeDo": {
+            "title": "Što radimo?",
+            "p1": "XDownloaderz je moćan i besplatan web alat dizajniran za premošćivanje jaza između feedova društvenih medija i vaših osobnih uređaja. Nudimo besprijekoran način za preuzimanje videozapisa i medija s X-a (bivši Twitter) izravno na vaše računalo, tablet ili pametni telefon.",
+            "p2": "Za razliku od drugih usluga koje zahtijevaju instalaciju softvera ili članstvo, naš alat u potpunosti radi u vašem pregledniku koristeći napredne web tehnologije. Pronalazi najvišu dostupnu rezoluciju do <strong>1080p Full HD</strong> i nudi opcije za trenutnu konverziju medijskih formata."
+        },
+        "howItWorks": {
+            "title": "Kako radi?",
+            "step1": {
+                "title": "1. Zalijepi",
+                "desc": "Kopirajte poveznicu objave na X-u (Twitteru) koja sadrži videozapis koji želite preuzeti i zalijepite je u naš okvir za pretraživanje."
+            },
+            "step2": {
+                "title": "2. Analiziraj",
+                "desc": "Naš pametni motor komunicira s javnom infrastrukturom platforme kako bi pronašao video datoteku i dostupne opcije kvalitete (npr. 720p, 1080p)."
+            },
+            "step3": {
+                "title": "3. Preuzmi",
+                "desc": "Vi odabirete željenu kvalitetu, a datoteka se sprema izravno na vaš uređaj bez pohranjivanja na našim poslužiteljima."
+            }
+        },
+        "whyUs": {
+            "title": "Zašto mi?",
+            "items": [
+                {
+                    "title": "Nema registracije:",
+                    "desc": "Poštujemo vaše vrijeme i privatnost. Ne morate stvarati račun niti davati adresu e-pošte da biste koristili naše značajke."
+                },
+                {
+                    "title": "Visoka kvaliteta:",
+                    "desc": "Dajemo prioritet pronalaženju najveće dostupne brzine prijenosa (kvalitete) za svaki videozapis."
+                },
+                {
+                    "title": "Obrada na strani klijenta:",
+                    "desc": "Koristimo moderne mogućnosti preglednika (uključujući FFmpeg tehnologiju) za učinkovitu obradu videozapisa, osiguravajući brza preuzimanja bez ugrožavanja sigurnosti."
+                },
+                {
+                    "title": "100% Besplatno:",
+                    "desc": "Naš alat je potpuno besplatan za sve."
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "Kontakt",
+        "subtitle": "Javite nam se",
+        "heading": "Cijenimo vaše povratne informacije",
+        "description": "Možete nam poslati e-poruku kako biste prijavili neuspjelo preuzimanje, podnijeli obavijest o autorskim pravima ili samo pozdravili.",
+        "button": "Pošalji e-poštu",
+        "footerText": "Ili posjetite našu stranicu",
+        "aboutLink": "O nama",
+        "footerSuffix": "kako biste saznali više o našem projektu."
+    },
+    "privacy": {
+        "title": "Politika privatnosti",
+        "lastUpdated": "Zadnje ažuriranje: 01.12.2025.",
+        "intro": {
+            "title": "Uvod",
+            "p1": "U XDownloaderzu („mi”, „nas”), cijenimo vašu privatnost. Ova Politika privatnosti objašnjava kako se postupa s vašim podacima kada koristite naš web alat za preuzimanje medija s X-a (bivši Twitter).",
+            "p2": "Korištenjem naše usluge potvrđujete da ste pročitali i razumjeli ovu politiku."
+        },
+        "collection": {
+            "title": "Informacije koje prikupljamo",
+            "personal": {
+                "title": "1. Osobni podaci",
+                "desc": "Naša usluga radi na bazi <strong>nezadržavanja</strong>. NE prikupljamo, ne pohranjujemo niti dijelimo nikakve „osobne identifikacijske podatke” (PII) kao što su:",
+                "list": [
+                    "Imena ili adrese e-pošte.",
+                    "Telefonski brojevi.",
+                    "Lozinke za prijavu na društvene mreže."
+                ],
+                "note": "Ne morate se registrirati niti prijavljivati da biste koristili našu uslugu."
+            },
+            "usage": {
+                "title": "2. Podaci o korištenju i log datoteke",
+                "desc": "Kao i većina standardnih web poslužitelja, koristimo log datoteke. Ove datoteke mogu sadržavati podatke kao što su adrese internetskog protokola (IP), vrsta preglednika, pružatelj internetskih usluga (ISP), stranice preporuke/izlaza, vrsta platforme, datum/vrijeme i broj klikova. Ovi podaci koriste se za analizu trendova, administriranje web stranice i praćenje kretanja korisnika u cjelini. Ovi podaci nisu povezani ni s kakvim podacima koji vas mogu osobno identificirati."
+            },
+            "urls": {
+                "title": "3. URL-ovi i medijski sadržaj",
+                "desc": "Kada zalijepite poveznicu (URL) u našu traku za pretraživanje, tu poveznicu privremeno obrađuju naši poslužitelji isključivo u svrhu lociranja relevantne medijske datoteke. Ne čuvamo trajnu povijest poveznica koje šaljete."
+            }
+        },
+        "cookies": {
+            "title": "Kolačići i lokalna pohrana",
+            "local": {
+                "title": "1. Obavezna lokalna pohrana",
+                "desc": "Značajke lokalne pohrane vašeg preglednika koristimo isključivo za pamćenje vaših preferencija sučelja (npr. odabir tamnog/svijetlog načina rada)."
+            },
+            "analytics": {
+                "title": "2. Analitika treće strane",
+                "desc": "Trenutačno ne koristimo kodove za praćenje trećih strana kao što je Google Analytics. Međutim, zadržavamo pravo dodavanja anonimnih analitičkih alata u budućnosti kako bismo poboljšali izvedbu naše web stranice."
+            }
+        },
+        "thirdParty": {
+            "title": "Usluge trećih strana",
+            "desc": "Naša usluga funkcionira pristupom javnim podacima na <strong>X-u (Twitteru)</strong>. Kada preuzimate videozapis, pristupate sadržaju koji se nalazi na poslužiteljima trećih strana. Potičemo vas da pregledate pravila o privatnosti platformi s kojima komunicirate."
+        },
+        "gdpr": {
+            "title": "Usklađenost s GDPR-om",
+            "desc": "Budući da ne prikupljamo osobne podatke i ne pratimo pojedinačne korisnike, u potpunosti smo usklađeni s načelima „minimizacije podataka” prema Općoj uredbi o zaštiti podataka (GDPR)."
+        },
+        "contact": {
+            "title": "Kontakt",
+            "desc": "Ako imate pitanja o ovoj Politici privatnosti, kontaktirajte nas putem naše web stranice ili naše",
+            "link": "kontakt stranice",
+            "suffix": "."
+        }
+    },
+    "terms": {
+        "title": "Uvjeti pružanja usluge",
+        "lastUpdated": "Zadnje ažuriranje: 01.12.2025.",
+        "sections": [
+            {
+                "title": "1. Prihvaćanje uvjeta",
+                "content": "Pristupom i korištenjem web stranice XDownloaderz pristajete na uvjete i odredbe ovog ugovora. Ako se ne slažete s ovim uvjetima, nemojte koristiti uslugu."
+            },
+            {
+                "title": "2. Odricanje od odgovornosti",
+                "content": "XDownloaderz <strong>NIJE</strong> povezan, pridružen, ovlašten, podržan od strane ili na bilo koji način službeno povezan s X Corp. (bivši Twitter), ili bilo kojom od njegovih podružnica ili povezanih društava. Službena web stranica X-a može se pronaći na twitter.com ili x.com. Imena „X”, „Twitter” kao i povezana imena, znakovi, amblemi i slike registrirani su zaštitni znakovi njihovih vlasnika."
+            },
+            {
+                "title": "4. Zabranjene aktivnosti",
+                "subcontent": "Slažete se da nećete koristiti Uslugu za:",
+                "list": [
+                    "Distribuciju materijala zaštićenog autorskim pravima bez dopuštenja ili za komercijalnu dobit.",
+                    "Učitavanje ili prijenos virusa ili zlonamjernog koda.",
+                    "Pokušaj preopterećenja, slanja neželjene pošte ili rušenja naših poslužitelja."
+                ]
+            },
+            {
+                "title": "5. „Kakvo jest” i Ograničenje odgovornosti",
+                "content": "Usluga se pruža „KAKVA JEST” i „KAKO JE DOSTUPNA”. Ne jamčimo da će Usluga biti neprekinuta, bez grešaka ili potpuno sigurna. <br/><br/> XDownloaderz neće biti odgovoran za bilo kakvu izravnu ili neizravnu štetu, uključujući, ali ne ograničavajući se na gubitak podataka ili sporove oko autorskih prava, koji proizlaze iz korištenja ili nemogućnosti korištenja Usluge."
+            },
+            {
+                "title": "6. Promjene uvjeta",
+                "content": "Zadržavamo pravo izmjene ovih uvjeta u bilo kojem trenutku. Vaše daljnje korištenje web stranice nakon izvršenih promjena znači da prihvaćate nove Uvjete pružanja usluge."
+            }
+        ],
+        "ip": {
+            "title": "3. Intelektualno vlasništvo i autorska prava",
+            "items": [
+                {
+                    "title": "Odgovornost korisnika",
+                    "desc": "Prihvaćate da je XDownloaderz tehnički alat koji omogućuje preuzimanje samo javno dostupnih medija. Ne polažemo pravo na vlasništvo nad bilo kojim sadržajem preuzetim putem naše usluge."
+                },
+                {
+                    "title": "Usklađenost s autorskim pravima",
+                    "desc": "Slažete se koristiti ovu uslugu samo za sadržaj koji imate pravo preuzeti ili za osobnu upotrebu (poštena upotreba). Ne smijete koristiti ovaj alat za kršenje autorskih prava drugih."
+                },
+                {
+                    "title": "Prava na sadržaj",
+                    "desc": "Sva prava intelektualnog vlasništva vezana uz videozapise, slike i zvuk pripadaju njihovim odgovarajućim tvorcima sadržaja i platformi za hosting."
+                }
+            ]
+        }
+    },
+    "staticPosts": [
+        {
+            "id": "welcome-1",
+            "authorName": "XDownloaderz",
+            "content": "🎉 Dobrodošli na XDownloaderz!\n\nPreuzmite X (Twitter) videozapise i GIF-ove jednim klikom, potpuno besplatno i u najvišoj kvaliteti. Spremite kao MP4 ili MP3, koristite izravno iz preglednika bez instaliranja aplikacije.\n\n✨ Brzo, sigurno i neograničeno!"
+        },
+        {
+            "id": "legal-warning",
+            "authorName": "XDownloaderz",
+            "content": "⚖️ Pravno odricanje od odgovornosti i uvjeti korištenja\n\nXDownloaderz.com ne hostira sadržaj zaštićen autorskim pravima na svojim poslužiteljima. Svi videozapisi preuzimaju se trenutno i izravno s X (Twitter) CDN-a. Korištenje preuzetog sadržaja u potpunosti je odgovornost korisnika.\n\n⚠️ Molimo koristite sadržaj samo u dopuštene svrhe."
+        },
+        {
+            "id": "seo-info-2",
+            "authorName": "XDownloaderz",
+            "content": "🚀 Najnapredniji X (Twitter) Video Downloader\n\n✅ Podrška za kvalitetu 1080p Full HD\n✅ Izdvajanje MP3 (preuzimanje glazbe)\n✅ Brzo i sigurno preuzimanje\n✅ Neograničeno korištenje\n✅ Iskustvo bez reklama\n✅ Nije potrebna registracija ili prijava\n\nSpremite X (Twitter) videozapise na svoj uređaj u nekoliko sekundi uz XDownloaderz.com!"
+        },
+        {
+            "id": "platform-compatibility",
+            "authorName": "XDownloaderz",
+            "content": "📱 Potpuno kompatibilan sa svim uređajima\n\nXDownloaderz radi glatko na svakoj platformi:\n\n🤖 Android (Chrome, Samsung Internet)\n🍎 iPhone i iPad (Safari)\n💻 Windows PC (Chrome, Edge, Firefox)\n🖥️ Mac (Safari, Chrome)\n🐧 Linux (Firefox, Chromium)\n\nPosjetite xdownloaderz.com svojim modernim preglednikom, zalijepite poveznicu na X (Twitter) video i preuzmite!"
+        },
+        {
+            "id": "guide-step1-4",
+            "authorName": "Vodič za XDownloaderz",
+            "content": "📖 Korisnički priručnik: Korak 1\n\n1️⃣ Kopirajte poveznicu na video\n\nOtvorite video koji želite preuzeti u aplikaciji ili na web stranici X (Twitter). Dodirnite ikonu 'Podijeli' na objavi i odaberite 'Kopiraj poveznicu'.\n\n💡 Savjet: URL video tweeta trebao bi izgledati ovako:\nx.com/korisnik/status/1234567890"
+        },
+        {
+            "id": "guide-step2",
+            "authorName": "Vodič za XDownloaderz",
+            "content": "📖 Korisnički priručnik: Korak 2\n\n2️⃣ Zalijepite poveznicu u XDownloaderz\n\nOtvorite xdownloaderz.com. Zalijepite kopiranu poveznicu na X (Twitter) video u okvir za tekst na vrhu stranice.\n\nNaš sustav će automatski detektirati poveznicu i odmah učitati informacije o videu."
+        },
+        {
+            "id": "guide-step3",
+            "authorName": "Vodič za XDownloaderz",
+            "content": "📖 Korisnički priručnik: Korak 3\n\n3️⃣ Odaberite kvalitetu i format\n\nNakon što se video analizira, odaberite željenu kvalitetu iz izbornika postavki (ikona ⚙️):\n\n• 1080p / 720p / 480p (MP4 Video)\n• MP3 (Samo zvuk)\n\nViša rezolucija = bolja kvaliteta slike, ali veća veličina datoteke."
+        },
+        {
+            "id": "guide-step4",
+            "authorName": "Vodič za XDownloaderz",
+            "content": "📖 Korisnički priručnik: Korak 4\n\n4️⃣ Pokreni preuzimanje\n\nNakon odabira formata i kvalitete, kliknite plavi gumb 'Preuzmi'. Vaša video ili audio datoteka automatski će se preuzeti na vaš uređaj.\n\n⚡ Brzina preuzimanja ovisi o vašoj internetskoj vezi i veličini videa."
+        },
+        {
+            "id": "faq-private-7",
+            "authorName": "ČPP XDownloaderz",
+            "content": "❓ Često postavljana pitanja\n\n🔒 Mogu li preuzeti videozapise s privatnih/zaključanih računa?\n\nNe. XDownloaderz može preuzimati videozapise samo iz javnih objava na X-u (Twitteru). Sadržaj na privatnim računima zaštićen je X (Twitter) API-jem i ne može mu se pristupiti.\n\n💡 Rješenje: Možete zatražiti dopuštenje od vlasnika sadržaja."
+        },
+        {
+            "id": "faq-quality",
+            "authorName": "ČPP XDownloaderz",
+            "content": "❓ Često postavljana pitanja\n\n📹 Zašto opcija 1080p nije uvijek vidljiva?\n\nNeki X (Twitter) videozapisi možda su preneseni samo u kvaliteti 720p ili nižoj. XDownloaderz ne može proizvesti višu rezoluciju od izvorne kvalitete videa.\n\nBit će vam predstavljena najviša dostupna opcija kvalitete."
+        },
+        {
+            "id": "faq-mp3-conversion",
+            "authorName": "ČPP XDownloaderz",
+            "content": "❓ Često postavljana pitanja\n\n🎵 Kako funkcionira MP3 konverzija?\n\nPrilikom preuzimanja X (Twitter) videa, XDownloaderz automatski izdvaja audio zapis i pretvara ga u MP3 format. Ovaj se proces odvija u vašem pregledniku i potpuno je siguran.\n\n⏱️ Vrijeme konverzije može trajati 5-30 sekundi ovisno o duljini videa."
+        },
+        {
+            "id": "faq-security",
+            "authorName": "ČPP XDownloaderz",
+            "content": "❓ Često postavljana pitanja\n\n🛡️ Je li XDownloaderz siguran? Hoću li dobiti virus?\n\nDa, 100% je siguran. XDownloaderz ne hostira nikakve datoteke i ne sadrži reklamni softver ili viruse. Videozapisi se preuzimaju izravno s X (Twitter) CDN poslužitelja.\n\n✅ Radi sa SSL (HTTPS) enkripcijom u vašem pregledniku.\n✅ Vaši osobni podaci se nikada ne prikupljaju."
+        },
+        {
+            "id": "faq-pricing",
+            "authorName": "ČPP XDownloaderz",
+            "content": "❓ Često postavljana pitanja\n\n💰 Je li XDownloaderz besplatan? Je li potrebna pretplata?\n\nNe! XDownloaderz je potpuno besplatan i takav će ostati zauvijek. Nema naknada, skrivenih troškova ili sustava pretplate.\n\n🎁 Možete preuzimati neograničen broj videozapisa i koristiti ga koliko god želite."
+        },
+        {
+            "id": "faq-legal-use",
+            "authorName": "ČPP XDownloaderz",
+            "content": "❓ Često postavljana pitanja\n\n⚖️ Je li legalno koristiti preuzete videozapise?\n\nPreuzeti sadržaj možete koristiti u osobne, obrazovne svrhe ili za poštenu upotrebu (Fair Use). Međutim:\n\n❌ Ponovno objavljivanje u komercijalne svrhe\n❌ Počinjenje kršenja autorskih prava\n❌ Dijeljenje bez dopuštenja vlasnika sadržaja\n\nPostupanje u skladu sa zakonom odgovornost je korisnika."
+        },
+        {
+            "id": "seo-info-benefits",
+            "authorName": "XDownloaderz",
+            "content": "🌟 Zašto XDownloaderz?\n\n🚀 Najbrže preuzimanje: Spremite X (Twitter) videozapise u nekoliko sekundi\n🎯 Jednostavan za korištenje: Preuzmite videozapise u samo 3 koraka\n💎 Visoka kvaliteta: Podrška za 1080p Full HD\n🔄 MP3 pretvarač: Izdvojite samo zvuk iz videa\n🌍 Univerzalni pristup: Radi na svim uređajima\n\nxdownloaderz.com - Najbolji način za preuzimanje X (Twitter) videozapisa!"
+        },
+        {
+            "id": "seo-keywords",
+            "authorName": "XDownloaderz",
+            "content": "🔍 Što možete učiniti s XDownloaderz:\n\n• Preuzimanje X (Twitter) videa MP4\n• Preuzimanje X (Twitter) GIF-a\n• X (Twitter) video downloader online\n• X (Twitter) MP3 pretvarač\n• 1080p X (Twitter) video preuzimanje\n• Spremanje X (Twitter) videa na mobitel\n• Besplatni X (Twitter) downloader\n\nZa najbolje iskustvo preuzimanja X (Twitter) videa: xdownloaderz.com"
+        }
+    ]
+}

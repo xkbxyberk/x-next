@@ -1,0 +1,296 @@
+{
+    "common": {
+        "title": "XDownloaderz | X (twitter) videó letöltő",
+        "description": "Töltse le az X (Twitter) videókat ingyen, gyorsan és biztonságosan. 1080p Full HD minőség és MP3 konverzió támogatása. Minden eszközön működik.",
+        "footerText": "© 2025 XDownloaderz",
+        "privacyPolicy": "Adatvédelmi irányelvek",
+        "termsOfService": "Szolgáltatási feltételek",
+        "contact": "Kapcsolat",
+        "about": "Rólunk"
+    },
+    "sidebar": {
+        "download": "Letöltés",
+        "howToUse": "Hogyan kell használni?",
+        "howItWorks": "Hogyan működik?",
+        "faq": "GYIK",
+        "adLabel": "HIRDETÉS",
+        "verticalAd": "FÜGGŐLEGES HIRDETÉSI HELY"
+    },
+    "rightSection": {
+        "searchPlaceholder": "Keresés",
+        "adLabel1": "HIRDETÉSI HELY 1",
+        "adLabel2": "HIRDETÉSI HELY 2",
+        "adLabel3": "HIRDETÉSI HELY 3"
+    },
+    "feed": {
+        "tabs": {
+            "download": "Letöltő",
+            "history": "Előzmények"
+        },
+        "inputPlaceholder": "Illessze be az X (Twitter) videó linkjét ide...",
+        "pasteButton": "Link beillesztése és letöltés",
+        "clearButton": "Törlés",
+        "analyzing": "Videó elemzése...",
+        "downloadButton": "Letöltés",
+        "downloading": "Letöltés...",
+        "settings": {
+            "title": "Formátum kiválasztása",
+            "audio": "Csak hang",
+            "autoConvert": "Automatikus konvertálás",
+            "highQuality": "Legjobb minőség",
+            "dataSaver": "Adattakarékos",
+            "standard": "Normál"
+        },
+        "theme": {
+            "default": "Alapértelmezett",
+            "dim": "Halvány",
+            "lightsOut": "Sötét"
+        },
+        "ad": {
+            "sponsored": "SZPONSZORÁLT",
+            "label": "HIRDETÉSI HELY",
+            "provider": "(Google Adsense / Egyéni hirdetés)"
+        }
+    },
+    "about": {
+        "title": "Rólunk",
+        "handle": "@xdownloaderz",
+        "logoTitle": "XDownloaderz",
+        "whatWeDo": {
+            "title": "Mit csinálunk?",
+            "p1": "Az XDownloaderz egy hatékony és ingyenes webes eszköz, amelyet arra terveztek, hogy áthidalja a szakadékot a közösségi média folyamok és személyes eszközei között. Zökkenőmentes módot kínálunk videók és média letöltésére az X-ről (korábban Twitter) közvetlenül számítógépére, táblagépére vagy okostelefonjára.",
+            "p2": "Más szolgáltatásokkal ellentétben, amelyek szoftvertelepítést vagy tagságot igényelnek, eszközünk teljes egészében a böngészőjében fut, fejlett webes technológiákat használva. Megtalálja az elérhető legmagasabb felbontást akár <strong>1080p Full HD</strong>-ig, és lehetőséget kínál az azonnali médiaformátum-konvertálásra."
+        },
+        "howItWorks": {
+            "title": "Hogyan működik?",
+            "step1": {
+                "title": "1. Beillesztés",
+                "desc": "Másolja ki a letölteni kívánt videót tartalmazó X (Twitter) bejegyzés linkjét, és illessze be a keresőmezőnkbe."
+            },
+            "step2": {
+                "title": "2. Elemzés",
+                "desc": "Intelligens motorunk kommunikál a platform nyilvános infrastruktúrájával, hogy megtalálja a videófájlt és az elérhető minőségi opciókat (pl. 720p, 1080p)."
+            },
+            "step3": {
+                "title": "3. Letöltés",
+                "desc": "Kiválasztja a kívánt minőséget, és a fájl közvetlenül az eszközére kerül mentésre anélkül, hogy szervereinken tárolnánk."
+            }
+        },
+        "whyUs": {
+            "title": "Miért mi?",
+            "items": [
+                {
+                    "title": "Nincs regisztráció:",
+                    "desc": "Tiszteletben tartjuk idejét és magánéletét. Nem kell fiókot létrehoznia vagy e-mail címet megadnia funkcióink használatához."
+                },
+                {
+                    "title": "Kiváló minőség:",
+                    "desc": "Kiemelten kezeljük, hogy minden videóhoz megtaláljuk a lehető legmagasabb bitrátát (minőséget)."
+                },
+                {
+                    "title": "Kliensoldali feldolgozás:",
+                    "desc": "Modern böngésző képességeket (beleértve az FFmpeg technológiát) használunk a videók hatékony feldolgozásához, biztosítva a gyors letöltést a biztonság veszélyeztetése nélkül."
+                },
+                {
+                    "title": "100% Ingyenes:",
+                    "desc": "Eszközünk mindenki számára teljesen ingyenes."
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "Kapcsolat",
+        "subtitle": "Lépjen kapcsolatba velünk",
+        "heading": "Értékeljük visszajelzését",
+        "description": "Küldhet nekünk e-mailt hibás letöltés bejelentéséhez, szerzői jogi értesítés benyújtásához, vagy csak hogy köszönjön.",
+        "button": "E-mail küldése",
+        "footerText": "Vagy látogassa meg",
+        "aboutLink": "Rólunk",
+        "footerSuffix": "oldalunkat, hogy többet megtudjon projektünkről."
+    },
+    "privacy": {
+        "title": "Adatvédelmi irányelvek",
+        "lastUpdated": "Utolsó frissítés: 2025.12.01.",
+        "intro": {
+            "title": "Bevezetés",
+            "p1": "Az XDownloaderz-nél („mi”, „minket”), értékeljük az Ön magánéletét. Ez az Adatvédelmi szabályzat elmagyarázza, hogyan kezeljük adatait, amikor webalapú eszközünket használja média letöltésére az X-ről (korábban Twitter).",
+            "p2": "Szolgáltatásunk használatával elfogadja, hogy elolvasta és megértette ezt a szabályzatot."
+        },
+        "collection": {
+            "title": "Az általunk gyűjtött információk",
+            "personal": {
+                "title": "1. Személyes adatok",
+                "desc": "Szolgáltatásunk <strong>meg nem őrzés</strong> alapján működik. NEM gyűjtünk, tárolunk vagy osztunk meg semmilyen „Személyazonosításra alkalmas adatot” (PII), mint például:",
+                "list": [
+                    "Nevek vagy e-mail címek.",
+                    "Telefonszámok.",
+                    "Közösségi média bejelentkezési jelszavak."
+                ],
+                "note": "Szolgáltatásunk használatához nem kell regisztrálnia vagy bejelentkeznie."
+            },
+            "usage": {
+                "title": "2. Használati adatok és naplófájlok",
+                "desc": "A legtöbb szabványos webszerverhez hasonlóan naplófájlokat használunk. Ezek a fájlok olyan adatokat tartalmazhatnak, mint az internetprotokoll (IP) címek, böngészőtípus, internetszolgáltató (ISP), hivatkozó/kilépő oldalak, platformtípus, dátum/időbélyegző és kattintások száma. Ezeket az információkat trendek elemzésére, az oldal adminisztrálására és a felhasználói mozgások összesített követésére használjuk. Ezek az adatok nincsenek összekapcsolva semmilyen személyazonosításra alkalmas információval."
+            },
+            "urls": {
+                "title": "3. URL-ek és médiatartalom",
+                "desc": "Amikor beilleszt egy linket (URL) a keresősávunkba, azt a linket szervereink ideiglenesen feldolgozzák kizárólag a releváns médiafájl megtalálása céljából. Nem őrzünk meg állandó előzményeket a beküldött linkekről."
+            }
+        },
+        "cookies": {
+            "title": "Sütik és helyi tárolás",
+            "local": {
+                "title": "1. Kötelező helyi tárolás",
+                "desc": "Böngészője helyi tárolási (Local Storage) funkcióit kizárólag a felületi preferenciák (pl. Sötét/Világos mód kiválasztása) megjegyzésére használjuk."
+            },
+            "analytics": {
+                "title": "2. Harmadik féltől származó elemzések",
+                "desc": "Jelenleg nem használunk harmadik féltől származó nyomkövető kódokat, például a Google Analytics-et. Fenntartjuk azonban a jogot, hogy a jövőben névtelen elemző eszközöket adjunk hozzá weboldalunk teljesítményének javítása érdekében."
+            }
+        },
+        "thirdParty": {
+            "title": "Harmadik féltől származó szolgáltatások",
+            "desc": "Szolgáltatásunk az <strong>X (Twitter)</strong> nyilvános adatainak elérésével működik. Amikor letölt egy videót, harmadik fél szerverein tárolt tartalomhoz fér hozzá. Javasoljuk, hogy tekintse át azon platformok adatvédelmi irányelveit, amelyekkel interakcióba lép."
+        },
+        "gdpr": {
+            "title": "GDPR megfelelés",
+            "desc": "Mivel nem gyűjtünk személyes adatokat és nem követjük nyomon az egyéni felhasználókat, teljes mértékben megfelelünk az „adatminimalizálás” elveinek az Általános Adatvédelmi Rendelet (GDPR) értelmében."
+        },
+        "contact": {
+            "title": "Kapcsolat",
+            "desc": "Ha kérdése van ezzel az Adatvédelmi szabályzattal kapcsolatban, kérjük, lépjen kapcsolatba velünk weboldalunkon vagy a",
+            "link": "kapcsolat oldalon",
+            "suffix": "keresztül."
+        }
+    },
+    "terms": {
+        "title": "Szolgáltatási feltételek",
+        "lastUpdated": "Utolsó frissítés: 2025.12.01.",
+        "sections": [
+            {
+                "title": "1. Feltételek elfogadása",
+                "content": "Az XDownloaderz weboldal elérésével és használatával Ön elfogadja a jelen megállapodás feltételeit. Ha nem ért egyet ezekkel a feltételekkel, kérjük, ne használja a szolgáltatást."
+            },
+            {
+                "title": "2. Felelősség kizárása",
+                "content": "Az XDownloaderz <strong>NEM</strong> áll kapcsolatban, nem társult, nem felhatalmazott, nem támogatott vagy bármilyen módon hivatalosan kapcsolatban az X Corp.-pal (korábban Twitter), vagy bármely leányvállalatával vagy társvállalatával. A hivatalos X weboldal a twitter.com vagy x.com címen található. Az „X”, „Twitter” nevek, valamint a kapcsolódó nevek, jelek, emblémák és képek a megfelelő tulajdonosaik bejegyzett védjegyei."
+            },
+            {
+                "title": "4. Tiltott tevékenységek",
+                "subcontent": "Ön vállalja, hogy nem használja a Szolgáltatást:",
+                "list": [
+                    "Szerzői joggal védett anyagok terjesztésére engedély nélkül vagy kereskedelmi haszonszerzés céljából.",
+                    "Vírusok vagy rosszindulatú kódok feltöltésére vagy továbbítására.",
+                    "Szervereink túlterhelésének, spammelésének vagy összeomlasztásának megkísérlésére."
+                ]
+            },
+            {
+                "title": "5. „Ahogy van” és a felelősség korlátozása",
+                "content": "A Szolgáltatást „AHOGY VAN” és „AHOGY ELÉRHETŐ” alapon nyújtjuk. Nem garantáljuk, hogy a Szolgáltatás zavartalan, hibamentes vagy teljesen biztonságos lesz. <br/><br/> Az XDownloaderz nem vállal felelősséget semmilyen közvetlen vagy közvetett kárért, beleértve, de nem kizárólagosan az adatvesztést vagy szerzői jogi vitákat, amelyek a Szolgáltatás használatából vagy használatának képtelenségéből erednek."
+            },
+            {
+                "title": "6. Feltételek módosítása",
+                "content": "Fenntartjuk a jogot, hogy ezeket a feltételeket bármikor módosítsuk. A weboldal további használata a módosítások után azt jelenti, hogy elfogadja az új Szolgáltatási feltételeket."
+            }
+        ],
+        "ip": {
+            "title": "3. Szellemi tulajdon és szerzői jog",
+            "items": [
+                {
+                    "title": "Felhasználói felelősség",
+                    "desc": "Ön tudomásul veszi, hogy az XDownloaderz egy technikai eszköz, amely csak nyilvánosan elérhető média letöltését teszi lehetővé. Nem tartunk igényt a szolgáltatásunkon keresztül letöltött tartalom tulajdonjogára."
+                },
+                {
+                    "title": "Szerzői jogok betartása",
+                    "desc": "Ön vállalja, hogy ezt a szolgáltatást csak olyan tartalomhoz használja, amelynek letöltésére joga van, vagy személyes használatra (Méltányos használat). Nem használhatja ezt az eszközt mások szerzői jogainak megsértésére."
+                },
+                {
+                    "title": "Tartalmi jogok",
+                    "desc": "A videókhoz, képekhez és hanghoz kapcsolódó minden szellemi tulajdonjog a megfelelő tartalomkészítőket és a tárhelyszolgáltató platformot illeti."
+                }
+            ]
+        }
+    },
+    "staticPosts": [
+        {
+            "id": "welcome-1",
+            "authorName": "XDownloaderz",
+            "content": "🎉 Üdvözli az XDownloaderz!\n\nTöltsön le X (Twitter) videókat és GIF-eket egyetlen kattintással, teljesen ingyen és a legmagasabb minőségben. Mentse MP4 vagy MP3 formátumban, használja közvetlenül a böngészőjéből alkalmazás telepítése nélkül.\n\n✨ Gyors, biztonságos és korlátlan!"
+        },
+        {
+            "id": "legal-warning",
+            "authorName": "XDownloaderz",
+            "content": "⚖️ Jogi nyilatkozat és használati feltételek\n\nAz XDownloaderz.com nem tárol szerzői joggal védett tartalmat szerverein. Minden videó azonnal és közvetlenül az X (Twitter) CDN-ről kerül letöltésre. A letöltött tartalom használata kizárólag a felhasználó felelőssége.\n\n⚠️ Kérjük, a tartalmat csak engedélyezett célokra használja."
+        },
+        {
+            "id": "seo-info-2",
+            "authorName": "XDownloaderz",
+            "content": "🚀 A legfejlettebb X (Twitter) videó letöltő\n\n✅ 1080p Full HD minőség támogatása\n✅ MP3 kinyerés (zene letöltés)\n✅ Gyors és biztonságos letöltés\n✅ Korlátlan használat\n✅ Reklámmentes élmény\n✅ Nincs szükség regisztrációra vagy bejelentkezésre\n\nMentse az X (Twitter) videókat eszközére másodpercek alatt az XDownloaderz.com segítségével!"
+        },
+        {
+            "id": "platform-compatibility",
+            "authorName": "XDownloaderz",
+            "content": "📱 Teljesen kompatibilis minden eszközzel\n\nAz XDownloaderz zökkenőmentesen működik minden platformon:\n\n🤖 Android (Chrome, Samsung Internet)\n🍎 iPhone és iPad (Safari)\n💻 Windows PC (Chrome, Edge, Firefox)\n🖥️ Mac (Safari, Chrome)\n🐧 Linux (Firefox, Chromium)\n\nLátogasson el az xdownloaderz.com oldalra modern böngészőjével, illessze be az X (Twitter) videó linkjét és töltsön le!"
+        },
+        {
+            "id": "guide-step1-4",
+            "authorName": "XDownloaderz Útmutató",
+            "content": "📖 Felhasználói útmutató: 1. lépés\n\n1️⃣ Videó link másolása\n\nNyissa meg a letölteni kívánt videót az X (Twitter) alkalmazásban vagy weboldalon. Koppintson a bejegyzésen a 'Megosztás' ikonra, és válassza a 'Link másolása' lehetőséget.\n\n💡 Tipp: A videós tweet URL-jének így kell kinéznie:\nx.com/felhasznalo/status/1234567890"
+        },
+        {
+            "id": "guide-step2",
+            "authorName": "XDownloaderz Útmutató",
+            "content": "📖 Felhasználói útmutató: 2. lépés\n\n2️⃣ Link beillesztése az XDownloaderz-be\n\nNyissa meg az xdownloaderz.com oldalt. Illessze be a másolt X (Twitter) videó linket az oldal tetején található szövegmezőbe.\n\nRendszerünk automatikusan észleli a linket és azonnal betölti a videó információkat."
+        },
+        {
+            "id": "guide-step3",
+            "authorName": "XDownloaderz Útmutató",
+            "content": "📖 Felhasználói útmutató: 3. lépés\n\n3️⃣ Minőség és formátum kiválasztása\n\nMiután a videó elemzése megtörtént, válassza ki a kívánt minőséget a beállítások menüből (⚙️ ikon):\n\n• 1080p / 720p / 480p (MP4 videó)\n• MP3 (Csak hang)\n\nNagyobb felbontás = Jobb képminőség, de nagyobb fájlméret."
+        },
+        {
+            "id": "guide-step4",
+            "authorName": "XDownloaderz Útmutató",
+            "content": "📖 Felhasználói útmutató: 4. lépés\n\n4️⃣ Letöltés indítása\n\nA formátum és minőség kiválasztása után kattintson a kék 'Letöltés' gombra. Videó- vagy hangfájlja automatikusan letöltődik eszközére.\n\n⚡ A letöltési sebesség az internetkapcsolatától és a videó méretétől függ."
+        },
+        {
+            "id": "faq-private-7",
+            "authorName": "XDownloaderz GYIK",
+            "content": "❓ Gyakran Ismételt Kérdések\n\n🔒 Letölthetek videókat privát/lezárt fiókokból?\n\nNem. Az XDownloaderz csak nyilvános X (Twitter) bejegyzésekből tud videókat letölteni. A privát fiókok tartalmát az X (Twitter) API védi, és nem férhetők hozzá.\n\n💡 Megoldás: Kérhet engedélyt a tartalom tulajdonosától."
+        },
+        {
+            "id": "faq-quality",
+            "authorName": "XDownloaderz GYIK",
+            "content": "❓ Gyakran Ismételt Kérdések\n\n📹 Miért nem látható mindig az 1080p opció?\n\nElőfordulhat, hogy egyes X (Twitter) videókat csak 720p vagy alacsonyabb minőségben töltöttek fel. Az XDownloaderz nem tud az eredeti videóminőségnél nagyobb felbontást előállítani.\n\nA rendelkezésre álló legmagasabb minőségi opciót fogjuk felkínálni."
+        },
+        {
+            "id": "faq-mp3-conversion",
+            "authorName": "XDownloaderz GYIK",
+            "content": "❓ Gyakran Ismételt Kérdések\n\n🎵 Hogyan működik az MP3 konverzió?\n\nAmikor letölt egy X (Twitter) videót, az XDownloaderz automatikusan kinyeri a hangsávot és MP3 formátumba konvertálja. Ez a folyamat a böngészőjében történik és teljesen biztonságos.\n\n⏱️ A konverziós idő a videó hosszától függően 5-30 másodpercig tarthat."
+        },
+        {
+            "id": "faq-security",
+            "authorName": "XDownloaderz GYIK",
+            "content": "❓ Gyakran Ismételt Kérdések\n\n🛡️ Biztonságos az XDownloaderz? Kaphatok vírust?\n\nIgen, 100%-ban biztonságos. Az XDownloaderz nem tárol fájlokat, és nem tartalmaz reklámprogramokat vagy vírusokat. A videók közvetlenül az X (Twitter) CDN szervereiről töltődnek le.\n\n✅ SSL (HTTPS) titkosítással működik a böngészőjében.\n✅ Személyes adatait soha nem gyűjtjük."
+        },
+        {
+            "id": "faq-pricing",
+            "authorName": "XDownloaderz GYIK",
+            "content": "❓ Gyakran Ismételt Kérdések\n\n💰 Ingyenes az XDownloaderz? Szükséges előfizetés?\n\nNem! Az XDownloaderz teljesen ingyenes, és örökre az is marad. Nincsenek díjak, rejtett költségek vagy előfizetési rendszerek.\n\n🎁 Korlátlan számú videót tölthet le, és annyit használhatja, amennyit csak akarja."
+        },
+        {
+            "id": "faq-legal-use",
+            "authorName": "XDownloaderz GYIK",
+            "content": "❓ Gyakran Ismételt Kérdések\n\n⚖️ Legális a letöltött videók használata?\n\nA letöltött tartalmat személyes, oktatási vagy méltányos használatra (Fair Use) használhatja fel. Azonban:\n\n❌ Kereskedelmi célú újbóli közzététel\n❌ Szerzői jogi jogsértés elkövetése\n❌ Megosztás a tartalom tulajdonosának engedélye nélkül\n\nA törvénynek megfelelő eljárás a felhasználó felelőssége."
+        },
+        {
+            "id": "seo-info-benefits",
+            "authorName": "XDownloaderz",
+            "content": "🌟 Miért az XDownloaderz?\n\n🚀 Leggyorsabb letöltés: Mentse az X (Twitter) videókat másodpercek alatt\n🎯 Könnyen használható: Töltsön le videókat mindössze 3 lépésben\n💎 Kiváló minőség: 1080p Full HD támogatás\n🔄 MP3 konverter: Csak a hang kinyerése a videóból\n🌍 Univerzális hozzáférés: Minden eszközön működik\n\nxdownloaderz.com - Az X (Twitter) videók letöltésének legjobb módja!"
+        },
+        {
+            "id": "seo-keywords",
+            "authorName": "XDownloaderz",
+            "content": "🔍 Mit tehet az XDownloaderz segítségével:\n\n• X (Twitter) videó letöltése MP4\n• X (Twitter) GIF letöltés\n• X (Twitter) videó letöltő online\n• X (Twitter) MP3 konverter\n• 1080p X (Twitter) videó letöltés\n• Mobil X (Twitter) videó mentés\n• Ingyenes X (Twitter) letöltő\n\nA legjobb X (Twitter) videó letöltési élményért: xdownloaderz.com"
+        }
+    ]
+}

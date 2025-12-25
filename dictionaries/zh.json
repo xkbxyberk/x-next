@@ -1,0 +1,296 @@
+{
+    "common": {
+        "title": "XDownloaderz | X (twitter) 视频下载器",
+        "description": "免费、快速且安全地下载 X (Twitter) 视频。支持 1080p 全高清质量和 MP3 转换。适用于所有设备。",
+        "footerText": "© 2025 XDownloaderz",
+        "privacyPolicy": "隐私政策",
+        "termsOfService": "服务条款",
+        "contact": "联系我们",
+        "about": "关于我们"
+    },
+    "sidebar": {
+        "download": "下载",
+        "howToUse": "如何使用？",
+        "howItWorks": "工作原理？",
+        "faq": "常见问题",
+        "adLabel": "广告",
+        "verticalAd": "垂直广告位"
+    },
+    "rightSection": {
+        "searchPlaceholder": "搜索",
+        "adLabel1": "广告位 1",
+        "adLabel2": "广告位 2",
+        "adLabel3": "广告位 3"
+    },
+    "feed": {
+        "tabs": {
+            "download": "下载器",
+            "history": "历史记录"
+        },
+        "inputPlaceholder": "在此粘贴 X (Twitter) 视频链接...",
+        "pasteButton": "粘贴链接并下载",
+        "clearButton": "清除",
+        "analyzing": "正在分析视频...",
+        "downloadButton": "下载",
+        "downloading": "正在下载...",
+        "settings": {
+            "title": "选择格式",
+            "audio": "仅音频",
+            "autoConvert": "自动转换",
+            "highQuality": "最高质量",
+            "dataSaver": "流量节省",
+            "standard": "标准"
+        },
+        "theme": {
+            "default": "默认",
+            "dim": "昏暗",
+            "lightsOut": "暗黑"
+        },
+        "ad": {
+            "sponsored": "赞助",
+            "label": "广告位",
+            "provider": "(Google Adsense / 自定义广告)"
+        }
+    },
+    "about": {
+        "title": "关于我们",
+        "handle": "@xdownloaderz",
+        "logoTitle": "XDownloaderz",
+        "whatWeDo": {
+            "title": "我们做什么？",
+            "p1": "XDownloaderz 是一款功能强大且免费的网络工具，旨在弥合社交媒体信息流与您的个人设备之间的差距。我们提供了一种无缝的方式，可以直接将 X（前 Twitter）的视频和媒体下载到您的电脑、平板电脑或智能手机。",
+            "p2": "与其他需要安装软件或会员资格的服务不同，我们的工具使用先进的网络技术完全在您的浏览器中运行。它能找到高达 <strong>1080p Full HD</strong> 的最高可用分辨率，并提供即时媒体格式转换选项。"
+        },
+        "howItWorks": {
+            "title": "它是如何工作的？",
+            "step1": {
+                "title": "1. 粘贴",
+                "desc": "复制包含您想要下载的视频的 X (Twitter) 帖子的链接，并将其粘贴到我们的搜索框中。"
+            },
+            "step2": {
+                "title": "2. 分析",
+                "desc": "我们的智能引擎与平台的公共基础设施通信，以查找视频文件和可用的质量选项（例如 720p, 1080p）。"
+            },
+            "step3": {
+                "title": "3. 下载",
+                "desc": "您选择偏好的质量，文件将直接保存到您的设备，而不会存储在我们的服务器上。"
+            }
+        },
+        "whyUs": {
+            "title": "为什么选择我们？",
+            "items": [
+                {
+                    "title": "无需注册：",
+                    "desc": "我们尊重您的时间和隐私。您无需创建帐户或提供电子邮件地址即可使用我们的功能。"
+                },
+                {
+                    "title": "高质量：",
+                    "desc": "我们优先查找每个视频可用的最高比特率（质量）。"
+                },
+                {
+                    "title": "客户端处理：",
+                    "desc": "我们利用现代浏览器功能（包括 FFmpeg 技术）高效处理视频，确在不影响安全性的情况下快速下载。"
+                },
+                {
+                    "title": "100% 免费：",
+                    "desc": "我们的工具对所有人完全免费。"
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "联系我们",
+        "subtitle": "取得联系",
+        "heading": "我们重视您的反馈",
+        "description": "您可以给我们发电子邮件报告下载损坏、提交版权通知，或者只是打个招呼。",
+        "button": "发送电子邮件",
+        "footerText": "或者访问我们的",
+        "aboutLink": "关于我们",
+        "footerSuffix": "页面以了解更多关于我们项目的信息。"
+    },
+    "privacy": {
+        "title": "隐私政策",
+        "lastUpdated": "最后更新：2025年12月1日",
+        "intro": {
+            "title": "简介",
+            "p1": "在 XDownloaderz（“我们”），我们重视您的隐私。本隐私政策解释了当您使用我们要基于网络的工具从 X（前 Twitter）下载媒体时，您的信息是如何被处理的。",
+            "p2": "使用我们的服务即表示您同意已阅读并理解本政策。"
+        },
+        "collection": {
+            "title": "我们收集的信息",
+            "personal": {
+                "title": "1. 个人信息",
+                "desc": "我们的服务基于<strong>不保留</strong>原则运作。我们不收集、存储或分享任何“个人身份信息”（PII），例如：",
+                "list": [
+                    "姓名或电子邮件地址。",
+                    "电话号码。",
+                    "社交媒体登录密码。"
+                ],
+                "note": "您无需注册或登录即可使用我们的服务。"
+            },
+            "usage": {
+                "title": "2. 使用数据和日志文件",
+                "desc": "像大多数标准网络服务器一样，我们使用日志文件。这些文件可能包含诸如互联网协议 (IP) 地址、浏览器类型、互联网服务提供商 (ISP)、引用/退出页面、平台类型、日期/时间戳和点击次数等数据。此信息用于分析趋势、管理网站和总体跟踪用户活动。此数据不与任何可识别个人身份的信息相关联。"
+            },
+            "urls": {
+                "title": "3. URL 和媒体内容",
+                "desc": "当您在我们的搜索栏中粘贴链接 (URL) 时，该链接会由我们的服务器临时处理，仅用于定位相关媒体文件。我们不会保留您提交的链接的永久历史记录。"
+            }
+        },
+        "cookies": {
+            "title": "Cookie 和本地存储",
+            "local": {
+                "title": "1. 强制性本地存储",
+                "desc": "我们仅使用您浏览器的本地存储功能来记住您的界面偏好（例如，深色/浅色模式选择）。"
+            },
+            "analytics": {
+                "title": "2. 第三方分析",
+                "desc": "我们目前不使用 Google Analytics 等第三方跟踪代码。但是，我们保留将来添加匿名分析工具以提高网站性能的权利。"
+            }
+        },
+        "thirdParty": {
+            "title": "第三方服务",
+            "desc": "我们的服务通过访问 <strong>X (Twitter)</strong> 上的公共数据来工作。当您下载视频时，您正在访问托管在第三方服务器上的内容。我们鼓励您查看您互动的平台的隐私政策。"
+        },
+        "gdpr": {
+            "title": "GDPR 合规性",
+            "desc": "由于我们不收集个人数据且不跟踪个人用户，我们完全遵守通用数据保护条例 (GDPR) 下的“数据最小化”原则。"
+        },
+        "contact": {
+            "title": "联系我们",
+            "desc": "如果您对本隐私政策有疑问，请通过我们的网站或我们的",
+            "link": "联系页面",
+            "suffix": "与我们联系。"
+        }
+    },
+    "terms": {
+        "title": "服务条款",
+        "lastUpdated": "最后更新：2025年12月1日",
+        "sections": [
+            {
+                "title": "1. 接受条款",
+                "content": "访问和使用 XDownloaderz 网站，即表示您同意本协议的条款和条件。如果您不同意这些条款，请勿使用本服务。"
+            },
+            {
+                "title": "2. 免责声明",
+                "content": "XDownloaderz <strong>不</strong> 隶属于、关联于、授权于、认可于或以任何方式正式连接于 X Corp.（前 Twitter）或其任何子公司或关联公司。官方 X 网站位于 twitter.com 或 x.com。名称“X”、“Twitter”以及相关名称、标记、徽章和图像是其各自所有者的注册商标。"
+            },
+            {
+                "title": "4. 禁止活动",
+                "subcontent": "您同意不将本服务用于：",
+                "list": [
+                    "未经许可分发受版权保护的材料或用于商业利益。",
+                    "上传或传输病毒或恶意代码。",
+                    "试图使我们的服务器过载、发送垃圾邮件或使其崩溃。"
+                ]
+            },
+            {
+                "title": "5. “按原样”和责任限制",
+                "content": "本服务按“原样”和“可用”提供。我们不保证服务不会中断、无错误或完全安全。<br/><br/> XDownloaderz 对因使用或无法使用本服务而引起的任何直接或间接损害（包括但不限于数据丢失或版权纠纷）不承担责任。"
+            },
+            {
+                "title": "6. 条款变更",
+                "content": "我们保留随时更改这些条款的权利。在更改后继续使用网站意味着您接受新的服务条款。"
+            }
+        ],
+        "ip": {
+            "title": "3. 知识产权和版权",
+            "items": [
+                {
+                    "title": "用户责任",
+                    "desc": "您承认 XDownloaderz 是一个仅允许下载公开可用媒体的技术工具。我们不对通过我们的服务下载的任何内容主张所有权。"
+                },
+                {
+                    "title": "版权合规",
+                    "desc": "您同意仅将此服务用于您有权下载的内容或用于个人使用（合理使用）。您不得使用此工具侵犯他人的版权。"
+                },
+                {
+                    "title": "内容权利",
+                    "desc": "与视频、图像和音频相关的所有知识产权均属于其各自的内容创作者和托管平台。"
+                }
+            ]
+        }
+    },
+    "staticPosts": [
+        {
+            "id": "welcome-1",
+            "authorName": "XDownloaderz",
+            "content": "🎉 欢迎来到 XDownloaderz！\n\n一键下载 X (Twitter) 视频和 GIF，完全免费且质量最高。保存为 MP4 或 MP3，直接从浏览器使用，无需安装任何应用程序。\n\n✨ 快速、安全且无限制！"
+        },
+        {
+            "id": "legal-warning",
+            "authorName": "XDownloaderz",
+            "content": "⚖️ 法律免责声明和使用条款\n\nXDownloaderz.com 不在其服务器上托管受版权保护的内容。所有视频均即时直接从 X (Twitter) CDN 下载。使用下载的内容完全是用户的责任。\n\n⚠️ 请仅将内容用于允许的用途。"
+        },
+        {
+            "id": "seo-info-2",
+            "authorName": "XDownloaderz",
+            "content": "🚀 最先进的 X (Twitter) 视频下载器\n\n✅ 支持 1080p 全高清质量\n✅ MP3 提取（音乐下载）\n✅ 快速安全的下载\n✅ 无限制使用\n✅ 无广告体验\n✅ 无需注册或登录\n\n使用 XDownloaderz.com 在几秒钟内将 X (Twitter) 视频保存到您的设备！"
+        },
+        {
+            "id": "platform-compatibility",
+            "authorName": "XDownloaderz",
+            "content": "📱 与所有设备完全兼容\n\nXDownloaderz 在每个平台上运行流畅：\n\n🤖 Android (Chrome, Samsung Internet)\n🍎 iPhone 和 iPad (Safari)\n💻 Windows PC (Chrome, Edge, Firefox)\n🖥️ Mac (Safari, Chrome)\n🐧 Linux (Firefox, Chromium)\n\n使用您的现代浏览器访问 xdownloaderz.com，粘贴 X (Twitter) 视频链接并下载！"
+        },
+        {
+            "id": "guide-step1-4",
+            "authorName": "XDownloaderz 指南",
+            "content": "📖 用户指南：第 1 步\n\n1️⃣ 复制视频链接\n\n在 X (Twitter) 应用或网站上打开您要下载的视频。点击帖子上的“分享”图标，然后选择“复制链接”。\n\n💡 提示：视频推文的 URL 应该如下所示：\nx.com/user/status/1234567890"
+        },
+        {
+            "id": "guide-step2",
+            "authorName": "XDownloaderz 指南",
+            "content": "📖 用户指南：第 2 步\n\n2️⃣ 将链接粘贴到 XDownloaderz\n\n打开 xdownloaderz.com。将复制的 X (Twitter) 视频链接粘贴到页面顶部的文本框中。\n\n我们的系统将自动检测链接并立即加载视频信息。"
+        },
+        {
+            "id": "guide-step3",
+            "authorName": "XDownloaderz 指南",
+            "content": "📖 用户指南：第 3 步\n\n3️⃣ 选择质量和格式\n\n视频分析完成后，从设置菜单（⚙️ 图标）中选择您想要的质量：\n\n• 1080p / 720p / 480p (MP4 视频)\n• MP3 (仅音频)\n\n更高的分辨率 = 更好的图像质量，但文件更大。"
+        },
+        {
+            "id": "guide-step4",
+            "authorName": "XDownloaderz 指南",
+            "content": "📖 用户指南：第 4 步\n\n4️⃣ 开始下载\n\n选择格式和质量后，点击蓝色的“下载”按钮。您的视频或音频文件将自动下载到您的设备。\n\n⚡ 下载速度取决于您的互联网连接和视频大小。"
+        },
+        {
+            "id": "faq-private-7",
+            "authorName": "XDownloaderz 常见问题",
+            "content": "❓ 常见问题解答\n\n🔒 我可以从私人/锁定帐户下载视频吗？\n\n不可以。XDownloaderz 只能从公开的 X (Twitter) 帖子下载视频。私人帐户中的内容受 X (Twitter) API 保护，无法访问。\n\n💡 解决方案：您可以请求内容所有者的许可。"
+        },
+        {
+            "id": "faq-quality",
+            "authorName": "XDownloaderz 常见问题",
+            "content": "❓ 常见问题解答\n\n📹 为什么 1080p 选项并不总是可见？\n\n某些 X (Twitter) 视频可能仅以 720p 或更低质量上传。XDownloaderz 无法生成比原始视频质量更高的分辨率。\n\n我们将为您提供可用的最高质量选项。"
+        },
+        {
+            "id": "faq-mp3-conversion",
+            "authorName": "XDownloaderz 常见问题",
+            "content": "❓ 常见问题解答\n\n🎵 MP3 转换是如何工作的？\n\n下载 X (Twitter) 视频时，XDownloaderz 会自动提取音轨并将其转换为 MP3 格式。此过程在您的浏览器中进行，完全安全。\n\n⏱️ 转换时间可能需要 5-30 秒，具体取决于视频长度。"
+        },
+        {
+            "id": "faq-security",
+            "authorName": "XDownloaderz 常见问题",
+            "content": "❓ 常见问题解答\n\n🛡️ XDownloaderz 安全吗？我会感染病毒吗？\n\n是的，它是 100% 安全的。XDownloaderz 不托管任何文件，也不包含广告软件或病毒。视频直接从 X (Twitter) CDN 服务器下载。\n\n✅ 在您的浏览器中使用 SSL (HTTPS) 加密运行。\n✅ 绝不收集您的个人信息。"
+        },
+        {
+            "id": "faq-pricing",
+            "authorName": "XDownloaderz 常见问题",
+            "content": "❓ 常见问题解答\n\n💰 XDownloaderz 是免费的吗？需要订阅吗？\n\n不！XDownloaderz 完全免费，并且永远免费。没有费用、隐藏成本或订阅系统。\n\n🎁 您可以下载无限量的视频，并随心所欲地使用它。"
+        },
+        {
+            "id": "faq-legal-use",
+            "authorName": "XDownloaderz 常见问题",
+            "content": "❓ 常见问题解答\n\n⚖️ 使用下载的视频合法吗？\n\n您可以将下载的内容用于个人、教育目的或合理使用 (Fair Use)。但是：\n\n❌ 用于商业目的的重新发布\n❌ 实施版权侵权\n❌ 未经内容所有者许可进行分享\n\n遵守法律是用户的责任。"
+        },
+        {
+            "id": "seo-info-benefits",
+            "authorName": "XDownloaderz",
+            "content": "🌟 为什么选择 XDownloaderz？\n\n🚀 最快下载：在几秒钟内保存 X (Twitter) 视频\n🎯 易于使用：只需 3 步即可下载视频\n💎 高质量：1080p 全高清支持\n🔄 MP3 转换器：仅从视频中提取音频\n🌍 通用访问：适用于所有设备\n\nxdownloaderz.com - 下载 X (Twitter) 视频的最佳方式！"
+        },
+        {
+            "id": "seo-keywords",
+            "authorName": "XDownloaderz",
+            "content": "🔍 您可以使用 XDownloaderz 做什么：\n\n• 下载 X (Twitter) 视频 MP4\n• 下载 X (Twitter) GIF\n• X (Twitter) 视频在线下载器\n• X (Twitter) MP3 转换器\n• 1080p X (Twitter) 视频下载\n• 手机保存 X (Twitter) 视频\n• 免费 X (Twitter) 下载器\n\n为了获得最佳的 X (Twitter) 视频下载体验：xdownloaderz.com"
+        }
+    ]
+}

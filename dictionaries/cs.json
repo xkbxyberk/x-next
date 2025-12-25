@@ -1,0 +1,296 @@
+{
+    "common": {
+        "title": "XDownloaderz | Stahovač videí z X (twitter)",
+        "description": "Stahujte videa z X (Twitter) zdarma, rychle a bezpečně. Podpora kvality 1080p Full HD a převodu na MP3. Funguje na všech zařízeních.",
+        "footerText": "© 2025 XDownloaderz",
+        "privacyPolicy": "Zásady ochrany osobních údajů",
+        "termsOfService": "Podmínky služby",
+        "contact": "Kontakt",
+        "about": "O nás"
+    },
+    "sidebar": {
+        "download": "Stáhnout",
+        "howToUse": "Jak používat?",
+        "howItWorks": "Jak to funguje?",
+        "faq": "Často kladené otázky",
+        "adLabel": "REKLAMA",
+        "verticalAd": "VERTIKÁLNÍ REKLAMNÍ PROSTOR"
+    },
+    "rightSection": {
+        "searchPlaceholder": "Hledat",
+        "adLabel1": "REKLAMNÍ PROSTOR 1",
+        "adLabel2": "REKLAMNÍ PROSTOR 2",
+        "adLabel3": "REKLAMNÍ PROSTOR 3"
+    },
+    "feed": {
+        "tabs": {
+            "download": "Stahovač",
+            "history": "Historie"
+        },
+        "inputPlaceholder": "Vložte odkaz na video z X (Twitter) sem...",
+        "pasteButton": "Vložit odkaz a stáhnout",
+        "clearButton": "Vymazat",
+        "analyzing": "Analyzuji video...",
+        "downloadButton": "Stáhnout",
+        "downloading": "Stahování...",
+        "settings": {
+            "title": "Vyberte formát",
+            "audio": "Pouze zvuk",
+            "autoConvert": "Automatický převod",
+            "highQuality": "Nejvyšší kvalita",
+            "dataSaver": "Úspora dat",
+            "standard": "Standardní"
+        },
+        "theme": {
+            "default": "Výchozí",
+            "dim": "Tlumené",
+            "lightsOut": "Zhasnuto"
+        },
+        "ad": {
+            "sponsored": "SPONZOROVÁNO",
+            "label": "REKLAMNÍ PROSTOR",
+            "provider": "(Google Adsense / Vlastní reklama)"
+        }
+    },
+    "about": {
+        "title": "O nás",
+        "handle": "@xdownloaderz",
+        "logoTitle": "XDownloaderz",
+        "whatWeDo": {
+            "title": "Co děláme?",
+            "p1": "XDownloaderz je výkonný a bezplatný webový nástroj navržený k překlenutí propasti mezi sociálními sítěmi a vašimi osobními zařízeními. Nabízíme bezproblémový způsob stahování videí a médií z X (dříve Twitter) přímo do vašeho počítače, tabletu nebo smartphonu.",
+            "p2": "Na rozdíl od jiných služeb vyžadujících instalaci softwaru nebo registraci, náš nástroj běží zcela ve vašem prohlížeči s využitím pokročilých webových technologií. Najde nejvyšší dostupné rozlišení až <strong>1080p Full HD</strong> a nabízí možnosti okamžitého převodu formátů médií."
+        },
+        "howItWorks": {
+            "title": "Jak to funguje?",
+            "step1": {
+                "title": "1. Vložit",
+                "desc": "Zkopírujte odkaz na příspěvek z X (Twitter) obsahující video, které chcete stáhnout, a vložte jej do našeho vyhledávacího pole."
+            },
+            "step2": {
+                "title": "2. Analyzovat",
+                "desc": "Náš chytrý engine komunikuje s veřejnou infrastrukturou platformy, aby našel soubor videa a dostupné možnosti kvality (např. 720p, 1080p)."
+            },
+            "step3": {
+                "title": "3. Stáhnout",
+                "desc": "Vyberete si preferovanou kvalitu a soubor se uloží přímo do vašeho zařízení, aniž by byl uložen na našich serverech."
+            }
+        },
+        "whyUs": {
+            "title": "Proč my?",
+            "items": [
+                {
+                    "title": "Žádná registrace:",
+                    "desc": "Respektujeme váš čas a soukromí. K používání našich funkcí si nemusíte vytvářet účet ani poskytovat e-mailovou adresu."
+                },
+                {
+                    "title": "Vysoká kvalita:",
+                    "desc": "Upřednostňujeme nalezení nejvyššího dostupného datového toku (kvality) pro každé video."
+                },
+                {
+                    "title": "Zpracování na straně klienta:",
+                    "desc": "Využíváme moderní možnosti prohlížeče (včetně technologie FFmpeg) k efektivnímu zpracování videí, což zajišťuje rychlé stahování bez kompromisů v oblasti bezpečnosti."
+                },
+                {
+                    "title": "100% Zdarma:",
+                    "desc": "Náš nástroj je pro všechny zcela zdarma."
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "Kontakt",
+        "subtitle": "Spojte se s námi",
+        "heading": "Vážíme si vaší zpětné vazby",
+        "description": "Můžete nám poslat e-mail a nahlásit nefunkční stahování, podat oznámení o porušení autorských práv nebo nás jen pozdravit.",
+        "button": "Poslat e-mail",
+        "footerText": "Nebo navštivte naši stránku",
+        "aboutLink": "O nás",
+        "footerSuffix": "a dozvíte se více o našem projektu."
+    },
+    "privacy": {
+        "title": "Zásady ochrany osobních údajů",
+        "lastUpdated": "Poslední aktualizace: 01/12/2025",
+        "intro": {
+            "title": "Úvod",
+            "p1": "V XDownloaderz („my“, „nás“) si vážíme vašeho soukromí. Tyto Zásady ochrany osobních údajů vysvětlují, jak je nakládáno s vašimi informacemi, když používáte náš webový nástroj pro stahování médií z X (dříve Twitter).",
+            "p2": "Používáním naší služby souhlasíte s tím, že jste si tyto zásady přečetli a porozuměli jim."
+        },
+        "collection": {
+            "title": "Informace, které shromažďujeme",
+            "personal": {
+                "title": "1. Osobní údaje",
+                "desc": "Naše služba funguje na základě <strong>neuchovávání dat</strong>. NEshromažďujeme, neukládáme ani nesdílíme žádné „Osobní identifikační údaje“ (PII), jako jsou:",
+                "list": [
+                    "Jména nebo e-mailové adresy.",
+                    "Telefonní čísla.",
+                    "Přihlašovací hesla k sociálním sítím."
+                ],
+                "note": "K používání naší služby se nemusíte registrovat ani přihlašovat."
+            },
+            "usage": {
+                "title": "2. Údaje o používání a soubory protokolů",
+                "desc": "Jako většina standardních webových serverů používáme soubory protokolů. Tyto soubory mohou obsahovat údaje jako adresy internetového protokolu (IP), typ prohlížeče, poskytovatel internetových služeb (ISP), odkazující/výstupní stránky, typ platformy, datum/čas a počet kliknutí. Tyto informace se používají k analýze trendů, správě webu a sledování pohybu uživatelů v souhrnné podobě. Tato data nejsou spojena s žádnými informacemi, které by vás mohly osobně identifikovat."
+            },
+            "urls": {
+                "title": "3. URL adresy a mediální obsah",
+                "desc": "Když vložíte odkaz (URL) do našeho vyhledávacího pole, tento odkaz je dočasně zpracován našimi servery pouze za účelem nalezení příslušného mediálního souboru. Neuchováváme trvalou historii odkazů, které odešlete."
+            }
+        },
+        "cookies": {
+            "title": "Cookies a místní úložiště",
+            "local": {
+                "title": "1. Povinné místní úložiště",
+                "desc": "Funkce místního úložiště vašeho prohlížeče používáme pouze k zapamatování vašich preferencí rozhraní (např. výběr tmavého/světlého režimu)."
+            },
+            "analytics": {
+                "title": "2. Analytika třetích stran",
+                "desc": "V současné době nepoužíváme sledovací kódy třetích stran, jako je Google Analytics. Vyhrazujeme si však právo v budoucnu přidat anonymní analytické nástroje pro zlepšení výkonu našeho webu."
+            }
+        },
+        "thirdParty": {
+            "title": "Služby třetích stran",
+            "desc": "Naše služba funguje prostřednictvím přístupu k veřejným datům na <strong>X (Twitter)</strong>. Když stahujete video, přistupujete k obsahu hostovanému na serverech třetích stran. Doporučujeme vám prostudovat si zásady ochrany osobních údajů platforem, se kterými interagujete."
+        },
+        "gdpr": {
+            "title": "Soulad s GDPR",
+            "desc": "Vzhledem k tomu, že neshromažďujeme osobní údaje a nesledujeme jednotlivé uživatele, plně dodržujeme zásady „minimalizace údajů“ podle obecného nařízení o ochraně osobních údajů (GDPR)."
+        },
+        "contact": {
+            "title": "Kontakt",
+            "desc": "Máte-li dotazy k těmto Zásadám ochrany osobních údajů, kontaktujte nás prosím prostřednictvím našeho webu nebo naší",
+            "link": "kontaktní stránky",
+            "suffix": "."
+        }
+    },
+    "terms": {
+        "title": "Podmínky služby",
+        "lastUpdated": "Poslední aktualizace: 01/12/2025",
+        "sections": [
+            {
+                "title": "1. Přijetí podmínek",
+                "content": "Přístupem na web XDownloaderz a jeho používáním souhlasíte s podmínkami této smlouvy. Pokud s těmito podmínkami nesouhlasíte, službu prosím nepoužívejte."
+            },
+            {
+                "title": "2. Zřeknutí se odpovědnosti",
+                "content": "XDownloaderz <strong>NENÍ</strong> přidružen, spojen, autorizován, podporován ani žádným způsobem oficiálně spojen s X Corp. (dříve Twitter) ani žádnou z jejích dceřiných společností nebo přidružených společností. Oficiální web X najdete na twitter.com nebo x.com. Jména „X“, „Twitter“, stejně jako související názvy, značky, emblémy a obrázky jsou registrované ochranné známky jejich příslušných vlastníků."
+            },
+            {
+                "title": "4. Zakázané činnosti",
+                "subcontent": "Souhlasíte s tím, že nebudete Službu používat k:",
+                "list": [
+                    "Šíření materiálů chráněných autorským právem bez povolení nebo pro komerční zisk.",
+                    "Nahrávání nebo přenos virů nebo škodlivého kódu.",
+                    "Pokusu o přetížení, spamování nebo zhroucení našich serverů."
+                ]
+            },
+            {
+                "title": "5. „Jak stojí a leží“ a omezení odpovědnosti",
+                "content": "Služba je poskytována „JAK STOJÍ A LEŽÍ“ a „JAK JE K DISPOZICI“. Negarantujeme, že služba bude nepřerušovaná, bezchybná nebo zcela bezpečná. <br/><br/> XDownloaderz nenese odpovědnost za žádné přímé ani nepřímé škody, včetně, ale bez omezení na ztrátu dat nebo spory o autorská práva, vyplývající z používání nebo nemožnosti používat Službu."
+            },
+            {
+                "title": "6. Změny podmínek",
+                "content": "Vyhrazujeme si právo tyto podmínky kdykoli změnit. Vaše další používání webových stránek po provedení změn znamená, že souhlasíte s novými Podmínkami služby."
+            }
+        ],
+        "ip": {
+            "title": "3. Duševní vlastnictví a autorská práva",
+            "items": [
+                {
+                    "title": "Odpovědnost uživatele",
+                    "desc": "Berete na vědomí, že XDownloaderz je technický nástroj, který umožňuje stahování pouze veřejně dostupných médií. Nenárokujeme si vlastnictví žádného obsahu staženého prostřednictvím naší služby."
+                },
+                {
+                    "title": "Dodržování autorských práv",
+                    "desc": "Souhlasíte s tím, že budete tuto službu používat pouze pro obsah, který máte právo stahovat, nebo pro osobní použití (Fair Use). Tento nástroj nesmíte používat k porušování autorských práv ostatních."
+                },
+                {
+                    "title": "Práva k obsahu",
+                    "desc": "Veškerá práva duševního vlastnictví související s videi, obrázky a zvukem patří jejich příslušným tvůrcům obsahu a hostitelské platformě."
+                }
+            ]
+        }
+    },
+    "staticPosts": [
+        {
+            "id": "welcome-1",
+            "authorName": "XDownloaderz",
+            "content": "🎉 Vítejte na XDownloaderz!\n\nStahujte videa a GIFy z X (Twitter) jedním kliknutím, zcela zdarma a v nejvyšší kvalitě. Ukládejte jako MP4 nebo MP3, používejte přímo z prohlížeče bez instalace jakékoli aplikace.\n\n✨ Rychlé, bezpečné a neomezené!"
+        },
+        {
+            "id": "legal-warning",
+            "authorName": "XDownloaderz",
+            "content": "⚖️ Právní prohlášení a podmínky použití\n\nXDownloaderz.com nehostuje na svých serverech obsah chráněný autorským právem. Všechna videa jsou stahována okamžitě a přímo z CDN X (Twitter). Používání staženého obsahu je zcela na odpovědnosti uživatele.\n\n⚠️ Používejte obsah pouze k povoleným účelům."
+        },
+        {
+            "id": "seo-info-2",
+            "authorName": "XDownloaderz",
+            "content": "🚀 Nejpokročilejší stahovač videí z X (Twitter)\n\n✅ Podpora kvality 1080p Full HD\n✅ Extrakce MP3 (stahování hudby)\n✅ Rychlé a bezpečné stahování\n✅ Neomezené použití\n✅ Zážitek bez reklam\n✅ Není nutná registrace ani přihlášení\n\nUložte si videa z X (Twitter) do svého zařízení během několika sekund s XDownloaderz.com!"
+        },
+        {
+            "id": "platform-compatibility",
+            "authorName": "XDownloaderz",
+            "content": "📱 Plně kompatibilní se všemi zařízeními\n\nXDownloaderz funguje hladce na každé platformě:\n\n🤖 Android (Chrome, Samsung Internet)\n🍎 iPhone & iPad (Safari)\n💻 Windows PC (Chrome, Edge, Firefox)\n🖥️ Mac (Safari, Chrome)\n🐧 Linux (Firefox, Chromium)\n\nNavštivte xdownloaderz.com ve svém moderním prohlížeči, vložte odkaz na video z X (Twitter) a stahujte!"
+        },
+        {
+            "id": "guide-step1-4",
+            "authorName": "Průvodce XDownloaderz",
+            "content": "📖 Uživatelská příručka: Krok 1\n\n1️⃣ Zkopírujte odkaz na video\n\nOtevřete video, které chcete stáhnout, v aplikaci nebo na webu X (Twitter). Klepněte na ikonu 'Sdílet' u příspěvku a vyberte 'Kopírovat odkaz'.\n\n💡 Tip: URL tweetu s videem by měla vypadat takto:\nx.com/uzivatel/status/1234567890"
+        },
+        {
+            "id": "guide-step2",
+            "authorName": "Průvodce XDownloaderz",
+            "content": "📖 Uživatelská příručka: Krok 2\n\n2️⃣ Vložte odkaz do XDownloaderz\n\nOtevřete xdownloaderz.com. Vložte zkopírovaný odkaz na video z X (Twitter) do textového pole v horní části stránky.\n\nNáš systém automaticky detekuje odkaz a okamžitě načte informace o videu."
+        },
+        {
+            "id": "guide-step3",
+            "authorName": "Průvodce XDownloaderz",
+            "content": "📖 Uživatelská příručka: Krok 3\n\n3️⃣ Vyberte kvalitu a formát\n\nPo analýze videa vyberte požadovanou kvalitu z nabídky nastavení (ikona ⚙️):\n\n• 1080p / 720p / 480p (MP4 video)\n• MP3 (Pouze zvuk)\n\nVyšší rozlišení = Lepší kvalita obrazu, ale větší velikost souboru."
+        },
+        {
+            "id": "guide-step4",
+            "authorName": "Průvodce XDownloaderz",
+            "content": "📖 Uživatelská příručka: Krok 4\n\n4️⃣ Zahájit stahování\n\nPo výběru formátu a kvality klikněte na modré tlačítko 'Stáhnout'. Váš video nebo audio soubor se automaticky stáhne do vašeho zařízení.\n\n⚡ Rychlost stahování závisí na vašem internetovém připojení a velikosti videa."
+        },
+        {
+            "id": "faq-private-7",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Často kladené otázky\n\n🔒 Mohu stahovat videa ze soukromých/uzamčených účtů?\n\nNe. XDownloaderz může stahovat videa pouze z veřejných příspěvků na X (Twitter). Obsah na soukromých účtech je chráněn rozhraním X (Twitter) API a nelze k němu přistupovat.\n\n💡 Řešení: Můžete požádat vlastníka obsahu o povolení."
+        },
+        {
+            "id": "faq-quality",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Často kladené otázky\n\n📹 Proč není možnost 1080p vždy viditelná?\n\nNěkterá videa na X (Twitter) mohla být nahrána pouze v kvalitě 720p nebo nižší. XDownloaderz nemůže vytvořit vyšší rozlišení než je původní kvalita videa.\n\nBude vám nabídnuta nejvyšší dostupná možnost kvality."
+        },
+        {
+            "id": "faq-mp3-conversion",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Často kladené otázky\n\n🎵 Jak funguje převod na MP3?\n\nPři stahování videa z X (Twitter) XDownloaderz automaticky extrahuje zvukovou stopu a převede ji do formátu MP3. Tento proces probíhá ve vašem prohlížeči a je zcela bezpečný.\n\n⏱️ Doba převodu může trvat 5-30 sekund v závislosti na délce videa."
+        },
+        {
+            "id": "faq-security",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Často kladené otázky\n\n🛡️ Je XDownloaderz bezpečný? Dostanu virus?\n\nAno, je 100% bezpečný. XDownloaderz nehostuje žádné soubory a neobsahuje žádný adware ani viry. Videa jsou stahována přímo ze serverů CDN X (Twitter).\n\n✅ Funguje se šifrováním SSL (HTTPS) ve vašem prohlížeči.\n✅ Vaše osobní údaje se nikdy neshromažďují."
+        },
+        {
+            "id": "faq-pricing",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Často kladené otázky\n\n💰 Je XDownloaderz zdarma? Je vyžadováno předplatné?\n\nNe! XDownloaderz je zcela zdarma a navždy zůstane. Neexistují žádné poplatky, skryté náklady ani systémy předplatného.\n\n🎁 Můžete stahovat neomezené množství videí a používat jej, jak chcete."
+        },
+        {
+            "id": "faq-legal-use",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Často kladené otázky\n\n⚖️ Je legální používat stažená videa?\n\nStažený obsah můžete používat pro osobní, vzdělávací účely nebo pro fair use (spravedlivé užití). Nicméně:\n\n❌ Znovupublikování pro komerční účely\n❌ Páchání porušení autorských práv\n❌ Sdílení bez svolení vlastníka obsahu\n\nJednání v souladu se zákonem je odpovědností uživatele."
+        },
+        {
+            "id": "seo-info-benefits",
+            "authorName": "XDownloaderz",
+            "content": "🌟 Proč XDownloaderz?\n\n🚀 Nejrychlejší stahování: Uložte si videa z X (Twitter) během několika sekund\n🎯 Snadné použití: Stahujte videa v pouhých 3 krocích\n💎 Vysoká kvalita: Podpora 1080p Full HD\n🔄 Konvertor MP3: Extrahujte z videa pouze zvuk\n🌍 Univerzální přístup: Funguje na všech zařízeních\n\nxdownloaderz.com - Nejlepší způsob, jak stahovat videa z X (Twitter)!"
+        },
+        {
+            "id": "seo-keywords",
+            "authorName": "XDownloaderz",
+            "content": "🔍 Co můžete dělat s XDownloaderz:\n\n• Stáhnout video z X (Twitter) MP4\n• Stáhnout GIF z X (Twitter)\n• Online stahovač videí z X (Twitter)\n• Konvertor MP3 z X (Twitter)\n• 1080p stahování videa z X (Twitter)\n• Uložení videa z X (Twitter) do mobilu\n• Bezplatný downloader pro X (Twitter)\n\nPro nejlepší zážitek ze stahování videí z X (Twitter): xdownloaderz.com"
+        }
+    ]
+}

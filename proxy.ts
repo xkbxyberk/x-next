@@ -34,7 +34,12 @@ function checkRateLimit(request: NextRequest) {
 }
 
 // --- i18n Logic ---
-const locales = ['en', 'tr'];
+const locales = [
+  'en', 'tr', 'ar', 'bg', 'bn', 'br', 'cs', 'da', 'de', 'el',
+  'es', 'fa', 'fi', 'fr', 'he', 'hi', 'hr', 'hu', 'id', 'it',
+  'ja', 'km', 'ko', 'ms', 'ne', 'nl', 'no', 'pl', 'pt', 'ro',
+  'ru', 'sr', 'sv', 'sw', 'th', 'tl', 'uk', 'ur', 'vi', 'zh'
+];
 const defaultLocale = 'en';
 
 function getLocale(request: NextRequest): string {

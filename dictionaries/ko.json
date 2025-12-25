@@ -1,0 +1,296 @@
+{
+    "common": {
+        "title": "XDownloaderz | X (twitter) 비디오 다운로더",
+        "description": "X (Twitter) 비디오를 무료로 빠르고 안전하게 다운로드하세요. 1080p Full HD 화질 및 MP3 변환을 지원합니다. 모든 기기에서 작동합니다.",
+        "footerText": "© 2025 XDownloaderz",
+        "privacyPolicy": "개인정보 처리방침",
+        "termsOfService": "서비스 약관",
+        "contact": "문의하기",
+        "about": "소개"
+    },
+    "sidebar": {
+        "download": "다운로드",
+        "howToUse": "사용 방법?",
+        "howItWorks": "작동 원리?",
+        "faq": "자주 묻는 질문",
+        "adLabel": "광고",
+        "verticalAd": "수직 광고 공간"
+    },
+    "rightSection": {
+        "searchPlaceholder": "검색",
+        "adLabel1": "광고 공간 1",
+        "adLabel2": "광고 공간 2",
+        "adLabel3": "광고 공간 3"
+    },
+    "feed": {
+        "tabs": {
+            "download": "다운로더",
+            "history": "기록"
+        },
+        "inputPlaceholder": "여기에 X (Twitter) 비디오 링크를 붙여넣으세요...",
+        "pasteButton": "링크 붙여넣기 및 다운로드",
+        "clearButton": "지우기",
+        "analyzing": "비디오 분석 중...",
+        "downloadButton": "다운로드",
+        "downloading": "다운로드 중...",
+        "settings": {
+            "title": "형식 선택",
+            "audio": "오디오만",
+            "autoConvert": "자동 변환",
+            "highQuality": "최고 화질",
+            "dataSaver": "데이터 절약",
+            "standard": "표준"
+        },
+        "theme": {
+            "default": "기본",
+            "dim": "어둡게",
+            "lightsOut": "조명 끄기"
+        },
+        "ad": {
+            "sponsored": "스폰서",
+            "label": "광고 공간",
+            "provider": "(Google Adsense / 맞춤 광고)"
+        }
+    },
+    "about": {
+        "title": "소개",
+        "handle": "@xdownloaderz",
+        "logoTitle": "XDownloaderz",
+        "whatWeDo": {
+            "title": "우리가 하는 일은?",
+            "p1": "XDownloaderz는 소셜 미디어 피드와 개인 기기 간의 간극을 메우기 위해 설계된 강력한 무료 웹 도구입니다. X(구 Twitter)의 비디오와 미디어를 컴퓨터, 태블릿 또는 스마트폰으로 직접 다운로드할 수 있는 원활한 방법을 제공합니다.",
+            "p2": "소프트웨어 설치나 회원 가입이 필요한 다른 서비스와 달리, 저희 도구는 고급 웹 기술을 사용하여 브라우저에서 완전히 실행됩니다. 최대 <strong>1080p Full HD</strong>의 고해상도를 찾아내며 즉각적인 미디어 형식 변환 옵션을 제공합니다."
+        },
+        "howItWorks": {
+            "title": "작동 원리는?",
+            "step1": {
+                "title": "1. 붙여넣기",
+                "desc": "다운로드하려는 비디오가 포함된 X (Twitter) 게시물의 링크를 복사하여 검색 상자에 붙여넣으세요."
+            },
+            "step2": {
+                "title": "2. 분석",
+                "desc": "저희의 스마트 엔진이 플랫폼의 공개 인프라와 통신하여 비디오 파일과 사용 가능한 화질 옵션(예: 720p, 1080p)을 찾습니다."
+            },
+            "step3": {
+                "title": "3. 다운로드",
+                "desc": "원하는 화질을 선택하면 파일이 서버에 저장되지 않고 기기에 직접 저장됩니다."
+            }
+        },
+        "whyUs": {
+            "title": "왜 우리인가요?",
+            "items": [
+                {
+                    "title": "회원 가입 불필요:",
+                    "desc": "저희는 여러분의 시간과 개인정보를 존중합니다. 기능을 사용하기 위해 계정을 만들거나 이메일 주소를 제공할 필요가 없습니다."
+                },
+                {
+                    "title": "고화질:",
+                    "desc": "각 비디오에 대해 사용 가능한 가장 높은 비트레이트(화질)를 찾는 것을 최우선으로 합니다."
+                },
+                {
+                    "title": "클라이언트 측 처리:",
+                    "desc": "최신 브라우저 기능(FFmpeg 기술 포함)을 사용하여 비디오를 효율적으로 처리하며, 보안을 훼손하지 않고 빠른 다운로드를 보장합니다."
+                },
+                {
+                    "title": "100% 무료:",
+                    "desc": "저희 도구는 모든 사람에게 완전히 무료입니다."
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "문의하기",
+        "subtitle": "연락하기",
+        "heading": "여러분의 피드백을 소중히 여깁니다",
+        "description": "다운로드 오류 신고, 저작권 침해 통지 제출 또는 인사말을 위해 이메일을 보내주세요.",
+        "button": "이메일 보내기",
+        "footerText": "또는 저희 프로젝트에 대해 더 알아보려면",
+        "aboutLink": "소개",
+        "footerSuffix": "페이지를 방문하세요."
+    },
+    "privacy": {
+        "title": "개인정보 처리방침",
+        "lastUpdated": "최종 업데이트: 2025년 12월 1일",
+        "intro": {
+            "title": "서론",
+            "p1": "XDownloaderz(\"우리\", \"저희\")는 여러분의 개인정보를 소중히 여깁니다. 이 개인정보 처리방침은 X(구 Twitter)에서 미디어를 다운로드하기 위해 웹 기반 도구를 사용할 때 정보가 어떻게 처리되는지 설명합니다.",
+            "p2": "저희 서비스를 이용함으로써 귀하는 이 정책을 읽고 이해했음에 동의하는 것입니다."
+        },
+        "collection": {
+            "title": "수집하는 정보",
+            "personal": {
+                "title": "1. 개인 정보",
+                "desc": "저희 서비스는 <strong>비보관(non-retention)</strong> 원칙에 따라 운영됩니다. 다음과 같은 \"개인 식별 정보\"(PII)를 수집, 저장 또는 공유하지 않습니다:",
+                "list": [
+                    "이름 또는 이메일 주소.",
+                    "전화번호.",
+                    "소셜 미디어 로그인 비밀번호."
+                ],
+                "note": "서비스를 이용하기 위해 등록하거나 로그인할 필요가 없습니다."
+            },
+            "usage": {
+                "title": "2. 사용 데이터 및 로그 파일",
+                "desc": "대부분의 표준 웹 서버와 마찬가지로 로그 파일을 사용합니다. 이 파일에는 인터넷 프로토콜(IP) 주소, 브라우저 유형, 인터넷 서비스 제공자(ISP), 참조/종료 페이지, 플랫폼 유형, 날짜/시간 스탬프 및 클릭 수와 같은 데이터가 포함될 수 있습니다. 이 정보는 트렌드 분석, 사이트 관리 및 사용자 이동 추적에 종합적으로 사용됩니다. 이 데이터는 개인을 식별할 수 있는 정보와 연결되지 않습니다."
+            },
+            "urls": {
+                "title": "3. URL 및 미디어 콘텐츠",
+                "desc": "검색창에 링크(URL)를 붙여넣으면 해당 링크는 관련 미디어 파일을 찾기 위한 목적으로만 서버에서 일시적으로 처리됩니다. 제출한 링크의 영구적인 기록은 보관하지 않습니다."
+            }
+        },
+        "cookies": {
+            "title": "쿠키 및 로컬 저장소",
+            "local": {
+                "title": "1. 필수 로컬 저장소",
+                "desc": "브라우저의 로컬 저장소(Local Storage) 기능을 사용하여 인터페이스 환경설정(예: 다크/라이트 모드 선택)만 기억합니다."
+            },
+            "analytics": {
+                "title": "2. 제3자 분석",
+                "desc": "현재 Google Analytics와 같은 제3자 추적 코드를 사용하지 않습니다. 그러나 웹사이트 성능을 개선하기 위해 향후 익명 분석 도구를 추가할 권리를 보유합니다."
+            }
+        },
+        "thirdParty": {
+            "title": "제3자 서비스",
+            "desc": "저희 서비스는 <strong>X (Twitter)</strong>의 공개 데이터에 접근하여 작동합니다. 비디오를 다운로드할 때 제3자 서버에 호스팅된 콘텐츠에 접근하게 됩니다. 상호 작용하는 플랫폼의 개인정보 처리방침을 검토하는 것을 권장합니다."
+        },
+        "gdpr": {
+            "title": "GDPR 준수",
+            "desc": "개인 데이터를 수집하지 않고 개별 사용자를 추적하지 않으므로, 일반 데이터 보호 규정(GDPR)에 따른 \"데이터 최소화\" 원칙을 완전히 준수합니다."
+        },
+        "contact": {
+            "title": "문의하기",
+            "desc": "이 개인정보 처리방침에 대해 질문이 있는 경우 웹사이트 또는",
+            "link": "연락처 페이지",
+            "suffix": "를 통해 문의해 주세요."
+        }
+    },
+    "terms": {
+        "title": "서비스 약관",
+        "lastUpdated": "최종 업데이트: 2025년 12월 1일",
+        "sections": [
+            {
+                "title": "1. 약관의 동의",
+                "content": "XDownloaderz 웹사이트에 접속하고 이용함으로써 귀하는 본 계약의 약관에 동의하는 것입니다. 이 약관에 동의하지 않는 경우 서비스를 이용하지 마십시오."
+            },
+            {
+                "title": "2. 면책 조항",
+                "content": "XDownloaderz는 X Corp.(구 Twitter) 또는 그 자회사나 계열사와 제휴, 연관, 승인, 보증되거나 어떤 방식으로든 공식적으로 연결되어 있지 <strong>않습니다</strong>. 공식 X 웹사이트는 twitter.com 또는 x.com에서 찾을 수 있습니다. \"X\", \"Twitter\"라는 이름과 관련 이름, 마크, 엠블럼 및 이미지는 해당 소유자의 등록 상표입니다."
+            },
+            {
+                "title": "4. 금지된 활동",
+                "subcontent": "귀하는 다음과 같은 목적으로 서비스를 이용하지 않을 것에 동의합니다:",
+                "list": [
+                    "허가 없이 또는 상업적 이익을 위해 저작권이 있는 자료 배포.",
+                    "바이러스 또는 악성 코드 업로드 또는 전송.",
+                    "서버 과부하, 스팸 발송 또는 충돌 시도."
+                ]
+            },
+            {
+                "title": "5. \"있는 그대로\" 및 책임의 제한",
+                "content": "서비스는 \"있는 그대로\" 및 \"이용 가능한 대로\" 제공됩니다. 서비스가 중단되지 않거나, 오류가 없거나, 완전히 안전할 것이라고 보증하지 않습니다. <br/><br/> XDownloaderz는 서비스 이용 또는 이용 불가로 인해 발생하는 데이터 손실이나 저작권 분쟁을 포함하되 이에 국한되지 않는 직간접적인 손해에 대해 책임을 지지 않습니다."
+            },
+            {
+                "title": "6. 약관의 변경",
+                "content": "저희는 언제든지 이 약관을 변경할 권리를 보유합니다. 변경 후 웹사이트를 계속 이용하는 것은 새로운 서비스 약관에 동의하는 것을 의미합니다."
+            }
+        ],
+        "ip": {
+            "title": "3. 지적 재산권 및 저작권",
+            "items": [
+                {
+                    "title": "사용자의 책임",
+                    "desc": "귀하는 XDownloaderz가 공개적으로 이용 가능한 미디어만 다운로드할 수 있는 기술적 도구임을 인정합니다. 저희는 서비스를 통해 다운로드된 콘텐츠에 대한 소유권을 주장하지 않습니다."
+                },
+                {
+                    "title": "저작권 준수",
+                    "desc": "귀하는 다운로드할 권리가 있는 콘텐츠나 개인적 사용(공정 사용)을 위해서만 이 서비스를 이용하는 데 동의합니다. 타인의 저작권을 침해하기 위해 이 도구를 사용할 수 없습니다."
+                },
+                {
+                    "title": "콘텐츠 권리",
+                    "desc": "비디오, 이미지 및 오디오와 관련된 모든 지적 재산권은 해당 콘텐츠 제작자 및 호스팅 플랫폼에 있습니다."
+                }
+            ]
+        }
+    },
+    "staticPosts": [
+        {
+            "id": "welcome-1",
+            "authorName": "XDownloaderz",
+            "content": "🎉 XDownloaderz에 오신 것을 환영합니다!\n\nX (Twitter) 비디오와 GIF를 클릭 한 번으로 완전 무료로 최고 화질로 다운로드하세요. MP4 또는 MP3로 저장하고, 앱 설치 없이 브라우저에서 직접 사용하세요.\n\n✨ 빠르고 안전하며 무제한입니다!"
+        },
+        {
+            "id": "legal-warning",
+            "authorName": "XDownloaderz",
+            "content": "⚖️ 법적 면책 조항 및 이용 약관\n\nXDownloaderz.com은 서버에 저작권이 있는 콘텐츠를 호스팅하지 않습니다. 모든 비디오는 X (Twitter) CDN에서 즉시 직접 다운로드됩니다. 다운로드된 콘텐츠의 사용은 전적으로 사용자의 책임입니다.\n\n⚠️ 허용된 목적으로만 콘텐츠를 사용해 주세요."
+        },
+        {
+            "id": "seo-info-2",
+            "authorName": "XDownloaderz",
+            "content": "🚀 가장 진보된 X (Twitter) 비디오 다운로더\n\n✅ 1080p Full HD 화질 지원\n✅ MP3 추출(음악 다운로드)\n✅ 빠르고 안전한 다운로드\n✅ 무제한 사용\n✅ 광고 없는 경험\n✅ 가입이나 로그인 불필요\n\nXDownloaderz.com으로 X (Twitter) 비디오를 몇 초 만에 기기에 저장하세요!"
+        },
+        {
+            "id": "platform-compatibility",
+            "authorName": "XDownloaderz",
+            "content": "📱 모든 기기와 완벽 호환\n\nXDownloaderz는 모든 플랫폼에서 원활하게 작동합니다:\n\n🤖 Android (Chrome, Samsung Internet)\n🍎 iPhone 및 iPad (Safari)\n💻 Windows PC (Chrome, Edge, Firefox)\n🖥️ Mac (Safari, Chrome)\n🐧 Linux (Firefox, Chromium)\n\n최신 브라우저로 xdownloaderz.com을 방문하여 X (Twitter) 비디오 링크를 붙여넣고 다운로드하세요!"
+        },
+        {
+            "id": "guide-step1-4",
+            "authorName": "XDownloaderz 가이드",
+            "content": "📖 사용자 가이드: 1단계\n\n1️⃣ 비디오 링크 복사\n\nX (Twitter) 앱이나 웹사이트에서 다운로드하려는 비디오를 엽니다. 게시물의 '공유' 아이콘을 탭하고 '링크 복사'를 선택합니다.\n\n💡 팁: 비디오 트윗 URL은 다음과 같아야 합니다:\nx.com/user/status/1234567890"
+        },
+        {
+            "id": "guide-step2",
+            "authorName": "XDownloaderz 가이드",
+            "content": "📖 사용자 가이드: 2단계\n\n2️⃣ XDownloaderz에 링크 붙여넣기\n\nxdownloaderz.com을 엽니다. 복사한 X (Twitter) 비디오 링크를 페이지 상단의 텍스트 상자에 붙여넣으세요.\n\n시스템이 자동으로 링크를 감지하고 비디오 정보를 즉시 로드합니다."
+        },
+        {
+            "id": "guide-step3",
+            "authorName": "XDownloaderz 가이드",
+            "content": "📖 사용자 가이드: 3단계\n\n3️⃣ 화질 및 형식 선택\n\n비디오 분석이 완료되면 설정 메뉴(⚙️ 아이콘)에서 원하는 화질을 선택하세요:\n\n• 1080p / 720p / 480p (MP4 비디오)\n• MP3 (오디오만)\n\n해상도가 높을수록 화질은 좋지만 파일 크기가 커집니다."
+        },
+        {
+            "id": "guide-step4",
+            "authorName": "XDownloaderz 가이드",
+            "content": "📖 사용자 가이드: 4단계\n\n4️⃣ 다운로드 시작\n\n형식과 화질을 선택한 후 파란색 '다운로드' 버튼을 클릭하세요. 비디오 또는 오디오 파일이 자동으로 기기에 다운로드됩니다.\n\n⚡ 다운로드 속도는 인터넷 연결과 비디오 크기에 따라 다릅니다."
+        },
+        {
+            "id": "faq-private-7",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ 자주 묻는 질문\n\n🔒 비공개/잠긴 계정의 비디오를 다운로드할 수 있나요?\n\n아니요. XDownloaderz는 공개된 X (Twitter) 게시물의 비디오만 다운로드할 수 있습니다. 비공개 계정의 콘텐츠는 X (Twitter) API로 보호되며 접근할 수 없습니다.\n\n💡 해결책: 콘텐츠 소유자에게 허가를 요청할 수 있습니다."
+        },
+        {
+            "id": "faq-quality",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ 자주 묻는 질문\n\n📹 왜 1080p 옵션이 항상 보이지 않나요?\n\n일부 X (Twitter) 비디오는 720p 이하의 화질로만 업로드되었을 수 있습니다. XDownloaderz는 원본 비디오 화질보다 높은 해상도를 생성할 수 없습니다.\n\n사용 가능한 최고 화질 옵션이 표시됩니다."
+        },
+        {
+            "id": "faq-mp3-conversion",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ 자주 묻는 질문\n\n🎵 MP3 변환은 어떻게 작동하나요?\n\nX (Twitter) 비디오를 다운로드할 때 XDownloaderz는 자동으로 오디오 트랙을 추출하여 MP3 형식으로 변환합니다. 이 과정은 브라우저에서 이루어지며 완전히 안전합니다.\n\n⏱️ 변환 시간은 비디오 길이에 따라 5~30초 정도 소요될 수 있습니다."
+        },
+        {
+            "id": "faq-security",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ 자주 묻는 질문\n\n🛡️ XDownloaderz는 안전한가요? 바이러스에 걸릴 수 있나요?\n\n네, 100% 안전합니다. XDownloaderz는 파일을 호스팅하지 않으며 애드웨어나 바이러스를 포함하지 않습니다. 비디오는 X (Twitter) CDN 서버에서 직접 다운로드됩니다.\n\n✅ 브라우저에서 SSL(HTTPS) 암호화로 작동합니다.\n✅ 개인정보는 절대 수집되지 않습니다."
+        },
+        {
+            "id": "faq-pricing",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ 자주 묻는 질문\n\n💰 XDownloaderz는 무료인가요? 구독이 필요한가요?\n\n아니요! XDownloaderz는 완전히 무료이며 영원히 무료로 유지될 것입니다. 요금, 숨겨진 비용 또는 구독 시스템이 없습니다.\n\n🎁 비디오를 무제한으로 다운로드하고 원하는 만큼 사용할 수 있습니다."
+        },
+        {
+            "id": "faq-legal-use",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ 자주 묻는 질문\n\n⚖️ 다운로드한 비디오를 사용하는 것이 합법인가요?\n\n다운로드한 콘텐츠는 개인적, 교육적 목적 또는 공정 사용(Fair Use)을 위해 사용할 수 있습니다. 그러나:\n\n❌ 상업적 목적으로 재게시\n❌ 저작권 침해 행위\n❌ 콘텐츠 소유자의 허가 없이 공유\n\n법에 따라 행동하는 것은 사용자의 책임입니다."
+        },
+        {
+            "id": "seo-info-benefits",
+            "authorName": "XDownloaderz",
+            "content": "🌟 왜 XDownloaderz인가요?\n\n🚀 가장 빠른 다운로드: 몇 초 만에 X (Twitter) 비디오 저장\n🎯 간편한 사용: 단 3단계로 비디오 다운로드\n💎 고화질: 1080p Full HD 지원\n🔄 MP3 변환기: 비디오에서 오디오만 추출\n🌍 범용 접근성: 모든 기기에서 작동\n\nxdownloaderz.com - X (Twitter) 비디오를 다운로드하는 최고의 방법!"
+        },
+        {
+            "id": "seo-keywords",
+            "authorName": "XDownloaderz",
+            "content": "🔍 XDownloaderz로 할 수 있는 일:\n\n• X (Twitter) 비디오 다운로드 MP4\n• X (Twitter) GIF 다운로드\n• X (Twitter) 비디오 다운로더 온라인\n• X (Twitter) MP3 변환기\n• 1080p X (Twitter) 비디오 다운로드\n• 모바일 X (Twitter) 비디오 저장\n• 무료 X (Twitter) 다운로더\n\n최고의 X (Twitter) 비디오 다운로드 경험을 위해: xdownloaderz.com"
+        }
+    ]
+}

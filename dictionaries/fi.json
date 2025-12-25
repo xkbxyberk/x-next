@@ -1,0 +1,296 @@
+{
+    "common": {
+        "title": "XDownloaderz | X (twitter) Videon Lataaja",
+        "description": "Lataa X (Twitter) -videoita ilmaiseksi, nopeasti ja turvallisesti. Tukee 1080p Full HD -laatua ja MP3-muunnosta. Toimii kaikilla laitteilla.",
+        "footerText": "© 2025 XDownloaderz",
+        "privacyPolicy": "Tietosuojakäytäntö",
+        "termsOfService": "Käyttöehdot",
+        "contact": "Ota yhteyttä",
+        "about": "Tietoa meistä"
+    },
+    "sidebar": {
+        "download": "Lataa",
+        "howToUse": "Kuinka käyttää?",
+        "howItWorks": "Miten se toimii?",
+        "faq": "UKK",
+        "adLabel": "MAINOS",
+        "verticalAd": "PYSTYSUORA MAINOSTILA"
+    },
+    "rightSection": {
+        "searchPlaceholder": "Hae",
+        "adLabel1": "MAINOSTILA 1",
+        "adLabel2": "MAINOSTILA 2",
+        "adLabel3": "MAINOSTILA 3"
+    },
+    "feed": {
+        "tabs": {
+            "download": "Lataaja",
+            "history": "Historia"
+        },
+        "inputPlaceholder": "Liitä X (Twitter) -videolinkki tähän...",
+        "pasteButton": "Liitä linkki ja lataa",
+        "clearButton": "Tyhjennä",
+        "analyzing": "Analysoidaan videota...",
+        "downloadButton": "Lataa",
+        "downloading": "Ladataan...",
+        "settings": {
+            "title": "Valitse muoto",
+            "audio": "Vain ääni",
+            "autoConvert": "Automaattinen muunnos",
+            "highQuality": "Korkein laatu",
+            "dataSaver": "Datan säästö",
+            "standard": "Vakio"
+        },
+        "theme": {
+            "default": "Oletus",
+            "dim": "Himmeä",
+            "lightsOut": "Pimeä"
+        },
+        "ad": {
+            "sponsored": "SPONSOROITU",
+            "label": "MAINOSTILA",
+            "provider": "(Google Adsense / Mukautettu mainos)"
+        }
+    },
+    "about": {
+        "title": "Tietoa meistä",
+        "handle": "@xdownloaderz",
+        "logoTitle": "XDownloaderz",
+        "whatWeDo": {
+            "title": "Mitä me teemme?",
+            "p1": "XDownloaderz on tehokas ja ilmainen verkkotyökalu, joka on suunniteltu yhdistämään sosiaalisen median syötteet ja henkilökohtaiset laitteesi. Tarjoamme saumattoman tavan ladata videoita ja mediaa X:stä (entinen Twitter) suoraan tietokoneellesi, tabletillesi tai älypuhelimellesi.",
+            "p2": "Toisin kuin muut palvelut, jotka vaativat ohjelmiston asennusta tai jäsenyyttä, työkalumme toimii kokonaan selaimessasi käyttäen edistyneitä verkkoteknologioita. Se löytää korkeimman saatavilla olevan resoluution jopa <strong>1080p Full HD</strong> -laatuun asti ja tarjoaa vaihtoehtoja välittömään mediamuodon muunnokseen."
+        },
+        "howItWorks": {
+            "title": "Miten se toimii?",
+            "step1": {
+                "title": "1. Liitä",
+                "desc": "Kopioi ladattavan videon sisältävän X (Twitter) -julkaisun linkki ja liitä se hakukenttäämme."
+            },
+            "step2": {
+                "title": "2. Analysoi",
+                "desc": "Älykäs moottorimme kommunikoi alustan julkisen infrastruktuurin kanssa löytääkseen videotiedoston ja saatavilla olevat laatuvaihtoehdot (esim. 720p, 1080p)."
+            },
+            "step3": {
+                "title": "3. Lataa",
+                "desc": "Valitset haluamasi laadun, ja tiedosto tallennetaan suoraan laitteellesi ilman, että sitä tallennetaan palvelimillemme."
+            }
+        },
+        "whyUs": {
+            "title": "Miksi me?",
+            "items": [
+                {
+                    "title": "Ei rekisteröitymistä:",
+                    "desc": "Kunnioitamme aikaasi ja yksityisyyttäsi. Sinun ei tarvitse luoda tiliä tai antaa sähköpostiosoitetta käyttääksesi ominaisuuksiamme."
+                },
+                {
+                    "title": "Korkea laatu:",
+                    "desc": "Priorisoimme korkeimman saatavilla olevan bittinopeuden (laadun) löytämisen jokaiselle videolle."
+                },
+                {
+                    "title": "Asiakaspuolen käsittely:",
+                    "desc": "Käytämme moderneja selaimen ominaisuuksia (mukaan lukien FFmpeg-teknologiaa) videoiden tehokkaaseen käsittelyyn, mikä varmistaa nopeat lataukset turvallisuudesta tinkimättä."
+                },
+                {
+                    "title": "100% Ilmainen:",
+                    "desc": "Työkalumme on täysin ilmainen kaikille."
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "Ota yhteyttä",
+        "subtitle": "Lähetä viesti",
+        "heading": "Arvostamme palautettasi",
+        "description": "Voit lähettää meille sähköpostia ilmoittaaksesi epäonnistuneesta latauksesta, lähettääksesi tekijänoikeusilmoituksen tai vain sanoaksesi hei.",
+        "button": "Lähetä sähköpostia",
+        "footerText": "Tai vieraile",
+        "aboutLink": "Tietoa meistä",
+        "footerSuffix": "-sivullamme oppiaksesi lisää projektistamme."
+    },
+    "privacy": {
+        "title": "Tietosuojakäytäntö",
+        "lastUpdated": "Viimeksi päivitetty: 01.12.2025",
+        "intro": {
+            "title": "Johdanto",
+            "p1": "XDownloaderzissa (”me”, ”meidän”) arvostamme yksityisyyttäsi. Tämä tietosuojakäytäntö selittää, miten tietojasi käsitellään, kun käytät verkkopohjaista työkaluamme median lataamiseen X:stä (entinen Twitter).",
+            "p2": "Käyttämällä palveluamme hyväksyt, että olet lukenut ja ymmärtänyt tämän käytännön."
+        },
+        "collection": {
+            "title": "Keräämämme tiedot",
+            "personal": {
+                "title": "1. Henkilötiedot",
+                "desc": "Palvelumme toimii <strong>tallentamattomuuden</strong> periaatteella. Emme kerää, tallenna tai jaa mitään ”henkilökohtaisesti tunnistettavia tietoja” (PII), kuten:",
+                "list": [
+                    "Nimet tai sähköpostiosoitteet.",
+                    "Puhelinnumerot.",
+                    "Sosiaalisen median kirjautumissalasanat."
+                ],
+                "note": "Sinun ei tarvitse rekisteröityä tai kirjautua sisään käyttääksesi palveluamme."
+            },
+            "usage": {
+                "title": "2. Käyttötiedot ja lokitiedostot",
+                "desc": "Kuten useimmat tavalliset verkkopalvelimet, käytämme lokitiedostoja. Nämä tiedostot voivat sisältää tietoja, kuten IP-osoitteet, selaintyyppi, internet-palveluntarjoaja (ISP), viittaus-/poistumissivut, alustatyyppi, päivämäärä/aikaleima ja napsautusten määrä. Tätä tietoa käytetään trendien analysointiin, sivuston hallinnointiin ja käyttäjien liikkeiden seurantaan kootusti. Nämä tiedot eivät ole linkitetty mihinkään henkilökohtaisesti tunnistettavaan tietoon."
+            },
+            "urls": {
+                "title": "3. URL-osoitteet ja mediasisältö",
+                "desc": "Kun liität linkin (URL) hakukenttäämme, palvelimemme käsittelevät tämän linkin väliaikaisesti vain kyseisen mediatiedoston paikantamiseksi. Emme säilytä pysyvää historiaa lähettämistäsi linkeistä."
+            }
+        },
+        "cookies": {
+            "title": "Evästeet ja paikallinen tallennus",
+            "local": {
+                "title": "1. Pakollinen paikallinen tallennus",
+                "desc": "Käytämme selaimesi paikallista tallennusta (Local Storage) vain käyttöliittymäasetustesi (esim. Tumma/Vaalea tila -valinta) muistamiseen."
+            },
+            "analytics": {
+                "title": "2. Kolmannen osapuolen analytiikka",
+                "desc": "Emme tällä hetkellä käytä kolmannen osapuolen seurantakoodeja, kuten Google Analytics. Pidätämme kuitenkin oikeuden lisätä anonyymejä analytiikkatyökaluja tulevaisuudessa verkkosivustomme suorituskyvyn parantamiseksi."
+            }
+        },
+        "thirdParty": {
+            "title": "Kolmannen osapuolen palvelut",
+            "desc": "Palvelumme toimii käyttämällä <strong>X (Twitter)</strong> -alustan julkisia tietoja. Kun lataat videon, käytät kolmannen osapuolen palvelimilla isännöityä sisältöä. Kehotamme sinua tutustumaan käyttämiesi alustojen tietosuojakäytäntöihin."
+        },
+        "gdpr": {
+            "title": "GDPR-vaatimustenmukaisuus",
+            "desc": "Koska emme kerää henkilötietoja emmekä seuraa yksittäisiä käyttäjiä, noudatamme täysin yleisen tietosuoja-asetuksen (GDPR) mukaisia ”tietojen minimoinnin” periaatteita."
+        },
+        "contact": {
+            "title": "Ota yhteyttä",
+            "desc": "Jos sinulla on kysyttävää tästä tietosuojakäytännöstä, ota meihin yhteyttä verkkosivustomme kautta tai",
+            "link": "yhteystietosivullamme",
+            "suffix": "."
+        }
+    },
+    "terms": {
+        "title": "Käyttöehdot",
+        "lastUpdated": "Viimeksi päivitetty: 01.12.2025",
+        "sections": [
+            {
+                "title": "1. Ehtojen hyväksyminen",
+                "content": "Käyttämällä XDownloaderz-verkkosivustoa hyväksyt tämän sopimuksen ehdot. Jos et hyväksy näitä ehtoja, älä käytä palvelua."
+            },
+            {
+                "title": "2. Vastuuvapauslauseke",
+                "content": "XDownloaderz <strong>EI OLE</strong> sidoksissa, liitännäinen, valtuutettu, suositeltu tai millään tavalla virallisesti yhteydessä X Corp.:iin (entinen Twitter) tai mihinkään sen tytäryhtiöön. Virallinen X-verkkosivusto löytyy osoitteesta twitter.com tai x.com. Nimet ”X”, ”Twitter” sekä niihin liittyvät nimet, merkit, tunnukset ja kuvat ovat omistajiensa rekisteröityjä tavaramerkkejä."
+            },
+            {
+                "title": "4. Kielletyt toiminnot",
+                "subcontent": "Sitoudut olemaan käyttämättä Palvelua:",
+                "list": [
+                    "Tekijänoikeudella suojatun materiaalin levittämiseen ilman lupaa tai kaupalliseen hyötyyn.",
+                    "Virusten tai haitallisen koodin lataamiseen tai välittämiseen.",
+                    "Palvelimiemme ylikuormittamiseen, roskapostittamiseen tai kaatamiseen."
+                ]
+            },
+            {
+                "title": "5. ”Sellaisena kuin on” ja vastuunrajoitus",
+                "content": "Palvelu tarjotaan ”SELLAISENA KUIN ON” ja ”SAATAVILLA OLEVANA”. Emme takaa, että Palvelu on keskeytymätön, virheetön tai täysin turvallinen. <br/><br/> XDownloaderz ei ole vastuussa mistään suorista tai epäsuorista vahingoista, mukaan lukien mutta ei rajoittuen tietojen menetykseen tai tekijänoikeuskiistoihin, jotka johtuvat Palvelun käytöstä tai käytön estymisestä."
+            },
+            {
+                "title": "6. Ehtojen muutokset",
+                "content": "Pidätämme oikeuden muuttaa näitä ehtoja milloin tahansa. Sivuston käytön jatkaminen muutosten tekemisen jälkeen tarkoittaa, että hyväksyt uudet käyttöehdot."
+            }
+        ],
+        "ip": {
+            "title": "3. Immateriaalioikeudet ja tekijänoikeus",
+            "items": [
+                {
+                    "title": "Käyttäjän vastuu",
+                    "desc": "Tiedostat, että XDownloaderz on tekninen työkalu, joka mahdollistaa vain julkisesti saatavilla olevan median lataamisen. Emme vaadi omistusoikeutta mihinkään palvelumme kautta ladattuun sisältöön."
+                },
+                {
+                    "title": "Tekijänoikeuksien noudattaminen",
+                    "desc": "Sitoudut käyttämään tätä palvelua vain sellaiseen sisältöön, johon sinulla on latausoikeus tai henkilökohtaiseen käyttöön (Fair Use). Et saa käyttää tätä työkalua toisten tekijänoikeuksien loukkaamiseen."
+                },
+                {
+                    "title": "Sisältöoikeudet",
+                    "desc": "Kaikki videoihin, kuviin ja ääneen liittyvät immateriaalioikeudet kuuluvat niiden vastaaville sisällöntuottajille ja isännöintialustalle."
+                }
+            ]
+        }
+    },
+    "staticPosts": [
+        {
+            "id": "welcome-1",
+            "authorName": "XDownloaderz",
+            "content": "🎉 Tervetuloa XDownloaderziin!\n\nLataa X (Twitter) -videoita ja GIF-tiedostoja yhdellä napsautuksella, täysin ilmaiseksi ja korkeimmalla laadulla. Tallenna MP4- tai MP3-muodossa, käytä suoraan selaimestasi asentamatta mitään sovellusta.\n\n✨ Nopea, turvallinen ja rajoittamaton!"
+        },
+        {
+            "id": "legal-warning",
+            "authorName": "XDownloaderz",
+            "content": "⚖️ Oikeudellinen vastuuvapauslauseke ja käyttöehdot\n\nXDownloaderz.com ei isännöi tekijänoikeudella suojattua sisältöä palvelimillaan. Kaikki videot ladataan välittömästi ja suoraan X (Twitter) CDN:stä. Ladatun sisällön käyttö on täysin käyttäjän vastuulla.\n\n⚠️ Käytä sisältöä vain sallittuihin tarkoituksiin."
+        },
+        {
+            "id": "seo-info-2",
+            "authorName": "XDownloaderz",
+            "content": "🚀 Edistynein X (Twitter) -videonlataaja\n\n✅ 1080p Full HD -laadun tuki\n✅ MP3-erotus (musiikin lataus)\n✅ Nopea ja turvallinen lataus\n✅ Rajoittamaton käyttö\n✅ Mainokseton kokemus\n✅ Ei vaadi rekisteröitymistä tai kirjautumista\n\nTallenna X (Twitter) -videot laitteellesi sekunneissa XDownloaderz.comin avulla!"
+        },
+        {
+            "id": "platform-compatibility",
+            "authorName": "XDownloaderz",
+            "content": "📱 Täysin yhteensopiva kaikkien laitteiden kanssa\n\nXDownloaderz toimii sujuvasti kaikilla alustoilla:\n\n🤖 Android (Chrome, Samsung Internet)\n🍎 iPhone & iPad (Safari)\n💻 Windows PC (Chrome, Edge, Firefox)\n🖥️ Mac (Safari, Chrome)\n🐧 Linux (Firefox, Chromium)\n\nVieraile osoitteessa xdownloaderz.com modernilla selaimellasi, liitä X (Twitter) -videolinkki ja lataa!"
+        },
+        {
+            "id": "guide-step1-4",
+            "authorName": "XDownloaderz Opas",
+            "content": "📖 Käyttöopas: Vaihe 1\n\n1️⃣ Kopioi videolinkki\n\nAvaa video, jonka haluat ladata, X (Twitter) -sovelluksessa tai verkkosivustolla. Napauta julkaisun 'Jaa'-kuvaketta ja valitse 'Kopioi linkki'.\n\n💡 Vinkki: Videotwiitin URL-osoitteen tulisi näyttää tältä:\nx.com/kayttaja/status/1234567890"
+        },
+        {
+            "id": "guide-step2",
+            "authorName": "XDownloaderz Opas",
+            "content": "📖 Käyttöopas: Vaihe 2\n\n2️⃣ Liitä linkki XDownloaderziin\n\nAvaa xdownloaderz.com. Liitä kopioitu X (Twitter) -videolinkki sivun yläosan tekstikenttään.\n\nJärjestelmämme tunnistaa linkin automaattisesti ja lataa videotiedot välittömästi."
+        },
+        {
+            "id": "guide-step3",
+            "authorName": "XDownloaderz Opas",
+            "content": "📖 Käyttöopas: Vaihe 3\n\n3️⃣ Valitse laatu ja muoto\n\nKun video on analysoitu, valitse haluamasi laatu asetusvalikosta (⚙️-kuvake):\n\n• 1080p / 720p / 480p (MP4 Video)\n• MP3 (Vain ääni)\n\nKorkeampi resoluutio = Parempi kuvanlaatu mutta suurempi tiedostokoko."
+        },
+        {
+            "id": "guide-step4",
+            "authorName": "XDownloaderz Opas",
+            "content": "📖 Käyttöopas: Vaihe 4\n\n4️⃣ Aloita lataus\n\nKun olet valinnut muodon ja laadun, napsauta sinistä 'Lataa'-painiketta. Video- tai äänitiedostosi ladataan automaattisesti laitteellesi.\n\n⚡ Latausnopeus riippuu internetyhteydestäsi ja videon koosta."
+        },
+        {
+            "id": "faq-private-7",
+            "authorName": "XDownloaderz UKK",
+            "content": "❓ Usein kysytyt kysymykset\n\n🔒 Voinko ladata videoita yksityisiltä/lukituilta tileiltä?\n\nEi. XDownloaderz voi ladata videoita vain julkisista X (Twitter) -julkaisuista. Yksityisten tilien sisältö on suojattu X (Twitter) API:lla eikä siihen pääse käsiksi.\n\n💡 Ratkaisu: Voit pyytää lupaa sisällön omistajalta."
+        },
+        {
+            "id": "faq-quality",
+            "authorName": "XDownloaderz UKK",
+            "content": "❓ Usein kysytyt kysymykset\n\n📹 Miksi 1080p-vaihtoehto ei ole aina näkyvissä?\n\nJotkut X (Twitter) -videot on saatettu ladata vain 720p-laadulla tai huonommalla. XDownloaderz ei voi tuottaa korkeampaa resoluutiota kuin alkuperäinen videon laatu.\n\nSinulle esitetään korkein saatavilla oleva laatuvaihtoehto."
+        },
+        {
+            "id": "faq-mp3-conversion",
+            "authorName": "XDownloaderz UKK",
+            "content": "❓ Usein kysytyt kysymykset\n\n🎵 Miten MP3-muunnos toimii?\n\nKun lataat X (Twitter) -videon, XDownloaderz erottaa automaattisesti ääniraidan ja muuntaa sen MP3-muotoon. Tämä prosessi tapahtuu selaimessasi ja on täysin turvallinen.\n\n⏱️ Muunnosaika voi kestää 5–30 sekuntia videon pituudesta riippuen."
+        },
+        {
+            "id": "faq-security",
+            "authorName": "XDownloaderz UKK",
+            "content": "❓ Usein kysytyt kysymykset\n\n🛡️ Onko XDownloaderz turvallinen? Saanko viruksen?\n\nKyllä, se on 100% turvallinen. XDownloaderz ei isännöi mitään tiedostoja eikä sisällä mainosohjelmia tai viruksia. Videot ladataan suoraan X (Twitter) CDN-palvelimilta.\n\n✅ Toimii SSL (HTTPS) -salauksella selaimessasi.\n✅ Henkilötietojasi ei koskaan kerätä."
+        },
+        {
+            "id": "faq-pricing",
+            "authorName": "XDownloaderz UKK",
+            "content": "❓ Usein kysytyt kysymykset\n\n💰 Onko XDownloaderz ilmainen? Vaaditaanko tilausta?\n\nEi! XDownloaderz on täysin ilmainen ja pysyy sellaisena ikuisesti. Ei maksuja, piilokuluja tai tilausjärjestelmiä.\n\n🎁 Voit ladata rajoittamattoman määrän videoita ja käyttää palvelua niin paljon kuin haluat."
+        },
+        {
+            "id": "faq-legal-use",
+            "authorName": "XDownloaderz UKK",
+            "content": "❓ Usein kysytyt kysymykset\n\n⚖️ Onko ladattujen videoiden käyttö laillista?\n\nVoit käyttää ladattua sisältöä henkilökohtaisiin, koulutuksellisiin tarkoituksiin tai kohtuullisen käytön (Fair Use) puitteissa. Kuitenkin:\n\n❌ Uudelleenjulkaiseminen kaupallisiin tarkoituksiin\n❌ Tekijänoikeusrikkomuksen tekeminen\n❌ Jakaminen ilman sisällön omistajan lupaa\n\nLain noudattaminen on käyttäjän vastuulla."
+        },
+        {
+            "id": "seo-info-benefits",
+            "authorName": "XDownloaderz",
+            "content": "🌟 Miksi XDownloaderz?\n\n🚀 Nopein lataus: Tallenna X (Twitter) -videot sekunneissa\n🎯 Helppokäyttöinen: Lataa videot vain 3 vaiheessa\n💎 Korkea laatu: 1080p Full HD -tuki\n🔄 MP3-muunnin: Erota vain ääni videosta\n🌍 Yleinen käyttöoikeus: Toimii kaikilla laitteilla\n\nxdownloaderz.com - Paras tapa ladata X (Twitter) -videoita!"
+        },
+        {
+            "id": "seo-keywords",
+            "authorName": "XDownloaderz",
+            "content": "🔍 Mitä voit tehdä XDownloaderzilla:\n\n• Lataa X (Twitter) video MP4\n• Lataa X (Twitter) GIF\n• X (Twitter) videonlataaja verkossa\n• X (Twitter) MP3-muunnin\n• 1080p X (Twitter) videon lataus\n• Tallenna X (Twitter) video mobiililla\n• Ilmainen X (Twitter) lataaja\n\nParas X (Twitter) -videon latauskokemus: xdownloaderz.com"
+        }
+    ]
+}

@@ -25,9 +25,10 @@ type FeedItem =
 
 interface MainFeedProps {
   dict: any;
+  initialItems: any[]; // Using any[] to avoid circular dependency or complex type imports, effectively FeedItem[]
 }
 
-export default function MainFeed({ dict }: MainFeedProps) {
+export default function MainFeed({ dict, initialItems }: MainFeedProps) {
   const [activeTab, setActiveTab] = useState<'foryou' | 'following'>('foryou');
   const [isFocused, setIsFocused] = useState(false);
   const [isThemeMenuOpen, setIsThemeMenuOpen] = useState(false);
@@ -47,9 +48,6 @@ export default function MainFeed({ dict }: MainFeedProps) {
 
   const logoSrc = theme === 'default' ? '/logo.avif' : '/logo-white.avif';
 
-  // Helper to find post content from dictionary
-  const getPost = (id: string) => dict.staticPosts.find((p: any) => p.id === id) || { content: '', authorName: 'XDownloaderz' };
-
   // --- REKLAM BİLEŞENİ ---
   const AdBanner = () => (
     <div className="border-b border-(--border) p-4 bg-(--background-secondary)/30">
@@ -63,217 +61,7 @@ export default function MainFeed({ dict }: MainFeedProps) {
     </div>
   );
 
-  // --- SABİT İÇERİK LİSTESİ ---
-  const staticItems: FeedItem[] = [
-    // 1. HOŞ GELDİN MESAJI
-    {
-      type: 'post',
-      data: {
-        id: 'welcome-1',
-        author: { name: getPost('welcome-1').authorName, handle: '@xdownloaderz', avatar: logoSrc },
-        content: getPost('welcome-1').content,
-        timestamp: 'Sabitlenmiş',
-        metrics: { likes: 15200, reposts: 4100, replies: 187 },
-      }
-    },
-
-    // 2. YASAL BİLGİLENDİRME
-    {
-      type: 'post',
-      data: {
-        id: 'legal-warning',
-        author: { name: getPost('legal-warning').authorName, handle: '@xdownloaderz', avatar: logoSrc },
-        content: getPost('legal-warning').content,
-        timestamp: 'Sabitlenmiş',
-        metrics: { likes: 2400, reposts: 310, replies: 42 },
-      }
-    },
-
-    // --- REKLAM ALANI 1 ---
-    { type: 'ad', id: 'ad-1' },
-
-    // 3. ÖZELLİKLER TANITIMI
-    {
-      type: 'post',
-      data: {
-        id: 'seo-info-2',
-        author: { name: getPost('seo-info-2').authorName, handle: '@xdownloaderz', avatar: logoSrc },
-        content: getPost('seo-info-2').content,
-        timestamp: '2d',
-        metrics: { likes: 9800, reposts: 2650, replies: 124 },
-      }
-    },
-
-    // 4. PLATFORM UYUMLULUK BİLGİSİ
-    {
-      type: 'post',
-      data: {
-        id: 'platform-compatibility',
-        author: { name: getPost('platform-compatibility').authorName, handle: '@xdownloaderz', avatar: logoSrc },
-        content: getPost('platform-compatibility').content,
-        timestamp: '3d',
-        metrics: { likes: 5600, reposts: 1420, replies: 78 },
-      }
-    },
-
-    // --- REKLAM ALANI 2 ---
-    { type: 'ad', id: 'ad-2' },
-
-    // 5. NASIL KULLANILIR - ADIM 1
-    {
-      type: 'post',
-      data: {
-        id: 'guide-step1-4',
-        author: { name: getPost('guide-step1-4').authorName, handle: '@guide', avatar: logoSrc },
-        content: getPost('guide-step1-4').content,
-        timestamp: '5d',
-        metrics: { likes: 4200, reposts: 980, replies: 56 },
-      }
-    },
-
-    // 6. NASIL KULLANILIR - ADIM 2
-    {
-      type: 'post',
-      data: {
-        id: 'guide-step2',
-        author: { name: getPost('guide-step2').authorName, handle: '@guide', avatar: logoSrc },
-        content: getPost('guide-step2').content,
-        timestamp: '5d',
-        metrics: { likes: 3800, reposts: 890, replies: 48 },
-      }
-    },
-
-    // 7. NASIL KULLANILIR - ADIM 3
-    {
-      type: 'post',
-      data: {
-        id: 'guide-step3',
-        author: { name: getPost('guide-step3').authorName, handle: '@guide', avatar: logoSrc },
-        content: getPost('guide-step3').content,
-        timestamp: '5d',
-        metrics: { likes: 3500, reposts: 820, replies: 44 },
-      }
-    },
-
-    // 8. NASIL KULLANILIR - ADIM 4
-    {
-      type: 'post',
-      data: {
-        id: 'guide-step4',
-        author: { name: getPost('guide-step4').authorName, handle: '@guide', avatar: logoSrc },
-        content: getPost('guide-step4').content,
-        timestamp: '5d',
-        metrics: { likes: 3200, reposts: 750, replies: 39 },
-      }
-    },
-
-    // --- REKLAM ALANI 3 ---
-    { type: 'ad', id: 'ad-3' },
-
-    // 9. SSS - ÖZEL VİDEOLAR
-    {
-      type: 'post',
-      data: {
-        id: 'faq-private-7',
-        author: { name: getPost('faq-private-7').authorName, handle: '@faq', avatar: logoSrc },
-        content: getPost('faq-private-7').content,
-        timestamp: '1w',
-        metrics: { likes: 2100, reposts: 420, replies: 67 },
-      }
-    },
-
-    // 10. SSS - KALİTE SORUNU
-    {
-      type: 'post',
-      data: {
-        id: 'faq-quality',
-        author: { name: getPost('faq-quality').authorName, handle: '@faq', avatar: logoSrc },
-        content: getPost('faq-quality').content,
-        timestamp: '1w',
-        metrics: { likes: 1800, reposts: 360, replies: 52 },
-      }
-    },
-
-    // 11. SSS - MP3 DÖNÜŞÜMÜ
-    {
-      type: 'post',
-      data: {
-        id: 'faq-mp3-conversion',
-        author: { name: getPost('faq-mp3-conversion').authorName, handle: '@faq', avatar: logoSrc },
-        content: getPost('faq-mp3-conversion').content,
-        timestamp: '1w',
-        metrics: { likes: 2800, reposts: 710, replies: 94 },
-      }
-    },
-
-    // 12. SSS - GÜVENLİK
-    {
-      type: 'post',
-      data: {
-        id: 'faq-security',
-        author: { name: getPost('faq-security').authorName, handle: '@faq', avatar: logoSrc },
-        content: getPost('faq-security').content,
-        timestamp: '1w',
-        metrics: { likes: 3400, reposts: 890, replies: 103 },
-      }
-    },
-
-    // 13. SSS - ÜCRET
-    {
-      type: 'post',
-      data: {
-        id: 'faq-pricing',
-        author: { name: getPost('faq-pricing').authorName, handle: '@faq', avatar: logoSrc },
-        content: getPost('faq-pricing').content,
-        timestamp: '1w',
-        metrics: { likes: 5200, reposts: 1340, replies: 156 },
-      }
-    },
-
-    // 14. SSS - YASAL KULLANIM
-    {
-      type: 'post',
-      data: {
-        id: 'faq-legal-use',
-        author: { name: getPost('faq-legal-use').authorName, handle: '@faq', avatar: logoSrc },
-        content: getPost('faq-legal-use').content,
-        timestamp: '2w',
-        metrics: { likes: 2600, reposts: 580, replies: 89 },
-      }
-    },
-
-    // --- REKLAM ALANI 4 ---
-    { type: 'ad', id: 'ad-4' },
-
-    // 15. SEO ODAKLI BİLGİLENDİRME
-    {
-      type: 'post',
-      data: {
-        id: 'seo-info-benefits',
-        author: { name: getPost('seo-info-benefits').authorName, handle: '@xdownloaderz', avatar: logoSrc },
-        content: getPost('seo-info-benefits').content,
-        timestamp: '2w',
-        metrics: { likes: 7100, reposts: 1890, replies: 142 },
-      }
-    },
-
-    // --- REKLAM ALANI 5 ---
-    { type: 'ad', id: 'ad-5' },
-
-    // 16. SEO - ANAHTAR KELİMELER
-    {
-      type: 'post',
-      data: {
-        id: 'seo-keywords',
-        author: { name: getPost('seo-keywords').authorName, handle: '@xdownloaderz', avatar: logoSrc },
-        content: getPost('seo-keywords').content,
-        timestamp: '3w',
-        metrics: { likes: 4800, reposts: 1230, replies: 95 },
-      }
-    },
-  ];
-
-  const [displayItems, setDisplayItems] = useState<FeedItem[]>(staticItems);
+  const [displayItems, setDisplayItems] = useState<FeedItem[]>(initialItems);
 
   const handlePaste = async (e: React.ClipboardEvent) => {
     const pastedText = e.clipboardData.getData('text');
@@ -326,7 +114,7 @@ export default function MainFeed({ dict }: MainFeedProps) {
   useEffect(() => {
     if (!inputUrl.trim()) {
       reset();
-      setDisplayItems(staticItems);
+      setDisplayItems(initialItems);
       setIsSettingsMenuOpen(false);
     }
   }, [inputUrl]);
@@ -349,9 +137,9 @@ export default function MainFeed({ dict }: MainFeedProps) {
           metrics: { likes: data.statistics.likes || 0, reposts: 0, replies: 0 },
         }
       };
-      setDisplayItems([newPost, ...staticItems]);
+      setDisplayItems([newPost, ...initialItems]);
     } else {
-      setDisplayItems(staticItems);
+      setDisplayItems(initialItems);
     }
   }, [theme, data]);
 
@@ -403,7 +191,7 @@ export default function MainFeed({ dict }: MainFeedProps) {
         <div id="download-area" className="p-4 border-b border-(--border) scroll-mt-24">
           <div className="flex gap-4">
             <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 relative border border-(--border)">
-              <Image src={logoSrc} alt="XDownloaderz" fill className="object-cover" sizes="40px" />
+              <Image src={logoSrc} alt="XDownloaderz" fill className="object-cover" sizes="40px" priority />
             </div>
             <div className="flex-1 flex flex-col gap-3">
 

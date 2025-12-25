@@ -1,0 +1,296 @@
+{
+    "common": {
+        "title": "XDownloaderz | X (twitter) Video Downloader",
+        "description": "Mag-download ng mga video mula sa X (Twitter) nang libre, mabilis, at ligtas. Suportado ang 1080p Full HD na kalidad at MP3 conversion. Gumagana sa lahat ng device.",
+        "footerText": "© 2025 XDownloaderz",
+        "privacyPolicy": "Patakaran sa Privacy",
+        "termsOfService": "Mga Tuntunin ng Serbisyo",
+        "contact": "Makipag-ugnayan",
+        "about": "Tungkol sa Amin"
+    },
+    "sidebar": {
+        "download": "I-download",
+        "howToUse": "Paano Gamitin?",
+        "howItWorks": "Paano Ito Gumagana?",
+        "faq": "FAQ",
+        "adLabel": "PATALASTAS",
+        "verticalAd": "PATAYONG ESPASYO NG AD"
+    },
+    "rightSection": {
+        "searchPlaceholder": "Maghanap",
+        "adLabel1": "ESPASYO NG AD 1",
+        "adLabel2": "ESPASYO NG AD 2",
+        "adLabel3": "ESPASYO NG AD 3"
+    },
+    "feed": {
+        "tabs": {
+            "download": "Downloader",
+            "history": "Kasaysayan"
+        },
+        "inputPlaceholder": "I-paste ang link ng X (Twitter) video dito...",
+        "pasteButton": "I-paste ang link at i-download",
+        "clearButton": "Linisin",
+        "analyzing": "Sinusuri ang video...",
+        "downloadButton": "I-download",
+        "downloading": "Nagda-download...",
+        "settings": {
+            "title": "Pumili ng Format",
+            "audio": "Audio Lamang",
+            "autoConvert": "Auto Convert",
+            "highQuality": "Pinakamataas na Kalidad",
+            "dataSaver": "Tipid sa Data",
+            "standard": "Karaniwan"
+        },
+        "theme": {
+            "default": "Default",
+            "dim": "Madilim-dilim",
+            "lightsOut": "Madilim"
+        },
+        "ad": {
+            "sponsored": "SPONSORED",
+            "label": "ESPASYO NG AD",
+            "provider": "(Google Adsense / Pasadyang Ad)"
+        }
+    },
+    "about": {
+        "title": "Tungkol sa Amin",
+        "handle": "@xdownloaderz",
+        "logoTitle": "XDownloaderz",
+        "whatWeDo": {
+            "title": "Ano ang Ginagawa Namin?",
+            "p1": "Ang XDownloaderz ay isang malakas at libreng web tool na idinisenyo upang pag-ugnayin ang mga social media feed at ang iyong mga personal na device. Nag-aalok kami ng seamless na paraan upang mag-download ng mga video at media mula sa X (dating Twitter) nang direkta sa iyong computer, tablet, o smartphone.",
+            "p2": "Hindi tulad ng ibang mga serbisyo na nangangailangan ng pag-install ng software o membership, ang aming tool ay ganap na gumagana sa iyong browser gamit ang mga advanced na teknolohiya sa web. Hinahanap nito ang pinakamataas na magagamit na resolution hanggang <strong>1080p Full HD</strong> at nag-aalok ng mga opsyon para sa instant media format conversion."
+        },
+        "howItWorks": {
+            "title": "Paano Ito Gumagana?",
+            "step1": {
+                "title": "1. I-paste",
+                "desc": "Kopyahin ang link ng X (Twitter) post na naglalaman ng video na gusto mong i-download at i-paste ito sa aming search box."
+            },
+            "step2": {
+                "title": "2. Suriin",
+                "desc": "Ang aming smart engine ay nakikipag-ugnayan sa pampublikong imprastraktura ng platform upang hanapin ang video file at ang mga magagamit na opsyon sa kalidad (hal. 720p, 1080p)."
+            },
+            "step3": {
+                "title": "3. I-download",
+                "desc": "Pipiliin mo ang iyong gustong kalidad, at ang file ay direktang ise-save sa iyong device nang hindi iniimbak sa aming mga server."
+            }
+        },
+        "whyUs": {
+            "title": "Bakit Kami?",
+            "items": [
+                {
+                    "title": "Walang Rehistrasyon:",
+                    "desc": "Iginagalang namin ang iyong oras at privacy. Hindi mo kailangang gumawa ng account o magbigay ng email address upang magamit ang aming mga tampok."
+                },
+                {
+                    "title": "Mataas na Kalidad:",
+                    "desc": "Inuuna namin ang paghahanap ng pinakamataas na magagamit na bitrate (kalidad) para sa bawat video."
+                },
+                {
+                    "title": "Client-side Processing:",
+                    "desc": "Gumagamit kami ng mga modernong kakayahan ng browser (kabilang ang teknolohiyang FFmpeg) upang mahusay na maproseso ang mga video, tinitiyak ang mabilis na pag-download nang hindi nakompromiso ang seguridad."
+                },
+                {
+                    "title": "100% Libre:",
+                    "desc": "Ang aming tool ay ganap na libre para sa lahat."
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "Makipag-ugnayan",
+        "subtitle": "Kausapin Kami",
+        "heading": "Pinahahalagahan namin ang iyong feedback",
+        "description": "Maaari kang mag-email sa amin upang mag-ulat ng sirang download, magsumite ng abiso sa copyright, o bumati lang.",
+        "button": "Magpadala ng Email",
+        "footerText": "O bisitahin ang aming pahina ng",
+        "aboutLink": "Tungkol sa Amin",
+        "footerSuffix": "upang malaman ang higit pa tungkol sa aming proyekto."
+    },
+    "privacy": {
+        "title": "Patakaran sa Privacy",
+        "lastUpdated": "Huling Na-update: 01/12/2025",
+        "intro": {
+            "title": "Panimula",
+            "p1": "Sa XDownloaderz (\"kami\", \"amin\"), pinahahalagahan namin ang iyong privacy. Ipinapaliwanag ng Patakaran sa Privacy na ito kung paano pinangangasiwaan ang iyong impormasyon kapag ginagamit mo ang aming web-based na tool upang mag-download ng media mula sa X (dating Twitter).",
+            "p2": "Sa paggamit ng aming serbisyo, sumasang-ayon ka na nabasa at naunawaan mo ang patakarang ito."
+        },
+        "collection": {
+            "title": "Impormasyong Kinokolekta Namin",
+            "personal": {
+                "title": "1. Personal na Impormasyon",
+                "desc": "Ang aming serbisyo ay gumagana sa batayang <strong>hindi pag-iimbak (non-retention)</strong>. HINDI kami nangongolekta, nag-iimbak, o nagbabahagi ng anumang \"Personally Identifiable Information\" (PII) tulad ng:",
+                "list": [
+                    "Mga pangalan o email address.",
+                    "Mga numero ng telepono.",
+                    "Mga password sa pag-login sa social media."
+                ],
+                "note": "Hindi mo kailangang magrehistro o mag-login upang magamit ang aming serbisyo."
+            },
+            "usage": {
+                "title": "2. Data ng Paggamit at Log Files",
+                "desc": "Tulad ng karamihan sa mga karaniwang web server, gumagamit kami ng log files. Ang mga file na ito ay maaaring maglaman ng data tulad ng internet protocol (IP) addresses, uri ng browser, internet service provider (ISP), referring/exit pages, uri ng platform, date/time stamp, at bilang ng mga click. Ang impormasyong ito ay ginagamit upang suriin ang mga uso, pamahalaan ang site, at subaybayan ang paggalaw ng mga gumagamit sa kabuuan. Ang data na ito ay hindi naka-link sa anumang impormasyon na maaaring personal na makilala."
+            },
+            "urls": {
+                "title": "3. Mga URL at Nilalaman ng Media",
+                "desc": "Kapag nag-paste ka ng link (URL) sa aming search bar, ang link na iyon ay pansamantalang pinoproseso ng aming mga server para lamang sa layunin ng paghahanap ng nauugnay na media file. Hindi kami nag-iingat ng permanenteng kasaysayan ng mga link na iyong isinusumite."
+            }
+        },
+        "cookies": {
+            "title": "Cookies at Local Storage",
+            "local": {
+                "title": "1. Mandatoryong Local Storage",
+                "desc": "Ginagamit namin ang mga tampok na Local Storage ng iyong browser para lamang matandaan ang iyong mga kagustuhan sa interface (hal. pagpili ng Dark/Light mode)."
+            },
+            "analytics": {
+                "title": "2. Third-Party Analytics",
+                "desc": "Kasalukuyan kaming hindi gumagamit ng mga third-party tracking code tulad ng Google Analytics. Gayunpaman, inirereserba namin ang karapatang magdagdag ng mga anonymous analytics tool sa hinaharap upang mapabuti ang pagganap ng aming website."
+            }
+        },
+        "thirdParty": {
+            "title": "Mga Serbisyo ng Third-Party",
+            "desc": "Gumagana ang aming serbisyo sa pamamagitan ng pag-access sa pampublikong data sa <strong>X (Twitter)</strong>. Kapag nag-download ka ng video, ina-access mo ang nilalaman na naka-host sa mga third-party server. Hinihikayat ka naming suriin ang mga patakaran sa privacy ng mga platform na iyong nakakasalamuha."
+        },
+        "gdpr": {
+            "title": "Pagsunod sa GDPR",
+            "desc": "Dahil hindi kami nangongolekta ng personal na data at hindi sumusubaybay sa mga indibidwal na gumagamit, ganap kaming sumusunod sa mga prinsipyo ng \"data minimization\" sa ilalim ng General Data Protection Regulation (GDPR)."
+        },
+        "contact": {
+            "title": "Makipag-ugnayan",
+            "desc": "Kung mayroon kang mga katanungan tungkol sa Patakaran sa Privacy na ito, mangyaring makipag-ugnayan sa amin sa pamamagitan ng aming website o sa aming",
+            "link": "pahina ng pakikipag-ugnayan",
+            "suffix": "."
+        }
+    },
+    "terms": {
+        "title": "Mga Tuntunin ng Serbisyo",
+        "lastUpdated": "Huling Na-update: 01/12/2025",
+        "sections": [
+            {
+                "title": "1. Pagtanggap sa mga Tuntunin",
+                "content": "Sa pamamagitan ng pag-access at paggamit ng website ng XDownloaderz, sumasang-ayon ka sa mga tuntunin at kundisyon ng kasunduang ito. Kung hindi ka sumasang-ayon sa mga tuntuning ito, mangyaring huwag gamitin ang serbisyo."
+            },
+            {
+                "title": "2. Pagtatatuwa",
+                "content": "Ang XDownloaderz ay <strong>HINDI</strong> kaanib, nauugnay, awtorisado, inendorso ng, o sa anumang paraan opisyal na konektado sa X Corp. (dating Twitter), o alinman sa mga subsidiary o kaakibat nito. Ang opisyal na website ng X ay matatagpuan sa twitter.com o x.com. Ang mga pangalang \"X\", \"Twitter\" pati na rin ang mga kaugnay na pangalan, marka, sagisag at larawan ay mga rehistradong trademark ng kani-kanilang mga may-ari."
+            },
+            {
+                "title": "4. Mga Ipinagbabawal na Aktibidad",
+                "subcontent": "Sumasang-ayon ka na huwag gamitin ang Serbisyo para sa:",
+                "list": [
+                    "Pamamahagi ng materyal na may copyright nang walang pahintulot o para sa komersyal na pakinabang.",
+                    "Pag-upload o pagpapadala ng mga virus o malisyosong code.",
+                    "Pagtatangkang i-overload, i-spam, o i-crash ang aming mga server."
+                ]
+            },
+            {
+                "title": "5. \"As Is\" at Limitasyon ng Pananagutan",
+                "content": "Ang Serbisyo ay ibinibigay nang \"AS IS\" at \"AS AVAILABLE\". Hindi kami gumagarantiya na ang Serbisyo ay hindi maaantala, walang error, o ganap na ligtas. <br/><br/> Ang XDownloaderz ay hindi mananagot para sa anumang direkta o hindi direktang pinsala, kabilang ngunit hindi limitado sa pagkawala ng data o mga hindi pagkakaunawaan sa copyright, na nagmumula sa paggamit o kawalan ng kakayahang gamitin ang Serbisyo."
+            },
+            {
+                "title": "6. Pagbabago sa mga Tuntunin",
+                "content": "Inirereserba namin ang karapatang baguhin ang mga tuntuning ito anumang oras. Ang iyong patuloy na paggamit ng website pagkatapos magawa ang mga pagbabago ay nangangahulugang tinatanggap mo ang mga bagong Tuntunin ng Serbisyo."
+            }
+        ],
+        "ip": {
+            "title": "3. Intelektwal na Ari-arian at Copyright",
+            "items": [
+                {
+                    "title": "Responsibilidad ng Gumagamit",
+                    "desc": "Kinikilala mo na ang XDownloaderz ay isang teknikal na tool na nagpapahintulot sa pag-download ng pampublikong magagamit na media lamang. Hindi kami nag-aangkin ng pagmamay-ari sa anumang nilalaman na na-download sa pamamagitan ng aming serbisyo."
+                },
+                {
+                    "title": "Pagsunod sa Copyright",
+                    "desc": "Sumasang-ayon ka na gamitin ang serbisyong ito para lamang sa nilalaman na mayroon kang karapatang i-download o para sa personal na paggamit (Fair Use). Hindi mo maaaring gamitin ang tool na ito upang lumabag sa mga copyright ng iba."
+                },
+                {
+                    "title": "Mga Karapatan sa Nilalaman",
+                    "desc": "Ang lahat ng mga karapatan sa intelektwal na ari-arian na may kaugnayan sa mga video, larawan, at audio ay pagmamay-ari ng kani-kanilang mga tagalikha ng nilalaman at ng hosting platform."
+                }
+            ]
+        }
+    },
+    "staticPosts": [
+        {
+            "id": "welcome-1",
+            "authorName": "XDownloaderz",
+            "content": "🎉 Maligayang Pagdating sa XDownloaderz!\n\nI-download ang mga X (Twitter) video at GIF sa isang click, ganap na libre at sa pinakamataas na kalidad. I-save bilang MP4 o MP3, gamitin nang direkta mula sa iyong browser nang hindi nag-i-install ng anumang app.\n\n✨ Mabilis, ligtas at walang limitasyon!"
+        },
+        {
+            "id": "legal-warning",
+            "authorName": "XDownloaderz",
+            "content": "⚖️ Legal na Pagtatatuwa at Mga Tuntunin ng Paggamit\n\nAng XDownloaderz.com ay hindi nagho-host ng nilalamang may copyright sa mga server nito. Ang lahat ng mga video ay dina-download kaagad at direkta mula sa X (Twitter) CDN. Ang paggamit ng na-download na nilalaman ay ganap na responsibilidad ng gumagamit.\n\n⚠️ Mangyaring gamitin ang nilalaman para sa mga pinahihintulutang layunin lamang."
+        },
+        {
+            "id": "seo-info-2",
+            "authorName": "XDownloaderz",
+            "content": "🚀 Ang Pinaka-advanced na X (Twitter) Video Downloader\n\n✅ Suporta sa kalidad ng 1080p Full HD\n✅ MP3 Extraction (Music download)\n✅ Mabilis at ligtas na pag-download\n✅ Walang limitasyong paggamit\n✅ Walang ad na karanasan\n✅ Walang kinakailangang pagpaparehistro o pag-login\n\nI-save ang mga X (Twitter) video sa iyong device sa ilang segundo gamit ang XDownloaderz.com!"
+        },
+        {
+            "id": "platform-compatibility",
+            "authorName": "XDownloaderz",
+            "content": "📱 Ganap na Katugma sa Lahat ng Device\n\nAng XDownloaderz ay gumagana nang maayos sa bawat platform:\n\n🤖 Android (Chrome, Samsung Internet)\n🍎 iPhone & iPad (Safari)\n💻 Windows PC (Chrome, Edge, Firefox)\n🖥️ Mac (Safari, Chrome)\n🐧 Linux (Firefox, Chromium)\n\nBisitahin ang xdownloaderz.com gamit ang iyong modernong browser, i-paste ang link ng X (Twitter) video, at i-download!"
+        },
+        {
+            "id": "guide-step1-4",
+            "authorName": "Gabay sa XDownloaderz",
+            "content": "📖 Gabay sa Gumagamit: Hakbang 1\n\n1️⃣ Kopyahin ang Link ng Video\n\nBuksan ang video na gusto mong i-download sa X (Twitter) app o website. I-tap ang icon na 'Ibahagi' sa post at piliin ang 'Kopyahin ang link'.\n\n💡 Tip: Ang URL ng video tweet ay dapat magmukhang ganito:\nx.com/user/status/1234567890"
+        },
+        {
+            "id": "guide-step2",
+            "authorName": "Gabay sa XDownloaderz",
+            "content": "📖 Gabay sa Gumagamit: Hakbang 2\n\n2️⃣ I-paste ang Link sa XDownloaderz\n\nBuksan ang xdownloaderz.com. I-paste ang kinopyang link ng X (Twitter) video sa text box sa itaas ng pahina.\n\nAwtomatikong made-detect ng aming system ang link atilo-load agad ang impormasyon ng video."
+        },
+        {
+            "id": "guide-step3",
+            "authorName": "Gabay sa XDownloaderz",
+            "content": "📖 Gabay sa Gumagamit: Hakbang 3\n\n3️⃣ Piliin ang Kalidad at Format\n\nMatapos masuri ang video, piliin ang iyong gustong kalidad mula sa menu ng mga setting (⚙️ icon):\n\n• 1080p / 720p / 480p (MP4 Video)\n• MP3 (Audio Lamang)\n\nMas mataas na resolution = Mas magandang kalidad ng larawan ngunit mas malaking sukat ng file."
+        },
+        {
+            "id": "guide-step4",
+            "authorName": "Gabay sa XDownloaderz",
+            "content": "📖 Gabay sa Gumagamit: Hakbang 4\n\n4️⃣ Simulan ang Pag-download\n\nPagkatapos piliin ang format at kalidad, i-click ang asul na button na 'I-download'. Ang iyong video o audio file ay awtomatikong mada-download sa iyong device.\n\n⚡ Ang bilis ng pag-download ay depende sa iyong koneksyon sa internet at laki ng video."
+        },
+        {
+            "id": "faq-private-7",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Mga Madalas Itanong\n\n🔒 Maaari ba akong mag-download ng mga video mula sa mga pribado/naka-lock na account?\n\nHindi. Ang XDownloaderz ay makakapag-download lamang ng mga video mula sa mga pampublikong post sa X (Twitter). Ang nilalaman sa mga pribadong account ay protektado ng X (Twitter) API at hindi maa-access.\n\n💡 Solusyon: Maaari kang humingi ng pahintulot sa may-ari ng nilalaman."
+        },
+        {
+            "id": "faq-quality",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Mga Madalas Itanong\n\n📹 Bakit hindi laging nakikita ang opsyon na 1080p?\n\nAng ilang mga X (Twitter) video ay maaaring na-upload lamang sa 720p o mas mababang kalidad. Hindi makakagawa ang XDownloaderz ng mas mataas na resolution kaysa sa orihinal na kalidad ng video.\n\nIpapakita sa iyo ang pinakamataas na opsyon sa kalidad na magagamit."
+        },
+        {
+            "id": "faq-mp3-conversion",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Mga Madalas Itanong\n\n🎵 Paano gumagana ang MP3 conversion?\n\nKapag nagda-download ng X (Twitter) video, awtomatikong kinukuha ng XDownloaderz ang audio track at kino-convert ito sa MP3 format. Ang prosesong ito ay nangyayari sa iyong browser at ganap na ligtas.\n\n⏱️ Ang oras ng conversion ay maaaring tumagal ng 5-30 segundo depende sa haba ng video."
+        },
+        {
+            "id": "faq-security",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Mga Madalas Itanong\n\n🛡️ Ligtas ba ang XDownloaderz? Magkakaroon ba ako ng virus?\n\nOo, ito ay 100% ligtas. Ang XDownloaderz ay hindi nagho-host ng anumang mga file at hindi naglalaman ng adware o mga virus. Ang mga video ay direktang dina-download mula sa X (Twitter) CDN servers.\n\n✅ Gumagana gamit ang SSL (HTTPS) encryption sa iyong browser.\n✅ Ang iyong personal na impormasyon ay hindi kailanman kinokolekta."
+        },
+        {
+            "id": "faq-pricing",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Mga Madalas Itanong\n\n💰 Libre ba ang XDownloaderz? Kailangan ba ng subscription?\n\nHindi! Ang XDownloaderz ay ganap na libre at mananatiling ganito magpakailanman. Walang mga bayarin, nakatagong gastos, o mga sistema ng subscription.\n\n🎁 Maaari kang mag-download ng walang limitasyong mga video at gamitin ito hangga't gusto mo."
+        },
+        {
+            "id": "faq-legal-use",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Mga Madalas Itanong\n\n⚖️ Legal bang gamitin ang mga na-download na video?\n\nMaaari mong gamitin ang na-download na nilalaman para sa personal, pang-edukasyon na layunin, o patas na paggamit (Fair Use). Gayunpaman:\n\n❌ Muling pag-publish para sa mga layuning komersyal\n❌ Paggawa ng paglabag sa copyright\n❌ Pagbabahagi nang walang pahintulot ng may-ari ng nilalaman\n\nAng pagkilos alinsunod sa batas ay responsibilidad ng gumagamit."
+        },
+        {
+            "id": "seo-info-benefits",
+            "authorName": "XDownloaderz",
+            "content": "🌟 Bakit XDownloaderz?\n\n🚀 Pinakamabilis na Download: I-save ang mga X (Twitter) video sa ilang segundo\n🎯 Madaling Gamitin: Mag-download ng mga video sa 3 hakbang lang\n💎 Mataas na Kalidad: Suporta sa 1080p Full HD\n🔄 MP3 Converter: I-extract lamang ang audio mula sa video\n🌍 Universal Access: Gumagana sa lahat ng device\n\nxdownloaderz.com - Ang Pinakamahusay na Paraan upang Mag-download ng mga X (Twitter) Video!"
+        },
+        {
+            "id": "seo-keywords",
+            "authorName": "XDownloaderz",
+            "content": "🔍 Ano ang Magagawa Mo Sa XDownloaderz:\n\n• Mag-download ng X (Twitter) video MP4\n• Mag-download ng X (Twitter) GIF\n• X (Twitter) video downloader online\n• X (Twitter) MP3 converter\n• 1080p X (Twitter) video download\n• Mobile X (Twitter) video save\n• Libreng X (Twitter) downloader\n\nPara sa pinakamahusay na karanasan sa pag-download ng video sa X (Twitter): xdownloaderz.com"
+        }
+    ]
+}

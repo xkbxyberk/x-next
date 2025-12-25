@@ -1,0 +1,296 @@
+{
+    "common": {
+        "title": "XDownloaderz | Kipakua Video cha X (twitter)",
+        "description": "Pakua video za X (Twitter) bila malipo, haraka na kwa usalama. Inasaidia ubora wa 1080p Full HD na ubadilishaji wa MP3. Inafanya kazi kwenye vifaa vyote.",
+        "footerText": "© 2025 XDownloaderz",
+        "privacyPolicy": "Sera ya Faragha",
+        "termsOfService": "Masharti ya Huduma",
+        "contact": "Wasiliana nasi",
+        "about": "Kutuhusu"
+    },
+    "sidebar": {
+        "download": "Pakua",
+        "howToUse": "Jinsi ya Kutumia?",
+        "howItWorks": "Inavyofanya Kazi?",
+        "faq": "Maswali Yanayoulizwa Mara kwa Mara",
+        "adLabel": "TANGAZO",
+        "verticalAd": "NAFASI YA TANGAZO YA WIMA"
+    },
+    "rightSection": {
+        "searchPlaceholder": "Tafuta",
+        "adLabel1": "NAFASI YA TANGAZO 1",
+        "adLabel2": "NAFASI YA TANGAZO 2",
+        "adLabel3": "NAFASI YA TANGAZO 3"
+    },
+    "feed": {
+        "tabs": {
+            "download": "Kipakua",
+            "history": "Historia"
+        },
+        "inputPlaceholder": "Bandika kiungo cha video cha X (Twitter) hapa...",
+        "pasteButton": "Bandika kiungo na pakua",
+        "clearButton": "Futa",
+        "analyzing": "Inachambua video...",
+        "downloadButton": "Pakua",
+        "downloading": "Inapakua...",
+        "settings": {
+            "title": "Chagua Umbizo",
+            "audio": "Sauti Pekee",
+            "autoConvert": "Ubadilishaji Otomatiki",
+            "highQuality": "Ubora wa Juu",
+            "dataSaver": "Kiokoa Data",
+            "standard": "Kawaida"
+        },
+        "theme": {
+            "default": "Chaguo-msingi",
+            "dim": "Fifia",
+            "lightsOut": "Giza"
+        },
+        "ad": {
+            "sponsored": "IMEDHAMINIWA",
+            "label": "NAFASI YA TANGAZO",
+            "provider": "(Google Adsense / Tangazo Maalum)"
+        }
+    },
+    "about": {
+        "title": "Kutuhusu",
+        "handle": "@xdownloaderz",
+        "logoTitle": "XDownloaderz",
+        "whatWeDo": {
+            "title": "Tunafanya nini?",
+            "p1": "XDownloaderz ni zana yenye nguvu na ya bure ya wavuti iliyoundwa ili kuziba pengo kati ya mitandao ya kijamii na vifaa vyako vya kibinafsi. Tunatoa njia rahisi ya kupakua video na maudhui kutoka X (zamani Twitter) moja kwa moja kwenye kompyuta yako, kompyuta kibao, au simu mahiri.",
+            "p2": "Tofauti na huduma zingine zinazohitaji usakinishaji wa programu au uanachama, zana yetu inaendesha kabisa kwenye kivinjari chako kwa kutumia teknolojia za juu za wavuti. Inapata ubora wa juu zaidi unaopatikana hadi <strong>1080p Full HD</strong> na inatoa chaguo za ubadilishaji wa umbizo la maudhui papo hapo."
+        },
+        "howItWorks": {
+            "title": "Inavyofanya kazi?",
+            "step1": {
+                "title": "1. Bandika",
+                "desc": "Nakili kiungo cha chapisho la X (Twitter) lenye video unayotaka kupakua na uibandike kwenye kisanduku chetu cha kutafuta."
+            },
+            "step2": {
+                "title": "2. Chambua",
+                "desc": "Injini yetu mahiri huwasiliana na miundombinu ya umma ya jukwaa ili kupata faili ya video na chaguzi za ubora zinazopatikana (mfano: 720p, 1080p)."
+            },
+            "step3": {
+                "title": "3. Pakua",
+                "desc": "Unachagua ubora unaopendelea, na faili inahifadhiwa moja kwa moja kwenye kifaa chako bila kuhifadhiwa kwenye seva zetu."
+            }
+        },
+        "whyUs": {
+            "title": "Kwa nini sisi?",
+            "items": [
+                {
+                    "title": "Hakuna Usajili:",
+                    "desc": "Tunatathmini muda wako na faragha. Huna haja ya kuunda akaunti au kutoa anwani ya barua pepe ili kutumia huduma zetu."
+                },
+                {
+                    "title": "Ubora wa Juu:",
+                    "desc": "Tunatoa kipaumbele kupata kiwango cha juu zaidi cha data (ubora) kinachopatikana kwa kila video."
+                },
+                {
+                    "title": "Uchakataji Upande wa Mteja:",
+                    "desc": "Tunatumia uwezo wa kisasa wa kivinjari (ikiwa ni pamoja na teknolojia ya FFmpeg) kuchakata video kwa ufanisi, kuhakikisha upakuaji wa haraka bila kuathiri usalama."
+                },
+                {
+                    "title": "Bure 100%:",
+                    "desc": "Zana yetu ni bure kabisa kwa kila mtu."
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "Wasiliana nasi",
+        "subtitle": "Kaa karibu",
+        "heading": "Tunatathmini maoni yako",
+        "description": "Unaweza kututumia barua pepe ili kuripoti upakuaji ulioshindwa, kuwasilisha ilani ya hakimiliki, au kusema tu hujambo.",
+        "button": "Tuma Barua pepe",
+        "footerText": "Au tembelea ukurasa wetu wa",
+        "aboutLink": "Kutuhusu",
+        "footerSuffix": "ili kujifunza zaidi kuhusu mradi wetu."
+    },
+    "privacy": {
+        "title": "Sera ya Faragha",
+        "lastUpdated": "Ilisasishwa Mwisho: 01/12/2025",
+        "intro": {
+            "title": "Utangulizi",
+            "p1": "Katika XDownloaderz (\"sisi\", \"yetu\"), tunatathmini faragha yako. Sera hii ya Faragha inaelezea jinsi habari yako inavyoshughulikiwa unapotumia zana yetu ya wavuti kupakua maudhui kutoka X (zamani Twitter).",
+            "p2": "Kwa kutumia huduma yetu, unakubali kwamba umesoma na kuelewa sera hii."
+        },
+        "collection": {
+            "title": "Taarifa tunazokusanya",
+            "personal": {
+                "title": "1. Taarifa za Kibinafsi",
+                "desc": "Huduma yetu inafanya kazi kwa msingi wa <strong>kutohifadhi</strong>. HATUKUSANYI, kuhifadhi au kushiriki \"Taarifa Zinazotambulisha Mtu\" (PII) zozote kama vile:",
+                "list": [
+                    "Majina au anwani za barua pepe.",
+                    "Nambari za simu.",
+                    "Nywila za kuingia kwenye mitandao ya kijamii."
+                ],
+                "note": "Huna haja ya kujiandikisha au kuingia ili kutumia huduma yetu."
+            },
+            "usage": {
+                "title": "2. Data ya Matumizi na Faili za Kumbukumbu",
+                "desc": "Kama seva nyingi za kawaida za wavuti, tunatumia faili za kumbukumbu. Faili hizi zinaweza kuwa na data kama vile anwani za itifaki ya mtandao (IP), aina ya kivinjari, mtoa huduma wa mtandao (ISP), kurasa za kurejelea/kutoka, aina ya jukwaa, mhuri wa tarehe/saa, na idadi ya mibofyo. Taarifa hii inatumika kuchambua mwelekeo, kusimamia tovuti, na kufuatilia mienendo ya watumiaji kwa ujumla. Data hii haijaunganishwa na taarifa yoyote inayoweza kumtambulisha mtu binafsi."
+            },
+            "urls": {
+                "title": "3. URL na Maudhui ya Vyombo vya Habari",
+                "desc": "Unapobandika kiungo (URL) kwenye upau wetu wa kutafuta, kiungo hicho kinachakatwa kwa muda na seva zetu kwa madhumuni pekee ya kupata faili husika ya maudhui. Hatutunzi historia ya kudumu ya viungo unavyowasilisha."
+            }
+        },
+        "cookies": {
+            "title": "Vidakuzi na Hifadhi ya Ndani",
+            "local": {
+                "title": "1. Hifadhi ya Ndani ya Lazima",
+                "desc": "Tunatumia vipengele vya Hifadhi ya Ndani ya kivinjari chako ili tu kukumbuka mapendeleo yako ya kiolesura (kwa mfano, uteuzi wa hali ya Giza/Mwanga)."
+            },
+            "analytics": {
+                "title": "2. Uchambuzi wa Wahusika wa Tatu",
+                "desc": "Kwa sasa hatutumii misimbo ya ufuatiliaji wa wahusika wa tatu kama Google Analytics. Hata hivyo, tunahifadhi haki ya kuongeza zana za uchambuzi zisizojulikana katika siku zijazo ili kuboresha utendaji wa tovuti yetu."
+            }
+        },
+        "thirdParty": {
+            "title": "Huduma za Wahusika wa Tatu",
+            "desc": "Huduma yetu inafanya kazi kwa kufikia data ya umma kwenye <strong>X (Twitter)</strong>. Unapopakua video, unafikia maudhui yanayohifadhiwa kwenye seva za wahusika wa tatu. Tunakuhimiza kupitia sera za faragha za majukwaa unayoshirikiana nayo."
+        },
+        "gdpr": {
+            "title": "Uzingatiaji wa GDPR",
+            "desc": "Kwa kuwa hatukusanyi data ya kibinafsi na hatufuatilii watumiaji binafsi, tunazingatia kikamilifu kanuni za \"kupunguza data\" chini ya Udhibiti wa Jumla wa Ulinzi wa Data (GDPR)."
+        },
+        "contact": {
+            "title": "Wasiliana nasi",
+            "desc": "Ikiwa una maswali kuhusu Sera hii ya Faragha, tafadhali wasiliana nasi kupitia tovuti yetu au ukurasa wetu wa",
+            "link": "mawasiliano",
+            "suffix": "."
+        }
+    },
+    "terms": {
+        "title": "Masharti ya Huduma",
+        "lastUpdated": "Ilisasishwa Mwisho: 01/12/2025",
+        "sections": [
+            {
+                "title": "1. Kukubali Masharti",
+                "content": "Kwa kufikia na kutumia tovuti ya XDownloaderz, unakubali sheria na masharti ya makubaliano haya. Ikiwa hukubaliani na masharti haya, tafadhali usitumie huduma hii."
+            },
+            {
+                "title": "2. Kanusho",
+                "content": "XDownloaderz <strong>HAIJAUNGANISHWA</strong>, kuhusishwa, kuidhinishwa, kuungwa mkono na, au kwa njia yoyote kuunganishwa rasmi na X Corp. (zamani Twitter), au kampuni zake tanzu au washirika. Tovuti rasmi ya X inaweza kupatikana twitter.com au x.com. Majina \"X\", \"Twitter\" pamoja na majina, alama, nembo na picha zinazohusiana ni alama za biashara zilizosajiliwa za wamiliki wao."
+            },
+            {
+                "title": "4. Shughuli Zilizopigwa Marufuku",
+                "subcontent": "Unakubali kutotumia Huduma kwa:",
+                "list": [
+                    "Kusambaza nyenzo zenye hakimiliki bila ruhusa au kwa faida ya kibiashara.",
+                    "Kupakia au kusambaza virusi au msimbo mbaya.",
+                    "Kujaribu kulemea, kutuma barua taka, au kuharibu seva zetu."
+                ]
+            },
+            {
+                "title": "5. \"Kama Ilivyo\" na Ukomo wa Dhima",
+                "content": "Huduma inatolewa \"KAMA ILIVYO\" na \"KAMA INAVYOPATIKANA\". Hatutoi hakikisho kwamba Huduma haitakatizwa, haina makosa au ni salama kabisa. <br/><br/> XDownloaderz haitawajibika kwa uharibifu wowote wa moja kwa moja au usio wa moja kwa moja, ikiwa ni pamoja na lakini sio tu kupoteza data au migogoro ya hakimiliki, inayotokana na matumizi au kutoweza kutumia Huduma."
+            },
+            {
+                "title": "6. Mabadiliko ya Masharti",
+                "content": "Tunahifadhi haki ya kubadilisha masharti haya wakati wowote. Kuendelea kutumia tovuti baada ya mabadiliko kufanywa inamaanisha unakubali Masharti mapya ya Huduma."
+            }
+        ],
+        "ip": {
+            "title": "3. Haki Miliki na Hakimiliki",
+            "items": [
+                {
+                    "title": "Wajibu wa Mtumiaji",
+                    "desc": "Unakubali kwamba XDownloaderz ni zana ya kiufundi inayoruhusu kupakua maudhui yanayopatikana kwa umma pekee. Hatudai umiliki wa maudhui yoyote yanayopakuliwa kupitia huduma yetu."
+                },
+                {
+                    "title": "Uzingatiaji wa Hakimiliki",
+                    "desc": "Unakubali kutumia huduma hii kwa maudhui ambayo una haki ya kupakua au kwa matumizi ya kibinafsi (Matumizi ya Haki). Huruhusiwi kutumia zana hii kukiuka hakimiliki za wengine."
+                },
+                {
+                    "title": "Haki za Maudhui",
+                    "desc": "Haki zote za haki miliki zinazohusiana na video, picha, na sauti ni za waundaji wa maudhui husika na jukwaa la mwenyeji."
+                }
+            ]
+        }
+    },
+    "staticPosts": [
+        {
+            "id": "welcome-1",
+            "authorName": "XDownloaderz",
+            "content": "🎉 Karibu kwenye XDownloaderz!\n\nPakua video na GIF za X (Twitter) kwa kubofya mara moja, bila malipo kabisa na kwa ubora wa juu zaidi. Hifadhi kama MP4 au MP3, tumia moja kwa moja kutoka kwa kivinjari chako bila kusakinisha programu yoyote.\n\n✨ Haraka, salama na bila kikomo!"
+        },
+        {
+            "id": "legal-warning",
+            "authorName": "XDownloaderz",
+            "content": "⚖️ Kanusho la Kisheria & Masharti ya Matumizi\n\nXDownloaderz.com haihifadhi maudhui yenye hakimiliki kwenye seva zake. Video zote zinapakuliwa papo hapo na moja kwa moja kutoka kwa X (Twitter) CDN. Matumizi ya maudhui yaliyopakuliwa ni jukumu la mtumiaji kikamilifu.\n\n⚠️ Tafadhali tumia maudhui kwa madhumuni yanayoruhusiwa pekee."
+        },
+        {
+            "id": "seo-info-2",
+            "authorName": "XDownloaderz",
+            "content": "🚀 Kipakua Video cha X (Twitter) cha Kisasa Zaidi\n\n✅ Usaidizi wa ubora wa 1080p Full HD\n✅ Utoaji wa MP3 (Upakuaji wa muziki)\n✅ Upakuaji wa haraka na salama\n✅ Matumizi yasiyo na kikomo\n✅ Uzoefu bila matangazo\n✅ Hakuna usajili au kuingia kunahitajika\n\nHifadhi video za X (Twitter) kwenye kifaa chako kwa sekunde na XDownloaderz.com!"
+        },
+        {
+            "id": "platform-compatibility",
+            "authorName": "XDownloaderz",
+            "content": "📱 Inaoana Kikamilifu na Vifaa Vyote\n\nXDownloaderz inafanya kazi vizuri kwenye kila jukwaa:\n\n🤖 Android (Chrome, Samsung Internet)\n🍎 iPhone & iPad (Safari)\n💻 Kompyuta ya Windows (Chrome, Edge, Firefox)\n🖥️ Mac (Safari, Chrome)\n🐧 Linux (Firefox, Chromium)\n\nTembelea xdownloaderz.com na kivinjari chako cha kisasa, bandika kiungo cha video cha X (Twitter), na pakua!"
+        },
+        {
+            "id": "guide-step1-4",
+            "authorName": "Mwongozo wa XDownloaderz",
+            "content": "📖 Mwongozo wa Mtumiaji: Hatua ya 1\n\n1️⃣ Nakili Kiungo cha Video\n\nFungua video unayotaka kupakua kwenye programu au tovuti ya X (Twitter). Gonga aikoni ya 'Shiriki' kwenye chapisho na uchague 'Nakili kiungo'.\n\n💡 Kidokezo: URL ya tweet ya video inapaswa kuonekana hivi:\nx.com/mtumiaji/status/1234567890"
+        },
+        {
+            "id": "guide-step2",
+            "authorName": "Mwongozo wa XDownloaderz",
+            "content": "📖 Mwongozo wa Mtumiaji: Hatua ya 2\n\n2️⃣ Bandika Kiungo kwenye XDownloaderz\n\nFungua xdownloaderz.com. Bandika kiungo cha video cha X (Twitter) ulichonakili kwenye kisanduku cha maandishi juu ya ukurasa.\n\nMfumo wetu utagundua kiungo kiotomatiki na kupakia taarifa za video papo hapo."
+        },
+        {
+            "id": "guide-step3",
+            "authorName": "Mwongozo wa XDownloaderz",
+            "content": "📖 Mwongozo wa Mtumiaji: Hatua ya 3\n\n3️⃣ Chagua Ubora na Umbizo\n\nBaada ya video kuchambuliwa, chagua ubora unaotaka kutoka kwa menyu ya mipangilio (aikoni ya ⚙️):\n\n• 1080p / 720p / 480p (Video ya MP4)\n• MP3 (Sauti Pekee)\n\nUbora wa juu = Ubora bora wa picha lakini saizi kubwa ya faili."
+        },
+        {
+            "id": "guide-step4",
+            "authorName": "Mwongozo wa XDownloaderz",
+            "content": "📖 Mwongozo wa Mtumiaji: Hatua ya 4\n\n4️⃣ Anza Kupakua\n\nBaada ya kuchagua umbizo na ubora, bofya kitufe cha bluu cha 'Pakua'. Faili yako ya video au sauti itapakuliwa kiotomatiki kwenye kifaa chako.\n\n⚡ Kasi ya kupakua inategemea muunganisho wako wa mtandao na saizi ya video."
+        },
+        {
+            "id": "faq-private-7",
+            "authorName": "Maswali ya XDownloaderz",
+            "content": "❓ Maswali Yanayoulizwa Mara kwa Mara\n\n🔒 Je, ninaweza kupakua video kutoka kwa akaunti za kibinafsi/zilizofungwa?\n\nHapana. XDownloaderz inaweza tu kupakua video kutoka kwa machapisho ya umma ya X (Twitter). Maudhui katika akaunti za kibinafsi yanalindwa na X (Twitter) API na hayawezi kufikiwa.\n\n💡 Suluhisho: Unaweza kuomba ruhusa kutoka kwa mmiliki wa maudhui."
+        },
+        {
+            "id": "faq-quality",
+            "authorName": "Maswali ya XDownloaderz",
+            "content": "❓ Maswali Yanayoulizwa Mara kwa Mara\n\n📹 Kwa nini chaguo la 1080p halionekani kila wakati?\n\nBaadhi ya video za X (Twitter) zinaweza kuwa zimepakiwa kwa ubora wa 720p au chini zaidi. XDownloaderz haiwezi kutoa ubora wa juu kuliko ubora wa video asili.\n\nUtasilishwa na chaguo la ubora wa juu zaidi unaopatikana."
+        },
+        {
+            "id": "faq-mp3-conversion",
+            "authorName": "Maswali ya XDownloaderz",
+            "content": "❓ Maswali Yanayoulizwa Mara kwa Mara\n\n🎵 Jinsi gani ubadilishaji wa MP3 hufanya kazi?\n\nUnapopakua video ya X (Twitter), XDownloaderz hutoa kiotomatiki wimbo wa sauti na kuubadilisha kuwa umbizo la MP3. Mchakato huu unafanyika kwenye kivinjari chako na ni salama kabisa.\n\n⏱️ Muda wa kubadilisha unaweza kuchukua sekunde 5-30 kulingana na urefu wa video."
+        },
+        {
+            "id": "faq-security",
+            "authorName": "Maswali ya XDownloaderz",
+            "content": "❓ Maswali Yanayoulizwa Mara kwa Mara\n\n🛡️ Je, XDownloaderz ni salama? Je, nitapata virusi?\n\nNdiyo, ni salama 100%. XDownloaderz haihifadhi faili zozote na haina programu hasidi au virusi. Video zinapakuliwa moja kwa moja kutoka kwa seva za CDN za X (Twitter).\n\n✅ Inafanya kazi na usimbuaji wa SSL (HTTPS) kwenye kivinjari chako.\n✅ Taarifa zako za kibinafsi hazikusanywi kamwe."
+        },
+        {
+            "id": "faq-pricing",
+            "authorName": "Maswali ya XDownloaderz",
+            "content": "❓ Maswali Yanayoulizwa Mara kwa Mara\n\n💰 Je, XDownloaderz ni bure? Je, usajili unahitajika?\n\nHapana! XDownloaderz ni bure kabisa na itabaki hivyo milele. Hakuna ada, gharama zilizofichwa, au mifumo ya usajili.\n\n🎁 Unaweza kupakua video bila kikomo na kuitumia kadri unavyotaka."
+        },
+        {
+            "id": "faq-legal-use",
+            "authorName": "Maswali ya XDownloaderz",
+            "content": "❓ Maswali Yanayoulizwa Mara kwa Mara\n\n⚖️ Je, ni halali kutumia video zilizopakuliwa?\n\nUnaweza kutumia maudhui yaliyopakuliwa kwa madhumuni ya kibinafsi, elimu, au matumizi ya haki (Fair Use). Hata hivyo:\n\n❌ Kuchapisha tena kwa madhumuni ya kibiashara\n❌ Kukiuka hakimiliki\n❌ Kushiriki bila ruhusa ya mmiliki wa maudhui\n\nKutenda kulingana na sheria ni wajibu wa mtumiaji."
+        },
+        {
+            "id": "seo-info-benefits",
+            "authorName": "XDownloaderz",
+            "content": "🌟 Kwa nini XDownloaderz?\n\n🚀 Upakuaji wa Haraka Zaidi: Hifadhi video za X (Twitter) kwa sekunde\n🎯 Rahisi Kutumia: Pakua video katika hatua 3 tu\n💎 Ubora wa Juu: Usaidizi wa 1080p Full HD\n🔄 Kigeuzi cha MP3: Toa sauti pekee kutoka kwa video\n🌍 Ufikiaji wa Ulimwenguni Pote: Inafanya kazi kwenye vifaa vyote\n\nxdownloaderz.com - Njia Bora ya Kupakua Video za X (Twitter)!"
+        },
+        {
+            "id": "seo-keywords",
+            "authorName": "XDownloaderz",
+            "content": "🔍 Unachoweza Kufanya na XDownloaderz:\n\n• Pakua video ya X (Twitter) MP4\n• Pakua GIF ya X (Twitter)\n• Kipakua video cha X (Twitter) mkondoni\n• Kigeuzi cha X (Twitter) MP3\n• Upakuaji wa video wa 1080p X (Twitter)\n• Hifadhi video ya X (Twitter) kwenye simu\n• Kipakua cha X (Twitter) cha bure\n\nKwa uzoefu bora wa upakuaji wa video wa X (Twitter): xdownloaderz.com"
+        }
+    ]
+}

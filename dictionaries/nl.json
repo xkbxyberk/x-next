@@ -1,0 +1,296 @@
+{
+    "common": {
+        "title": "XDownloaderz | X (twitter) Video Downloader",
+        "description": "Download X (Twitter) video's gratis, snel en veilig. Ondersteunt 1080p Full HD kwaliteit en MP3 conversie. Werkt op alle apparaten.",
+        "footerText": "© 2025 XDownloaderz",
+        "privacyPolicy": "Privacybeleid",
+        "termsOfService": "Servicevoorwaarden",
+        "contact": "Contact",
+        "about": "Over ons"
+    },
+    "sidebar": {
+        "download": "Downloaden",
+        "howToUse": "Hoe te gebruiken?",
+        "howItWorks": "Hoe werkt het?",
+        "faq": "Veelgestelde vragen",
+        "adLabel": "ADVERTENTIE",
+        "verticalAd": "VERTICALE ADVERTENTIERUIMTE"
+    },
+    "rightSection": {
+        "searchPlaceholder": "Zoeken",
+        "adLabel1": "ADVERTENTIERUIMTE 1",
+        "adLabel2": "ADVERTENTIERUIMTE 2",
+        "adLabel3": "ADVERTENTIERUIMTE 3"
+    },
+    "feed": {
+        "tabs": {
+            "download": "Downloader",
+            "history": "Geschiedenis"
+        },
+        "inputPlaceholder": "Plak X (Twitter) videolink hier...",
+        "pasteButton": "Link plakken en downloaden",
+        "clearButton": "Wissen",
+        "analyzing": "Video analyseren...",
+        "downloadButton": "Downloaden",
+        "downloading": "Downloaden...",
+        "settings": {
+            "title": "Selecteer formaat",
+            "audio": "Alleen audio",
+            "autoConvert": "Automatische conversie",
+            "highQuality": "Hoogste kwaliteit",
+            "dataSaver": "Databesparing",
+            "standard": "Standaard"
+        },
+        "theme": {
+            "default": "Standaard",
+            "dim": "Gedimd",
+            "lightsOut": "Donker"
+        },
+        "ad": {
+            "sponsored": "GESPONSORD",
+            "label": "ADVERTENTIERUIMTE",
+            "provider": "(Google Adsense / Aangepaste advertentie)"
+        }
+    },
+    "about": {
+        "title": "Over ons",
+        "handle": "@xdownloaderz",
+        "logoTitle": "XDownloaderz",
+        "whatWeDo": {
+            "title": "Wat doen we?",
+            "p1": "XDownloaderz is een krachtige en gratis webtool die is ontworpen om de kloof tussen social media feeds en uw persoonlijke apparaten te overbruggen. We bieden een naadloze manier om video's en media van X (voorheen Twitter) rechtstreeks naar uw computer, tablet of smartphone te downloaden.",
+            "p2": "In tegenstelling tot andere diensten die software-installatie of lidmaatschap vereisen, draait onze tool volledig in uw browser met behulp van geavanceerde webtechnologieën. Het vindt de hoogst beschikbare resolutie tot <strong>1080p Full HD</strong> en biedt opties voor directe conversie van mediaformaten."
+        },
+        "howItWorks": {
+            "title": "Hoe werkt het?",
+            "step1": {
+                "title": "1. Plakken",
+                "desc": "Kopieer de link van het X (Twitter) bericht met de video die u wilt downloaden en plak deze in onze zoekbalk."
+            },
+            "step2": {
+                "title": "2. Analyseren",
+                "desc": "Onze slimme engine communiceert met de openbare infrastructuur van het platform om het videobestand en de beschikbare kwaliteitsopties (bijv. 720p, 1080p) te vinden."
+            },
+            "step3": {
+                "title": "3. Downloaden",
+                "desc": "U selecteert uw voorkeurskwaliteit en het bestand wordt direct op uw apparaat opgeslagen zonder op onze servers te worden opgeslagen."
+            }
+        },
+        "whyUs": {
+            "title": "Waarom wij?",
+            "items": [
+                {
+                    "title": "Geen registratie:",
+                    "desc": "We respecteren uw tijd en privacy. U hoeft geen account aan te maken of een e-mailadres op te geven om onze functies te gebruiken."
+                },
+                {
+                    "title": "Hoge kwaliteit:",
+                    "desc": "We geven prioriteit aan het vinden van de hoogst beschikbare bitrate (kwaliteit) voor elke video."
+                },
+                {
+                    "title": "Client-side verwerking:",
+                    "desc": "We gebruiken moderne browserfuncties (inclusief FFmpeg-technologie) om video's efficiënt te verwerken, wat zorgt voor snelle downloads zonder de veiligheid in gevaar te brengen."
+                },
+                {
+                    "title": "100% Gratis:",
+                    "desc": "Onze tool is volledig gratis voor iedereen."
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": "Neem contact op",
+        "heading": "We waarderen uw feedback",
+        "description": "U kunt ons een e-mail sturen om een kapotte download te melden, een auteursrechtmelding in te dienen of gewoon hallo te zeggen.",
+        "button": "E-mail verzenden",
+        "footerText": "Of bezoek onze",
+        "aboutLink": "Over ons",
+        "footerSuffix": "pagina om meer te weten te komen over ons project."
+    },
+    "privacy": {
+        "title": "Privacybeleid",
+        "lastUpdated": "Laatst bijgewerkt: 01-12-2025",
+        "intro": {
+            "title": "Inleiding",
+            "p1": "Bij XDownloaderz (\"wij\", \"ons\") hechten we waarde aan uw privacy. Dit privacybeleid legt uit hoe uw informatie wordt behandeld wanneer u onze webgebaseerde tool gebruikt om media van X (voorheen Twitter) te downloaden.",
+            "p2": "Door onze service te gebruiken, gaat u ermee akkoord dat u dit beleid hebt gelezen en begrepen."
+        },
+        "collection": {
+            "title": "Informatie die we verzamelen",
+            "personal": {
+                "title": "1. Persoonlijke informatie",
+                "desc": "Onze service werkt op basis van <strong>niet-retentie</strong>. We verzamelen, bewaren of delen GEEN \"Persoonlijk Identificeerbare Informatie\" (PII) zoals:",
+                "list": [
+                    "Namen of e-mailadressen.",
+                    "Telefoonnummers.",
+                    "Wachtwoorden voor sociale media."
+                ],
+                "note": "U hoeft zich niet te registreren of in te loggen om onze service te gebruiken."
+            },
+            "usage": {
+                "title": "2. Gebruiksgegevens en logbestanden",
+                "desc": "Zoals de meeste standaard webservers gebruiken we logbestanden. Deze bestanden kunnen gegevens bevatten zoals internetprotocol (IP) adressen, browsertype, internetprovider (ISP), verwijzende/uitgaande pagina's, platformtype, datum/tijdstempel en aantal klikken. Deze informatie wordt gebruikt om trends te analyseren, de site te beheren en gebruikersbewegingen in het algemeen te volgen. Deze gegevens zijn niet gekoppeld aan informatie die persoonlijk identificeerbaar is."
+            },
+            "urls": {
+                "title": "3. URL's en media-inhoud",
+                "desc": "Wanneer u een link (URL) in onze zoekbalk plakt, wordt die link tijdelijk door onze servers verwerkt, uitsluitend om het relevante mediabestand te lokaliseren. We bewaren geen permanente geschiedenis van de links die u indient."
+            }
+        },
+        "cookies": {
+            "title": "Cookies en lokale opslag",
+            "local": {
+                "title": "1. Verplichte lokale opslag",
+                "desc": "We gebruiken de lokale opslagfuncties van uw browser uitsluitend om uw interfacevoorkeuren te onthouden (bijv. selectie van Donkere/Lichte modus)."
+            },
+            "analytics": {
+                "title": "2. Analyse door derden",
+                "desc": "We gebruiken momenteel geen trackingcodes van derden zoals Google Analytics. We behouden ons echter het recht voor om in de toekomst anonieme analysetools toe te voegen om de prestaties van onze website te verbeteren."
+            }
+        },
+        "thirdParty": {
+            "title": "Diensten van derden",
+            "desc": "Onze service werkt door toegang te krijgen tot openbare gegevens op <strong>X (Twitter)</strong>. Wanneer u een video downloadt, opent u inhoud die wordt gehost op servers van derden. We moedigen u aan om het privacybeleid te bekijken van de platforms waarmee u communiceert."
+        },
+        "gdpr": {
+            "title": "AVG-naleving",
+            "desc": "Aangezien we geen persoonlijke gegevens verzamelen en geen individuele gebruikers volgen, voldoen we volledig aan de principes van \"dataminimalisatie\" onder de Algemene Verordening Gegevensbescherming (AVG/GDPR)."
+        },
+        "contact": {
+            "title": "Contact",
+            "desc": "Als u vragen heeft over dit privacybeleid, neem dan contact met ons op via onze website of onze",
+            "link": "contactpagina",
+            "suffix": "."
+        }
+    },
+    "terms": {
+        "title": "Servicevoorwaarden",
+        "lastUpdated": "Laatst bijgewerkt: 01-12-2025",
+        "sections": [
+            {
+                "title": "1. Acceptatie van voorwaarden",
+                "content": "Door de XDownloaderz-website te openen en te gebruiken, gaat u akkoord met de voorwaarden van deze overeenkomst. Als u niet akkoord gaat met deze voorwaarden, gebruik de service dan niet."
+            },
+            {
+                "title": "2. Disclaimer",
+                "content": "XDownloaderz is <strong>NIET</strong> gelieerd, geassocieerd, geautoriseerd, onderschreven door of op enige wijze officieel verbonden met X Corp. (voorheen Twitter), of een van zijn dochterondernemingen of gelieerde ondernemingen. De officiële X-website is te vinden op twitter.com of x.com. De namen \"X\", \"Twitter\" evenals gerelateerde namen, merken, emblemen en afbeeldingen zijn geregistreerde handelsmerken van hun respectievelijke eigenaren."
+            },
+            {
+                "title": "4. Verboden activiteiten",
+                "subcontent": "U gaat ermee akkoord de Service niet te gebruiken voor:",
+                "list": [
+                    "Het verspreiden van auteursrechtelijk beschermd materiaal zonder toestemming of voor commercieel gewin.",
+                    "Het uploaden of verzenden van virussen of kwaadaardige code.",
+                    "Pogingen om onze servers te overbelasten, te spammen of te laten crashen."
+                ]
+            },
+            {
+                "title": "5. \"Zoals het is\" en Beperking van aansprakelijkheid",
+                "content": "De Service wordt geleverd \"ZOALS HET IS\" en \"ZOALS BESCHIKBAAR\". We garanderen niet dat de Service ononderbroken, foutloos of volledig veilig zal zijn. <br/><br/> XDownloaderz is niet aansprakelijk voor enige directe of indirecte schade, inclusief maar niet beperkt tot gegevensverlies of geschillen over auteursrechten, die voortvloeien uit het gebruik of het onvermogen om de Service te gebruiken."
+            },
+            {
+                "title": "6. Wijzigingen in voorwaarden",
+                "content": "We behouden ons het recht voor om deze voorwaarden op elk moment te wijzigen. Uw voortgezette gebruik van de website nadat er wijzigingen zijn aangebracht, betekent dat u de nieuwe Servicevoorwaarden accepteert."
+            }
+        ],
+        "ip": {
+            "title": "3. Intellectueel eigendom en auteursrecht",
+            "items": [
+                {
+                    "title": "Verantwoordelijkheid van de gebruiker",
+                    "desc": "U erkent dat XDownloaderz een technische tool is waarmee alleen openbaar beschikbare media kunnen worden gedownload. We claimen geen eigendom van inhoud die via onze service is gedownload."
+                },
+                {
+                    "title": "Naleving van auteursrechten",
+                    "desc": "U gaat ermee akkoord deze service alleen te gebruiken voor inhoud die u mag downloaden of voor persoonlijk gebruik (Fair Use). U mag deze tool niet gebruiken om inbreuk te maken op de auteursrechten van anderen."
+                },
+                {
+                    "title": "Inhoudsrechten",
+                    "desc": "Alle intellectuele eigendomsrechten met betrekking tot video's, afbeeldingen en audio behoren toe aan hun respectievelijke makers van inhoud en het hostingplatform."
+                }
+            ]
+        }
+    },
+    "staticPosts": [
+        {
+            "id": "welcome-1",
+            "authorName": "XDownloaderz",
+            "content": "🎉 Welkom bij XDownloaderz!\n\nDownload X (Twitter) video's en GIF's met één klik, volledig gratis en in de hoogste kwaliteit. Sla op als MP4 of MP3, gebruik direct vanuit uw browser zonder een app te installeren.\n\n✨ Snel, veilig en onbeperkt!"
+        },
+        {
+            "id": "legal-warning",
+            "authorName": "XDownloaderz",
+            "content": "⚖️ Juridische disclaimer & Gebruiksvoorwaarden\n\nXDownloaderz.com host geen auteursrechtelijk beschermde inhoud op zijn servers. Alle video's worden direct en rechtstreeks gedownload van de X (Twitter) CDN. Het gebruik van gedownloade inhoud is volledig de verantwoordelijkheid van de gebruiker.\n\n⚠️ Gebruik inhoud alleen voor toegestane doeleinden."
+        },
+        {
+            "id": "seo-info-2",
+            "authorName": "XDownloaderz",
+            "content": "🚀 De meest geavanceerde X (Twitter) Video Downloader\n\n✅ 1080p Full HD kwaliteitsondersteuning\n✅ MP3-extractie (Muziek downloaden)\n✅ Snel en veilig downloaden\n✅ Onbeperkt gebruik\n✅ Advertentievrije ervaring\n✅ Geen registratie of login vereist\n\nSla X (Twitter) video's binnen enkele seconden op uw apparaat op met XDownloaderz.com!"
+        },
+        {
+            "id": "platform-compatibility",
+            "authorName": "XDownloaderz",
+            "content": "📱 Volledig compatibel met alle apparaten\n\nXDownloaderz werkt soepel op elk platform:\n\n🤖 Android (Chrome, Samsung Internet)\n🍎 iPhone & iPad (Safari)\n💻 Windows PC (Chrome, Edge, Firefox)\n🖥️ Mac (Safari, Chrome)\n🐧 Linux (Firefox, Chromium)\n\nBezoek xdownloaderz.com met uw moderne browser, plak de X (Twitter) videolink en download!"
+        },
+        {
+            "id": "guide-step1-4",
+            "authorName": "XDownloaderz Gids",
+            "content": "📖 Gebruikershandleiding: Stap 1\n\n1️⃣ Kopieer videolink\n\nOpen de video die u wilt downloaden in de X (Twitter) app of website. Tik op het pictogram 'Delen' op het bericht en selecteer 'Link kopiëren'.\n\n💡 Tip: De URL van de videotweet moet er zo uitzien:\nx.com/gebruiker/status/1234567890"
+        },
+        {
+            "id": "guide-step2",
+            "authorName": "XDownloaderz Gids",
+            "content": "📖 Gebruikershandleiding: Stap 2\n\n2️⃣ Plak link in XDownloaderz\n\nOpen xdownloaderz.com. Plak de gekopieerde X (Twitter) videolink in het tekstvak bovenaan de pagina.\n\nOns systeem detecteert de link automatisch en laadt de video-informatie direct."
+        },
+        {
+            "id": "guide-step3",
+            "authorName": "XDownloaderz Gids",
+            "content": "📖 Gebruikershandleiding: Stap 3\n\n3️⃣ Selecteer kwaliteit en formaat\n\nNadat de video is geanalyseerd, selecteert u uw gewenste kwaliteit in het instellingenmenu (⚙️ pictogram):\n\n• 1080p / 720p / 480p (MP4 Video)\n• MP3 (Alleen audio)\n\nHogere resolutie = Betere beeldkwaliteit maar grotere bestandsgrootte."
+        },
+        {
+            "id": "guide-step4",
+            "authorName": "XDownloaderz Gids",
+            "content": "📖 Gebruikershandleiding: Stap 4\n\n4️⃣ Start download\n\nNadat u het formaat en de kwaliteit hebt geselecteerd, klikt u op de blauwe knop 'Downloaden'. Uw video- of audiobestand wordt automatisch naar uw apparaat gedownload.\n\n⚡ De downloadsnelheid is afhankelijk van uw internetverbinding en de grootte van de video."
+        },
+        {
+            "id": "faq-private-7",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Veelgestelde vragen\n\n🔒 Kan ik video's downloaden van privé/vergrendelde accounts?\n\nNee. XDownloaderz kan alleen video's downloaden van openbare X (Twitter) berichten. Inhoud in privéaccounts wordt beschermd door de X (Twitter) API en is niet toegankelijk.\n\n💡 Oplossing: U kunt toestemming vragen aan de eigenaar van de inhoud."
+        },
+        {
+            "id": "faq-quality",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Veelgestelde vragen\n\n📹 Waarom is de 1080p-optie niet altijd zichtbaar?\n\nSommige X (Twitter) video's zijn mogelijk alleen geüpload in 720p of lagere kwaliteit. XDownloaderz kan geen hogere resolutie produceren dan de oorspronkelijke videokwaliteit.\n\nDe hoogst beschikbare kwaliteitsoptie wordt aan u gepresenteerd."
+        },
+        {
+            "id": "faq-mp3-conversion",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Veelgestelde vragen\n\n🎵 Hoe werkt MP3-conversie?\n\nBij het downloaden van een X (Twitter) video extraheert XDownloaderz automatisch de audiotrack en converteert deze naar MP3-formaat. Dit proces vindt plaats in uw browser en is volledig veilig.\n\n⏱️ De conversietijd kan 5-30 seconden duren, afhankelijk van de lengte van de video."
+        },
+        {
+            "id": "faq-security",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Veelgestelde vragen\n\n🛡️ Is XDownloaderz veilig? Krijg ik een virus?\n\nJa, het is 100% veilig. XDownloaderz host geen bestanden en bevat geen adware of virussen. Video's worden rechtstreeks gedownload van X (Twitter) CDN-servers.\n\n✅ Werkt met SSL (HTTPS) encryptie in uw browser.\n✅ Uw persoonlijke gegevens worden nooit verzameld."
+        },
+        {
+            "id": "faq-pricing",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Veelgestelde vragen\n\n💰 Is XDownloaderz gratis? Is een abonnement vereist?\n\nNee! XDownloaderz is volledig gratis en blijft dat voor altijd. Er zijn geen kosten, verborgen kosten of abonnementssystemen.\n\n🎁 U kunt onbeperkt video's downloaden en het zoveel gebruiken als u wilt."
+        },
+        {
+            "id": "faq-legal-use",
+            "authorName": "XDownloaderz FAQ",
+            "content": "❓ Veelgestelde vragen\n\n⚖️ Is het legaal om gedownloade video's te gebruiken?\n\nU kunt gedownloade inhoud gebruiken voor persoonlijke, educatieve doeleinden of redelijk gebruik (Fair Use). Echter:\n\n❌ Opnieuw publiceren voor commerciële doeleinden\n❌ Het plegen van inbreuk op het auteursrecht\n❌ Delen zonder toestemming van de eigenaar van de inhoud\n\nHandelen in overeenstemming met de wet is de verantwoordelijkheid van de gebruiker."
+        },
+        {
+            "id": "seo-info-benefits",
+            "authorName": "XDownloaderz",
+            "content": "🌟 Waarom XDownloaderz?\n\n🚀 Snelste download: Sla X (Twitter) video's op in seconden\n🎯 Gemakkelijk te gebruiken: Download video's in slechts 3 stappen\n💎 Hoge kwaliteit: 1080p Full HD ondersteuning\n🔄 MP3 Converter: Extraheer alleen audio uit video\n🌍 Universele toegang: Werkt op alle apparaten\n\nxdownloaderz.com - De beste manier om X (Twitter) video's te downloaden!"
+        },
+        {
+            "id": "seo-keywords",
+            "authorName": "XDownloaderz",
+            "content": "🔍 Wat u kunt doen met XDownloaderz:\n\n• Download X (Twitter) video MP4\n• Download X (Twitter) GIF\n• X (Twitter) video downloader online\n• X (Twitter) MP3 converter\n• 1080p X (Twitter) video download\n• Mobiele X (Twitter) video opslaan\n• Gratis X (Twitter) downloader\n\nVoor de beste X (Twitter) video downloadervaring: xdownloaderz.com"
+        }
+    ]
+}
