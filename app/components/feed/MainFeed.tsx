@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import PostCard from './PostCard';
 import Toast from '../ui/Toast';
-import { Music, Settings2, Moon, Sun, CloudMoon, Check, Loader2, Video, FileAudio, X } from 'lucide-react';
+import { Music, Settings2, Moon, Sun, CloudMoon, Check, Loader2, Video, FileAudio, X, Clipboard as ClipboardIcon } from 'lucide-react';
 import { useTheme } from '../ThemeProvider';
 import Image from 'next/image';
 import { useVideoDownload, SelectionType } from '@/lib/hooks/use-video-download';
@@ -444,7 +444,7 @@ export default function MainFeed({ dict }: MainFeedProps) {
                       onClick={handlePasteAndAnalyze}
                       className="flex items-center gap-2 text-(--accent) font-semibold text-sm hover:bg-(--accent)/10 rounded-full px-3 py-1 w-fit transition-colors cursor-pointer"
                     >
-                      <LanguageSwitcher />
+                      <ClipboardIcon size={20} />
                       <span>{dict.feed.pasteButton}</span>
                     </button>
                   )

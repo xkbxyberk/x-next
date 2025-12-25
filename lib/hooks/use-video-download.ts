@@ -16,11 +16,11 @@ export function useVideoDownload() {
   const [inputUrl, setInputUrl] = useState('');
   const [data, setData] = useState<TweetVideoEntity | null>(null);
   const [error, setError] = useState<string | null>(null);
-  
+
   const [loading, setLoading] = useState(false);
   const [downloading, setDownloading] = useState(false);
   const [progress, setProgress] = useState(0);
-  
+
   const [selection, setSelection] = useState<SelectionType | null>(null);
   const [notification, setNotification] = useState<{ msg: string; type: 'success' | 'error' | 'info' } | null>(null);
 
@@ -41,7 +41,7 @@ export function useVideoDownload() {
   const handleAnalyze = async (urlToAnalyze?: string) => {
     const targetUrl = urlToAnalyze || inputUrl;
     if (!targetUrl.trim()) return;
-    
+
     setLoading(true);
     setData(null);
     setSelection(null);
@@ -49,7 +49,7 @@ export function useVideoDownload() {
 
     try {
       const result = await resolveTweetAction(targetUrl);
-      
+
       // DÜZELTME BURADA:
       // TypeScript'e "Eğer success false ise bu bloğa gir" diyoruz.
       // Böylece bu bloğun içinde result.error'a erişmemize izin veriyor.
@@ -60,9 +60,9 @@ export function useVideoDownload() {
       // Buraya geldiyse TypeScript artık başarısız olmadığını biliyor.
       // Dolayısıyla result.data'ya güvenle erişebiliriz.
       setData(result.data);
-      
+
       if (result.fromCache) {
-         console.log('⚡ Veri Cache\'den ışık hızında geldi!');
+        console.log('⚡ Veri Cache\'den ışık hızında geldi!');
       }
 
       showNotification('Video başarıyla bulundu. Format seçin.', 'success');
@@ -85,7 +85,7 @@ export function useVideoDownload() {
 
     try {
       if (typeof showNotification === 'function') {
-         showNotification(`${selection.type === 'audio' ? 'Ses' : 'Video'} indiriliyor...`, 'info');
+        showNotification(`${selection.type === 'audio' ? 'Ses' : 'Video'} indiriliyor...`, 'info');
       }
 
       let blob: Blob;
@@ -98,22 +98,47 @@ export function useVideoDownload() {
           setProgress(Math.round(progress * 100));
         });
 
-        await ffmpeg.writeFile('input.mp4', await fetchFile(selection.url));
-        await ffmpeg.exec(['-i', 'input.mp4', '-vn', '-ab', '192k', 'output.mp3']);
-        const fileData = await ffmpeg.readFile('output.mp3');
-        
-        await ffmpeg.deleteFile('input.mp4');
-        await ffmpeg.deleteFile('output.mp3');
+        try {
+          // fetchFile yerine manuel fetch yapıyoruz, böylece referrerPolicy ekleyebiliriz.
+          const response = await fetch(selection.url, {
+            referrerPolicy: 'no-referrer'
+          });
 
-        blob = new Blob([fileData as any], { type: 'audio/mp3' });
-        filename += '.mp3';
+          if (!response.ok) {
+            throw new Error(`Video indirilemedi. Status: ${response.status}`);
+          }
+
+          const blobData = await response.blob();
+          const arrayBuffer = await blobData.arrayBuffer();
+          const uint8Array = new Uint8Array(arrayBuffer);
+
+          await ffmpeg.writeFile('input.mp4', uint8Array);
+
+          await ffmpeg.exec(['-i', 'input.mp4', '-vn', '-ab', '192k', 'output.mp3']);
+
+          const fileData = await ffmpeg.readFile('output.mp3');
+          blob = new Blob([fileData as any], { type: 'audio/mp3' });
+          filename += '.mp3';
+        } catch (e: any) {
+          console.error("FFmpeg error full object:", e);
+          const errorMessage = e.message || (typeof e === 'string' ? e : JSON.stringify(e));
+          throw new Error("Ses dönüştürme hatası: " + errorMessage);
+        } finally {
+          // Temizlik
+          try {
+            await ffmpeg.deleteFile('input.mp4');
+            await ffmpeg.deleteFile('output.mp3');
+          } catch (cleanupErr) {
+            console.warn("Dosya temizleme hatası (önemsiz olabilir):", cleanupErr);
+          }
+        }
       } else {
         const response = await fetch(selection.url, {
-            referrerPolicy: 'no-referrer'
+          referrerPolicy: 'no-referrer'
         });
 
         if (!response.ok) throw new Error('Video dosyası çekilemedi.');
-        
+
         setProgress(50);
         blob = await response.blob();
         setProgress(100);
@@ -126,12 +151,12 @@ export function useVideoDownload() {
       a.download = filename;
       document.body.appendChild(a);
       a.click();
-      
+
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
 
       showNotification('İndirme tamamlandı!', 'success');
-      
+
     } catch (err: any) {
       console.error(err);
       showNotification('İndirme hatası: ' + (err.message || 'Bilinmeyen hata'), 'error');
