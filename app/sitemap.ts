@@ -11,9 +11,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         'ru', 'sr', 'sv', 'sw', 'th', 'tl', 'uk', 'ur', 'vi', 'zh'
     ];
 
+    // Task 4: Sitemap & lastmod Strategy
+    // Hardcoded deployment date to avoid fake updates on every request
+    const DEPLOY_DATE = new Date('2025-01-01T00:00:00.000Z');
+
     const languageRoutes = languages.map((lang) => ({
         url: `${baseUrl}/${lang}`,
-        lastModified: new Date(),
+        lastModified: DEPLOY_DATE,
         changeFrequency: 'daily' as const,
         priority: 0.8,
     }));
@@ -21,32 +25,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [
         {
             url: `${baseUrl}`,
-            lastModified: new Date(),
+            lastModified: DEPLOY_DATE,
             changeFrequency: 'daily',
             priority: 1,
         },
         ...languageRoutes,
         {
             url: `${baseUrl}/about`,
-            lastModified: new Date(),
+            lastModified: DEPLOY_DATE,
             changeFrequency: 'monthly',
             priority: 0.5,
         },
         {
             url: `${baseUrl}/contact`,
-            lastModified: new Date(),
+            lastModified: DEPLOY_DATE,
             changeFrequency: 'monthly',
             priority: 0.5,
         },
         {
             url: `${baseUrl}/privacy`,
-            lastModified: new Date(),
+            lastModified: DEPLOY_DATE,
             changeFrequency: 'yearly',
             priority: 0.3,
         },
         {
             url: `${baseUrl}/terms`,
-            lastModified: new Date(),
+            lastModified: DEPLOY_DATE,
             changeFrequency: 'yearly',
             priority: 0.3,
         },

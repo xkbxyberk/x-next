@@ -3,6 +3,9 @@
 import { useState } from 'react';
 import { Heart, MessageCircle, Repeat2, Share } from 'lucide-react';
 
+
+import Image from 'next/image';
+
 interface PostProps {
   data: {
     id: string;
@@ -12,9 +15,10 @@ interface PostProps {
     timestamp: string;
     metrics: { likes: number; reposts: number; replies: number };
   };
+  priority?: boolean;
 }
 
-export default function PostCard({ data }: PostProps) {
+export default function PostCard({ data, priority = false }: PostProps) {
   const [isLiked, setIsLiked] = useState(false);
   const [likeCount, setLikeCount] = useState(data.metrics.likes);
 
@@ -26,16 +30,18 @@ export default function PostCard({ data }: PostProps) {
 
   return (
     // BURASI DEĞİŞTİ: id prop'u eklendi
-    <article 
-      id={data.id} 
+    <article
+      id={data.id}
       className="border-b border-(--border) p-4 hover:bg-(--background-secondary) transition-colors cursor-pointer scroll-mt-20"
     >
       <div className="flex gap-4">
-        <div className="shrink-0">
-          <img
+        <div className="shrink-0 relative w-10 h-10">
+          <Image
             src={data.author.avatar}
             alt={data.author.name}
-            className="w-10 h-10 rounded-full object-cover"
+            fill
+            className="rounded-full object-cover"
+            sizes="40px"
           />
         </div>
 
@@ -54,12 +60,14 @@ export default function PostCard({ data }: PostProps) {
           </p>
 
           {data.image && (
-            <div className="mt-3 rounded-2xl overflow-hidden border border-(--border) max-h-125">
-              <img
+            <div className="mt-3 rounded-2xl overflow-hidden border border-(--border) max-h-125 relative w-full aspect-video">
+              <Image
                 src={data.image}
                 alt="Post media"
-                className="w-full h-full object-cover"
-                loading="lazy"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 600px"
+                priority={priority}
               />
             </div>
           )}
@@ -84,17 +92,15 @@ export default function PostCard({ data }: PostProps) {
                 e.stopPropagation();
                 handleLike();
               }}
-              className={`group flex items-center gap-2 transition-colors ${
-                isLiked ? 'text-pink-600' : 'hover:text-pink-600'
-              }`}
+              className={`group flex items-center gap-2 transition-colors ${isLiked ? 'text-pink-600' : 'hover:text-pink-600'
+                }`}
             >
               <div className="p-2 rounded-full group-hover:bg-pink-600/10 relative">
                 <Heart
                   size={18}
                   fill={isLiked ? 'currentColor' : 'none'}
-                  className={`transition-transform duration-200 ${
-                    isLiked ? 'scale-110' : 'scale-100'
-                  }`}
+                  className={`transition-transform duration-200 ${isLiked ? 'scale-110' : 'scale-100'
+                    }`}
                 />
               </div>
               <span className="text-xs">{likeCount}</span>

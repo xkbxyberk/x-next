@@ -112,9 +112,18 @@ export function useVideoDownload() {
           const arrayBuffer = await blobData.arrayBuffer();
           const uint8Array = new Uint8Array(arrayBuffer);
 
+          // Task 5: INP Optimization - Yield to main thread
+          await new Promise(resolve => setTimeout(resolve, 0)); // yieldToMain polyfill
+
           await ffmpeg.writeFile('input.mp4', uint8Array);
 
+          // Yield again before heavy processing
+          await new Promise(resolve => setTimeout(resolve, 0));
+
           await ffmpeg.exec(['-i', 'input.mp4', '-vn', '-ab', '192k', 'output.mp3']);
+
+          // Yield before reading result
+          await new Promise(resolve => setTimeout(resolve, 0));
 
           const fileData = await ffmpeg.readFile('output.mp3');
           blob = new Blob([fileData as any], { type: 'audio/mp3' });

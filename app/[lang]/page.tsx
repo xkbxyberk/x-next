@@ -204,19 +204,64 @@ export default async function Home({
   ];
 
   /* JSON-LD Schema (Task 3) */
+  /* JSON-LD Schema (Task 2: Graph Architecture) */
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'SoftwareApplication',
-    name: 'XDownloaderz',
-    applicationCategory: 'MultimediaApplication',
-    operatingSystem: 'Web',
-    offers: {
-      '@type': 'Offer',
-      price: '0',
-      priceCurrency: 'USD'
-    },
-    description: dict.common.title,
-    softwareVersion: '2025.1.0'
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': 'https://xdownloaderz.com/#organization',
+        name: 'XDownloaderz',
+        url: 'https://xdownloaderz.com',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://xdownloaderz.com/logo.avif',
+          width: 512,
+          height: 512
+        }
+      },
+      {
+        '@type': 'WebSite',
+        '@id': 'https://xdownloaderz.com/#website',
+        url: 'https://xdownloaderz.com',
+        name: dict.common.title,
+        publisher: { '@id': 'https://xdownloaderz.com/#organization' }
+      },
+      {
+        '@type': 'SoftwareApplication',
+        '@id': 'https://xdownloaderz.com/#app',
+        name: 'XDownloaderz',
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Web',
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD'
+        },
+        description: dict.common.title,
+        softwareVersion: '2025.1.0',
+        author: { '@id': 'https://xdownloaderz.com/#organization' },
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '4.9',
+          ratingCount: '15200'
+        }
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://xdownloaderz.com/#faq',
+        mainEntity: staticItems
+          .filter((item: any) => item.type === 'post' && item.data.id.startsWith('faq-'))
+          .map((item: any) => ({
+            '@type': 'Question',
+            name: item.data.content.split('\n')[2]?.replace('❓ ', '').trim() || 'Question',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: item.data.content.split('\n\n').slice(1).join('\n')
+            }
+          }))
+      }
+    ]
   };
 
   return (

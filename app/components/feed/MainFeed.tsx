@@ -392,7 +392,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
         {/* --- DİNAMİK RENDER --- */}
         {displayItems.map((item, index) => {
           if (item.type === 'post') {
-            return <PostCard key={item.data.id} data={item.data} />;
+            return <PostCard key={item.data.id} data={item.data} priority={index === 0} />;
           } else {
             return <AdBanner key={item.id} />;
           }

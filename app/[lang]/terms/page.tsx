@@ -2,6 +2,12 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { getDictionary } from '@/app/get-dictionary';
 
+interface ListSection {
+  title: string;
+  subcontent: string;
+  list: string[];
+}
+
 export default async function TermsPage({
   params,
 }: {
@@ -48,10 +54,10 @@ export default async function TermsPage({
 
         {/* Section 4 (Prohibited - List) */}
         <section className="mb-8">
-          <h2 className="text-lg font-bold mb-3 border-b border-(--border) pb-2">{t.sections[2].title}</h2>
-          <p className="mb-2 text-[15px] text-(--text-secondary)">{t.sections[2].subcontent}</p>
+          <h2 className="text-lg font-bold mb-3 border-b border-(--border) pb-2">{(t.sections[2] as ListSection).title}</h2>
+          <p className="mb-2 text-[15px] text-(--text-secondary)">{(t.sections[2] as ListSection).subcontent}</p>
           <ul className="list-disc pl-5 space-y-1 text-[15px] text-(--text-secondary)">
-            {t.sections[2].list?.map((item: string, i: number) => (
+            {(t.sections[2] as ListSection).list.map((item: string, i: number) => (
               <li key={i}>{item}</li>
             ))}
           </ul>

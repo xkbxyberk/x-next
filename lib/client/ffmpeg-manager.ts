@@ -1,5 +1,5 @@
 import { FFmpeg } from '@ffmpeg/ffmpeg';
-import { toBlobURL } from '@ffmpeg/util';
+
 
 // Singleton Class: Sayfa boyunca sadece TEK bir FFmpeg instance'ı olmasını garanti eder.
 export class FFmpegManager {
@@ -14,14 +14,12 @@ export class FFmpegManager {
 
     this.loadingPromise = (async () => {
       const ffmpeg = new FFmpeg();
-      const baseURL = 'https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd';
-      
       try {
         await ffmpeg.load({
-          coreURL: await toBlobURL(`${baseURL}/ffmpeg-core.js`, 'text/javascript'),
-          wasmURL: await toBlobURL(`${baseURL}/ffmpeg-core.wasm`, 'application/wasm'),
+          coreURL: 'https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd/ffmpeg-core.js',
+          wasmURL: 'https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd/ffmpeg-core.wasm',
         });
-        
+
         this.instance = ffmpeg;
         return ffmpeg;
       } catch (e) {
