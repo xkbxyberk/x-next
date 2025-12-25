@@ -43,7 +43,8 @@ function getLocale(request: NextRequest): string {
   return match(languages, locales, defaultLocale);
 }
 
-export function middleware(request: NextRequest) {
+// DİKKAT: Buradaki isim "middleware" yerine "proxy" oldu.
+export function proxy(request: NextRequest) {
   // 1. Run Rate Limiter
   const rateLimitResponse = checkRateLimit(request);
   if (rateLimitResponse) return rateLimitResponse;
