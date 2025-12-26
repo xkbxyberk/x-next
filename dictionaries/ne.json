@@ -50,6 +50,14 @@
             "sponsored": "प्रायोजित",
             "label": "विज्ञापन स्थान",
             "provider": "(Google Adsense / अनुकूलन विज्ञापन)"
+        },
+        "accessibility": {
+            "themeToggle": "थिम परिवर्तन गर्नुहोस्",
+            "settings": "सेटिङहरू",
+            "like": "मन पर्यो",
+            "reply": "जवाफ दिनुहोस्",
+            "repost": "रिपोस्ट",
+            "share": "साझा गर्नुहोस्"
         }
     },
     "about": {

@@ -50,6 +50,14 @@
             "sponsored": "DISPONSORI",
             "label": "RUANG IKLAN",
             "provider": "(Google Adsense / Iklan Kustom)"
+        },
+        "accessibility": {
+            "themeToggle": "Ganti Tema",
+            "settings": "Pengaturan",
+            "like": "Suka",
+            "reply": "Balas",
+            "repost": "Repost",
+            "share": "Bagikan"
         }
     },
     "about": {

@@ -50,6 +50,14 @@
             "sponsored": "اسپانسر شدہ",
             "label": "اشتہار کی جگہ",
             "provider": "(Google Adsense / کسٹم اشتہار)"
+        },
+        "accessibility": {
+            "themeToggle": "تھیم تبدیل کریں",
+            "settings": "ترتیبات",
+            "like": "پسند کریں",
+            "reply": "جواب دیں",
+            "repost": "ری پوسٹ",
+            "share": "شیئر کریں"
         }
     },
     "about": {

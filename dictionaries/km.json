@@ -50,6 +50,14 @@
             "sponsored": "បានឧបត្ថម្ភ",
             "label": "កន្លែងផ្សាយពាណិជ្ជកម្ម",
             "provider": "(Google Adsense / ការផ្សាយពាណិជ្ជកម្មផ្ទាល់ខ្លួន)"
+        },
+        "accessibility": {
+            "themeToggle": "ប្តូរប្រធានបទ",
+            "settings": "ការកំណត់",
+            "like": "ចូលចិត្ត",
+            "reply": "ឆ្លើយតប",
+            "repost": "បង្ហោះឡើងវិញ",
+            "share": "ចែករំលែក"
         }
     },
     "about": {

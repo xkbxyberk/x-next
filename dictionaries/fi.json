@@ -50,6 +50,14 @@
             "sponsored": "SPONSOROITU",
             "label": "MAINOSTILA",
             "provider": "(Google Adsense / Mukautettu mainos)"
+        },
+        "accessibility": {
+            "themeToggle": "Vaihda teemaa",
+            "settings": "Asetukset",
+            "like": "Tykkää",
+            "reply": "Vastaa",
+            "repost": "Uudelleenjulkaise",
+            "share": "Jaa"
         }
     },
     "about": {

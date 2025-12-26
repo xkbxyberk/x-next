@@ -50,6 +50,14 @@
             "sponsored": "SPONSORED",
             "label": "ESPASYO NG AD",
             "provider": "(Google Adsense / Pasadyang Ad)"
+        },
+        "accessibility": {
+            "themeToggle": "Palitan ang Tema",
+            "settings": "Mga Setting",
+            "like": "Gusto",
+            "reply": "Sumagot",
+            "repost": "I-repost",
+            "share": "Ibahagi"
         }
     },
     "about": {

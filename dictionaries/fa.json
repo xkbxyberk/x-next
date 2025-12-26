@@ -50,6 +50,14 @@
             "sponsored": "اسپانسر شده",
             "label": "فضای تبلیغاتی",
             "provider": "(گوگل ادسنس / تبلیغ سفارشی)"
+        },
+        "accessibility": {
+            "themeToggle": "تغییر پوسته",
+            "settings": "تنظیمات",
+            "like": "پسندیدن",
+            "reply": "پاسخ",
+            "repost": "بازنشر",
+            "share": "اشتراک‌گذاری"
         }
     },
     "about": {

@@ -50,6 +50,14 @@
             "sponsored": "স্পন্সরড",
             "label": "বিজ্ঞাপন স্থান",
             "provider": "(Google Adsense / কাস্টম বিজ্ঞাপন)"
+        },
+        "accessibility": {
+            "themeToggle": "থিম পরিবর্তন করুন",
+            "settings": "সেটিংস",
+            "like": "লাইক",
+            "reply": "উত্তর",
+            "repost": "রিপোস্ট",
+            "share": "শেয়ার"
         }
     },
     "about": {

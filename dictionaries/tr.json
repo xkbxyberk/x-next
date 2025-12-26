@@ -50,6 +50,14 @@
             "sponsored": "SPONSORLU",
             "label": "REKLAM ALANI",
             "provider": "(Google Adsense / Özel Reklam)"
+        },
+        "accessibility": {
+            "themeToggle": "Temayı Değiştir",
+            "settings": "Ayarlar",
+            "like": "Beğen",
+            "reply": "Yanıtla",
+            "repost": "Yeniden Gönder",
+            "share": "Paylaş"
         }
     },
     "about": {

@@ -50,6 +50,14 @@
             "sponsored": "IMEDHAMINIWA",
             "label": "NAFASI YA TANGAZO",
             "provider": "(Google Adsense / Tangazo Maalum)"
+        },
+        "accessibility": {
+            "themeToggle": "Badilisha Mandhari",
+            "settings": "Mipangilio",
+            "like": "Penda",
+            "reply": "Jibu",
+            "repost": "Chapisha tena",
+            "share": "Shiriki"
         }
     },
     "about": {

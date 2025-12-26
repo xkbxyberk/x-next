@@ -50,6 +50,14 @@
             "sponsored": "スポンサー",
             "label": "広告スペース",
             "provider": "（Google Adsense / カスタム広告）"
+        },
+        "accessibility": {
+            "themeToggle": "テーマを切り替え",
+            "settings": "設定",
+            "like": "いいね",
+            "reply": "返信",
+            "repost": "リポスト",
+            "share": "共有"
         }
     },
     "about": {

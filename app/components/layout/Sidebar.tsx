@@ -124,8 +124,8 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
 
         <div className="hidden xl:flex w-full my-2 px-2 flex-1 min-h-75">
           <div className="w-full bg-(--background-secondary) rounded-2xl border border-(--border) h-full flex flex-col items-center justify-center relative overflow-hidden group">
-            <span className="text-(--text-secondary) text-[10px] font-bold tracking-widest opacity-40 absolute top-2 right-2">{dict.sidebar.adLabel}</span>
-            <div className="flex flex-col items-center gap-2 opacity-50">
+            <span className="text-(--text-secondary) text-[10px] font-bold tracking-widest absolute top-2 right-2">{dict.sidebar.adLabel}</span>
+            <div className="flex flex-col items-center gap-2">
               <span className="text-(--text-secondary) text-xs font-bold tracking-widest rotate-90 whitespace-nowrap">{dict.sidebar.verticalAd}</span>
             </div>
           </div>

@@ -50,6 +50,14 @@
             "sponsored": "СПОНЗОРИСАНО",
             "label": "РЕКЛАМНИ ПРОСТОР",
             "provider": "(Google Adsense / Прилагођена реклама)"
+        },
+        "accessibility": {
+            "themeToggle": "Promeni temu",
+            "settings": "Podešavanja",
+            "like": "Sviđa mi se",
+            "reply": "Odgovori",
+            "repost": "Repostuj",
+            "share": "Podeli"
         }
     },
     "about": {

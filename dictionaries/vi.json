@@ -50,6 +50,14 @@
             "sponsored": "ĐƯỢC TÀI TRỢ",
             "label": "KHÔNG GIAN QUẢNG CÁO",
             "provider": "(Google Adsense / Quảng cáo tùy chỉnh)"
+        },
+        "accessibility": {
+            "themeToggle": "Đổi giao diện",
+            "settings": "Cài đặt",
+            "like": "Thích",
+            "reply": "Trả lời",
+            "repost": "Đăng lại",
+            "share": "Chia sẻ"
         }
     },
     "about": {

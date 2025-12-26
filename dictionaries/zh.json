@@ -50,6 +50,14 @@
             "sponsored": "赞助",
             "label": "广告位",
             "provider": "(Google Adsense / 自定义广告)"
+        },
+        "accessibility": {
+            "themeToggle": "切换主题",
+            "settings": "设置",
+            "like": "喜欢",
+            "reply": "回复",
+            "repost": "转发",
+            "share": "分享"
         }
     },
     "about": {

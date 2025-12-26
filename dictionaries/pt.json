@@ -50,6 +50,14 @@
             "sponsored": "PATROCINADO",
             "label": "ESPAÇO DE ANÚNCIO",
             "provider": "(Google Adsense / Anúncio Personalizado)"
+        },
+        "accessibility": {
+            "themeToggle": "Alternar Tema",
+            "settings": "Definições",
+            "like": "Gosto",
+            "reply": "Responder",
+            "repost": "Republicar",
+            "share": "Partilhar"
         }
     },
     "about": {

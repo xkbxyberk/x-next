@@ -16,9 +16,10 @@ interface PostProps {
     metrics: { likes: number; reposts: number; replies: number };
   };
   priority?: boolean;
+  dict?: any;
 }
 
-export default function PostCard({ data, priority = false }: PostProps) {
+export default function PostCard({ data, priority = false, dict }: PostProps) {
   const [isLiked, setIsLiked] = useState(false);
   const [likeCount, setLikeCount] = useState(data.metrics.likes);
 
@@ -73,14 +74,20 @@ export default function PostCard({ data, priority = false }: PostProps) {
           )}
 
           <div className="flex justify-between mt-3 text-(--text-secondary) max-w-100">
-            <button className="group flex items-center gap-2 hover:text-blue-400 transition-colors">
+            <button
+              className="group flex items-center gap-2 hover:text-blue-400 transition-colors"
+              aria-label={dict?.feed?.accessibility?.reply || "Reply"}
+            >
               <div className="p-2 rounded-full group-hover:bg-blue-400/10">
                 <MessageCircle size={18} />
               </div>
               <span className="text-xs">{data.metrics.replies}</span>
             </button>
 
-            <button className="group flex items-center gap-2 hover:text-green-400 transition-colors">
+            <button
+              className="group flex items-center gap-2 hover:text-green-400 transition-colors"
+              aria-label={dict?.feed?.accessibility?.repost || "Repost"}
+            >
               <div className="p-2 rounded-full group-hover:bg-green-400/10">
                 <Repeat2 size={18} />
               </div>
@@ -94,6 +101,7 @@ export default function PostCard({ data, priority = false }: PostProps) {
               }}
               className={`group flex items-center gap-2 transition-colors ${isLiked ? 'text-pink-600' : 'hover:text-pink-600'
                 }`}
+              aria-label={dict?.feed?.accessibility?.like || "Like"}
             >
               <div className="p-2 rounded-full group-hover:bg-pink-600/10 relative">
                 <Heart
@@ -106,7 +114,10 @@ export default function PostCard({ data, priority = false }: PostProps) {
               <span className="text-xs">{likeCount}</span>
             </button>
 
-            <button className="group flex items-center gap-2 hover:text-blue-400 transition-colors">
+            <button
+              className="group flex items-center gap-2 hover:text-blue-400 transition-colors"
+              aria-label={dict?.feed?.accessibility?.share || "Share"}
+            >
               <div className="p-2 rounded-full group-hover:bg-blue-400/10">
                 <Share size={18} />
               </div>

@@ -50,6 +50,14 @@
             "sponsored": "GESPONSERT",
             "label": "WERBEFLÄCHE",
             "provider": "(Google Adsense / Benutzerdefinierte Werbung)"
+        },
+        "accessibility": {
+            "themeToggle": "Design wechseln",
+            "settings": "Einstellungen",
+            "like": "Gefällt mir",
+            "reply": "Antworten",
+            "repost": "Teilen",
+            "share": "Senden"
         }
     },
     "about": {

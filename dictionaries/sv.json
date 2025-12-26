@@ -50,6 +50,14 @@
             "sponsored": "SPONSRAD",
             "label": "ANNONSPLATS",
             "provider": "(Google Adsense / Anpassad annons)"
+        },
+        "accessibility": {
+            "themeToggle": "Byt tema",
+            "settings": "Inställningar",
+            "like": "Gilla",
+            "reply": "Svara",
+            "repost": "Reposta",
+            "share": "Dela"
         }
     },
     "about": {

@@ -50,6 +50,14 @@
             "sponsored": "스폰서",
             "label": "광고 공간",
             "provider": "(Google Adsense / 맞춤 광고)"
+        },
+        "accessibility": {
+            "themeToggle": "테마 변경",
+            "settings": "설정",
+            "like": "좋아요",
+            "reply": "답글",
+            "repost": "재게시",
+            "share": "공유"
         }
     },
     "about": {

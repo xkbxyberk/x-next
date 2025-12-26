@@ -50,6 +50,14 @@
             "sponsored": "SPONZOROVÁNO",
             "label": "REKLAMNÍ PROSTOR",
             "provider": "(Google Adsense / Vlastní reklama)"
+        },
+        "accessibility": {
+            "themeToggle": "Přepnout téma",
+            "settings": "Nastavení",
+            "like": "Líbí se",
+            "reply": "Odpovědět",
+            "repost": "Repostovat",
+            "share": "Sdílet"
         }
     },
     "about": {

@@ -50,6 +50,14 @@
             "sponsored": "ΧΟΡΗΓΟΥΜΕΝΟ",
             "label": "ΧΩΡΟΣ ΔΙΑΦΗΜΙΣΗΣ",
             "provider": "(Google Adsense / Προσαρμοσμένη διαφήμιση)"
+        },
+        "accessibility": {
+            "themeToggle": "Αλλαγή θέματος",
+            "settings": "Ρυθμίσεις",
+            "like": "Μου αρέσει",
+            "reply": "Απάντηση",
+            "repost": "Αναδημοσίευση",
+            "share": "Κοινοποίηση"
         }
     },
     "about": {

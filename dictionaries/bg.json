@@ -50,6 +50,14 @@
             "sponsored": "СПОНСОРИРАНО",
             "label": "РЕКЛАМНО МЯСТО",
             "provider": "(Google Adsense / Персонализирана реклама)"
+        },
+        "accessibility": {
+            "themeToggle": "Смяна на темата",
+            "settings": "Настройки",
+            "like": "Харесване",
+            "reply": "Отговор",
+            "repost": "Репост",
+            "share": "Споделяне"
         }
     },
     "about": {

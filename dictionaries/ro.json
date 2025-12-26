@@ -50,6 +50,14 @@
             "sponsored": "SPONSORIZAT",
             "label": "SPAȚIU PUBLICITAR",
             "provider": "(Google Adsense / Anunț Personalizat)"
+        },
+        "accessibility": {
+            "themeToggle": "Schimbă tema",
+            "settings": "Setări",
+            "like": "Îmi place",
+            "reply": "Răspunde",
+            "repost": "Repostează",
+            "share": "Distribuie"
         }
     },
     "about": {

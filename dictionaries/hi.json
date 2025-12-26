@@ -50,6 +50,14 @@
             "sponsored": "प्रायोजित",
             "label": "विज्ञापन स्थान",
             "provider": "(Google Adsense / कस्टम विज्ञापन)"
+        },
+        "accessibility": {
+            "themeToggle": "थीम बदलें",
+            "settings": "सेटिंग्स",
+            "like": "लाइक",
+            "reply": "जवाब दें",
+            "repost": "रिपोस्ट",
+            "share": "शेयर"
         }
     },
     "about": {

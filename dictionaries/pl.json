@@ -50,6 +50,14 @@
             "sponsored": "SPONSOROWANE",
             "label": "PRZESTRZEŃ REKLAMOWA",
             "provider": "(Google Adsense / Reklama niestandardowa)"
+        },
+        "accessibility": {
+            "themeToggle": "Zmień motyw",
+            "settings": "Ustawienia",
+            "like": "Lubię to",
+            "reply": "Odpowiedz",
+            "repost": "Podaj dalej",
+            "share": "Udostępnij"
         }
     },
     "about": {

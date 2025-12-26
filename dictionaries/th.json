@@ -50,6 +50,14 @@
             "sponsored": "ได้รับการสนับสนุน",
             "label": "พื้นที่โฆษณา",
             "provider": "(Google Adsense / โฆษณาที่กำหนดเอง)"
+        },
+        "accessibility": {
+            "themeToggle": "สลับธีม",
+            "settings": "การตั้งค่า",
+            "like": "ถูกใจ",
+            "reply": "ตอบกลับ",
+            "repost": "รีโพสต์",
+            "share": "แชร์"
         }
     },
     "about": {

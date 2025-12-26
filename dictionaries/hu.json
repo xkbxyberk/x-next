@@ -50,6 +50,14 @@
             "sponsored": "SZPONSZORÁLT",
             "label": "HIRDETÉSI HELY",
             "provider": "(Google Adsense / Egyéni hirdetés)"
+        },
+        "accessibility": {
+            "themeToggle": "Téma váltása",
+            "settings": "Beállítások",
+            "like": "Tetszik",
+            "reply": "Válasz",
+            "repost": "Megosztás",
+            "share": "Küldés"
         }
     },
     "about": {

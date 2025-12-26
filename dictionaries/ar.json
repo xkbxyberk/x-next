@@ -50,6 +50,14 @@
             "sponsored": "برعاية",
             "label": "مساحة إعلانية",
             "provider": "(Google Adsense / إعلان مخصص)"
+        },
+        "accessibility": {
+            "themeToggle": "تبديل المظهر",
+            "settings": "الإعدادات",
+            "like": "إعجاب",
+            "reply": "رد",
+            "repost": "إعادة نشر",
+            "share": "مشاركة"
         }
     },
     "about": {

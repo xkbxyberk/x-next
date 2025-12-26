@@ -50,6 +50,14 @@
             "sponsored": "ממומן",
             "label": "שטח פרסום",
             "provider": "(Google Adsense / מודעה מותאמת אישית)"
+        },
+        "accessibility": {
+            "themeToggle": "החלף ערכת נושא",
+            "settings": "הגדרות",
+            "like": "לייק",
+            "reply": "הגב",
+            "repost": "פרסם מחדש",
+            "share": "שתף"
         }
     },
     "about": {

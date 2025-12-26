@@ -50,6 +50,14 @@
             "sponsored": "РЕКЛАМА",
             "label": "РЕКЛАМНЕ МІСЦЕ",
             "provider": "(Google Adsense / Користувацька реклама)"
+        },
+        "accessibility": {
+            "themeToggle": "Змінити тему",
+            "settings": "Налаштування",
+            "like": "Подобається",
+            "reply": "Відповісти",
+            "repost": "Репост",
+            "share": "Поділитися"
         }
     },
     "about": {

@@ -52,8 +52,8 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
   const AdBanner = () => (
     <div className="border-b border-(--border) p-4 bg-(--background-secondary)/30">
       <div className="w-full h-32 bg-(--background-secondary) rounded-xl border border-(--border) flex flex-col items-center justify-center relative overflow-hidden group cursor-pointer hover:bg-(--border)/50 transition-colors">
-        <span className="text-(--text-secondary) text-[10px] font-bold tracking-widest opacity-40 absolute top-2 right-2">{dict.feed.ad.sponsored}</span>
-        <div className="flex flex-col items-center gap-2 opacity-50">
+        <span className="text-(--text-secondary) text-[10px] font-bold tracking-widest absolute top-2 right-2">{dict.feed.ad.sponsored}</span>
+        <div className="flex flex-col items-center gap-2">
           <span className="text-(--text-secondary) text-sm font-bold tracking-widest">{dict.feed.ad.label}</span>
           <span className="text-(--text-secondary) text-[10px]">{dict.feed.ad.provider}</span>
         </div>
@@ -257,6 +257,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                             ${selection?.type === 'video' ? 'bg-blue-500/10 text-blue-500 ring-2 ring-blue-500/20' : 'text-(--accent) hover:bg-(--accent)/10'}
                         `}
                       title={dict.feed.settings.title}
+                      aria-label={dict.feed.accessibility.settings}
                     >
                       <Settings2 size={20} />
                       {selection?.type === 'video' && (
@@ -345,7 +346,11 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                     <LanguageSwitcher />
 
                     <div className="relative" ref={themeRef}>
-                      <button onClick={() => setIsThemeMenuOpen(!isThemeMenuOpen)} className={`p-2 rounded-full transition-colors cursor-pointer ${isThemeMenuOpen ? 'bg-(--accent)/20 text-(--accent)' : 'hover:bg-(--accent)/10 text-(--accent)'}`}>
+                      <button
+                        onClick={() => setIsThemeMenuOpen(!isThemeMenuOpen)}
+                        className={`p-2 rounded-full transition-colors cursor-pointer ${isThemeMenuOpen ? 'bg-(--accent)/20 text-(--accent)' : 'hover:bg-(--accent)/10 text-(--accent)'}`}
+                        aria-label={dict.feed.accessibility.themeToggle}
+                      >
                         <Moon size={20} />
                       </button>
                       {isThemeMenuOpen && (
@@ -392,7 +397,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
         {/* --- DİNAMİK RENDER --- */}
         {displayItems.map((item, index) => {
           if (item.type === 'post') {
-            return <PostCard key={item.data.id} data={item.data} priority={index === 0} />;
+            return <PostCard key={item.data.id} data={item.data} priority={index === 0} dict={dict} />;
           } else {
             return <AdBanner key={item.id} />;
           }

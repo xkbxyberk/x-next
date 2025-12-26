@@ -50,6 +50,14 @@
             "sponsored": "GESPONSORD",
             "label": "ADVERTENTIERUIMTE",
             "provider": "(Google Adsense / Aangepaste advertentie)"
+        },
+        "accessibility": {
+            "themeToggle": "Thema wisselen",
+            "settings": "Instellingen",
+            "like": "Leuk",
+            "reply": "Beantwoorden",
+            "repost": "Herplaatsen",
+            "share": "Delen"
         }
     },
     "about": {

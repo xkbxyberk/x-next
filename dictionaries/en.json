@@ -50,6 +50,14 @@
             "sponsored": "SPONSORED",
             "label": "AD SPACE",
             "provider": "(Google Adsense / Custom Ad)"
+        },
+        "accessibility": {
+            "themeToggle": "Toggle Theme",
+            "settings": "Settings",
+            "like": "Like",
+            "reply": "Reply",
+            "repost": "Repost",
+            "share": "Share"
         }
     },
     "about": {

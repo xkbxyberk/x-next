@@ -50,6 +50,14 @@
             "sponsored": "DITAJA",
             "label": "RUANG IKLAN",
             "provider": "(Google Adsense / Iklan Tersuai)"
+        },
+        "accessibility": {
+            "themeToggle": "Tukar Tema",
+            "settings": "Tetapan",
+            "like": "Suka",
+            "reply": "Balas",
+            "repost": "Hantar Semula",
+            "share": "Kongsi"
         }
     },
     "about": {
