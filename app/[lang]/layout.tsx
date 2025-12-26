@@ -9,6 +9,7 @@ import { getDictionary } from '@/app/get-dictionary';
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
+  variable: '--font-inter',
   preload: true,
   adjustFontFallback: true,
 });
@@ -48,7 +49,7 @@ export default async function RootLayout({
 
   return (
     <html lang={lang}>
-      <body className={`${inter.className} min-h-screen overflow-x-hidden`}>
+      <body className={`${inter.className} ${inter.variable} font-sans min-h-screen overflow-x-hidden`}>
         <ThemeProvider>
           <div className="mx-auto max-w-325 flex justify-center">
 
@@ -60,8 +61,8 @@ export default async function RootLayout({
               {children}
             </main>
 
-            <aside className="hidden lg:flex lg:w-87.5 lg:flex-col pl-8 pt-2 h-screen sticky top-0">
-              <RightSection dict={dict} />
+            <aside className="hidden lg:flex lg:w-87.5 lg:flex-col pl-8 pt-2 pb-2 h-screen sticky top-0 justify-between">
+              <RightSection dict={dict} lang={lang} />
             </aside>
 
             <nav className="md:hidden fixed bottom-0 w-full bg-(--background)/90 backdrop-blur-md border-t border-(--border) z-50">
