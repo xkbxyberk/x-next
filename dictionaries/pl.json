@@ -153,7 +153,7 @@
             },
             "analytics": {
                 "title": "2. Analityka stron trzecich",
-                "desc": "Obecnie nie używamy kodów śledzenia stron trzecich, takich jak Google Analytics. Zastrzegamy sobie jednak prawo do dodania anonimowych narzędzi analitycznych w przyszłości w celu poprawy wydajności naszej witryny."
+                "desc": "Używamy Google Analytics do monitorowania i analizowania korzystania z naszego Serwisu. Pomaga nam to ulepszać doświadczenia użytkowników. Google Analytics zbiera dane anonimowo."
             }
         },
         "thirdParty": {
@@ -199,6 +199,10 @@
             {
                 "title": "6. Zmiany warunków",
                 "content": "Zastrzegamy sobie prawo do zmiany niniejszych warunków w dowolnym momencie. Dalsze korzystanie z witryny po wprowadzeniu zmian oznacza akceptację nowych Warunków korzystania."
+            },
+            {
+                "title": "7. Analityka",
+                "content": "Używamy Google Analytics do zbierania anonimowych danych o użytkowaniu. Korzystając z naszego serwisu, zgadzasz się na to gromadzenie danych zgodnie z opisem w naszej Polityce Prywatności."
             }
         ],
         "ip": {

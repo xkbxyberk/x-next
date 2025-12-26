@@ -153,7 +153,7 @@
             },
             "analytics": {
                 "title": "2. Analitik Pihak Ketiga",
-                "desc": "Saat ini kami tidak menggunakan kode pelacakan pihak ketiga seperti Google Analytics. Namun, kami berhak untuk menambahkan alat analitik anonim di masa mendatang untuk meningkatkan kinerja situs web kami."
+                "desc": "Kami menggunakan Google Analytics untuk memantau dan menganalisis penggunaan Layanan kami. Ini membantu kami meningkatkan pengalaman pengguna kami. Google Analytics mengumpulkan data secara anonim."
             }
         },
         "thirdParty": {
@@ -199,6 +199,10 @@
             {
                 "title": "6. Perubahan Syarat",
                 "content": "Kami berhak untuk mengubah syarat-syarat ini kapan saja. Penggunaan situs web yang berkelanjutan oleh Anda setelah perubahan dilakukan berarti Anda menerima Syarat Layanan yang baru."
+            },
+            {
+                "title": "7. Analitik",
+                "content": "Kami menggunakan Google Analytics untuk mengumpulkan data penggunaan anonim. Dengan menggunakan layanan kami, Anda menyetujui pengumpulan data ini sebagaimana dijelaskan dalam Kebijakan Privasi kami."
             }
         ],
         "ip": {

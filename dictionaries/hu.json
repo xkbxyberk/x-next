@@ -153,7 +153,7 @@
             },
             "analytics": {
                 "title": "2. Harmadik féltől származó elemzések",
-                "desc": "Jelenleg nem használunk harmadik féltől származó nyomkövető kódokat, például a Google Analytics-et. Fenntartjuk azonban a jogot, hogy a jövőben névtelen elemző eszközöket adjunk hozzá weboldalunk teljesítményének javítása érdekében."
+                "desc": "A Google Analytics szolgáltatást használjuk szolgáltatásunk használatának nyomon követésére és elemzésére. Ez segít javítani a felhasználói élményt. A Google Analytics névtelenül gyűjt adatokat."
             }
         },
         "thirdParty": {
@@ -199,6 +199,10 @@
             {
                 "title": "6. Feltételek módosítása",
                 "content": "Fenntartjuk a jogot, hogy ezeket a feltételeket bármikor módosítsuk. A weboldal további használata a módosítások után azt jelenti, hogy elfogadja az új Szolgáltatási feltételeket."
+            },
+            {
+                "title": "7. Analitika",
+                "content": "A Google Analytics szolgáltatást névtelen használati adatok gyűjtésére használjuk. Szolgáltatásunk használatával Ön beleegyezik ebbe az adatgyűjtésbe az Adatvédelmi szabályzatunkban leírtak szerint."
             }
         ],
         "ip": {

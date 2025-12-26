@@ -5,6 +5,7 @@ import RightSection from '@/app/components/layout/RightSection';
 import { ThemeProvider } from '@/app/components/ThemeProvider';
 import type { Metadata } from 'next';
 import { getDictionary } from '@/app/get-dictionary';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -70,6 +71,7 @@ export default async function RootLayout({
             </nav>
           </div>
         </ThemeProvider>
+        <GoogleAnalytics gaId="G-Q3CFQW96JD" />
       </body>
     </html>
   );

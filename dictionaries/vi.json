@@ -153,7 +153,7 @@
             },
             "analytics": {
                 "title": "2. Phân tích của bên thứ ba",
-                "desc": "Chúng tôi hiện không sử dụng mã theo dõi của bên thứ ba như Google Analytics. Tuy nhiên, chúng tôi bảo lưu quyền thêm các công cụ phân tích ẩn danh trong tương lai để cải thiện hiệu suất trang web của mình."
+                "desc": "Chúng tôi sử dụng Google Analytics để theo dõi và phân tích việc sử dụng Dịch vụ. Điều này giúp chúng tôi cải thiện trải nghiệm người dùng. Google Analytics thu thập dữ liệu ẩn danh."
             }
         },
         "thirdParty": {
@@ -199,6 +199,10 @@
             {
                 "title": "6. Thay đổi điều khoản",
                 "content": "Chúng tôi bảo lưu quyền thay đổi các điều khoản này bất kỳ lúc nào. Việc bạn tiếp tục sử dụng trang web sau khi thay đổi được thực hiện có nghĩa là bạn chấp nhận các Điều khoản dịch vụ mới."
+            },
+            {
+                "title": "7. Phân tích",
+                "content": "Chúng tôi sử dụng Google Analytics để thu thập dữ liệu sử dụng ẩn danh. Bằng cách sử dụng dịch vụ của chúng tôi, bạn đồng ý với việc thu thập dữ liệu này như được mô tả trong Chính sách quyền riêng tư."
             }
         ],
         "ip": {

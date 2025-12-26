@@ -153,7 +153,7 @@
             },
             "analytics": {
                 "title": "2. Análisis de Terceros",
-                "desc": "Actualmente no utilizamos códigos de seguimiento de terceros como Google Analytics. Sin embargo, nos reservamos el derecho de agregar herramientas de análisis anónimas en el futuro para mejorar el rendimiento de nuestro sitio web."
+                "desc": "Utilizamos Google Analytics para monitorear y analizar el uso de nuestro Servicio. Esto nos ayuda a mejorar nuestra experiencia de usuario. Google Analytics recopila datos de forma anónima."
             }
         },
         "thirdParty": {
@@ -199,6 +199,10 @@
             {
                 "title": "6. Cambios en los Términos",
                 "content": "Nos reservamos el derecho de cambiar estos términos en cualquier momento. Tu uso continuo del sitio web después de que se realicen cambios significa que aceptas los nuevos Términos de Servicio."
+            },
+            {
+                "title": "7. Analítica",
+                "content": "Utilizamos Google Analytics para recopilar datos de uso anónimos. Al utilizar nuestro servicio, usted acepta esta recopilación de datos como se describe en nuestra Política de Privacidad."
             }
         ],
         "ip": {

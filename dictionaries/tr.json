@@ -153,7 +153,7 @@
             },
             "analytics": {
                 "title": "2. Üçüncü Taraf Analitikleri",
-                "desc": "Şu anda Google Analytics gibi üçüncü taraf izleme kodları kullanmıyoruz. Ancak, web sitemizin performansını artırmak amacıyla gelecekte anonim analitik araçları ekleme hakkımızı saklı tutarız."
+                "desc": "Hizmetimizin kullanımını izlemek ve analiz etmek için Google Analytics kullanıyoruz. Bu, kullanıcı deneyimimizi geliştirmemize yardımcı olur. Google Analytics verileri anonim olarak toplar."
             }
         },
         "thirdParty": {
@@ -199,6 +199,10 @@
             {
                 "title": "6. Şartlarda Değişiklik",
                 "content": "Bu şartları dilediğimiz zaman değiştirme hakkımız saklıdır. Yapılan değişikliklerden sonra web sitesini kullanmaya devam etmeniz, yeni Hizmet Şartlarını kabul ettiğiniz anlamına gelir."
+            },
+            {
+                "title": "7. Analitik",
+                "content": "Anonim kullanım verilerini toplamak için Google Analytics kullanıyoruz. Hizmetimizi kullanarak, Gizlilik Politikamızda açıklandığı gibi bu veri toplamayı kabul etmiş olursunuz."
             }
         ],
         "ip": {

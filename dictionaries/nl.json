@@ -153,7 +153,7 @@
             },
             "analytics": {
                 "title": "2. Analyse door derden",
-                "desc": "We gebruiken momenteel geen trackingcodes van derden zoals Google Analytics. We behouden ons echter het recht voor om in de toekomst anonieme analysetools toe te voegen om de prestaties van onze website te verbeteren."
+                "desc": "Wij gebruiken Google Analytics om het gebruik van onze Service te monitoren en analyseren. Dit helpt ons onze gebruikerservaring te verbeteren. Google Analytics verzamelt gegevens anoniem."
             }
         },
         "thirdParty": {
@@ -199,6 +199,10 @@
             {
                 "title": "6. Wijzigingen in voorwaarden",
                 "content": "We behouden ons het recht voor om deze voorwaarden op elk moment te wijzigen. Uw voortgezette gebruik van de website nadat er wijzigingen zijn aangebracht, betekent dat u de nieuwe Servicevoorwaarden accepteert."
+            },
+            {
+                "title": "7. Analytics",
+                "content": "Wij gebruiken Google Analytics om anonieme gebruiksgegevens te verzamelen. Door onze service te gebruiken, gaat u akkoord met deze gegevensverzameling zoals beschreven in ons Privacybeleid."
             }
         ],
         "ip": {

@@ -153,7 +153,7 @@
             },
             "analytics": {
                 "title": "2. Uchambuzi wa Wahusika wa Tatu",
-                "desc": "Kwa sasa hatutumii misimbo ya ufuatiliaji wa wahusika wa tatu kama Google Analytics. Hata hivyo, tunahifadhi haki ya kuongeza zana za uchambuzi zisizojulikana katika siku zijazo ili kuboresha utendaji wa tovuti yetu."
+                "desc": "Tunatumia Google Analytics kufuatilia na kuchambua matumizi ya Huduma yetu. Hii inatusaidia kuboresha uzoefu wetu wa mtumiaji. Google Analytics hukusanya data bila kujulikana."
             }
         },
         "thirdParty": {
@@ -199,6 +199,10 @@
             {
                 "title": "6. Mabadiliko ya Masharti",
                 "content": "Tunahifadhi haki ya kubadilisha masharti haya wakati wowote. Kuendelea kutumia tovuti baada ya mabadiliko kufanywa inamaanisha unakubali Masharti mapya ya Huduma."
+            },
+            {
+                "title": "7. Uchambuzi",
+                "content": "Tunatumia Google Analytics kukusanya data ya matumizi isiyojulikana. Kwa kutumia huduma yetu, unakubali ukusanyaji huu wa data kama ilivyoelezwa katika Sera yetu ya Faragha."
             }
         ],
         "ip": {

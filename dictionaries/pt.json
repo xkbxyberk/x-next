@@ -153,7 +153,7 @@
             },
             "analytics": {
                 "title": "2. Análises de Terceiros",
-                "desc": "Atualmente, não utilizamos códigos de rastreio de terceiros, como o Google Analytics. No entanto, reservamo-nos o direito de adicionar ferramentas de análise anónimas no futuro para melhorar o desempenho do nosso site."
+                "desc": "Utilizamos o Google Analytics para monitorizar e analisar a utilização do nosso Serviço. Isto ajuda-nos a melhorar a nossa experiência de utilizador. O Google Analytics recolhe dados de forma anónima."
             }
         },
         "thirdParty": {
@@ -199,6 +199,10 @@
             {
                 "title": "6. Alterações nos Termos",
                 "content": "Reservamo-nos o direito de alterar estes termos a qualquer momento. A sua utilização contínua do site após as alterações significa que aceita os novos Termos de Serviço."
+            },
+            {
+                "title": "7. Analítica",
+                "content": "Utilizamos o Google Analytics para recolher dados de utilização anónimos. Ao utilizar o nosso serviço, concorda com esta recolha de dados, conforme descrito na nossa Política de Privacidade."
             }
         ],
         "ip": {

@@ -46,10 +46,10 @@ const nextConfig: NextConfig = {
             key: 'Content-Security-Policy',
             value: `
               default-src 'self';
-              script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://*.twitter.com https://unpkg.com https://static.cloudflareinsights.com https://cloudflareinsights.com;
+              script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://*.twitter.com https://unpkg.com https://static.cloudflareinsights.com https://cloudflareinsights.com https://www.googletagmanager.com https://www.google-analytics.com;
               style-src 'self' 'unsafe-inline';
-              img-src 'self' blob: data: https://*.twimg.com https://images.unsplash.com https://pbs.twimg.com https://abs.twimg.com;
-              connect-src 'self' https://*.twitter.com https://video.twimg.com https://pbs.twimg.com https://abs.twimg.com https://unpkg.com https://cloudflareinsights.com https://static.cloudflareinsights.com;
+              img-src 'self' blob: data: https://*.twimg.com https://images.unsplash.com https://pbs.twimg.com https://abs.twimg.com https://www.google-analytics.com;
+              connect-src 'self' https://*.twitter.com https://video.twimg.com https://pbs.twimg.com https://abs.twimg.com https://unpkg.com https://cloudflareinsights.com https://static.cloudflareinsights.com https://www.google-analytics.com https://www.googletagmanager.com;
               frame-src 'self' https://*.twitter.com;
               worker-src 'self' blob: https://unpkg.com;
               media-src 'self' blob: https://video.twimg.com;

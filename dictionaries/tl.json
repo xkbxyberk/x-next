@@ -153,7 +153,7 @@
             },
             "analytics": {
                 "title": "2. Third-Party Analytics",
-                "desc": "Kasalukuyan kaming hindi gumagamit ng mga third-party tracking code tulad ng Google Analytics. Gayunpaman, inirereserba namin ang karapatang magdagdag ng mga anonymous analytics tool sa hinaharap upang mapabuti ang pagganap ng aming website."
+                "desc": "Gumagamit kami ng Google Analytics upang subaybayan at suriin ang paggamit ng aming Serbisyo. Nakakatulong ito sa amin na mapabuti ang aming karanasan ng gumagamit. Ang Google Analytics ay nangongolekta ng data nang hindi nagpapakilala."
             }
         },
         "thirdParty": {
@@ -199,6 +199,10 @@
             {
                 "title": "6. Pagbabago sa mga Tuntunin",
                 "content": "Inirereserba namin ang karapatang baguhin ang mga tuntuning ito anumang oras. Ang iyong patuloy na paggamit ng website pagkatapos magawa ang mga pagbabago ay nangangahulugang tinatanggap mo ang mga bagong Tuntunin ng Serbisyo."
+            },
+            {
+                "title": "7. Analytics",
+                "content": "Gumagamit kami ng Google Analytics upang mangolekta ng hindi kilalang data ng paggamit. Sa pamamagitan ng paggamit ng aming serbisyo, sumasang-ayon ka sa pagkolekta ng data na ito tulad ng inilarawan sa aming Patakaran sa Pagkapribado."
             }
         ],
         "ip": {

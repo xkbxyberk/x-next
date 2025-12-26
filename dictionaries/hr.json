@@ -153,7 +153,7 @@
             },
             "analytics": {
                 "title": "2. Analitika treće strane",
-                "desc": "Trenutačno ne koristimo kodove za praćenje trećih strana kao što je Google Analytics. Međutim, zadržavamo pravo dodavanja anonimnih analitičkih alata u budućnosti kako bismo poboljšali izvedbu naše web stranice."
+                "desc": "Koristimo Google Analytics za praćenje i analizu korištenja naše Usluge. To nam pomaže poboljšati naše korisničko iskustvo. Google Analytics prikuplja podatke anonimno."
             }
         },
         "thirdParty": {
@@ -199,6 +199,10 @@
             {
                 "title": "6. Promjene uvjeta",
                 "content": "Zadržavamo pravo izmjene ovih uvjeta u bilo kojem trenutku. Vaše daljnje korištenje web stranice nakon izvršenih promjena znači da prihvaćate nove Uvjete pružanja usluge."
+            },
+            {
+                "title": "7. Analitika",
+                "content": "Koristimo Google Analytics za prikupljanje anonimnih podataka o korištenju. Korištenjem naše usluge pristajete na ovo prikupljanje podataka kako je opisano u našim Pravilima o privatnosti."
             }
         ],
         "ip": {

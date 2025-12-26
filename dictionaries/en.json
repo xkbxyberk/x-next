@@ -153,7 +153,7 @@
             },
             "analytics": {
                 "title": "2. Third-Party Analytics",
-                "desc": "We currently do not use third-party tracking codes like Google Analytics. However, we reserve the right to add anonymous analytics tools in the future to improve our website's performance."
+                "desc": "We use Google Analytics to monitor and analyze the use of our Service. This helps us improve our user experience. Google Analytics collects data anonymously."
             }
         },
         "thirdParty": {
@@ -199,6 +199,10 @@
             {
                 "title": "6. Changes to Terms",
                 "content": "We reserve the right to change these terms at any time. Your continued use of the website after changes are made means you agree to the new Terms of Service."
+            },
+            {
+                "title": "7. Analytics",
+                "content": "We use Google Analytics to collect anonymous usage data. By using our service, you agree to this data collection as described in our Privacy Policy."
             }
         ],
         "ip": {

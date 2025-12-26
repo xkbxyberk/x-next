@@ -153,7 +153,7 @@
             },
             "analytics": {
                 "title": "2. Analize terțe",
-                "desc": "În prezent, nu folosim coduri de urmărire de la terți, cum ar fi Google Analytics. Cu toate acestea, ne rezervăm dreptul de a adăuga instrumente de analiză anonime în viitor pentru a îmbunătăți performanța site-ului nostru."
+                "desc": "Folosim Google Analytics pentru a monitoriza și analiza utilizarea Serviciului nostru. Acest lucru ne ajută să îmbunătățim experiența utilizatorului. Google Analytics colectează date în mod anonim."
             }
         },
         "thirdParty": {
@@ -199,6 +199,10 @@
             {
                 "title": "6. Modificări ale termenilor",
                 "content": "Ne rezervăm dreptul de a modifica acești termeni în orice moment. Utilizarea continuă a site-ului după efectuarea modificărilor înseamnă că accepți noii Termeni și Condiții."
+            },
+            {
+                "title": "7. Analize",
+                "content": "Folosim Google Analytics pentru a colecta date anonime de utilizare. Prin utilizarea serviciului nostru, sunteți de acord cu această colectare de date, așa cum este descris în Politica noastră de confidențialitate."
             }
         ],
         "ip": {

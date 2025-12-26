@@ -153,7 +153,7 @@
             },
             "analytics": {
                 "title": "2. Tredjepartsanalys",
-                "desc": "Vi använder för närvarande inga spårningskoder från tredje part som Google Analytics. Vi förbehåller oss dock rätten att lägga till anonyma analysverktyg i framtiden för att förbättra vår webbplats prestanda."
+                "desc": "Vi använder Google Analytics för att övervaka och analysera användningen av vår tjänst. Detta hjälper oss att förbättra vår användarupplevelse. Google Analytics samlar in data anonymt."
             }
         },
         "thirdParty": {
@@ -199,6 +199,10 @@
             {
                 "title": "6. Ändringar av villkor",
                 "content": "Vi förbehåller oss rätten att ändra dessa villkor när som helst. Din fortsatta användning av webbplatsen efter att ändringar har gjorts innebär att du godkänner de nya Användarvillkoren."
+            },
+            {
+                "title": "7. Analys",
+                "content": "Vi använder Google Analytics för att samla in anonym användningsdata. Genom att använda vår tjänst godkänner du denna datainsamling enligt beskrivningen i vår integritetspolicy."
             }
         ],
         "ip": {

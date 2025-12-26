@@ -153,7 +153,7 @@
             },
             "analytics": {
                 "title": "2. Analytika třetích stran",
-                "desc": "V současné době nepoužíváme sledovací kódy třetích stran, jako je Google Analytics. Vyhrazujeme si však právo v budoucnu přidat anonymní analytické nástroje pro zlepšení výkonu našeho webu."
+                "desc": "Používáme Google Analytics k monitorování a analýze používání naší služby. To nám pomáhá zlepšovat uživatelskou zkušenost. Google Analytics shromažďuje data anonymně."
             }
         },
         "thirdParty": {
@@ -199,6 +199,10 @@
             {
                 "title": "6. Změny podmínek",
                 "content": "Vyhrazujeme si právo tyto podmínky kdykoli změnit. Vaše další používání webových stránek po provedení změn znamená, že souhlasíte s novými Podmínkami služby."
+            },
+            {
+                "title": "7. Analytika",
+                "content": "K shromažďování anonymních údajů o používání používáme Google Analytics. Používáním naší služby souhlasíte s tímto sběrem dat, jak je popsáno v našich Zásadách ochrany osobních údajů."
             }
         ],
         "ip": {

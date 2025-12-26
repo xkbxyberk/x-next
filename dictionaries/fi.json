@@ -153,7 +153,7 @@
             },
             "analytics": {
                 "title": "2. Kolmannen osapuolen analytiikka",
-                "desc": "Emme tällä hetkellä käytä kolmannen osapuolen seurantakoodeja, kuten Google Analytics. Pidätämme kuitenkin oikeuden lisätä anonyymejä analytiikkatyökaluja tulevaisuudessa verkkosivustomme suorituskyvyn parantamiseksi."
+                "desc": "Käytämme Google Analyticsia palvelumme käytön seurantaan ja analysointiin. Tämä auttaa meitä parantamaan käyttökokemustamme. Google Analytics kerää tietoja nimettömästi."
             }
         },
         "thirdParty": {
@@ -199,6 +199,10 @@
             {
                 "title": "6. Ehtojen muutokset",
                 "content": "Pidätämme oikeuden muuttaa näitä ehtoja milloin tahansa. Sivuston käytön jatkaminen muutosten tekemisen jälkeen tarkoittaa, että hyväksyt uudet käyttöehdot."
+            },
+            {
+                "title": "7. Analytiikka",
+                "content": "Käytämme Google Analyticsia nimettömien käyttötietojen keräämiseen. Käyttämällä palveluamme hyväksyt tämän tiedonkeruun tietosuojakäytännössämme kuvatulla tavalla."
             }
         ],
         "ip": {
