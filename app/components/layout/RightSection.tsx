@@ -45,7 +45,7 @@ export default function RightSection({ dict }: RightSectionProps) {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               onKeyDown={handleKeyDown}
-              className="w-full bg-(--input-background) rounded-full py-3 pl-12 pr-4 text-sm text-(--text-primary) focus:outline-none focus:bg-(--background) focus:ring-1 focus:ring-(--accent) border border-transparent focus:border-(--accent) transition-[color,background-color,border-color,box-shadow] placeholder:text-(--text-secondary)/70"
+              className="w-full bg-(--input-background) rounded-full py-3 pl-12 pr-4 text-sm text-(--text-primary) focus:outline-none focus:bg-(--background) focus:ring-1 focus:ring-(--accent) border border-transparent focus:border-(--accent) placeholder:text-(--text-secondary)/70"
             />
           </div>
 
@@ -71,16 +71,16 @@ export default function RightSection({ dict }: RightSectionProps) {
         {/* Footer - Her Zaman En Altta Görünür */}
         <footer className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs text-(--text-secondary) py-3 shrink-0">
           <span>{dict.common.footerText}</span>
-          <Link href={`/${lang}/privacy`} className="hover:underline hover:text-(--text-primary) transition-colors">
+          <Link href={`/${lang}/privacy`} className="hover:underline hover:text-(--text-primary)">
             {dict.common.privacyPolicy}
           </Link>
-          <Link href={`/${lang}/terms`} className="hover:underline hover:text-(--text-primary) transition-colors">
+          <Link href={`/${lang}/terms`} className="hover:underline hover:text-(--text-primary)">
             {dict.common.termsOfService}
           </Link>
-          <Link href={`/${lang}/contact`} className="hover:underline hover:text-(--text-primary) transition-colors">
+          <Link href={`/${lang}/contact`} className="hover:underline hover:text-(--text-primary)">
             {dict.common.contact}
           </Link>
-          <Link href={`/${lang}/about`} className="hover:underline hover:text-(--text-primary) transition-colors">
+          <Link href={`/${lang}/about`} className="hover:underline hover:text-(--text-primary)">
             {dict.common.about}
           </Link>
         </footer>

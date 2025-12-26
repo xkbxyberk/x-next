@@ -48,7 +48,7 @@ export default async function RootLayout({
 
   return (
     <html lang={lang}>
-      <body className={`${inter.className} min-h-screen overflow-x-hidden transition-colors duration-200`}>
+      <body className={`${inter.className} min-h-screen overflow-x-hidden`}>
         <ThemeProvider>
           <div className="mx-auto max-w-325 flex justify-center">
 

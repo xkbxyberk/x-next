@@ -33,7 +33,7 @@ export default function PostCard({ data, priority = false, dict }: PostProps) {
     // BURASI DEĞİŞTİ: id prop'u eklendi, Wrapper Div Flattened
     <article
       id={data.id}
-      className="border-b border-(--border) p-4 hover:bg-(--background-secondary) transition-colors cursor-pointer scroll-mt-20 flex gap-4"
+      className="border-b border-(--border) p-4 hover:bg-(--background-secondary) cursor-pointer scroll-mt-20 flex gap-4"
     >
       {/* Wrapper removed, styles moved up */}
       <div className="shrink-0 relative w-10 h-10">
@@ -75,7 +75,7 @@ export default function PostCard({ data, priority = false, dict }: PostProps) {
 
         <div className="flex justify-between mt-3 text-(--text-secondary) max-w-100">
           <button
-            className="group flex items-center gap-2 hover:text-blue-400 transition-colors"
+            className="group flex items-center gap-2 hover:text-blue-400"
             aria-label={dict?.feed?.accessibility?.reply || "Reply"}
           >
             <div className="p-2 rounded-full group-hover:bg-blue-400/10">
@@ -85,7 +85,7 @@ export default function PostCard({ data, priority = false, dict }: PostProps) {
           </button>
 
           <button
-            className="group flex items-center gap-2 hover:text-green-400 transition-colors"
+            className="group flex items-center gap-2 hover:text-green-400"
             aria-label={dict?.feed?.accessibility?.repost || "Repost"}
           >
             <div className="p-2 rounded-full group-hover:bg-green-400/10">
@@ -99,7 +99,7 @@ export default function PostCard({ data, priority = false, dict }: PostProps) {
               e.stopPropagation();
               handleLike();
             }}
-            className={`group flex items-center gap-2 transition-colors ${isLiked ? 'text-pink-600' : 'hover:text-pink-600'
+            className={`group flex items-center gap-2 ${isLiked ? 'text-pink-600' : 'hover:text-pink-600'
               }`}
             aria-label={dict?.feed?.accessibility?.like || "Like"}
           >
@@ -115,7 +115,7 @@ export default function PostCard({ data, priority = false, dict }: PostProps) {
           </button>
 
           <button
-            className="group flex items-center gap-2 hover:text-blue-400 transition-colors"
+            className="group flex items-center gap-2 hover:text-blue-400"
             aria-label={dict?.feed?.accessibility?.share || "Share"}
           >
             <div className="p-2 rounded-full group-hover:bg-blue-400/10">

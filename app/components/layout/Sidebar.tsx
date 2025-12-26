@@ -60,7 +60,7 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
             key={index}
             href={item.href}
             onClick={(e) => handleScroll(e, item.href)}
-            className="p-2 rounded-full hover:bg-(--background-secondary) transition-colors text-(--text-primary)"
+            className="p-2 rounded-full hover:bg-(--background-secondary) text-(--text-primary)"
             aria-label={item.label}
           >
             <item.icon size={24} strokeWidth={2} />
@@ -88,7 +88,7 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
       <div className="mb-2 px-2">
         <Link
           href={`/${lang}`}
-          className="flex items-center gap-3 p-2 w-fit xl:w-full rounded-full hover:bg-(--background-secondary) transition-colors relative group"
+          className="flex items-center gap-3 p-2 w-fit xl:w-full rounded-full hover:bg-(--background-secondary) relative group"
           aria-label="X Downloader Ana Sayfa"
         >
           <Image
@@ -98,6 +98,7 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
             height={52}
             className="object-contain shrink-0"
             priority={true}
+            sizes="52px"
             fetchPriority="high"
           />
           <h1 className="hidden xl:block text-sm font-bold text-(--text-primary) leading-tight">
@@ -112,7 +113,7 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
             key={index}
             href={item.href}
             onClick={(e) => handleScroll(e, item.href)}
-            className="flex items-center gap-4 px-4 py-3 rounded-full hover:bg-(--background-secondary) transition-colors w-fit xl:w-full group shrink-0 cursor-pointer"
+            className="flex items-center gap-4 px-4 py-3 rounded-full hover:bg-(--background-secondary) w-fit xl:w-full group shrink-0 cursor-pointer"
           >
             <item.icon size={24} strokeWidth={2} className="text-(--text-primary)" />
             <span className="text-xl hidden xl:block text-(--text-primary) font-normal group-hover:font-medium">
@@ -131,7 +132,7 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
         </div>
       </div>
 
-      <div className="mb-4 mt-2 p-3 hover:bg-(--background-secondary) rounded-full cursor-pointer flex items-center gap-3 transition-colors shrink-0">
+      <div className="mb-4 mt-2 p-3 hover:bg-(--background-secondary) rounded-full cursor-pointer flex items-center gap-3 shrink-0">
         <div className="w-10 h-10 rounded-full overflow-hidden relative border border-(--border)">
           <Image
             src={logoSrc}

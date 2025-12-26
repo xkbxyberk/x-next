@@ -187,11 +187,11 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
 
       <div className="sticky top-0 z-10 bg-(--background)/80 backdrop-blur-md border-b border-(--border)">
         <div className="flex">
-          <button onClick={() => setActiveTab('foryou')} className="flex-1 py-4 text-center font-semibold hover:bg-(--background-secondary) transition-colors relative flex items-center justify-center cursor-pointer">
+          <button onClick={() => setActiveTab('foryou')} className="flex-1 py-4 text-center font-semibold hover:bg-(--background-secondary) relative flex items-center justify-center cursor-pointer">
             <span className={activeTab === 'foryou' && 'font-bold text-(--text-primary)' || 'text-(--text-secondary)'}>{dict.feed.tabs.download}</span>
             {activeTab === 'foryou' && <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1 bg-(--accent) rounded-full w-16" />}
           </button>
-          <button onClick={() => setActiveTab('following')} className="flex-1 py-4 text-center font-semibold hover:bg-(--background-secondary) transition-colors relative flex items-center justify-center cursor-pointer">
+          <button onClick={() => setActiveTab('following')} className="flex-1 py-4 text-center font-semibold hover:bg-(--background-secondary) relative flex items-center justify-center cursor-pointer">
             <span className={activeTab === 'following' && 'font-bold text-(--text-primary)' || 'text-(--text-secondary)'}>{dict.feed.tabs.history}</span>
             {activeTab === 'following' && <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1 bg-(--accent) rounded-full w-12" />}
           </button>
@@ -221,7 +221,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                     }
                   }}
                   placeholder={dict.feed.inputPlaceholder}
-                  className={`w-full bg-transparent text-xl outline-none resize-none min-h-12 transition-colors duration-300 ${getTextAreaColorClass()}`}
+                  className={`w-full bg-transparent text-xl outline-none resize-none min-h-12 ${getTextAreaColorClass()}`}
                   rows={2}
                   disabled={loading || downloading}
                 />
@@ -231,7 +231,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                 inputUrl ? (
                   <button
                     onClick={handleClearInput}
-                    className="flex items-center gap-2 text-(--text-secondary) hover:text-red-500 font-semibold text-sm hover:bg-red-500/10 rounded-full px-3 py-1 w-fit transition-colors cursor-pointer"
+                    className="flex items-center gap-2 text-(--text-secondary) hover:text-red-500 font-semibold text-sm hover:bg-red-500/10 rounded-full px-3 py-1 w-fit cursor-pointer"
                   >
                     <X size={16} />
                     <span>{dict.feed.clearButton}</span>
@@ -241,7 +241,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                     <button
                       onMouseDown={(e) => e.preventDefault()}
                       onClick={handlePasteAndAnalyze}
-                      className="flex items-center gap-2 text-(--accent) font-semibold text-sm hover:bg-(--accent)/10 rounded-full px-3 py-1 w-fit transition-colors cursor-pointer"
+                      className="flex items-center gap-2 text-(--accent) font-semibold text-sm hover:bg-(--accent)/10 rounded-full px-3 py-1 w-fit cursor-pointer"
                     >
                       <ClipboardIcon size={20} />
                       <span>{dict.feed.pasteButton}</span>
@@ -263,7 +263,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                     <button
                       onClick={() => setIsSettingsMenuOpen(!isSettingsMenuOpen)}
                       disabled={!data}
-                      className={`p-2 rounded-full transition-[color,background-color,box-shadow] duration-300 cursor-pointer flex items-center gap-2
+                      className={`p-2 rounded-full cursor-pointer flex items-center gap-2
                             ${!data ? 'text-(--text-secondary) opacity-50 cursor-not-allowed' : ''}
                             ${selection?.type === 'video' ? 'bg-blue-500/10 text-blue-500 ring-2 ring-blue-500/20' : 'text-(--accent) hover:bg-(--accent)/10'}
                         `}
@@ -288,12 +288,12 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                               type: 'audio',
                               url: data.media.variants[0].url
                             })}
-                            className={`flex items-center justify-between p-3 rounded-lg transition-colors group cursor-pointer w-full text-left
+                            className={`flex items-center justify-between p-3 rounded-lg group cursor-pointer w-full text-left
                                         ${selection?.type === 'audio' ? 'bg-pink-500/10 border border-pink-500/20' : 'hover:bg-(--background-secondary)'}
                                     `}
                           >
                             <div className="flex items-center gap-3">
-                              <div className={`w-8 h-8 rounded flex items-center justify-center font-bold text-xs transition-colors
+                              <div className={`w-8 h-8 rounded flex items-center justify-center font-bold text-xs
                                             ${selection?.type === 'audio' ? 'bg-pink-500 text-white' : 'bg-pink-500/10 text-pink-500'}
                                         `}>
                                 MP3
@@ -319,12 +319,12 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                                   url: variant.url,
                                   qualityLabel: qualityLabel
                                 })}
-                                className={`flex items-center justify-between p-3 rounded-lg transition-colors group cursor-pointer w-full text-left
+                                className={`flex items-center justify-between p-3 rounded-lg group cursor-pointer w-full text-left
                                                 ${isSelected ? 'bg-blue-500/10 border border-blue-500/20' : 'hover:bg-(--background-secondary)'}
                                             `}
                               >
                                 <div className="flex items-center gap-3">
-                                  <div className={`w-8 h-8 rounded flex items-center justify-center font-bold text-xs transition-colors
+                                  <div className={`w-8 h-8 rounded flex items-center justify-center font-bold text-xs
                                                     ${isSelected ? 'bg-blue-500 text-white' : 'bg-blue-500/10 text-blue-500'}
                                                 `}>
                                     MP4
@@ -347,7 +347,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                     )}
                   </div>
 
-                  <div className={`p-2 rounded-full transition-[color,background-color,box-shadow,opacity] duration-300 ${selection?.type === 'audio' ? 'bg-pink-500/10 text-pink-500 ring-2 ring-pink-500/20 opacity-100' : 'text-pink-500/50 opacity-50'}`}>
+                  <div className={`p-2 rounded-full ${selection?.type === 'audio' ? 'bg-pink-500/10 text-pink-500 ring-2 ring-pink-500/20 opacity-100' : 'text-pink-500/50 opacity-50'}`}>
                     <Music size={20} />
                   </div>
                 </div>
@@ -359,24 +359,24 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                     <div className="relative" ref={themeRef}>
                       <button
                         onClick={() => setIsThemeMenuOpen(!isThemeMenuOpen)}
-                        className={`p-2 rounded-full transition-colors cursor-pointer ${isThemeMenuOpen ? 'bg-(--accent)/20 text-(--accent)' : 'hover:bg-(--accent)/10 text-(--accent)'}`}
+                        className={`p-2 rounded-full cursor-pointer ${isThemeMenuOpen ? 'bg-(--accent)/20 text-(--accent)' : 'hover:bg-(--accent)/10 text-(--accent)'}`}
                         aria-label={dict.feed.accessibility.themeToggle}
                       >
                         <Moon size={20} />
                       </button>
                       {isThemeMenuOpen && (
                         <div className="absolute top-full right-0 mt-2 w-64 bg-(--background) border border-(--border) rounded-xl shadow-xl p-2 z-50 animate-in fade-in zoom-in-95 duration-200">
-                          <button onClick={() => { setTheme('default'); setIsThemeMenuOpen(false); }} className="w-full flex items-center gap-3 px-3 py-3 hover:bg-(--background-secondary) rounded-lg transition-colors text-(--text-primary) cursor-pointer group">
+                          <button onClick={() => { setTheme('default'); setIsThemeMenuOpen(false); }} className="w-full flex items-center gap-3 px-3 py-3 hover:bg-(--background-secondary) rounded-lg text-(--text-primary) cursor-pointer group">
                             <div className="p-2 bg-blue-500 rounded-full text-white shadow-sm group-hover:scale-110"><Sun size={16} /></div>
                             <span className="font-bold text-sm">{dict.feed.theme.default}</span>
                             {theme === 'default' && <Check className="ml-auto text-blue-500" size={18} />}
                           </button>
-                          <button onClick={() => { setTheme('dim'); setIsThemeMenuOpen(false); }} className="w-full flex items-center gap-3 px-3 py-3 hover:bg-(--background-secondary) rounded-lg transition-colors text-(--text-primary) cursor-pointer group">
+                          <button onClick={() => { setTheme('dim'); setIsThemeMenuOpen(false); }} className="w-full flex items-center gap-3 px-3 py-3 hover:bg-(--background-secondary) rounded-lg text-(--text-primary) cursor-pointer group">
                             <div className="p-2 bg-[#15202b] rounded-full text-white border border-gray-600 shadow-sm group-hover:scale-110"><CloudMoon size={16} /></div>
                             <span className="font-bold text-sm">{dict.feed.theme.dim}</span>
                             {theme === 'dim' && <Check className="ml-auto text-blue-500" size={18} />}
                           </button>
-                          <button onClick={() => { setTheme('lights-out'); setIsThemeMenuOpen(false); }} className="w-full flex items-center gap-3 px-3 py-3 hover:bg-(--background-secondary) rounded-lg transition-colors text-(--text-primary) cursor-pointer group">
+                          <button onClick={() => { setTheme('lights-out'); setIsThemeMenuOpen(false); }} className="w-full flex items-center gap-3 px-3 py-3 hover:bg-(--background-secondary) rounded-lg text-(--text-primary) cursor-pointer group">
                             <div className="p-2 bg-black rounded-full text-white border border-gray-800 shadow-sm group-hover:scale-110"><Moon size={16} /></div>
                             <span className="font-bold text-sm">{dict.feed.theme.lightsOut}</span>
                             {theme === 'lights-out' && <Check className="ml-auto text-blue-500" size={18} />}
@@ -386,7 +386,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                     </div>
                   </div>
                   <div className="h-8 w-px bg-(--border) mx-1"></div>
-                  <button onClick={executeDownload} disabled={!selection || downloading || loading} className={`font-bold px-6 py-2 rounded-full transition-[transform,background-color] duration-200 shadow-md flex items-center gap-2 ${(!selection || downloading || loading) ? 'bg-(--background-secondary) text-(--text-secondary) cursor-not-allowed opacity-70' : 'bg-(--accent) text-white hover:bg-(--accent-hover) cursor-pointer hover:scale-105 active:scale-95'}`}>
+                  <button onClick={executeDownload} disabled={!selection || downloading || loading} className={`font-bold px-6 py-2 rounded-full transition-transform duration-200 shadow-md flex items-center gap-2 ${(!selection || downloading || loading) ? 'bg-(--background-secondary) text-(--text-secondary) cursor-not-allowed opacity-70' : 'bg-(--accent) text-white hover:bg-(--accent-hover) cursor-pointer hover:scale-105 active:scale-95'}`}>
                     {downloading ? (
                       <>
                         <Loader2 size={18} className="animate-spin" />
