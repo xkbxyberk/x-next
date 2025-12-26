@@ -52,17 +52,17 @@ export default function RightSection({ dict, lang }: RightSectionProps) {
         <div className="flex flex-col gap-3">
           {/* Reklam Alanı 1 */}
           <div className="bg-(--background-secondary) rounded-2xl overflow-hidden border border-(--border) h-59.5 flex items-center justify-center group relative">
-            <span className="text-(--text-secondary) text-xs font-bold tracking-widest">{dict.rightSection.adLabel1}</span>
+            <span className="text-(--text-primary) text-xs font-bold tracking-widest">{dict.rightSection.adLabel1}</span>
           </div>
 
           {/* Reklam Alanı 2 */}
           <div className="bg-(--background-secondary) rounded-2xl overflow-hidden border border-(--border) h-59.5 flex items-center justify-center">
-            <span className="text-(--text-secondary) text-xs font-bold tracking-widest">{dict.rightSection.adLabel2}</span>
+            <span className="text-(--text-primary) text-xs font-bold tracking-widest">{dict.rightSection.adLabel2}</span>
           </div>
 
           {/* Reklam Alanı 3 */}
           <div className="bg-(--background-secondary) rounded-2xl overflow-hidden border border-(--border) h-59.5 flex items-center justify-center">
-            <span className="text-(--text-secondary) text-xs font-bold tracking-widest">{dict.rightSection.adLabel3}</span>
+            <span className="text-(--text-primary) text-xs font-bold tracking-widest">{dict.rightSection.adLabel3}</span>
           </div>
         </div>
       </div>
