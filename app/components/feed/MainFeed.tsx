@@ -8,6 +8,7 @@ import { useTheme } from '../ThemeProvider';
 import Image from 'next/image';
 import { useVideoDownload, SelectionType } from '@/lib/hooks/use-video-download';
 import LanguageSwitcher from '../ui/LanguageSwitcher';
+import dynamic from 'next/dynamic';
 
 // --- TİP TANIMLAMALARI ---
 type PostData = {
@@ -49,19 +50,29 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
   const logoSrc = theme === 'default' ? '/logo.avif' : '/logo-white.avif';
 
   // --- REKLAM BİLEŞENİ ---
-  const AdBanner = () => (
-    <div className="border-b border-(--border) p-4 bg-(--background-secondary)/30">
-      <div className="w-full h-32 bg-(--background-secondary) rounded-xl border border-(--border) flex flex-col items-center justify-center relative overflow-hidden group cursor-pointer hover:bg-(--border)/50 transition-colors">
-        <span className="text-(--text-secondary) text-[10px] font-bold tracking-widest absolute top-2 right-2">{dict.feed.ad.sponsored}</span>
-        <div className="flex flex-col items-center gap-2">
-          <span className="text-(--text-secondary) text-sm font-bold tracking-widest">{dict.feed.ad.label}</span>
-          <span className="text-(--text-secondary) text-[10px]">{dict.feed.ad.provider}</span>
+  // --- REKLAM BİLEŞENİ (Lazy Load) ---
+  const AdBanner = dynamic(() => import('./AdBanner'), {
+    ssr: false,
+    loading: () => (
+      <div className="border-b border-(--border) p-4 bg-(--background-secondary)/30 animate-pulse">
+        <div className="w-full h-32 bg-(--background-secondary) rounded-xl border border-(--border) flex flex-col items-center justify-center relative overflow-hidden">
         </div>
       </div>
-    </div>
-  );
+    )
+  });
 
-  const [displayItems, setDisplayItems] = useState<FeedItem[]>(initialItems);
+  // DOM Optimization: Limit initial render to first 4 items
+  const [displayItems, setDisplayItems] = useState<FeedItem[]>(() => initialItems.slice(0, 4));
+
+  useEffect(() => {
+    // Hydrate remaining items after first paint
+    if (initialItems.length > 4) {
+      const timer = setTimeout(() => {
+        setDisplayItems(initialItems);
+      }, 0);
+      return () => clearTimeout(timer);
+    }
+  }, [initialItems]);
 
   const handlePaste = async (e: React.ClipboardEvent) => {
     const pastedText = e.clipboardData.getData('text');
@@ -399,7 +410,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
           if (item.type === 'post') {
             return <PostCard key={item.data.id} data={item.data} priority={index === 0} dict={dict} />;
           } else {
-            return <AdBanner key={item.id} />;
+            return <AdBanner key={item.id} dict={dict} />;
           }
         })}
       </div>

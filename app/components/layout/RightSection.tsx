@@ -2,8 +2,12 @@
 
 import { Search } from 'lucide-react';
 import { useState, KeyboardEvent } from 'react';
-import TweetModal from '../ui/TweetModal';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
+
+const TweetModal = dynamic(() => import('../ui/TweetModal'), {
+  ssr: false,
+});
 import { useParams } from 'next/navigation';
 
 interface RightSectionProps {

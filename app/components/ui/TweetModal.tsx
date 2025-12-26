@@ -26,15 +26,22 @@ export default function TweetModal({ isOpen, onClose, url }: TweetModalProps) {
   useEffect(() => {
     if (isOpen && url) {
       loadTweetData();
-      document.body.style.overflow = 'hidden';
+      // Optimization: Prevent forced reflow by scheduling style update
+      requestAnimationFrame(() => {
+        document.body.style.overflow = 'hidden';
+      });
     } else {
       setData(null);
       setError(null);
       setLoading(true);
-      document.body.style.overflow = 'unset';
+      requestAnimationFrame(() => {
+        document.body.style.overflow = 'unset';
+      });
     }
     return () => {
-      document.body.style.overflow = 'unset';
+      requestAnimationFrame(() => {
+        document.body.style.overflow = 'unset';
+      });
     };
   }, [isOpen, url]);
 
@@ -42,9 +49,9 @@ export default function TweetModal({ isOpen, onClose, url }: TweetModalProps) {
     try {
       setLoading(true);
       setError(null);
-      
+
       const result = await resolveTweetAction(url);
-      
+
       // DÜZELTME BURADA:
       // Önce başarısız mı diye bakıyoruz.
       if (!result.success) {
@@ -68,16 +75,16 @@ export default function TweetModal({ isOpen, onClose, url }: TweetModalProps) {
   const modalContent = (
     // DÜZELTME: z-[99999] yerine z-99999 (Tailwind v4 syntax uyarısı giderildi)
     <div className="fixed inset-0 z-99999 flex items-center justify-center p-4">
-      <div 
-        className="absolute inset-0 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200" 
-        onClick={onClose} 
+      <div
+        className="absolute inset-0 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200"
+        onClick={onClose}
       />
 
       <div className="relative w-full max-w-xl bg-(--background) rounded-2xl border border-(--border) shadow-2xl overflow-hidden flex flex-col max-h-[90vh] animate-in zoom-in-95 duration-200 z-10">
-        
+
         <div className="flex items-center justify-between p-4 border-b border-(--border)">
           <h3 className="font-bold text-lg text-(--text-primary)">Gönderi Önizleme</h3>
-          <button 
+          <button
             onClick={onClose}
             className="p-2 rounded-full hover:bg-(--background-secondary) text-(--text-secondary) transition-colors cursor-pointer"
           >
@@ -103,10 +110,10 @@ export default function TweetModal({ isOpen, onClose, url }: TweetModalProps) {
             <div className="flex flex-col p-4 gap-3">
               <div className="flex items-start gap-3">
                 <div className="relative w-10 h-10 rounded-full overflow-hidden shrink-0 border border-(--border)">
-                  <Image 
-                    src={data.author.avatarUrl} 
-                    alt={data.author.name} 
-                    fill 
+                  <Image
+                    src={data.author.avatarUrl}
+                    alt={data.author.name}
+                    fill
                     className="object-cover"
                   />
                 </div>
@@ -126,8 +133,8 @@ export default function TweetModal({ isOpen, onClose, url }: TweetModalProps) {
 
               {data.media && data.media.variants.length > 0 && (
                 <div className="mt-2 rounded-2xl overflow-hidden border border-(--border) bg-black relative aspect-video group">
-                  <video 
-                    controls 
+                  <video
+                    controls
                     poster={data.media.thumbnailUrl}
                     className="w-full h-full object-contain"
                     playsInline
@@ -149,10 +156,10 @@ export default function TweetModal({ isOpen, onClose, url }: TweetModalProps) {
               </div>
 
               <div className="flex items-center justify-between pt-1 px-2">
-                 <button className="text-(--text-secondary) hover:text-blue-400 transition-colors"><MessageCircle size={20} /></button>
-                 <button className="text-(--text-secondary) hover:text-green-400 transition-colors"><Repeat size={20} /></button>
-                 <button className="text-(--text-secondary) hover:text-pink-500 transition-colors"><Heart size={20} /></button>
-                 <button className="text-(--text-secondary) hover:text-blue-400 transition-colors"><Share size={20} /></button>
+                <button className="text-(--text-secondary) hover:text-blue-400 transition-colors"><MessageCircle size={20} /></button>
+                <button className="text-(--text-secondary) hover:text-green-400 transition-colors"><Repeat size={20} /></button>
+                <button className="text-(--text-secondary) hover:text-pink-500 transition-colors"><Heart size={20} /></button>
+                <button className="text-(--text-secondary) hover:text-blue-400 transition-colors"><Share size={20} /></button>
               </div>
             </div>
           ) : null}

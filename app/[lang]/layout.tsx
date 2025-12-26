@@ -6,7 +6,12 @@ import { ThemeProvider } from '@/app/components/ThemeProvider';
 import type { Metadata } from 'next';
 import { getDictionary } from '@/app/get-dictionary';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true,
+  adjustFontFallback: true,
+});
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;

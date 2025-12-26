@@ -1,9 +1,8 @@
 // lib/hooks/use-video-download.ts
 import { useState } from 'react';
 import { resolveTweetAction } from '@/app/actions/resolve-tweet';
-import { FFmpegManager } from '@/lib/client/ffmpeg-manager';
+// remove FFmpegManager and fetchFile static imports
 import { TweetVideoEntity } from '@/lib/core/schemas';
-import { fetchFile } from '@ffmpeg/util';
 
 export type SelectionType = {
   type: 'video' | 'audio';
@@ -92,6 +91,8 @@ export function useVideoDownload() {
       let filename = `${data.author.screenName}-${data.id}`;
 
       if (selection.type === 'audio') {
+        // Dynamic import for FFmpegManager
+        const { FFmpegManager } = await import('@/lib/client/ffmpeg-manager');
         const ffmpeg = await FFmpegManager.getInstance();
 
         ffmpeg.on('progress', ({ progress }) => {
@@ -159,10 +160,14 @@ export function useVideoDownload() {
       a.href = url;
       a.download = filename;
       document.body.appendChild(a);
-      a.click();
 
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
+      // Optimization: Schedule click to avoid sync layout thrashing
+      requestAnimationFrame(() => {
+        a.click();
+        // Clean up in next frame or immediately after
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      });
 
       showNotification('İndirme tamamlandı!', 'success');
 

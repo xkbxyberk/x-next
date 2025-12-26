@@ -91,16 +91,15 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
           className="flex items-center gap-3 p-2 w-fit xl:w-full rounded-full hover:bg-(--background-secondary) transition-colors relative group"
           aria-label="X Downloader Ana Sayfa"
         >
-          <div className="relative shrink-0 w-[52px] h-[52px]">
-            <Image
-              src={logoSrc}
-              alt="X Downloader Logo"
-              fill
-              className="object-contain"
-              priority={true}
-              fetchPriority="high"
-            />
-          </div>
+          <Image
+            src={logoSrc}
+            alt="X Downloader Logo"
+            width={52}
+            height={52}
+            className="object-contain shrink-0"
+            priority={true}
+            fetchPriority="high"
+          />
           <h1 className="hidden xl:block text-sm font-bold text-(--text-primary) leading-tight">
             {dict.common.title}
           </h1>
