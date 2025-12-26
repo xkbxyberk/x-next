@@ -93,7 +93,7 @@ export default function LanguageSwitcher() {
         <div className="relative" ref={dropdownRef}>
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`flex items-center justify-center w-10 h-10 rounded-full transition-all cursor-pointer ${isOpen ? 'bg-(--accent)/20 scale-110' : 'hover:bg-(--accent)/10'}`}
+                className={`flex items-center justify-center w-10 h-10 rounded-full transition-[transform,background-color] cursor-pointer ${isOpen ? 'bg-(--accent)/20 scale-110' : 'hover:bg-(--accent)/10'}`}
                 title="Dil Seçin / Select Language"
             >
                 <span className="text-2xl leading-none pt-1">{currentFlag}</span>

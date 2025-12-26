@@ -113,7 +113,7 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
             key={index}
             href={item.href}
             onClick={(e) => handleScroll(e, item.href)}
-            className="flex items-center gap-4 px-4 py-3 rounded-full hover:bg-(--background-secondary) transition-all w-fit xl:w-full group shrink-0 cursor-pointer"
+            className="flex items-center gap-4 px-4 py-3 rounded-full hover:bg-(--background-secondary) transition-colors w-fit xl:w-full group shrink-0 cursor-pointer"
           >
             <item.icon size={24} strokeWidth={2} className="text-(--text-primary)" />
             <span className="text-xl hidden xl:block text-(--text-primary) font-normal group-hover:font-medium">

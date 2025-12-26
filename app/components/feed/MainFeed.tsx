@@ -220,7 +220,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                 inputUrl ? (
                   <button
                     onClick={handleClearInput}
-                    className="flex items-center gap-2 text-(--text-secondary) hover:text-red-500 font-semibold text-sm hover:bg-red-500/10 rounded-full px-3 py-1 w-fit transition-all cursor-pointer"
+                    className="flex items-center gap-2 text-(--text-secondary) hover:text-red-500 font-semibold text-sm hover:bg-red-500/10 rounded-full px-3 py-1 w-fit transition-colors cursor-pointer"
                   >
                     <X size={16} />
                     <span>{dict.feed.clearButton}</span>
@@ -252,7 +252,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                     <button
                       onClick={() => setIsSettingsMenuOpen(!isSettingsMenuOpen)}
                       disabled={!data}
-                      className={`p-2 rounded-full transition-all duration-300 cursor-pointer flex items-center gap-2
+                      className={`p-2 rounded-full transition-[color,background-color,box-shadow] duration-300 cursor-pointer flex items-center gap-2
                             ${!data ? 'text-(--text-secondary) opacity-50 cursor-not-allowed' : ''}
                             ${selection?.type === 'video' ? 'bg-blue-500/10 text-blue-500 ring-2 ring-blue-500/20' : 'text-(--accent) hover:bg-(--accent)/10'}
                         `}
@@ -336,7 +336,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                     )}
                   </div>
 
-                  <div className={`p-2 rounded-full transition-all duration-300 ${selection?.type === 'audio' ? 'bg-pink-500/10 text-pink-500 ring-2 ring-pink-500/20 opacity-100' : 'text-pink-500/50 opacity-50'}`}>
+                  <div className={`p-2 rounded-full transition-[color,background-color,box-shadow,opacity] duration-300 ${selection?.type === 'audio' ? 'bg-pink-500/10 text-pink-500 ring-2 ring-pink-500/20 opacity-100' : 'text-pink-500/50 opacity-50'}`}>
                     <Music size={20} />
                   </div>
                 </div>
@@ -375,7 +375,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                     </div>
                   </div>
                   <div className="h-8 w-px bg-(--border) mx-1"></div>
-                  <button onClick={executeDownload} disabled={!selection || downloading || loading} className={`font-bold px-6 py-2 rounded-full transition-all duration-200 shadow-md flex items-center gap-2 ${(!selection || downloading || loading) ? 'bg-(--background-secondary) text-(--text-secondary) cursor-not-allowed opacity-70' : 'bg-(--accent) text-white hover:bg-(--accent-hover) cursor-pointer hover:scale-105 active:scale-95'}`}>
+                  <button onClick={executeDownload} disabled={!selection || downloading || loading} className={`font-bold px-6 py-2 rounded-full transition-[transform,background-color] duration-200 shadow-md flex items-center gap-2 ${(!selection || downloading || loading) ? 'bg-(--background-secondary) text-(--text-secondary) cursor-not-allowed opacity-70' : 'bg-(--accent) text-white hover:bg-(--accent-hover) cursor-pointer hover:scale-105 active:scale-95'}`}>
                     {downloading ? (
                       <>
                         <Loader2 size={18} className="animate-spin" />

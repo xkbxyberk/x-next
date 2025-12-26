@@ -43,7 +43,7 @@ export default function Toast({ message, type, isVisible, onClose }: ToastProps)
   const Icon = type === 'success' ? CheckCircle : type === 'error' ? AlertCircle : Info;
 
   return (
-    <div className={`fixed bottom-20 md:bottom-10 left-1/2 -translate-x-1/2 z-100 flex items-center gap-3 px-4 py-3 rounded-full shadow-2xl transition-all duration-300 transform ${show ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${bgColors[type]} ${textColors[type]}`}>
+    <div className={`fixed bottom-20 md:bottom-10 left-1/2 -translate-x-1/2 z-100 flex items-center gap-3 px-4 py-3 rounded-full shadow-2xl transition-[transform,opacity] duration-300 transform ${show ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${bgColors[type]} ${textColors[type]}`}>
       <Icon size={20} />
       <span className="font-medium text-sm">{message}</span>
       <button onClick={() => setShow(false)} className="ml-2 hover:opacity-70">
