@@ -253,22 +253,30 @@
         {
             "id": "guide-step1-4",
             "authorName": "XDownloaderz Guide",
-            "content": "📖 User Guide: Step 1\n\n1️⃣ Copy Video Link\n\nOpen the video you want to download on the X (Twitter) app or website. Tap the 'Share' icon on the post and select 'Copy Link'.\n\n💡 Tip: The video tweet URL should look like this:\nx.com/user/status/1234567890"
+            "content": "📖 User Guide: Step 1\n\n1️⃣ Copy Video Link\n\nOpen the video you want to download on the X (Twitter) app or website. Tap the 'Share' icon on the post and select 'Copy Link'.\n\n💡 Tip: The video tweet URL should look like this:\nx.com/user/status/1234567890",
+            "image": "twitter-video-download-step1-copy-link.avif",
+            "imageAlt": "📖 User Guide: Step 1 - 1️⃣ Copy Video Link"
         },
         {
             "id": "guide-step2",
             "authorName": "XDownloaderz Guide",
-            "content": "📖 User Guide: Step 2\n\n2️⃣ Paste Link to XDownloaderz\n\nOpen xdownloaderz.com. Paste the copied X (Twitter) video link into the text box at the top of the page.\n\nOur system will automatically detect the link and load video information instantly."
+            "content": "📖 User Guide: Step 2\n\n2️⃣ Paste Link to XDownloaderz\n\nOpen xdownloaderz.com. Paste the copied X (Twitter) video link into the text box at the top of the page.\n\nOur system will automatically detect the link and load video information instantly.",
+            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "imageAlt": "📖 User Guide: Step 2 - 2️⃣ Paste Link to XDownloaderz"
         },
         {
             "id": "guide-step3",
             "authorName": "XDownloaderz Guide",
-            "content": "📖 User Guide: Step 3\n\n3️⃣ Select Quality and Format\n\nAfter the video is analyzed, select your desired quality from the settings menu (⚙️ icon):\n\n• 1080p / 720p / 480p (MP4 Video)\n• MP3 (Audio Only)\n\nHigher resolution = Better image quality but larger file size."
+            "content": "📖 User Guide: Step 3\n\n3️⃣ Select Quality and Format\n\nAfter the video is analyzed, select your desired quality from the settings menu (⚙️ icon):\n\n• 1080p / 720p / 480p (MP4 Video)\n• MP3 (Audio Only)\n\nHigher resolution = Better image quality but larger file size.",
+            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "imageAlt": "📖 User Guide: Step 3 - 3️⃣ Select Quality and Format"
         },
         {
             "id": "guide-step4",
             "authorName": "XDownloaderz Guide",
-            "content": "📖 User Guide: Step 4\n\n4️⃣ Start Downloading\n\nAfter selecting the format and quality, click the blue 'Download' button. Your video or audio file will automatically download to your device.\n\n⚡ Download speed depends on your internet connection and video size."
+            "content": "📖 User Guide: Step 4\n\n4️⃣ Start Downloading\n\nAfter selecting the format and quality, click the blue 'Download' button. Your video or audio file will automatically download to your device.\n\n⚡ Download speed depends on your internet connection and video size.",
+            "image": "x-video-download-step4-start-download.avif",
+            "imageAlt": "📖 User Guide: Step 4 - 4️⃣ Start Downloading"
         },
         {
             "id": "faq-private-7",

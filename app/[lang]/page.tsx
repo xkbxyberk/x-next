@@ -10,8 +10,16 @@ export default async function Home({
   const dict = await getDictionary(lang as "en" | "tr");
 
   // Helper to find post content from dictionary (Server Side execution)
-  const getPost = (id: string) => dict.staticPosts.find((p: any) => p.id === id) || { content: '', authorName: 'XDownloaderz' };
+  interface DictionaryPost {
+    id: string;
+    authorName: string;
+    content: string;
+    image?: string;
+    imageAlt?: string;
+  }
+  const getPost = (id: string): DictionaryPost => dict.staticPosts.find((p: any) => p.id === id) as DictionaryPost || { content: '', authorName: 'XDownloaderz' };
   const logoSrc = '/logo.avif'; // Default logo for SSR
+  const logoWhiteSrc = '/logo-white.avif'; // White logo for dark themes
 
   // Reconstruct static items on the server
   const staticItems = [
@@ -20,7 +28,7 @@ export default async function Home({
       type: 'post',
       data: {
         id: 'welcome-1',
-        author: { name: getPost('welcome-1').authorName, handle: '@xdownloaderz', avatar: logoSrc },
+        author: { name: getPost('welcome-1').authorName, handle: '@xdownloaderz', avatar: logoSrc, avatarDark: logoWhiteSrc },
         content: getPost('welcome-1').content,
         timestamp: dict.feed.pinned,
         metrics: { likes: 15200, reposts: 4100, replies: 187 },
@@ -31,7 +39,7 @@ export default async function Home({
       type: 'post',
       data: {
         id: 'legal-warning',
-        author: { name: getPost('legal-warning').authorName, handle: '@xdownloaderz', avatar: logoSrc },
+        author: { name: getPost('legal-warning').authorName, handle: '@xdownloaderz', avatar: logoSrc, avatarDark: logoWhiteSrc },
         content: getPost('legal-warning').content,
         timestamp: dict.feed.pinned,
         metrics: { likes: 2400, reposts: 310, replies: 42 },
@@ -44,7 +52,7 @@ export default async function Home({
       type: 'post',
       data: {
         id: 'seo-info-2',
-        author: { name: getPost('seo-info-2').authorName, handle: '@xdownloaderz', avatar: logoSrc },
+        author: { name: getPost('seo-info-2').authorName, handle: '@xdownloaderz', avatar: logoSrc, avatarDark: logoWhiteSrc },
         content: getPost('seo-info-2').content,
         timestamp: '2d',
         metrics: { likes: 9800, reposts: 2650, replies: 124 },
@@ -55,7 +63,7 @@ export default async function Home({
       type: 'post',
       data: {
         id: 'platform-compatibility',
-        author: { name: getPost('platform-compatibility').authorName, handle: '@xdownloaderz', avatar: logoSrc },
+        author: { name: getPost('platform-compatibility').authorName, handle: '@xdownloaderz', avatar: logoSrc, avatarDark: logoWhiteSrc },
         content: getPost('platform-compatibility').content,
         timestamp: '3d',
         metrics: { likes: 5600, reposts: 1420, replies: 78 },
@@ -68,8 +76,10 @@ export default async function Home({
       type: 'post',
       data: {
         id: 'guide-step1-4',
-        author: { name: getPost('guide-step1-4').authorName, handle: '@guide', avatar: logoSrc },
+        author: { name: getPost('guide-step1-4').authorName, handle: '@guide', avatar: logoSrc, avatarDark: logoWhiteSrc },
         content: getPost('guide-step1-4').content,
+        image: `/images/guide/${getPost('guide-step1-4').image}`,
+        imageAlt: getPost('guide-step1-4').imageAlt,
         timestamp: '5d',
         metrics: { likes: 4200, reposts: 980, replies: 56 },
       }
@@ -79,8 +89,10 @@ export default async function Home({
       type: 'post',
       data: {
         id: 'guide-step2',
-        author: { name: getPost('guide-step2').authorName, handle: '@guide', avatar: logoSrc },
+        author: { name: getPost('guide-step2').authorName, handle: '@guide', avatar: logoSrc, avatarDark: logoWhiteSrc },
         content: getPost('guide-step2').content,
+        image: `/images/guide/${getPost('guide-step2').image}`,
+        imageAlt: getPost('guide-step2').imageAlt,
         timestamp: '5d',
         metrics: { likes: 3800, reposts: 890, replies: 48 },
       }
@@ -90,8 +102,10 @@ export default async function Home({
       type: 'post',
       data: {
         id: 'guide-step3',
-        author: { name: getPost('guide-step3').authorName, handle: '@guide', avatar: logoSrc },
+        author: { name: getPost('guide-step3').authorName, handle: '@guide', avatar: logoSrc, avatarDark: logoWhiteSrc },
         content: getPost('guide-step3').content,
+        image: `/images/guide/${getPost('guide-step3').image}`,
+        imageAlt: getPost('guide-step3').imageAlt,
         timestamp: '5d',
         metrics: { likes: 3500, reposts: 820, replies: 44 },
       }
@@ -101,8 +115,10 @@ export default async function Home({
       type: 'post',
       data: {
         id: 'guide-step4',
-        author: { name: getPost('guide-step4').authorName, handle: '@guide', avatar: logoSrc },
+        author: { name: getPost('guide-step4').authorName, handle: '@guide', avatar: logoSrc, avatarDark: logoWhiteSrc },
         content: getPost('guide-step4').content,
+        image: `/images/guide/${getPost('guide-step4').image}`,
+        imageAlt: getPost('guide-step4').imageAlt,
         timestamp: '5d',
         metrics: { likes: 3200, reposts: 750, replies: 39 },
       }
@@ -114,7 +130,7 @@ export default async function Home({
       type: 'post',
       data: {
         id: 'faq-private-7',
-        author: { name: getPost('faq-private-7').authorName, handle: '@faq', avatar: logoSrc },
+        author: { name: getPost('faq-private-7').authorName, handle: '@faq', avatar: logoSrc, avatarDark: logoWhiteSrc },
         content: getPost('faq-private-7').content,
         timestamp: '1w',
         metrics: { likes: 2100, reposts: 420, replies: 67 },
@@ -125,7 +141,7 @@ export default async function Home({
       type: 'post',
       data: {
         id: 'faq-quality',
-        author: { name: getPost('faq-quality').authorName, handle: '@faq', avatar: logoSrc },
+        author: { name: getPost('faq-quality').authorName, handle: '@faq', avatar: logoSrc, avatarDark: logoWhiteSrc },
         content: getPost('faq-quality').content,
         timestamp: '1w',
         metrics: { likes: 1800, reposts: 360, replies: 52 },
@@ -136,7 +152,7 @@ export default async function Home({
       type: 'post',
       data: {
         id: 'faq-mp3-conversion',
-        author: { name: getPost('faq-mp3-conversion').authorName, handle: '@faq', avatar: logoSrc },
+        author: { name: getPost('faq-mp3-conversion').authorName, handle: '@faq', avatar: logoSrc, avatarDark: logoWhiteSrc },
         content: getPost('faq-mp3-conversion').content,
         timestamp: '1w',
         metrics: { likes: 2800, reposts: 710, replies: 94 },
@@ -147,7 +163,7 @@ export default async function Home({
       type: 'post',
       data: {
         id: 'faq-security',
-        author: { name: getPost('faq-security').authorName, handle: '@faq', avatar: logoSrc },
+        author: { name: getPost('faq-security').authorName, handle: '@faq', avatar: logoSrc, avatarDark: logoWhiteSrc },
         content: getPost('faq-security').content,
         timestamp: '1w',
         metrics: { likes: 3400, reposts: 890, replies: 103 },
@@ -158,7 +174,7 @@ export default async function Home({
       type: 'post',
       data: {
         id: 'faq-pricing',
-        author: { name: getPost('faq-pricing').authorName, handle: '@faq', avatar: logoSrc },
+        author: { name: getPost('faq-pricing').authorName, handle: '@faq', avatar: logoSrc, avatarDark: logoWhiteSrc },
         content: getPost('faq-pricing').content,
         timestamp: '1w',
         metrics: { likes: 5200, reposts: 1340, replies: 156 },
@@ -169,7 +185,7 @@ export default async function Home({
       type: 'post',
       data: {
         id: 'faq-legal-use',
-        author: { name: getPost('faq-legal-use').authorName, handle: '@faq', avatar: logoSrc },
+        author: { name: getPost('faq-legal-use').authorName, handle: '@faq', avatar: logoSrc, avatarDark: logoWhiteSrc },
         content: getPost('faq-legal-use').content,
         timestamp: '2w',
         metrics: { likes: 2600, reposts: 580, replies: 89 },
@@ -182,7 +198,7 @@ export default async function Home({
       type: 'post',
       data: {
         id: 'seo-info-benefits',
-        author: { name: getPost('seo-info-benefits').authorName, handle: '@xdownloaderz', avatar: logoSrc },
+        author: { name: getPost('seo-info-benefits').authorName, handle: '@xdownloaderz', avatar: logoSrc, avatarDark: logoWhiteSrc },
         content: getPost('seo-info-benefits').content,
         timestamp: '2w',
         metrics: { likes: 7100, reposts: 1890, replies: 142 },
@@ -195,7 +211,7 @@ export default async function Home({
       type: 'post',
       data: {
         id: 'seo-keywords',
-        author: { name: getPost('seo-keywords').authorName, handle: '@xdownloaderz', avatar: logoSrc },
+        author: { name: getPost('seo-keywords').authorName, handle: '@xdownloaderz', avatar: logoSrc, avatarDark: logoWhiteSrc },
         content: getPost('seo-keywords').content,
         timestamp: '3w',
         metrics: { likes: 4800, reposts: 1230, replies: 95 },

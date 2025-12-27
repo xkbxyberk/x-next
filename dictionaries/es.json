@@ -253,22 +253,30 @@
         {
             "id": "guide-step1-4",
             "authorName": "Guía XDownloaderz",
-            "content": "📖 Guía del Usuario: Paso 1\n\n1️⃣ Copiar Enlace del Vídeo\n\nAbre el vídeo que deseas descargar en la aplicación o sitio web de X (Twitter). Toca el icono 'Compartir' en la publicación y selecciona 'Copiar enlace'.\n\n💡 Consejo: La URL del tweet del vídeo debería verse así:\nx.com/usuario/status/1234567890"
+            "content": "📖 Guía del Usuario: Paso 1\n\n1️⃣ Copiar Enlace del Vídeo\n\nAbre el vídeo que deseas descargar en la aplicación o sitio web de X (Twitter). Toca el icono 'Compartir' en la publicación y selecciona 'Copiar enlace'.\n\n💡 Consejo: La URL del tweet del vídeo debería verse así:\nx.com/usuario/status/1234567890",
+            "image": "twitter-video-download-step1-copy-link.avif",
+            "imageAlt": "📖 Guía del Usuario: Paso 1 - 1️⃣ Copiar Enlace del Vídeo"
         },
         {
             "id": "guide-step2",
             "authorName": "Guía XDownloaderz",
-            "content": "📖 Guía del Usuario: Paso 2\n\n2️⃣ Pegar Enlace en XDownloaderz\n\nAbre xdownloaderz.com. Pega el enlace del vídeo de X (Twitter) copiado en el cuadro de texto en la parte superior de la página.\n\nNuestro sistema detectará automáticamente el enlace y cargará la información del vídeo al instante."
+            "content": "📖 Guía del Usuario: Paso 2\n\n2️⃣ Pegar Enlace en XDownloaderz\n\nAbre xdownloaderz.com. Pega el enlace del vídeo de X (Twitter) copiado en el cuadro de texto en la parte superior de la página.\n\nNuestro sistema detectará automáticamente el enlace y cargará la información del vídeo al instante.",
+            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "imageAlt": "📖 Guía del Usuario: Paso 2 - 2️⃣ Pegar Enlace en XDownloaderz"
         },
         {
             "id": "guide-step3",
             "authorName": "Guía XDownloaderz",
-            "content": "📖 Guía del Usuario: Paso 3\n\n3️⃣ Seleccionar Calidad y Formato\n\nDespués de que se analice el vídeo, selecciona tu calidad deseada en el menú de configuración (icono ⚙️):\n\n• 1080p / 720p / 480p (Vídeo MP4)\n• MP3 (Solo Audio)\n\nMayor resolución = Mejor calidad de imagen pero mayor tamaño de archivo."
+            "content": "📖 Guía del Usuario: Paso 3\n\n3️⃣ Seleccionar Calidad y Formato\n\nDespués de que se analice el vídeo, selecciona tu calidad deseada en el menú de configuración (icono ⚙️):\n\n• 1080p / 720p / 480p (Vídeo MP4)\n• MP3 (Solo Audio)\n\nMayor resolución = Mejor calidad de imagen pero mayor tamaño de archivo.",
+            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "imageAlt": "📖 Guía del Usuario: Paso 3 - 3️⃣ Seleccionar Calidad y Formato"
         },
         {
             "id": "guide-step4",
             "authorName": "Guía XDownloaderz",
-            "content": "📖 Guía del Usuario: Paso 4\n\n4️⃣ Iniciar Descarga\n\nDespués de seleccionar el formato y la calidad, haz clic en el botón azul 'Descargar'. Tu archivo de vídeo o audio se descargará automáticamente en tu dispositivo.\n\n⚡ La velocidad de descarga depende de tu conexión a internet y del tamaño del vídeo."
+            "content": "📖 Guía del Usuario: Paso 4\n\n4️⃣ Iniciar Descarga\n\nDespués de seleccionar el formato y la calidad, haz clic en el botón azul 'Descargar'. Tu archivo de vídeo o audio se descargará automáticamente en tu dispositivo.\n\n⚡ La velocidad de descarga depende de tu conexión a internet y del tamaño del vídeo.",
+            "image": "x-video-download-step4-start-download.avif",
+            "imageAlt": "📖 Guía del Usuario: Paso 4 - 4️⃣ Iniciar Descarga"
         },
         {
             "id": "faq-private-7",

@@ -253,22 +253,30 @@
         {
             "id": "guide-step1-4",
             "authorName": "Mwongozo wa XDownloaderz",
-            "content": "📖 Mwongozo wa Mtumiaji: Hatua ya 1\n\n1️⃣ Nakili Kiungo cha Video\n\nFungua video unayotaka kupakua kwenye programu au tovuti ya X (Twitter). Gonga aikoni ya 'Shiriki' kwenye chapisho na uchague 'Nakili kiungo'.\n\n💡 Kidokezo: URL ya tweet ya video inapaswa kuonekana hivi:\nx.com/mtumiaji/status/1234567890"
+            "content": "📖 Mwongozo wa Mtumiaji: Hatua ya 1\n\n1️⃣ Nakili Kiungo cha Video\n\nFungua video unayotaka kupakua kwenye programu au tovuti ya X (Twitter). Gonga aikoni ya 'Shiriki' kwenye chapisho na uchague 'Nakili kiungo'.\n\n💡 Kidokezo: URL ya tweet ya video inapaswa kuonekana hivi:\nx.com/mtumiaji/status/1234567890",
+            "image": "twitter-video-download-step1-copy-link.avif",
+            "imageAlt": "📖 Mwongozo wa Mtumiaji: Hatua ya 1 - 1️⃣ Nakili Kiungo cha Video"
         },
         {
             "id": "guide-step2",
             "authorName": "Mwongozo wa XDownloaderz",
-            "content": "📖 Mwongozo wa Mtumiaji: Hatua ya 2\n\n2️⃣ Bandika Kiungo kwenye XDownloaderz\n\nFungua xdownloaderz.com. Bandika kiungo cha video cha X (Twitter) ulichonakili kwenye kisanduku cha maandishi juu ya ukurasa.\n\nMfumo wetu utagundua kiungo kiotomatiki na kupakia taarifa za video papo hapo."
+            "content": "📖 Mwongozo wa Mtumiaji: Hatua ya 2\n\n2️⃣ Bandika Kiungo kwenye XDownloaderz\n\nFungua xdownloaderz.com. Bandika kiungo cha video cha X (Twitter) ulichonakili kwenye kisanduku cha maandishi juu ya ukurasa.\n\nMfumo wetu utagundua kiungo kiotomatiki na kupakia taarifa za video papo hapo.",
+            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "imageAlt": "📖 Mwongozo wa Mtumiaji: Hatua ya 2 - 2️⃣ Bandika Kiungo kwenye XDownloaderz"
         },
         {
             "id": "guide-step3",
             "authorName": "Mwongozo wa XDownloaderz",
-            "content": "📖 Mwongozo wa Mtumiaji: Hatua ya 3\n\n3️⃣ Chagua Ubora na Umbizo\n\nBaada ya video kuchambuliwa, chagua ubora unaotaka kutoka kwa menyu ya mipangilio (aikoni ya ⚙️):\n\n• 1080p / 720p / 480p (Video ya MP4)\n• MP3 (Sauti Pekee)\n\nUbora wa juu = Ubora bora wa picha lakini saizi kubwa ya faili."
+            "content": "📖 Mwongozo wa Mtumiaji: Hatua ya 3\n\n3️⃣ Chagua Ubora na Umbizo\n\nBaada ya video kuchambuliwa, chagua ubora unaotaka kutoka kwa menyu ya mipangilio (aikoni ya ⚙️):\n\n• 1080p / 720p / 480p (Video ya MP4)\n• MP3 (Sauti Pekee)\n\nUbora wa juu = Ubora bora wa picha lakini saizi kubwa ya faili.",
+            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "imageAlt": "📖 Mwongozo wa Mtumiaji: Hatua ya 3 - 3️⃣ Chagua Ubora na Umbizo"
         },
         {
             "id": "guide-step4",
             "authorName": "Mwongozo wa XDownloaderz",
-            "content": "📖 Mwongozo wa Mtumiaji: Hatua ya 4\n\n4️⃣ Anza Kupakua\n\nBaada ya kuchagua umbizo na ubora, bofya kitufe cha bluu cha 'Pakua'. Faili yako ya video au sauti itapakuliwa kiotomatiki kwenye kifaa chako.\n\n⚡ Kasi ya kupakua inategemea muunganisho wako wa mtandao na saizi ya video."
+            "content": "📖 Mwongozo wa Mtumiaji: Hatua ya 4\n\n4️⃣ Anza Kupakua\n\nBaada ya kuchagua umbizo na ubora, bofya kitufe cha bluu cha 'Pakua'. Faili yako ya video au sauti itapakuliwa kiotomatiki kwenye kifaa chako.\n\n⚡ Kasi ya kupakua inategemea muunganisho wako wa mtandao na saizi ya video.",
+            "image": "x-video-download-step4-start-download.avif",
+            "imageAlt": "📖 Mwongozo wa Mtumiaji: Hatua ya 4 - 4️⃣ Anza Kupakua"
         },
         {
             "id": "faq-private-7",

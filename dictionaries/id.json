@@ -253,22 +253,30 @@
         {
             "id": "guide-step1-4",
             "authorName": "Panduan XDownloaderz",
-            "content": "📖 Panduan Pengguna: Langkah 1\n\n1️⃣ Salin Tautan Video\n\nBuka video yang ingin Anda unduh di aplikasi atau situs web X (Twitter). Ketuk ikon 'Bagikan' pada postingan dan pilih 'Salin tautan'.\n\n💡 Tips: URL tweet video akan terlihat seperti ini:\nx.com/pengguna/status/1234567890"
+            "content": "📖 Panduan Pengguna: Langkah 1\n\n1️⃣ Salin Tautan Video\n\nBuka video yang ingin Anda unduh di aplikasi atau situs web X (Twitter). Ketuk ikon 'Bagikan' pada postingan dan pilih 'Salin tautan'.\n\n💡 Tips: URL tweet video akan terlihat seperti ini:\nx.com/pengguna/status/1234567890",
+            "image": "twitter-video-download-step1-copy-link.avif",
+            "imageAlt": "📖 Panduan Pengguna: Langkah 1 - 1️⃣ Salin Tautan Video"
         },
         {
             "id": "guide-step2",
             "authorName": "Panduan XDownloaderz",
-            "content": "📖 Panduan Pengguna: Langkah 2\n\n2️⃣ Tempel Tautan di XDownloaderz\n\nBuka xdownloaderz.com. Tempel tautan video X (Twitter) yang disalin ke dalam kotak teks di bagian atas halaman.\n\nSistem kami akan secara otomatis mendeteksi tautan dan memuat informasi video secara instan."
+            "content": "📖 Panduan Pengguna: Langkah 2\n\n2️⃣ Tempel Tautan di XDownloaderz\n\nBuka xdownloaderz.com. Tempel tautan video X (Twitter) yang disalin ke dalam kotak teks di bagian atas halaman.\n\nSistem kami akan secara otomatis mendeteksi tautan dan memuat informasi video secara instan.",
+            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "imageAlt": "📖 Panduan Pengguna: Langkah 2 - 2️⃣ Tempel Tautan di XDownloaderz"
         },
         {
             "id": "guide-step3",
             "authorName": "Panduan XDownloaderz",
-            "content": "📖 Panduan Pengguna: Langkah 3\n\n3️⃣ Pilih Kualitas dan Format\n\nSetelah video dianalisis, pilih kualitas yang Anda inginkan dari menu pengaturan (ikon ⚙️):\n\n• 1080p / 720p / 480p (Video MP4)\n• MP3 (Hanya Audio)\n\nResolusi lebih tinggi = Kualitas gambar lebih baik tetapi ukuran file lebih besar."
+            "content": "📖 Panduan Pengguna: Langkah 3\n\n3️⃣ Pilih Kualitas dan Format\n\nSetelah video dianalisis, pilih kualitas yang Anda inginkan dari menu pengaturan (ikon ⚙️):\n\n• 1080p / 720p / 480p (Video MP4)\n• MP3 (Hanya Audio)\n\nResolusi lebih tinggi = Kualitas gambar lebih baik tetapi ukuran file lebih besar.",
+            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "imageAlt": "📖 Panduan Pengguna: Langkah 3 - 3️⃣ Pilih Kualitas dan Format"
         },
         {
             "id": "guide-step4",
             "authorName": "Panduan XDownloaderz",
-            "content": "📖 Panduan Pengguna: Langkah 4\n\n4️⃣ Mulai Unduh\n\nSetelah memilih format dan kualitas, klik tombol biru 'Unduh'. File video atau audio Anda akan diunduh secara otomatis ke perangkat Anda.\n\n⚡ Kecepatan unduh tergantung pada koneksi internet Anda dan ukuran video."
+            "content": "📖 Panduan Pengguna: Langkah 4\n\n4️⃣ Mulai Unduh\n\nSetelah memilih format dan kualitas, klik tombol biru 'Unduh'. File video atau audio Anda akan diunduh secara otomatis ke perangkat Anda.\n\n⚡ Kecepatan unduh tergantung pada koneksi internet Anda dan ukuran video.",
+            "image": "x-video-download-step4-start-download.avif",
+            "imageAlt": "📖 Panduan Pengguna: Langkah 4 - 4️⃣ Mulai Unduh"
         },
         {
             "id": "faq-private-7",

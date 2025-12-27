@@ -253,22 +253,30 @@
         {
             "id": "guide-step1-4",
             "authorName": "Hướng dẫn XDownloaderz",
-            "content": "📖 Hướng dẫn sử dụng: Bước 1\n\n1️⃣ Sao chép liên kết video\n\nMở video bạn muốn tải xuống trên ứng dụng hoặc trang web X (Twitter). Nhấn vào biểu tượng 'Chia sẻ' trên bài đăng và chọn 'Sao chép liên kết'.\n\n💡 Mẹo: URL tweet video sẽ trông giống như thế này:\nx.com/nguoidung/status/1234567890"
+            "content": "📖 Hướng dẫn sử dụng: Bước 1\n\n1️⃣ Sao chép liên kết video\n\nMở video bạn muốn tải xuống trên ứng dụng hoặc trang web X (Twitter). Nhấn vào biểu tượng 'Chia sẻ' trên bài đăng và chọn 'Sao chép liên kết'.\n\n💡 Mẹo: URL tweet video sẽ trông giống như thế này:\nx.com/nguoidung/status/1234567890",
+            "image": "twitter-video-download-step1-copy-link.avif",
+            "imageAlt": "📖 Hướng dẫn sử dụng: Bước 1 - 1️⃣ Sao chép liên kết video"
         },
         {
             "id": "guide-step2",
             "authorName": "Hướng dẫn XDownloaderz",
-            "content": "📖 Hướng dẫn sử dụng: Bước 2\n\n2️⃣ Dán liên kết vào XDownloaderz\n\nMở xdownloaderz.com. Dán liên kết video X (Twitter) đã sao chép vào hộp văn bản ở đầu trang.\n\nHệ thống của chúng tôi sẽ tự động phát hiện liên kết và tải thông tin video ngay lập tức."
+            "content": "📖 Hướng dẫn sử dụng: Bước 2\n\n2️⃣ Dán liên kết vào XDownloaderz\n\nMở xdownloaderz.com. Dán liên kết video X (Twitter) đã sao chép vào hộp văn bản ở đầu trang.\n\nHệ thống của chúng tôi sẽ tự động phát hiện liên kết và tải thông tin video ngay lập tức.",
+            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "imageAlt": "📖 Hướng dẫn sử dụng: Bước 2 - 2️⃣ Dán liên kết vào XDownloaderz"
         },
         {
             "id": "guide-step3",
             "authorName": "Hướng dẫn XDownloaderz",
-            "content": "📖 Hướng dẫn sử dụng: Bước 3\n\n3️⃣ Chọn chất lượng và định dạng\n\nSau khi video được phân tích, hãy chọn chất lượng mong muốn của bạn từ menu cài đặt (biểu tượng ⚙️):\n\n• 1080p / 720p / 480p (Video MP4)\n• MP3 (Chỉ âm thanh)\n\nĐộ phân giải cao hơn = Chất lượng hình ảnh tốt hơn nhưng kích thước tệp lớn hơn."
+            "content": "📖 Hướng dẫn sử dụng: Bước 3\n\n3️⃣ Chọn chất lượng và định dạng\n\nSau khi video được phân tích, hãy chọn chất lượng mong muốn của bạn từ menu cài đặt (biểu tượng ⚙️):\n\n• 1080p / 720p / 480p (Video MP4)\n• MP3 (Chỉ âm thanh)\n\nĐộ phân giải cao hơn = Chất lượng hình ảnh tốt hơn nhưng kích thước tệp lớn hơn.",
+            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "imageAlt": "📖 Hướng dẫn sử dụng: Bước 3 - 3️⃣ Chọn chất lượng và định dạng"
         },
         {
             "id": "guide-step4",
             "authorName": "Hướng dẫn XDownloaderz",
-            "content": "📖 Hướng dẫn sử dụng: Bước 4\n\n4️⃣ Bắt đầu tải xuống\n\nSau khi chọn định dạng và chất lượng, hãy nhấp vào nút 'Tải xuống' màu xanh lam. Tệp video hoặc âm thanh của bạn sẽ tự động tải xuống thiết bị của bạn.\n\n⚡ Tốc độ tải xuống phụ thuộc vào kết nối internet của bạn và kích thước video."
+            "content": "📖 Hướng dẫn sử dụng: Bước 4\n\n4️⃣ Bắt đầu tải xuống\n\nSau khi chọn định dạng và chất lượng, hãy nhấp vào nút 'Tải xuống' màu xanh lam. Tệp video hoặc âm thanh của bạn sẽ tự động tải xuống thiết bị của bạn.\n\n⚡ Tốc độ tải xuống phụ thuộc vào kết nối internet của bạn và kích thước video.",
+            "image": "x-video-download-step4-start-download.avif",
+            "imageAlt": "📖 Hướng dẫn sử dụng: Bước 4 - 4️⃣ Bắt đầu tải xuống"
         },
         {
             "id": "faq-private-7",

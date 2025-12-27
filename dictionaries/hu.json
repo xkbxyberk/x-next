@@ -253,22 +253,30 @@
         {
             "id": "guide-step1-4",
             "authorName": "XDownloaderz Útmutató",
-            "content": "📖 Felhasználói útmutató: 1. lépés\n\n1️⃣ Videó link másolása\n\nNyissa meg a letölteni kívánt videót az X (Twitter) alkalmazásban vagy weboldalon. Koppintson a bejegyzésen a 'Megosztás' ikonra, és válassza a 'Link másolása' lehetőséget.\n\n💡 Tipp: A videós tweet URL-jének így kell kinéznie:\nx.com/felhasznalo/status/1234567890"
+            "content": "📖 Felhasználói útmutató: 1. lépés\n\n1️⃣ Videó link másolása\n\nNyissa meg a letölteni kívánt videót az X (Twitter) alkalmazásban vagy weboldalon. Koppintson a bejegyzésen a 'Megosztás' ikonra, és válassza a 'Link másolása' lehetőséget.\n\n💡 Tipp: A videós tweet URL-jének így kell kinéznie:\nx.com/felhasznalo/status/1234567890",
+            "image": "twitter-video-download-step1-copy-link.avif",
+            "imageAlt": "📖 Felhasználói útmutató: 1. lépés - 1️⃣ Videó link másolása"
         },
         {
             "id": "guide-step2",
             "authorName": "XDownloaderz Útmutató",
-            "content": "📖 Felhasználói útmutató: 2. lépés\n\n2️⃣ Link beillesztése az XDownloaderz-be\n\nNyissa meg az xdownloaderz.com oldalt. Illessze be a másolt X (Twitter) videó linket az oldal tetején található szövegmezőbe.\n\nRendszerünk automatikusan észleli a linket és azonnal betölti a videó információkat."
+            "content": "📖 Felhasználói útmutató: 2. lépés\n\n2️⃣ Link beillesztése az XDownloaderz-be\n\nNyissa meg az xdownloaderz.com oldalt. Illessze be a másolt X (Twitter) videó linket az oldal tetején található szövegmezőbe.\n\nRendszerünk automatikusan észleli a linket és azonnal betölti a videó információkat.",
+            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "imageAlt": "📖 Felhasználói útmutató: 2. lépés - 2️⃣ Link beillesztése az XDownloaderz-be"
         },
         {
             "id": "guide-step3",
             "authorName": "XDownloaderz Útmutató",
-            "content": "📖 Felhasználói útmutató: 3. lépés\n\n3️⃣ Minőség és formátum kiválasztása\n\nMiután a videó elemzése megtörtént, válassza ki a kívánt minőséget a beállítások menüből (⚙️ ikon):\n\n• 1080p / 720p / 480p (MP4 videó)\n• MP3 (Csak hang)\n\nNagyobb felbontás = Jobb képminőség, de nagyobb fájlméret."
+            "content": "📖 Felhasználói útmutató: 3. lépés\n\n3️⃣ Minőség és formátum kiválasztása\n\nMiután a videó elemzése megtörtént, válassza ki a kívánt minőséget a beállítások menüből (⚙️ ikon):\n\n• 1080p / 720p / 480p (MP4 videó)\n• MP3 (Csak hang)\n\nNagyobb felbontás = Jobb képminőség, de nagyobb fájlméret.",
+            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "imageAlt": "📖 Felhasználói útmutató: 3. lépés - 3️⃣ Minőség és formátum kiválasztása"
         },
         {
             "id": "guide-step4",
             "authorName": "XDownloaderz Útmutató",
-            "content": "📖 Felhasználói útmutató: 4. lépés\n\n4️⃣ Letöltés indítása\n\nA formátum és minőség kiválasztása után kattintson a kék 'Letöltés' gombra. Videó- vagy hangfájlja automatikusan letöltődik eszközére.\n\n⚡ A letöltési sebesség az internetkapcsolatától és a videó méretétől függ."
+            "content": "📖 Felhasználói útmutató: 4. lépés\n\n4️⃣ Letöltés indítása\n\nA formátum és minőség kiválasztása után kattintson a kék 'Letöltés' gombra. Videó- vagy hangfájlja automatikusan letöltődik eszközére.\n\n⚡ A letöltési sebesség az internetkapcsolatától és a videó méretétől függ.",
+            "image": "x-video-download-step4-start-download.avif",
+            "imageAlt": "📖 Felhasználói útmutató: 4. lépés - 4️⃣ Letöltés indítása"
         },
         {
             "id": "faq-private-7",

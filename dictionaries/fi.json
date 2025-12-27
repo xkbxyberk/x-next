@@ -253,22 +253,30 @@
         {
             "id": "guide-step1-4",
             "authorName": "XDownloaderz Opas",
-            "content": "📖 Käyttöopas: Vaihe 1\n\n1️⃣ Kopioi videolinkki\n\nAvaa video, jonka haluat ladata, X (Twitter) -sovelluksessa tai verkkosivustolla. Napauta julkaisun 'Jaa'-kuvaketta ja valitse 'Kopioi linkki'.\n\n💡 Vinkki: Videotwiitin URL-osoitteen tulisi näyttää tältä:\nx.com/kayttaja/status/1234567890"
+            "content": "📖 Käyttöopas: Vaihe 1\n\n1️⃣ Kopioi videolinkki\n\nAvaa video, jonka haluat ladata, X (Twitter) -sovelluksessa tai verkkosivustolla. Napauta julkaisun 'Jaa'-kuvaketta ja valitse 'Kopioi linkki'.\n\n💡 Vinkki: Videotwiitin URL-osoitteen tulisi näyttää tältä:\nx.com/kayttaja/status/1234567890",
+            "image": "twitter-video-download-step1-copy-link.avif",
+            "imageAlt": "📖 Käyttöopas: Vaihe 1 - 1️⃣ Kopioi videolinkki"
         },
         {
             "id": "guide-step2",
             "authorName": "XDownloaderz Opas",
-            "content": "📖 Käyttöopas: Vaihe 2\n\n2️⃣ Liitä linkki XDownloaderziin\n\nAvaa xdownloaderz.com. Liitä kopioitu X (Twitter) -videolinkki sivun yläosan tekstikenttään.\n\nJärjestelmämme tunnistaa linkin automaattisesti ja lataa videotiedot välittömästi."
+            "content": "📖 Käyttöopas: Vaihe 2\n\n2️⃣ Liitä linkki XDownloaderziin\n\nAvaa xdownloaderz.com. Liitä kopioitu X (Twitter) -videolinkki sivun yläosan tekstikenttään.\n\nJärjestelmämme tunnistaa linkin automaattisesti ja lataa videotiedot välittömästi.",
+            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "imageAlt": "📖 Käyttöopas: Vaihe 2 - 2️⃣ Liitä linkki XDownloaderziin"
         },
         {
             "id": "guide-step3",
             "authorName": "XDownloaderz Opas",
-            "content": "📖 Käyttöopas: Vaihe 3\n\n3️⃣ Valitse laatu ja muoto\n\nKun video on analysoitu, valitse haluamasi laatu asetusvalikosta (⚙️-kuvake):\n\n• 1080p / 720p / 480p (MP4 Video)\n• MP3 (Vain ääni)\n\nKorkeampi resoluutio = Parempi kuvanlaatu mutta suurempi tiedostokoko."
+            "content": "📖 Käyttöopas: Vaihe 3\n\n3️⃣ Valitse laatu ja muoto\n\nKun video on analysoitu, valitse haluamasi laatu asetusvalikosta (⚙️-kuvake):\n\n• 1080p / 720p / 480p (MP4 Video)\n• MP3 (Vain ääni)\n\nKorkeampi resoluutio = Parempi kuvanlaatu mutta suurempi tiedostokoko.",
+            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "imageAlt": "📖 Käyttöopas: Vaihe 3 - 3️⃣ Valitse laatu ja muoto"
         },
         {
             "id": "guide-step4",
             "authorName": "XDownloaderz Opas",
-            "content": "📖 Käyttöopas: Vaihe 4\n\n4️⃣ Aloita lataus\n\nKun olet valinnut muodon ja laadun, napsauta sinistä 'Lataa'-painiketta. Video- tai äänitiedostosi ladataan automaattisesti laitteellesi.\n\n⚡ Latausnopeus riippuu internetyhteydestäsi ja videon koosta."
+            "content": "📖 Käyttöopas: Vaihe 4\n\n4️⃣ Aloita lataus\n\nKun olet valinnut muodon ja laadun, napsauta sinistä 'Lataa'-painiketta. Video- tai äänitiedostosi ladataan automaattisesti laitteellesi.\n\n⚡ Latausnopeus riippuu internetyhteydestäsi ja videon koosta.",
+            "image": "x-video-download-step4-start-download.avif",
+            "imageAlt": "📖 Käyttöopas: Vaihe 4 - 4️⃣ Aloita lataus"
         },
         {
             "id": "faq-private-7",

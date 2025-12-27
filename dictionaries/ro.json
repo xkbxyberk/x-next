@@ -253,22 +253,30 @@
         {
             "id": "guide-step1-4",
             "authorName": "Ghid XDownloaderz",
-            "content": "📖 Ghid de utilizare: Pasul 1\n\n1️⃣ Copiază link-ul video\n\nDeschide videoclipul pe care vrei să-l descarci în aplicația sau pe site-ul X (Twitter). Atinge pictograma „Partajare” de pe postare și selectează „Copiază link-ul”.\n\n💡 Sfat: URL-ul tweet-ului video ar trebui să arate cam așa:\nx.com/utilizator/status/1234567890"
+            "content": "📖 Ghid de utilizare: Pasul 1\n\n1️⃣ Copiază link-ul video\n\nDeschide videoclipul pe care vrei să-l descarci în aplicația sau pe site-ul X (Twitter). Atinge pictograma „Partajare” de pe postare și selectează „Copiază link-ul”.\n\n💡 Sfat: URL-ul tweet-ului video ar trebui să arate cam așa:\nx.com/utilizator/status/1234567890",
+            "image": "twitter-video-download-step1-copy-link.avif",
+            "imageAlt": "📖 Ghid de utilizare: Pasul 1 - 1️⃣ Copiază link-ul video"
         },
         {
             "id": "guide-step2",
             "authorName": "Ghid XDownloaderz",
-            "content": "📖 Ghid de utilizare: Pasul 2\n\n2️⃣ Lipește link-ul în XDownloaderz\n\nDeschide xdownloaderz.com. Lipește link-ul video X (Twitter) copiat în caseta text din partea de sus a paginii.\n\nSistemul nostru va detecta automat link-ul și va încărca informațiile video instantaneu."
+            "content": "📖 Ghid de utilizare: Pasul 2\n\n2️⃣ Lipește link-ul în XDownloaderz\n\nDeschide xdownloaderz.com. Lipește link-ul video X (Twitter) copiat în caseta text din partea de sus a paginii.\n\nSistemul nostru va detecta automat link-ul și va încărca informațiile video instantaneu.",
+            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "imageAlt": "📖 Ghid de utilizare: Pasul 2 - 2️⃣ Lipește link-ul în XDownloaderz"
         },
         {
             "id": "guide-step3",
             "authorName": "Ghid XDownloaderz",
-            "content": "📖 Ghid de utilizare: Pasul 3\n\n3️⃣ Selectează calitatea și formatul\n\nDupă ce videoclipul este analizat, selectează calitatea dorită din meniul de setări (pictograma ⚙️):\n\n• 1080p / 720p / 480p (Video MP4)\n• MP3 (Doar Audio)\n\nRezoluție mai mare = Calitate a imaginii mai bună, dar dimensiune a fișierului mai mare."
+            "content": "📖 Ghid de utilizare: Pasul 3\n\n3️⃣ Selectează calitatea și formatul\n\nDupă ce videoclipul este analizat, selectează calitatea dorită din meniul de setări (pictograma ⚙️):\n\n• 1080p / 720p / 480p (Video MP4)\n• MP3 (Doar Audio)\n\nRezoluție mai mare = Calitate a imaginii mai bună, dar dimensiune a fișierului mai mare.",
+            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "imageAlt": "📖 Ghid de utilizare: Pasul 3 - 3️⃣ Selectează calitatea și formatul"
         },
         {
             "id": "guide-step4",
             "authorName": "Ghid XDownloaderz",
-            "content": "📖 Ghid de utilizare: Pasul 4\n\n4️⃣ Începe descărcarea\n\nDupă selectarea formatului și calității, fă clic pe butonul albastru „Descarcă”. Fișierul tău video sau audio se va descărca automat pe dispozitivul tău.\n\n⚡ Viteza de descărcare depinde de conexiunea ta la internet și de dimensiunea videoclipului."
+            "content": "📖 Ghid de utilizare: Pasul 4\n\n4️⃣ Începe descărcarea\n\nDupă selectarea formatului și calității, fă clic pe butonul albastru „Descarcă”. Fișierul tău video sau audio se va descărca automat pe dispozitivul tău.\n\n⚡ Viteza de descărcare depinde de conexiunea ta la internet și de dimensiunea videoclipului.",
+            "image": "x-video-download-step4-start-download.avif",
+            "imageAlt": "📖 Ghid de utilizare: Pasul 4 - 4️⃣ Începe descărcarea"
         },
         {
             "id": "faq-private-7",

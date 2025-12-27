@@ -253,22 +253,30 @@
         {
             "id": "guide-step1-4",
             "authorName": "Gabay sa XDownloaderz",
-            "content": "📖 Gabay sa Gumagamit: Hakbang 1\n\n1️⃣ Kopyahin ang Link ng Video\n\nBuksan ang video na gusto mong i-download sa X (Twitter) app o website. I-tap ang icon na 'Ibahagi' sa post at piliin ang 'Kopyahin ang link'.\n\n💡 Tip: Ang URL ng video tweet ay dapat magmukhang ganito:\nx.com/user/status/1234567890"
+            "content": "📖 Gabay sa Gumagamit: Hakbang 1\n\n1️⃣ Kopyahin ang Link ng Video\n\nBuksan ang video na gusto mong i-download sa X (Twitter) app o website. I-tap ang icon na 'Ibahagi' sa post at piliin ang 'Kopyahin ang link'.\n\n💡 Tip: Ang URL ng video tweet ay dapat magmukhang ganito:\nx.com/user/status/1234567890",
+            "image": "twitter-video-download-step1-copy-link.avif",
+            "imageAlt": "📖 Gabay sa Gumagamit: Hakbang 1 - 1️⃣ Kopyahin ang Link ng Video"
         },
         {
             "id": "guide-step2",
             "authorName": "Gabay sa XDownloaderz",
-            "content": "📖 Gabay sa Gumagamit: Hakbang 2\n\n2️⃣ I-paste ang Link sa XDownloaderz\n\nBuksan ang xdownloaderz.com. I-paste ang kinopyang link ng X (Twitter) video sa text box sa itaas ng pahina.\n\nAwtomatikong made-detect ng aming system ang link atilo-load agad ang impormasyon ng video."
+            "content": "📖 Gabay sa Gumagamit: Hakbang 2\n\n2️⃣ I-paste ang Link sa XDownloaderz\n\nBuksan ang xdownloaderz.com. I-paste ang kinopyang link ng X (Twitter) video sa text box sa itaas ng pahina.\n\nAwtomatikong made-detect ng aming system ang link atilo-load agad ang impormasyon ng video.",
+            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "imageAlt": "📖 Gabay sa Gumagamit: Hakbang 2 - 2️⃣ I-paste ang Link sa XDownloaderz"
         },
         {
             "id": "guide-step3",
             "authorName": "Gabay sa XDownloaderz",
-            "content": "📖 Gabay sa Gumagamit: Hakbang 3\n\n3️⃣ Piliin ang Kalidad at Format\n\nMatapos masuri ang video, piliin ang iyong gustong kalidad mula sa menu ng mga setting (⚙️ icon):\n\n• 1080p / 720p / 480p (MP4 Video)\n• MP3 (Audio Lamang)\n\nMas mataas na resolution = Mas magandang kalidad ng larawan ngunit mas malaking sukat ng file."
+            "content": "📖 Gabay sa Gumagamit: Hakbang 3\n\n3️⃣ Piliin ang Kalidad at Format\n\nMatapos masuri ang video, piliin ang iyong gustong kalidad mula sa menu ng mga setting (⚙️ icon):\n\n• 1080p / 720p / 480p (MP4 Video)\n• MP3 (Audio Lamang)\n\nMas mataas na resolution = Mas magandang kalidad ng larawan ngunit mas malaking sukat ng file.",
+            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "imageAlt": "📖 Gabay sa Gumagamit: Hakbang 3 - 3️⃣ Piliin ang Kalidad at Format"
         },
         {
             "id": "guide-step4",
             "authorName": "Gabay sa XDownloaderz",
-            "content": "📖 Gabay sa Gumagamit: Hakbang 4\n\n4️⃣ Simulan ang Pag-download\n\nPagkatapos piliin ang format at kalidad, i-click ang asul na button na 'I-download'. Ang iyong video o audio file ay awtomatikong mada-download sa iyong device.\n\n⚡ Ang bilis ng pag-download ay depende sa iyong koneksyon sa internet at laki ng video."
+            "content": "📖 Gabay sa Gumagamit: Hakbang 4\n\n4️⃣ Simulan ang Pag-download\n\nPagkatapos piliin ang format at kalidad, i-click ang asul na button na 'I-download'. Ang iyong video o audio file ay awtomatikong mada-download sa iyong device.\n\n⚡ Ang bilis ng pag-download ay depende sa iyong koneksyon sa internet at laki ng video.",
+            "image": "x-video-download-step4-start-download.avif",
+            "imageAlt": "📖 Gabay sa Gumagamit: Hakbang 4 - 4️⃣ Simulan ang Pag-download"
         },
         {
             "id": "faq-private-7",

@@ -253,22 +253,30 @@
         {
             "id": "guide-step1-4",
             "authorName": "XDownloaderz 指南",
-            "content": "📖 用户指南：第 1 步\n\n1️⃣ 复制视频链接\n\n在 X (Twitter) 应用或网站上打开您要下载的视频。点击帖子上的“分享”图标，然后选择“复制链接”。\n\n💡 提示：视频推文的 URL 应该如下所示：\nx.com/user/status/1234567890"
+            "content": "📖 用户指南：第 1 步\n\n1️⃣ 复制视频链接\n\n在 X (Twitter) 应用或网站上打开您要下载的视频。点击帖子上的“分享”图标，然后选择“复制链接”。\n\n💡 提示：视频推文的 URL 应该如下所示：\nx.com/user/status/1234567890",
+            "image": "twitter-video-download-step1-copy-link.avif",
+            "imageAlt": "📖 用户指南：第 1 步 - 1️⃣ 复制视频链接"
         },
         {
             "id": "guide-step2",
             "authorName": "XDownloaderz 指南",
-            "content": "📖 用户指南：第 2 步\n\n2️⃣ 将链接粘贴到 XDownloaderz\n\n打开 xdownloaderz.com。将复制的 X (Twitter) 视频链接粘贴到页面顶部的文本框中。\n\n我们的系统将自动检测链接并立即加载视频信息。"
+            "content": "📖 用户指南：第 2 步\n\n2️⃣ 将链接粘贴到 XDownloaderz\n\n打开 xdownloaderz.com。将复制的 X (Twitter) 视频链接粘贴到页面顶部的文本框中。\n\n我们的系统将自动检测链接并立即加载视频信息。",
+            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "imageAlt": "📖 用户指南：第 2 步 - 2️⃣ 将链接粘贴到 XDownloaderz"
         },
         {
             "id": "guide-step3",
             "authorName": "XDownloaderz 指南",
-            "content": "📖 用户指南：第 3 步\n\n3️⃣ 选择质量和格式\n\n视频分析完成后，从设置菜单（⚙️ 图标）中选择您想要的质量：\n\n• 1080p / 720p / 480p (MP4 视频)\n• MP3 (仅音频)\n\n更高的分辨率 = 更好的图像质量，但文件更大。"
+            "content": "📖 用户指南：第 3 步\n\n3️⃣ 选择质量和格式\n\n视频分析完成后，从设置菜单（⚙️ 图标）中选择您想要的质量：\n\n• 1080p / 720p / 480p (MP4 视频)\n• MP3 (仅音频)\n\n更高的分辨率 = 更好的图像质量，但文件更大。",
+            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "imageAlt": "📖 用户指南：第 3 步 - 3️⃣ 选择质量和格式"
         },
         {
             "id": "guide-step4",
             "authorName": "XDownloaderz 指南",
-            "content": "📖 用户指南：第 4 步\n\n4️⃣ 开始下载\n\n选择格式和质量后，点击蓝色的“下载”按钮。您的视频或音频文件将自动下载到您的设备。\n\n⚡ 下载速度取决于您的互联网连接和视频大小。"
+            "content": "📖 用户指南：第 4 步\n\n4️⃣ 开始下载\n\n选择格式和质量后，点击蓝色的“下载”按钮。您的视频或音频文件将自动下载到您的设备。\n\n⚡ 下载速度取决于您的互联网连接和视频大小。",
+            "image": "x-video-download-step4-start-download.avif",
+            "imageAlt": "📖 用户指南：第 4 步 - 4️⃣ 开始下载"
         },
         {
             "id": "faq-private-7",

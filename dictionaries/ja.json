@@ -254,22 +254,30 @@
         {
             "id": "guide-step1-4",
             "authorName": "XDownloaderz ガイド",
-            "content": "📖 ユーザーガイド：ステップ1\n\n1️⃣ 動画リンクをコピー\n\nX（Twitter）アプリまたはWebサイトでダウンロードしたい動画を開きます。投稿の「共有」アイコンをタップし、「リンクをコピー」を選択します。\n\n💡 ヒント：動画ツイートのURLは以下のようになります：\nx.com/user/status/1234567890"
+            "content": "📖 ユーザーガイド：ステップ1\n\n1️⃣ 動画リンクをコピー\n\nX（Twitter）アプリまたはWebサイトでダウンロードしたい動画を開きます。投稿の「共有」アイコンをタップし、「リンクをコピー」を選択します。\n\n💡 ヒント：動画ツイートのURLは以下のようになります：\nx.com/user/status/1234567890",
+            "image": "twitter-video-download-step1-copy-link.avif",
+            "imageAlt": "📖 ユーザーガイド：ステップ1 - 1️⃣ 動画リンクをコピー"
         },
         {
             "id": "guide-step2",
             "authorName": "XDownloaderz ガイド",
-            "content": "📖 ユーザーガイド：ステップ2\n\n2️⃣ リンクをXDownloaderzに貼り付け\n\nxdownloaderz.comを開きます。コピーしたX（Twitter）の動画リンクをページ上部のテキストボックスに貼り付けます。\n\nシステムが自動的にリンクを検出し、動画情報を即座に読み込みます。"
+            "content": "📖 ユーザーガイド：ステップ2\n\n2️⃣ リンクをXDownloaderzに貼り付け\n\nxdownloaderz.comを開きます。コピーしたX（Twitter）の動画リンクをページ上部のテキストボックスに貼り付けます。\n\nシステムが自動的にリンクを検出し、動画情報を即座に読み込みます。",
+            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "imageAlt": "📖 ユーザーガイド：ステップ2 - 2️⃣ リンクをXDownloaderzに貼り付け"
         },
         {
             "id": "guide-step3",
             "authorName": "XDownloaderz ガイド",
-            "content": "📖 ユーザーガイド：ステップ3\n\n3️⃣ 品質と形式を選択\n\n動画が解析されたら、設定メニュー（⚙️アイコン）から希望の品質を選択します：\n\n• 1080p / 720p / 480p (MP4動画)\n• MP3 (音声のみ)\n\n高解像度 = 画質は良くなりますが、ファイルサイズは大きくなります。"
+            "content": "📖 ユーザーガイド：ステップ3\n\n3️⃣ 品質と形式を選択\n\n動画が解析されたら、設定メニュー（⚙️アイコン）から希望の品質を選択します：\n\n• 1080p / 720p / 480p (MP4動画)\n• MP3 (音声のみ)\n\n高解像度 = 画質は良くなりますが、ファイルサイズは大きくなります。",
+            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "imageAlt": "📖 ユーザーガイド：ステップ3 - 3️⃣ 品質と形式を選択"
         },
         {
             "id": "guide-step4",
             "authorName": "XDownloaderz ガイド",
-            "content": "📖 ユーザーガイド：ステップ4\n\n4️⃣ ダウンロード開始\n\n形式と品質を選択したら、青い「ダウンロード」ボタンをクリックします。動画または音声ファイルが自動的にデバイスにダウンロードされます。\n\n⚡ ダウンロード速度は、インターネット接続と動画のサイズによって異なります。"
+            "content": "📖 ユーザーガイド：ステップ4\n\n4️⃣ ダウンロード開始\n\n形式と品質を選択したら、青い「ダウンロード」ボタンをクリックします。動画または音声ファイルが自動的にデバイスにダウンロードされます。\n\n⚡ ダウンロード速度は、インターネット接続と動画のサイズによって異なります。",
+            "image": "x-video-download-step4-start-download.avif",
+            "imageAlt": "📖 ユーザーガイド：ステップ4 - 4️⃣ ダウンロード開始"
         },
         {
             "id": "faq-private-7",
