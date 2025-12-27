@@ -6,7 +6,12 @@
         "privacyPolicy": "Политика конфиденциальности",
         "termsOfService": "Условия использования",
         "contact": "Контакты",
-        "about": "О нас"
+        "about": "О нас",
+        "social": {
+            "ogTitle": "XDownloaderz | Скачать видео с X быстро и бесплатно | 1080p MP4",
+            "ogDescription": "Лучший загрузчик видео с X (Twitter). Сохраняйте видео и GIF в качестве 1080p Full HD. Конвертация в MP3. Бесплатно и без регистрации.",
+            "imageAlt": "XDownloaderz - Загрузчик видео с X"
+        }
     },
     "sidebar": {
         "download": "Скачать",

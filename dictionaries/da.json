@@ -6,7 +6,12 @@
         "privacyPolicy": "Privatlivspolitik",
         "termsOfService": "Servicevilkår",
         "contact": "Kontakt",
-        "about": "Om"
+        "about": "Om",
+        "social": {
+            "ogTitle": "XDownloaderz | Download X-videoer hurtigt og gratis | 1080p MP4",
+            "ogDescription": "Den bedste X (Twitter) video downloader. Gem videoer og GIF'er i 1080p fuld HD-kvalitet. Konverter til MP3. Gratis, hurtig og ingen registrering.",
+            "imageAlt": "XDownloaderz - X Video Downloader"
+        }
     },
     "sidebar": {
         "download": "Download",

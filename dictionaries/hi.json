@@ -6,7 +6,12 @@
         "privacyPolicy": "गोपनीयता नीति",
         "termsOfService": "सेवा की शर्तें",
         "contact": "संपर्क करें",
-        "about": "हमारे बारे में"
+        "about": "के बारे में",
+        "social": {
+            "ogTitle": "XDownloaderz | X वीडियो डाउनलोड करें तेज़ और मुफ़्त | 1080p MP4",
+            "ogDescription": "सर्वश्रेष्ठ X (Twitter) वीडियो डाउनलोडर। 1080p फुल एचडी गुणवत्ता में वीडियो और जिफ़ सहेजें। MP3 में बदलें। मुफ़्त और कोई पंजीकरण आवश्यक नहीं।",
+            "imageAlt": "XDownloaderz - X वीडियो डाउनलोडर"
+        }
     },
     "sidebar": {
         "download": "डाउनलोड",

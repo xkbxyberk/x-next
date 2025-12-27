@@ -6,7 +6,12 @@
         "privacyPolicy": "隐私政策",
         "termsOfService": "服务条款",
         "contact": "联系我们",
-        "about": "关于我们"
+        "about": "关于我们",
+        "social": {
+            "ogTitle": "XDownloaderz | 快速免费下载 X 视频 | 1080p MP4",
+            "ogDescription": "最好的 X (Twitter) 视频下载器。以 1080p 全高清质量保存视频和 GIF。转换为 MP3。免费且无需注册。",
+            "imageAlt": "XDownloaderz - X 视频下载器"
+        }
     },
     "sidebar": {
         "download": "下载",

@@ -18,10 +18,78 @@ const inter = Inter({
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
   const dict = await getDictionary(lang as "en" | "tr");
+  const baseUrl = 'https://xdownloaderz.com';
 
   return {
-    title: dict.common.title,
-    description: dict.common.description,
+    metadataBase: new URL(baseUrl),
+    title: {
+      default: dict.common.title,
+      template: `%s | XDownloaderz`
+    },
+    description: dict.common.social?.ogDescription || dict.common.description,
+    keywords: ['x video downloader', 'twitter video downloader', 'twitter gif download', 'x video indir', 'save x video', 'twitter downloader'],
+    authors: [{ name: 'XDownloaderz' }],
+    creator: 'XDownloaderz',
+    publisher: 'XDownloaderz',
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+    alternates: {
+      canonical: `/${lang}`,
+      languages: {
+        'en': '/en',
+        'tr': '/tr',
+        'es': '/es',
+        'fr': '/fr',
+        'de': '/de',
+        'it': '/it',
+        'pt': '/pt',
+        'ru': '/ru',
+        'ja': '/ja',
+        'ko': '/ko',
+        'ar': '/ar',
+        'hi': '/hi'
+        // Diğer diller buraya eklenebilir, fakat liste çok uzun olacağı için
+        // temel dilleri eklemek yeterli olabilir veya hepsi eklenebilir.
+        // Şimdilik ana dilleri ekliyoruz.
+      },
+    },
+    openGraph: {
+      title: dict.common.social?.ogTitle || dict.common.title,
+      description: dict.common.social?.ogDescription || dict.common.description,
+      url: `/${lang}`,
+      siteName: 'XDownloaderz',
+      locale: lang,
+      type: 'website',
+      images: [
+        {
+          url: `/${lang}/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: dict.common.social?.imageAlt || 'XDownloaderz - X Video Downloader',
+        }
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: dict.common.social?.ogTitle || dict.common.title,
+      description: dict.common.social?.ogDescription || dict.common.description,
+      creator: '@xdownloaderz',
+      images: [`/${lang}/twitter-image`], // twitter-image.tsx kullanacağız
+    },
+    appleWebApp: {
+      capable: true,
+      statusBarStyle: 'default',
+      title: 'XDownloaderz',
+    },
   };
 }
 

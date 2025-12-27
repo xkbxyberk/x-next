@@ -6,7 +6,12 @@
         "privacyPolicy": "پرائیویسی پالیسی",
         "termsOfService": "سروس کی شرائط",
         "contact": "رابطہ کریں",
-        "about": "ہمارے بارے میں"
+        "about": "ہمارے بارے میں",
+        "social": {
+            "ogTitle": "XDownloaderz | X ویڈیوز تیزی سے اور مفت ڈاؤن لوڈ کریں | 1080p MP4",
+            "ogDescription": "بہترین X (Twitter) ویڈیو ڈاؤنلوڈر۔ ویڈیوز اور GIFs کو 1080p فل ایچ ڈی کوالٹی میں محفوظ کریں۔ MP3 میں تبدیل کریں۔ مفت اور رجسٹریشن کی ضرورت نہیں۔",
+            "imageAlt": "XDownloaderz - X ویڈیو ڈاؤنلوڈر"
+        }
     },
     "sidebar": {
         "download": "ڈاؤن لوڈ",

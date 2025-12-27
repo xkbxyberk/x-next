@@ -6,7 +6,12 @@
         "privacyPolicy": "Gizlilik Politikası",
         "termsOfService": "Hizmet Şartları",
         "contact": "İletişim",
-        "about": "Hakkında"
+        "about": "Hakkında",
+        "social": {
+            "ogTitle": "XDownloaderz | X Video İndir | Hızlı & Ücretsiz | 1080p MP4",
+            "ogDescription": "En iyi X (Twitter) Video İndirici. Videoları ve GIF'leri 1080p yüksek kalitede kaydedin. MP3 dönüştürücü. Kurulumsuz, ücretsiz ve hızlı.",
+            "imageAlt": "XDownloaderz - X Video İndirici"
+        }
     },
     "sidebar": {
         "download": "İndir",

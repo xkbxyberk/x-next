@@ -6,7 +6,12 @@
         "privacyPolicy": "Tietosuojakäytäntö",
         "termsOfService": "Käyttöehdot",
         "contact": "Ota yhteyttä",
-        "about": "Tietoa meistä"
+        "about": "Tietoja",
+        "social": {
+            "ogTitle": "XDownloaderz | Lataa X-videoita nopeasti ja ilmaiseksi | 1080p MP4",
+            "ogDescription": "Paras X (Twitter) -videolataaja. Tallenna videoita ja GIF-tiedostoja 1080p Full HD -laadulla. Muunna MP3-muotoon. Ilmainen ja ilman rekisteröitymistä.",
+            "imageAlt": "XDownloaderz - X-videolataaja"
+        }
     },
     "sidebar": {
         "download": "Lataa",

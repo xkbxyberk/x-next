@@ -6,7 +6,12 @@
         "privacyPolicy": "গোপনীয়তা নীতি",
         "termsOfService": "পরিষেবার শর্তাবলী",
         "contact": "যোগাযোগ",
-        "about": "সম্পর্কে"
+        "about": "সম্পর্কে",
+        "social": {
+            "ogTitle": "XDownloaderz | X ভিডিও ডাউনলোড করুন দ্রুত ও বিনামূল্যে | 1080p MP4",
+            "ogDescription": "সেরা X (Twitter) ভিডিও ডাউনলোডার। ভিডিও এবং GIF সেভ করুন ফুল HD 1080p কোয়ালিটিতে। MP3 তে রূপান্তর করুন। বিনামূল্যে এবং দ্রুত।",
+            "imageAlt": "XDownloaderz - X ভিডিও ডাউনলোডার"
+        }
     },
     "sidebar": {
         "download": "ডাউনলোড",

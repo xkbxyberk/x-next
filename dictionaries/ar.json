@@ -6,7 +6,12 @@
         "privacyPolicy": "سياسة الخصوصية",
         "termsOfService": "شروط الخدمة",
         "contact": "اتصل بنا",
-        "about": "حول"
+        "about": "حول",
+        "social": {
+            "ogTitle": "XDownloaderz | تحميل فيديوهات X بسرعة ومجانًا | 1080p MP4",
+            "ogDescription": "أفضل أداة لتحميل فيديوهات X (تويتر). احفظ الفيديوهات وملفات GIF بجودة عالية 1080p. تحويل إلى MP3. مجاني وسريع وبدون تسجيل.",
+            "imageAlt": "XDownloaderz - أداة تحميل فيديو X"
+        }
     },
     "sidebar": {
         "download": "تحميل",

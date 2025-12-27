@@ -6,7 +6,12 @@
         "privacyPolicy": "Política de Privacidad",
         "termsOfService": "Términos de Servicio",
         "contact": "Contacto",
-        "about": "Acerca de"
+        "about": "Acerca de",
+        "social": {
+            "ogTitle": "XDownloaderz | Descargar videos de X Rápido y Gratis | 1080p MP4",
+            "ogDescription": "El mejor descargador de videos de X (Twitter). Guarda videos y GIFs en calidad Full HD 1080p. Convierte a MP3. Gratis y sin registro.",
+            "imageAlt": "XDownloaderz - Descargador de videos X"
+        }
     },
     "sidebar": {
         "download": "Descargar",

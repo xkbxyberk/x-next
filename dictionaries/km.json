@@ -6,7 +6,12 @@
         "privacyPolicy": "គោលការណ៍​ភាព​ឯកជន",
         "termsOfService": "លក្ខខណ្ឌសេវាកម្ម",
         "contact": "ទំនាក់ទំនង",
-        "about": "អំពីយើង"
+        "about": "អំពីយើង",
+        "social": {
+            "ogTitle": "XDownloaderz | ទាញយកវីដេអូ X លឿននិងឥតគិតថ្លៃ | 1080p MP4",
+            "ogDescription": "កម្មវិធីទាញយកវីដេអូ X (Twitter) ល្អបំផុត។ រក្សាទុកវីដេអូនិង GIF ក្នុងគុណភាព 1080p Full HD ។ បម្លែងទៅជា MP3 ។",
+            "imageAlt": "XDownloaderz - កម្មវិធីទាញយកវីដេអូ X"
+        }
     },
     "sidebar": {
         "download": "ទាញយក",

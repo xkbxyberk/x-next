@@ -6,7 +6,12 @@
         "privacyPolicy": "Adatvédelmi irányelvek",
         "termsOfService": "Szolgáltatási feltételek",
         "contact": "Kapcsolat",
-        "about": "Rólunk"
+        "about": "Rólunk",
+        "social": {
+            "ogTitle": "XDownloaderz | X videók letöltése gyorsan és ingyen | 1080p MP4",
+            "ogDescription": "A legjobb X (Twitter) videó letöltő. Mentse el a videókat és GIF-eket 1080p Full HD minőségben. Konvertálás MP3-ba. Ingyenes és regisztráció nélkül.",
+            "imageAlt": "XDownloaderz - X Videó letöltő"
+        }
     },
     "sidebar": {
         "download": "Letöltés",

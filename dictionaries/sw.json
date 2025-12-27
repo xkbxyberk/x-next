@@ -6,7 +6,12 @@
         "privacyPolicy": "Sera ya Faragha",
         "termsOfService": "Masharti ya Huduma",
         "contact": "Wasiliana nasi",
-        "about": "Kutuhusu"
+        "about": "Kuhusu",
+        "social": {
+            "ogTitle": "XDownloaderz | Pakua Video za X Haraka na Bure | 1080p MP4",
+            "ogDescription": "Kipakuzi bora cha Video cha X (Twitter). Hifadhi video na GIF katika ubora wa 1080p Full HD. Badilisha hadi MP3. Bure na hakuna usajili.",
+            "imageAlt": "XDownloaderz - Kipakuzi cha Video cha X"
+        }
     },
     "sidebar": {
         "download": "Pakua",

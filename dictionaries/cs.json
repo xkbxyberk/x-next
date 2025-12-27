@@ -6,7 +6,12 @@
         "privacyPolicy": "Zásady ochrany osobních údajů",
         "termsOfService": "Podmínky služby",
         "contact": "Kontakt",
-        "about": "O nás"
+        "about": "O nás",
+        "social": {
+            "ogTitle": "XDownloaderz | Stahování videí z X rychle a zdarma | 1080p MP4",
+            "ogDescription": "Nejlepší stahovač videí z X (Twitter). Ukládejte videa a GIFy v kvalitě 1080p Full HD. Převod do MP3. Zdarma a bez registrace.",
+            "imageAlt": "XDownloaderz - Stahovač videí X"
+        }
     },
     "sidebar": {
         "download": "Stáhnout",

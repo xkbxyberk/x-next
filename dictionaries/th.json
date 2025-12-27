@@ -6,7 +6,12 @@
         "privacyPolicy": "นโยบายความเป็นส่วนตัว",
         "termsOfService": "เงื่อนไขการให้บริการ",
         "contact": "ติดต่อ",
-        "about": "เกี่ยวกับเรา"
+        "about": "เกี่ยวกับ",
+        "social": {
+            "ogTitle": "XDownloaderz | ดาวน์โหลดวิดีโอ X รวดเร็วและฟรี | 1080p MP4",
+            "ogDescription": "เครื่องมือดาวน์โหลดวิดีโอ X (Twitter) ที่ดีที่สุด บันทึกวิดีโอและ GIF ในคุณภาพระดับ Full HD 1080p แปลงเป็น MP3 ฟรีและไม่ต้องลงทะเบียน",
+            "imageAlt": "XDownloaderz - เครื่องมือดาวน์โหลดวิดีโอ X"
+        }
     },
     "sidebar": {
         "download": "ดาวน์โหลด",

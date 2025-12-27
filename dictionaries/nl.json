@@ -6,7 +6,12 @@
         "privacyPolicy": "Privacybeleid",
         "termsOfService": "Servicevoorwaarden",
         "contact": "Contact",
-        "about": "Over ons"
+        "about": "Over ons",
+        "social": {
+            "ogTitle": "XDownloaderz | Download X Video's Snel & Gratis | 1080p MP4",
+            "ogDescription": "De beste X (Twitter) video downloader. Sla video's en GIF's op in 1080p Full HD kwaliteit. Converteer naar MP3. Gratis en geen registratie.",
+            "imageAlt": "XDownloaderz - X Video Downloader"
+        }
     },
     "sidebar": {
         "download": "Downloaden",

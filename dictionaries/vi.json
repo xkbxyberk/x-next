@@ -6,7 +6,12 @@
         "privacyPolicy": "Chính sách bảo mật",
         "termsOfService": "Điều khoản dịch vụ",
         "contact": "Liên hệ",
-        "about": "Giới thiệu"
+        "about": "Giới thiệu",
+        "social": {
+            "ogTitle": "XDownloaderz | Tải xuống video X nhanh và miễn phí | 1080p MP4",
+            "ogDescription": "Trình tải xuống video X (Twitter) tốt nhất. Lưu video và GIF ở chất lượng Full HD 1080p. Chuyển đổi sang MP3. Miễn phí và không cần đăng ký.",
+            "imageAlt": "XDownloaderz - Trình tải xuống video X"
+        }
     },
     "sidebar": {
         "download": "Tải xuống",

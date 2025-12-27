@@ -6,7 +6,12 @@
         "privacyPolicy": "Polityka prywatności",
         "termsOfService": "Warunki korzystania",
         "contact": "Kontakt",
-        "about": "O nas"
+        "about": "O nas",
+        "social": {
+            "ogTitle": "XDownloaderz | Pobieraj filmy z X Szybko i Za Darmo | 1080p MP4",
+            "ogDescription": "Najlepszy program do pobierania wideo z X (Twitter). Zapisuj filmy i GIF-y w jakości Full HD 1080p. Konwertuj na MP3. Bezpłatnie i bez rejestracji.",
+            "imageAlt": "XDownloaderz - Pobieracz wideo X"
+        }
     },
     "sidebar": {
         "download": "Pobierz",

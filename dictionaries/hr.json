@@ -6,7 +6,12 @@
         "privacyPolicy": "Politika privatnosti",
         "termsOfService": "Uvjeti pružanja usluge",
         "contact": "Kontakt",
-        "about": "O nama"
+        "about": "O nama",
+        "social": {
+            "ogTitle": "XDownloaderz | Preuzmite X videozapise brzo i besplatno | 1080p MP4",
+            "ogDescription": "Najbolji program za preuzimanje videa s X-a (Twittera). Spremite videozapise i GIF-ove u 1080p Full HD kvaliteti. Pretvori u MP3.",
+            "imageAlt": "XDownloaderz - X Video Downloader"
+        }
     },
     "sidebar": {
         "download": "Preuzimanje",

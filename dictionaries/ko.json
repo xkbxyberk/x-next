@@ -6,7 +6,12 @@
         "privacyPolicy": "개인정보 처리방침",
         "termsOfService": "서비스 약관",
         "contact": "문의하기",
-        "about": "소개"
+        "about": "정보",
+        "social": {
+            "ogTitle": "XDownloaderz | X 동영상 빠르고 무료로 다운로드 | 1080p MP4",
+            "ogDescription": "최고의 X (Twitter) 동영상 다운로더. 1080p Full HD 품질로 동영상 및 GIF 저장. MP3 변환. 무료, 가입 필요 없음.",
+            "imageAlt": "XDownloaderz - X 동영상 다운로더"
+        }
     },
     "sidebar": {
         "download": "다운로드",

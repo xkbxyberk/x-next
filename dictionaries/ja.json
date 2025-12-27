@@ -6,7 +6,12 @@
         "privacyPolicy": "プライバシーポリシー",
         "termsOfService": "利用規約",
         "contact": "お問い合わせ",
-        "about": "当サイトについて"
+        "about": "概要",
+        "social": {
+            "ogTitle": "XDownloaderz | X動画を高速かつ無料でダウンロード | 1080p MP4",
+            "ogDescription": "最高のX（Twitter）動画ダウンローダー。動画やGIFを1080pフルHD品質で保存。MP3に変換。無料、登録不要。",
+            "imageAlt": "XDownloaderz - X動画ダウンローダー"
+        }
     },
     "sidebar": {
         "download": "ダウンロード",
@@ -190,7 +195,8 @@
                     "許可なく、または商業的利益のために著作物を配布すること。",
                     "ウイルスや悪意のあるコードをアップロードまたは送信すること。",
                     "当社のサーバーに過負荷をかけたり、スパムを送信したり、クラッシュさせようとすること。"
-                ]
+                ],
+                "subcontent": "You agree not to use the Service for:"
             },
             {
                 "title": "5. 「現状有姿」および責任の制限",

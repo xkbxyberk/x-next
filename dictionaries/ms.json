@@ -6,7 +6,12 @@
         "privacyPolicy": "Dasar Privasi",
         "termsOfService": "Syarat Perkhidmatan",
         "contact": "Hubungi",
-        "about": "Tentang"
+        "about": "Tentang",
+        "social": {
+            "ogTitle": "XDownloaderz | Muat Turun Video X Pantas & Percuma | 1080p MP4",
+            "ogDescription": "Pemuat turun Video X (Twitter) terbaik. Simpan video dan GIF dalam kualiti Full HD 1080p. Tukar kepada MP3. Percuma dan tiada pendaftaran.",
+            "imageAlt": "XDownloaderz - Pemuat Turun Video X"
+        }
     },
     "sidebar": {
         "download": "Muat Turun",

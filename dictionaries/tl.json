@@ -6,7 +6,12 @@
         "privacyPolicy": "Patakaran sa Privacy",
         "termsOfService": "Mga Tuntunin ng Serbisyo",
         "contact": "Makipag-ugnayan",
-        "about": "Tungkol sa Amin"
+        "about": "Tungkol sa",
+        "social": {
+            "ogTitle": "XDownloaderz | Mag-download ng X Videos Mabilis at Libre | 1080p MP4",
+            "ogDescription": "Ang pinakamahusay na X (Twitter) Video Downloader. I-save ang mga video at GIF sa 1080p full HD na kalidad. I-convert sa MP3. Libre at walang rehistrasyon.",
+            "imageAlt": "XDownloaderz - X Video Downloader"
+        }
     },
     "sidebar": {
         "download": "I-download",

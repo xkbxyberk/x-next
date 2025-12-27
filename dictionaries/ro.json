@@ -6,7 +6,12 @@
         "privacyPolicy": "Politica de Confidențialitate",
         "termsOfService": "Termeni și Condiții",
         "contact": "Contact",
-        "about": "Despre noi"
+        "about": "Despre",
+        "social": {
+            "ogTitle": "XDownloaderz | Descarcă videoclipuri X Rapid & Gratuit | 1080p MP4",
+            "ogDescription": "Cel mai bun program de descărcare video X (Twitter). Salvează videoclipuri și GIF-uri la calitate Full HD 1080p. Convertește în MP3.",
+            "imageAlt": "XDownloaderz - Descărcător Video X"
+        }
     },
     "sidebar": {
         "download": "Descarcă",

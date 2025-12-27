@@ -6,7 +6,12 @@
         "privacyPolicy": "Personvernerklæring",
         "termsOfService": "Vilkår for bruk",
         "contact": "Kontakt",
-        "about": "Om oss"
+        "about": "Om oss",
+        "social": {
+            "ogTitle": "XDownloaderz | Last ned X-videoer raskt og gratis | 1080p MP4",
+            "ogDescription": "Den beste X (Twitter) videonedlasteren. Lagre videoer og GIF-er i 1080p full HD-kvalitet. Konverter til MP3. Gratis og uten registrering.",
+            "imageAlt": "XDownloaderz - X Videonedlaster"
+        }
     },
     "sidebar": {
         "download": "Last ned",

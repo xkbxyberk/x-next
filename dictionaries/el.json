@@ -6,7 +6,12 @@
         "privacyPolicy": "Πολιτική Απορρήτου",
         "termsOfService": "Όροι Χρήσης",
         "contact": "Επικοινωνία",
-        "about": "Σχετικά"
+        "about": "Σχετικά",
+        "social": {
+            "ogTitle": "XDownloaderz | Κατεβάστε βίντεο X γρήγορα και δωρεάν | 1080p MP4",
+            "ogDescription": "Το καλύτερο πρόγραμμα λήψης βίντεο X (Twitter). Αποθηκεύστε βίντεο και GIF σε ποιότητα Full HD 1080p. Μετατροπή σε MP3.",
+            "imageAlt": "XDownloaderz - Πρόγραμμα λήψης βίντεο X"
+        }
     },
     "sidebar": {
         "download": "Λήψη",

@@ -6,7 +6,12 @@
         "privacyPolicy": "Kebijakan Privasi",
         "termsOfService": "Syarat Layanan",
         "contact": "Kontak",
-        "about": "Tentang"
+        "about": "Tentang",
+        "social": {
+            "ogTitle": "XDownloaderz | Unduh Video X Cepat & Gratis | 1080p MP4",
+            "ogDescription": "Pengunduh Video X (Twitter) terbaik. Simpan video dan GIF dalam kualitas Full HD 1080p. Konversi ke MP3. Gratis dan tanpa registrasi.",
+            "imageAlt": "XDownloaderz - Pengunduh Video X"
+        }
     },
     "sidebar": {
         "download": "Unduh",

@@ -6,7 +6,12 @@
         "privacyPolicy": "מדיניות פרטיות",
         "termsOfService": "תנאי שימוש",
         "contact": "צור קשר",
-        "about": "אודות"
+        "about": "אודות",
+        "social": {
+            "ogTitle": "XDownloaderz | הורדת סרטוני X במהירות ובחינם | 1080p MP4",
+            "ogDescription": "הורדת הסרטונים הטובה ביותר ל-X (טוויטר). שמור סרטונים ו-GIF באיכות Full HD 1080p. המרה ל-MP3. חינם וללא הרשמה.",
+            "imageAlt": "XDownloaderz - הורדת סרטוני X"
+        }
     },
     "sidebar": {
         "download": "הורדה",

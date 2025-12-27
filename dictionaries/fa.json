@@ -6,7 +6,12 @@
         "privacyPolicy": "سیاست حفظ حریم خصوصی",
         "termsOfService": "شرایط استفاده از خدمات",
         "contact": "تماس با ما",
-        "about": "درباره ما"
+        "about": "درباره ما",
+        "social": {
+            "ogTitle": "XDownloaderz | دانلود ویدیوهای X سریع و رایگان | 1080p MP4",
+            "ogDescription": "بهترین دانلود کننده ویدیو از X (توییتر). ذخیره ویدیوها و GIFها با کیفیت Full HD 1080p. تبدیل به MP3. رایگان و بدون ثبت نام.",
+            "imageAlt": "XDownloaderz - دانلود کننده ویدیو X"
+        }
     },
     "sidebar": {
         "download": "دانلود",
