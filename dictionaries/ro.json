@@ -63,7 +63,8 @@
             "reply": "Răspunde",
             "repost": "Repostează",
             "share": "Distribuie"
-        }
+        },
+        "pinned": "Fixat"
     },
     "about": {
         "title": "Despre noi",

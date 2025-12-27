@@ -63,7 +63,8 @@
             "reply": "回复",
             "repost": "转发",
             "share": "分享"
-        }
+        },
+        "pinned": "已置顶"
     },
     "about": {
         "title": "关于我们",

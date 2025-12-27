@@ -63,7 +63,8 @@
             "reply": "Vastaa",
             "repost": "Uudelleenjulkaise",
             "share": "Jaa"
-        }
+        },
+        "pinned": "Kiinnitetty"
     },
     "about": {
         "title": "Tietoa meistä",

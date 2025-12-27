@@ -63,7 +63,8 @@
             "reply": "Trả lời",
             "repost": "Đăng lại",
             "share": "Chia sẻ"
-        }
+        },
+        "pinned": "Đã ghim"
     },
     "about": {
         "title": "Về chúng tôi",

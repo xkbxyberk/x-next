@@ -63,7 +63,8 @@
             "reply": "Válasz",
             "repost": "Megosztás",
             "share": "Küldés"
-        }
+        },
+        "pinned": "Rögzített"
     },
     "about": {
         "title": "Rólunk",

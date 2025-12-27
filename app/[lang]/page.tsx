@@ -22,7 +22,7 @@ export default async function Home({
         id: 'welcome-1',
         author: { name: getPost('welcome-1').authorName, handle: '@xdownloaderz', avatar: logoSrc },
         content: getPost('welcome-1').content,
-        timestamp: 'Sabitlenmiş',
+        timestamp: dict.feed.pinned,
         metrics: { likes: 15200, reposts: 4100, replies: 187 },
       }
     },
@@ -33,7 +33,7 @@ export default async function Home({
         id: 'legal-warning',
         author: { name: getPost('legal-warning').authorName, handle: '@xdownloaderz', avatar: logoSrc },
         content: getPost('legal-warning').content,
-        timestamp: 'Sabitlenmiş',
+        timestamp: dict.feed.pinned,
         metrics: { likes: 2400, reposts: 310, replies: 42 },
       }
     },

@@ -63,7 +63,8 @@
             "reply": "Jibu",
             "repost": "Chapisha tena",
             "share": "Shiriki"
-        }
+        },
+        "pinned": "Bandikwa"
     },
     "about": {
         "title": "Kutuhusu",

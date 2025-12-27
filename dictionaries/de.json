@@ -63,7 +63,8 @@
             "reply": "Antworten",
             "repost": "Teilen",
             "share": "Senden"
-        }
+        },
+        "pinned": "Angeheftet"
     },
     "about": {
         "title": "Über uns",

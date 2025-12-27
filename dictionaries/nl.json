@@ -63,7 +63,8 @@
             "reply": "Beantwoorden",
             "repost": "Herplaatsen",
             "share": "Delen"
-        }
+        },
+        "pinned": "Vastgemaakt"
     },
     "about": {
         "title": "Over ons",

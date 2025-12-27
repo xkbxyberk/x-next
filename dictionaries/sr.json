@@ -63,7 +63,8 @@
             "reply": "Odgovori",
             "repost": "Repostuj",
             "share": "Podeli"
-        }
+        },
+        "pinned": "Zakačeno"
     },
     "about": {
         "title": "О нама",

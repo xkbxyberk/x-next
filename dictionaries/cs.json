@@ -63,7 +63,8 @@
             "reply": "Odpovědět",
             "repost": "Repostovat",
             "share": "Sdílet"
-        }
+        },
+        "pinned": "Připnuto"
     },
     "about": {
         "title": "O nás",

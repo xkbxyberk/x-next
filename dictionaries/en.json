@@ -63,7 +63,8 @@
             "reply": "Reply",
             "repost": "Repost",
             "share": "Share"
-        }
+        },
+        "pinned": "Pinned"
     },
     "about": {
         "title": "About Us",

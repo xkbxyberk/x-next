@@ -63,7 +63,8 @@
             "reply": "Odgovori",
             "repost": "Ponovno objavi",
             "share": "Podijeli"
-        }
+        },
+        "pinned": "Prikvačeno"
     },
     "about": {
         "title": "O nama",

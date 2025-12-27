@@ -63,7 +63,8 @@
             "reply": "Svar",
             "repost": "Repost",
             "share": "Del"
-        }
+        },
+        "pinned": "Festet"
     },
     "about": {
         "title": "Om oss",

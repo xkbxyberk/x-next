@@ -63,7 +63,8 @@
             "reply": "Sumagot",
             "repost": "I-repost",
             "share": "Ibahagi"
-        }
+        },
+        "pinned": "Naka-pin"
     },
     "about": {
         "title": "Tungkol sa Amin",

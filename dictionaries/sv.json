@@ -63,7 +63,8 @@
             "reply": "Svara",
             "repost": "Reposta",
             "share": "Dela"
-        }
+        },
+        "pinned": "Fäst"
     },
     "about": {
         "title": "Om oss",

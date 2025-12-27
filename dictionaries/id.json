@@ -63,7 +63,8 @@
             "reply": "Balas",
             "repost": "Repost",
             "share": "Bagikan"
-        }
+        },
+        "pinned": "Disematkan"
     },
     "about": {
         "title": "Tentang Kami",

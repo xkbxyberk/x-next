@@ -63,7 +63,8 @@
             "reply": "Rispondi",
             "repost": "Ripubblica",
             "share": "Condividi"
-        }
+        },
+        "pinned": "Fissato"
     },
     "about": {
         "title": "Chi siamo",

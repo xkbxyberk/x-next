@@ -63,7 +63,8 @@
             "reply": "Balas",
             "repost": "Hantar Semula",
             "share": "Kongsi"
-        }
+        },
+        "pinned": "Disemat"
     },
     "about": {
         "title": "Tentang Kami",

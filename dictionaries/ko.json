@@ -63,7 +63,8 @@
             "reply": "답글",
             "repost": "재게시",
             "share": "공유"
-        }
+        },
+        "pinned": "고정됨"
     },
     "about": {
         "title": "소개",

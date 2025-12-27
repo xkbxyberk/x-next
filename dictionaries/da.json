@@ -63,7 +63,8 @@
             "reply": "Svar",
             "repost": "Repost",
             "share": "Del"
-        }
+        },
+        "pinned": "Fastgjort"
     },
     "about": {
         "title": "Om os",

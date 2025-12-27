@@ -63,7 +63,8 @@
             "reply": "Yanıtla",
             "repost": "Yeniden Gönder",
             "share": "Paylaş"
-        }
+        },
+        "pinned": "Sabitlenmiş"
     },
     "about": {
         "title": "Hakkımızda",
