@@ -6,6 +6,7 @@ import { ThemeProvider } from '@/app/components/ThemeProvider';
 import type { Metadata } from 'next';
 import { getDictionary } from '@/app/get-dictionary';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import { keywords } from '@/app/keywords';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       template: `%s | XDownloaderz`
     },
     description: dict.common.social?.ogDescription || dict.common.description,
-    keywords: ['x video downloader', 'twitter video downloader', 'twitter gif download', 'x video indir', 'save x video', 'twitter downloader'],
+    keywords: keywords,
     authors: [{ name: 'XDownloaderz' }],
     creator: 'XDownloaderz',
     publisher: 'XDownloaderz',
