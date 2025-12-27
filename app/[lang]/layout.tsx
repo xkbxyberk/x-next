@@ -91,6 +91,15 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       statusBarStyle: 'default',
       title: 'XDownloaderz',
     },
+    icons: {
+      icon: [
+        { url: '/favicon.ico', sizes: 'any' },
+        { url: '/icon.png', type: 'image/png' },
+      ],
+      apple: [
+        { url: '/apple-icon.png' },
+      ],
+    },
   };
 }
 
