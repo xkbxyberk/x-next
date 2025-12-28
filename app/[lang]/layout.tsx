@@ -70,21 +70,14 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       siteName: 'XDownloaderz',
       locale: lang,
       type: 'website',
-      images: [
-        {
-          url: `/${lang}/opengraph-image`,
-          width: 1200,
-          height: 630,
-          alt: dict.common.social?.imageAlt || 'XDownloaderz - X Video Downloader',
-        }
-      ],
+
     },
     twitter: {
       card: 'summary_large_image',
       title: dict.common.social?.ogTitle || dict.common.title,
       description: dict.common.social?.ogDescription || dict.common.description,
       creator: '@xdownloaderz',
-      images: [`/${lang}/twitter-image`], // twitter-image.tsx kullanacağız
+
     },
     appleWebApp: {
       capable: true,
