@@ -1,5 +1,5 @@
 // lib/hooks/use-video-download.ts
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { resolveTweetAction } from '@/app/actions/resolve-tweet';
 // remove FFmpegManager and fetchFile static imports
 import { TweetVideoEntity } from '@/lib/core/schemas';
@@ -9,6 +9,17 @@ export type SelectionType = {
   url: string;
   qualityLabel?: string;
   bitrate?: number;
+};
+
+export type HistoryItem = {
+  id: string;
+  originalUrl: string;
+  author: { name: string; handle: string; avatar: string };
+  content: string;
+  image?: string;
+  timestamp: string;
+  quality: string;
+  type: 'video' | 'audio';
 };
 
 export function useVideoDownload(dict?: any) {
@@ -28,6 +39,36 @@ export function useVideoDownload(dict?: any) {
   };
 
   const closeNotification = () => setNotification(null);
+
+  const [history, setHistory] = useState<HistoryItem[]>([]);
+
+  useEffect(() => {
+    const saved = localStorage.getItem('xdl_history');
+    if (saved) {
+      try {
+        setHistory(JSON.parse(saved));
+      } catch (e) {
+        console.error('History parse error', e);
+      }
+    }
+  }, []);
+
+  const saveToHistory = (item: HistoryItem) => {
+    const newHistory = [item, ...history.filter(h => h.id !== item.id)].slice(0, 50); // Keep last 50
+    setHistory(newHistory);
+    localStorage.setItem('xdl_history', JSON.stringify(newHistory));
+  };
+
+  const removeFromHistory = (id: string) => {
+    const newHistory = history.filter(h => h.id !== id);
+    setHistory(newHistory);
+    localStorage.setItem('xdl_history', JSON.stringify(newHistory));
+  };
+
+  const clearHistory = () => {
+    setHistory([]);
+    localStorage.removeItem('xdl_history');
+  };
 
   const reset = () => {
     setData(null);
@@ -164,13 +205,29 @@ export function useVideoDownload(dict?: any) {
       a.download = filename;
       document.body.appendChild(a);
 
-      // Optimization: Schedule click to avoid sync layout thrashing
       requestAnimationFrame(() => {
         a.click();
         // Clean up in next frame or immediately after
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
       });
+
+      // Save to History
+      const historyItem: HistoryItem = {
+        id: data.id, // Tweet ID remains specific
+        originalUrl: inputUrl, // inputUrl is the source of truth
+        author: {
+          name: data.author.name,
+          handle: data.author.screenName,
+          avatar: data.author.avatarUrl
+        },
+        content: data.text,
+        image: data.media.thumbnailUrl,
+        timestamp: new Date().toISOString(),
+        quality: selection.qualityLabel || (selection.type === 'audio' ? 'MP3' : 'Standard'),
+        type: selection.type
+      };
+      saveToHistory(historyItem);
 
       showNotification(dict?.feed?.notifications?.downloadComplete || 'İndirme tamamlandı!', 'success');
 
@@ -198,6 +255,9 @@ export function useVideoDownload(dict?: any) {
     closeNotification,
     handleAnalyze,
     executeDownload,
-    reset
+    reset,
+    history,
+    removeFromHistory,
+    clearHistory
   };
 }

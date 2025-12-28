@@ -288,6 +288,13 @@
             "imageAlt": "📖 Ghid de utilizare: Pasul 4 - 4️⃣ Începe descărcarea"
         },
         {
+            "id": "guide-step5",
+            "authorName": "Ghid XDownloaderz",
+            "content": "📖 Ghidul utilizatorului: Pasul 5\n\n5️⃣ Gestionați-vă istoricul\n\nFiecare videoclip pe care îl descărcați este salvat automat în fila 'Istoric' de pe dispozitivul dvs. Vă puteți accesa ușor descărcările anterioare oricând, fără a fi nevoie să căutați din nou linkul.\n\n🔄 Funcție: Utilizați butonul 'Descărcați din nou' pentru a procesa instantaneu același videoclip din nou cu diferite opțiuni de calitate.\n\n🔒 Notă de confidențialitate: Istoricul dvs. este stocat local în browser. Nimeni altcineva nu vă poate vedea istoricul descărcărilor.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Ghidul utilizatorului: Pasul 5 - 5️⃣ Gestionați-vă istoricul"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "Întrebări frecvente XDownloaderz",
             "content": "❓ Întrebări frecvente\n\n🔒 Pot descărca videoclipuri de pe conturi private/blocate?\n\nNu. XDownloaderz poate descărca videoclipuri doar din postări publice X (Twitter). Conținutul din conturile private este protejat de API-ul X (Twitter) și nu poate fi accesat.\n\n💡 Soluție: Poți cere permisiunea proprietarului conținutului."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 Ce poți face cu XDownloaderz:\n\n• Descărcare video X (Twitter) MP4\n• Descărcare GIF X (Twitter)\n• Descărcător video X (Twitter) online\n• Convertor MP3 X (Twitter)\n• Descărcare video 1080p X (Twitter)\n• Salvare video X (Twitter) pe mobil\n• Descărcător X (Twitter) gratuit\n\nPentru cea mai bună experiență de descărcare video X (Twitter): xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Istoric descărcări",
+        "clearAll": "Șterge tot",
+        "noHistory": "Nu ați descărcat nimic încă. Verificați ghidul nostru!",
+        "reDownload": "Descarcă din nou",
+        "confirmClear": "Sigur doriți să ștergeți istoricul?"
+    }
 }

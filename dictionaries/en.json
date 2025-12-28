@@ -288,6 +288,13 @@
             "imageAlt": "📖 User Guide: Step 4 - 4️⃣ Start Downloading"
         },
         {
+            "id": "guide-step5",
+            "authorName": "XDownloaderz Guide",
+            "content": "📖 User Guide: Step 5\n\n5️⃣ Manage Your History\n\nEvery video you download is automatically saved to the 'History' tab on your device. You can easily access your past downloads anytime without needing to search for the link again.\n\n🔄 Feature: Use the 'Re-download' button to instantly process the same video again with different quality options.\n\n🔒 Privacy Note: Your history is stored locally on your browser. No one else can see your download history.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 User Guide: Step 5 - 5️⃣ Manage Your History"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "XDownloaderz FAQ",
             "content": "❓ Frequently Asked Questions\n\n🔒 Can I download videos from private/locked accounts?\n\nNo. XDownloaderz can only download videos from public X (Twitter) posts. Content on private accounts is protected by the X (Twitter) API and cannot be accessed.\n\n💡 Solution: You can ask the content owner for permission."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 What You Can Do With XDownloaderz:\n\n• Download X (Twitter) video MP4\n• Download X (Twitter) GIF\n• X (Twitter) video downloader online\n• X (Twitter) MP3 converter\n• 1080p X (Twitter) video download\n• Mobile X (Twitter) video save\n• Free X (Twitter) downloader\n\nFor the best X (Twitter) video downloading experience: xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Download History",
+        "clearAll": "Clear All",
+        "noHistory": "You haven't downloaded anything yet. Check our guide!",
+        "reDownload": "Re-download",
+        "confirmClear": "Are you sure you want to clear your history?"
+    }
 }

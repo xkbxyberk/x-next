@@ -288,6 +288,13 @@
             "imageAlt": "📖 Korisnički priručnik: Korak 4 - 4️⃣ Pokreni preuzimanje"
         },
         {
+            "id": "guide-step5",
+            "authorName": "XDownloaderz Vodič",
+            "content": "📖 Korisnički vodič: Korak 5\n\n5️⃣ Upravljajte svojom poviješću\n\nSvaki videozapis koji preuzmete automatski se sprema na karticu 'Povijest' na vašem uređaju. Svojim prošlim preuzimanjima možete jednostavno pristupiti bilo kada bez potrebe da ponovno tražite poveznicu.\n\n🔄 Značajka: Koristite gumb 'Ponovno preuzmi' za trenutačnu ponovnu obradu istog videozapisa s različitim opcijama kvalitete.\n\n🔒 Napomena o privatnosti: Vaša se povijest pohranjuje lokalno u vašem pregledniku. Nitko drugi ne može vidjeti vašu povijest preuzimanja.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Korisnički vodič: Korak 5 - 5️⃣ Upravljajte svojom poviješću"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "ČPP XDownloaderz",
             "content": "❓ Često postavljana pitanja\n\n🔒 Mogu li preuzeti videozapise s privatnih/zaključanih računa?\n\nNe. XDownloaderz može preuzimati videozapise samo iz javnih objava na X-u (Twitteru). Sadržaj na privatnim računima zaštićen je X (Twitter) API-jem i ne može mu se pristupiti.\n\n💡 Rješenje: Možete zatražiti dopuštenje od vlasnika sadržaja."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 Što možete učiniti s XDownloaderz:\n\n• Preuzimanje X (Twitter) videa MP4\n• Preuzimanje X (Twitter) GIF-a\n• X (Twitter) video downloader online\n• X (Twitter) MP3 pretvarač\n• 1080p X (Twitter) video preuzimanje\n• Spremanje X (Twitter) videa na mobitel\n• Besplatni X (Twitter) downloader\n\nZa najbolje iskustvo preuzimanja X (Twitter) videa: xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Povijest preuzimanja",
+        "clearAll": "Izbriši sve",
+        "noHistory": "Još niste ništa preuzeli. Pogledajte naš vodič!",
+        "reDownload": "Preuzmi ponovno",
+        "confirmClear": "Jeste li sigurni da želite izbrisati povijest?"
+    }
 }

@@ -123,6 +123,19 @@ export default async function Home({
         metrics: { likes: 3200, reposts: 750, replies: 39 },
       }
     },
+    // 9. NASIL KULLANILIR - ADIM 5 (GEÇMİŞ YÖNETİMİ)
+    {
+      type: 'post',
+      data: {
+        id: 'guide-step5',
+        author: { name: getPost('guide-step5').authorName, handle: '@guide', avatar: logoSrc, avatarDark: logoWhiteSrc },
+        content: getPost('guide-step5').content,
+        image: `/images/guide/${getPost('guide-step5').image}`,
+        imageAlt: getPost('guide-step5').imageAlt,
+        timestamp: '5d',
+        metrics: { likes: 3500, reposts: 810, replies: 45 },
+      }
+    },
     // --- REKLAM ALANI 3 ---
     { type: 'ad', id: 'ad-3' },
     // 9. SSS - ÖZEL VİDEOLAR

@@ -289,6 +289,13 @@
             "imageAlt": "📖 ユーザーガイド：ステップ4 - 4️⃣ ダウンロード開始"
         },
         {
+            "id": "guide-step5",
+            "authorName": "XDownloaderz ガイド",
+            "content": "📖 ユーザーガイド：ステップ5\n\n5️⃣ 履歴の管理\n\nダウンロードしたすべての動画は、デバイスの「履歴」タブに自動的に保存されます。リンクを再度検索することなく、いつでも過去のダウンロードに簡単にアクセスできます。\n\n🔄 機能：「再ダウンロード」ボタンを使用して、異なる品質オプションで同じ動画を即座に再処理します。\n\n🔒 プライバシーに関する注意：履歴はブラウザにローカルに保存されます。他の誰もあなたのダウンロード履歴を見ることはできません。",
+            "image": "history-management.avif",
+            "imageAlt": "📖 ユーザーガイド：ステップ5 - 5️⃣ 履歴の管理"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "XDownloaderz FAQ",
             "content": "❓ よくある質問\n\n🔒 非公開/鍵付きアカウントから動画をダウンロードできますか？\n\nいいえ。XDownloaderzは公開されているX（Twitter）の投稿からのみ動画をダウンロードできます。非公開アカウントのコンテンツはX（Twitter）APIによって保護されており、アクセスできません。\n\n💡 解決策：コンテンツの所有者に許可を求めることができます。"
@@ -328,5 +335,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 XDownloaderzでできること：\n\n• X（Twitter）動画ダウンロードMP4\n• X（Twitter）GIFダウンロード\n• X（Twitter）動画ダウンローダーオンライン\n• X（Twitter）MP3コンバーター\n• 1080p X（Twitter）動画ダウンロード\n• モバイルX（Twitter）動画保存\n• 無料X（Twitter）ダウンローダー\n\n最高のX（Twitter）動画ダウンロード体験のために：xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "ダウンロード履歴",
+        "clearAll": "すべて消去",
+        "noHistory": "まだ何もダウンロードしていません。ガイドをご覧ください！",
+        "reDownload": "再ダウンロード",
+        "confirmClear": "履歴を消去してもよろしいですか？"
+    }
 }

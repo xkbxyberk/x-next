@@ -288,6 +288,13 @@
             "imageAlt": "📖 Käyttöopas: Vaihe 4 - 4️⃣ Aloita lataus"
         },
         {
+            "id": "guide-step5",
+            "authorName": "XDownloaderz Opas",
+            "content": "📖 Käyttöopas: Vaihe 5\n\n5️⃣ Hallitse historiaasi\n\nJokainen lataamasi video tallennetaan automaattisesti laitteesi 'Historia'-välilehdelle. Pääset helposti käsiksi aiempiin latauksiisi milloin tahansa etsimättä linkkiä uudelleen.\n\n🔄 Ominaisuus: Käytä 'Lataa uudelleen' -painiketta käsitelläksesi saman videon välittömästi uudelleen eri laatuvaihtoehdoilla.\n\n🔒 Tietosuojahuomautus: Historiasi tallennetaan paikallisesti selaimeesi. Kukaan muu ei näe lataushistoriaasi.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Käyttöopas: Vaihe 5 - 5️⃣ Hallitse historiaasi"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "XDownloaderz UKK",
             "content": "❓ Usein kysytyt kysymykset\n\n🔒 Voinko ladata videoita yksityisiltä/lukituilta tileiltä?\n\nEi. XDownloaderz voi ladata videoita vain julkisista X (Twitter) -julkaisuista. Yksityisten tilien sisältö on suojattu X (Twitter) API:lla eikä siihen pääse käsiksi.\n\n💡 Ratkaisu: Voit pyytää lupaa sisällön omistajalta."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 Mitä voit tehdä XDownloaderzilla:\n\n• Lataa X (Twitter) video MP4\n• Lataa X (Twitter) GIF\n• X (Twitter) videonlataaja verkossa\n• X (Twitter) MP3-muunnin\n• 1080p X (Twitter) videon lataus\n• Tallenna X (Twitter) video mobiililla\n• Ilmainen X (Twitter) lataaja\n\nParas X (Twitter) -videon latauskokemus: xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Lataushistoria",
+        "clearAll": "Tyhjennä kaikki",
+        "noHistory": "Et ole ladannut vielä mitään. Katso oppaamme!",
+        "reDownload": "Lataa uudelleen",
+        "confirmClear": "Haluatko varmasti tyhjentää historian?"
+    }
 }

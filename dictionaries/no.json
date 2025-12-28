@@ -288,6 +288,13 @@
             "imageAlt": "📖 Brukerhåndbok: Trinn 4 - 4️⃣ Start nedlasting"
         },
         {
+            "id": "guide-step5",
+            "authorName": "XDownloaderz Guide",
+            "content": "📖 Brukerveiledning: Trinn 5\n\n5️⃣ Administrer historikken din\n\nHver video du laster ned lagres automatisk i 'Historikk'-fanen på enheten din. Du kan enkelt få tilgang til dine tidligere nedlastinger når som helst uten å måtte søke etter lenken på nytt.\n\n🔄 Funksjon: Bruk 'Last ned på nytt'-knappen for å umiddelbart behandle den samme videoen igjen med forskjellige kvalitetsalternativer.\n\n🔒 Personvernmerknad: Historikken din lagres lokalt i nettleseren din. Ingen andre kan se nedlastingshistorikken din.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Brukerveiledning: Trinn 5 - 5️⃣ Administrer historikken din"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "XDownloaderz FAQ",
             "content": "❓ Ofte stilte spørsmål\n\n🔒 Kan jeg laste ned videoer fra private/låste kontoer?\n\nNei. XDownloaderz kan kun laste ned videoer fra offentlige X (Twitter)-innlegg. Innhold i private kontoer er beskyttet av X (Twitter) API og kan ikke nås.\n\n💡 Løsning: Du kan be om tillatelse fra innholdseieren."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 Hva du kan gjøre med XDownloaderz:\n\n• Last ned X (Twitter) video MP4\n• Last ned X (Twitter) GIF\n• X (Twitter) video nedlaster online\n• X (Twitter) MP3-konverter\n• 1080p X (Twitter) video nedlasting\n• Mobil X (Twitter) video lagre\n• Gratis X (Twitter) nedlaster\n\nFor den beste X (Twitter) videonedlastingsopplevelsen: xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Nedlastingshistorikk",
+        "clearAll": "Slett alt",
+        "noHistory": "Du har ikke lastet ned noe ennå. Sjekk guiden vår!",
+        "reDownload": "Last ned på nytt",
+        "confirmClear": "Er du sikker på at du vil slette historikken?"
+    }
 }

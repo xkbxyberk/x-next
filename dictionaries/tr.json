@@ -288,6 +288,13 @@
             "imageAlt": "📖 Kullanım Kılavuzu: Adım 4 - 4️⃣ İndirme İşlemini Başlatın"
         },
         {
+            "id": "guide-step5",
+            "authorName": "XDownloaderz Rehber",
+            "content": "📖 Kullanım Kılavuzu: Adım 5\n\n5️⃣ Geçmişinizi Yönetin\n\nİndirdiğiniz her video, cihazınızdaki 'Geçmiş' sekmesine otomatik olarak kaydedilir. Geçmiş indirmelerinize, linki tekrar aramaya gerek kalmadan istediğiniz zaman kolayca erişebilirsiniz.\n\n🔄 Özellik: 'Tekrar İndir' butonu ile aynı videoyu farklı kalite seçenekleriyle anında tekrar işleyebilirsiniz.\n\n🔒 Gizlilik Notu: Geçmişiniz tamamen tarayıcınızda yerel olarak saklanır. İndirme geçmişinizi sizden başka kimse göremez.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Kullanım Kılavuzu: Adım 5 - 5️⃣ Geçmişinizi Yönetin"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "XDownloaderz SSS",
             "content": "❓ Sık Sorulan Sorular\n\n🔒 Özel/Kilitli hesaplardan video indirebilir miyim?\n\nHayır. XDownloaderz yalnızca herkese açık X (Twitter) gönderilerinden video indirebilir. Özel hesaplardaki içerikler X (Twitter) API'si tarafından korunmaktadır ve erişilemez.\n\n💡 Çözüm: İndirmek istediğiniz içeriğin sahibinden izin isteyebilirsiniz."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 XDownloaderz ile Yapabilecekleriniz:\n\n• X (Twitter) video indir MP4\n• X (Twitter) GIF indir\n• X (Twitter) video indirici online\n• X (Twitter) MP3 dönüştürücü\n• 1080p X (Twitter) video download\n• Mobil X (Twitter) video kaydetme\n• Ücretsiz X (Twitter) downloader\n\nEn iyi X (Twitter) video indirme deneyimi için xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "İndirme Geçmişi",
+        "clearAll": "Tümünü Temizle",
+        "noHistory": "Henüz bir şey indirmediniz. Rehberimize göz atın!",
+        "reDownload": "Tekrar İndir",
+        "confirmClear": "Geçmişi temizlemek istediğinize emin misiniz?"
+    }
 }

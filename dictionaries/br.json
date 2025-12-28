@@ -288,6 +288,13 @@
             "imageAlt": "📖 Guia do Usuário: Passo 4 - 4️⃣ Iniciar Download"
         },
         {
+            "id": "guide-step5",
+            "authorName": "Guia XDownloaderz",
+            "content": "📖 Guia do Usuário: Passo 5\n\n5️⃣ Gerencie seu Histórico\n\nCada vídeo que você baixa é salvo automaticamente na guia 'Histórico' do seu dispositivo. Você pode acessar facilmente seus downloads anteriores a qualquer momento, sem precisar procurar o link novamente.\n\n🔄 Recurso: Use o botão 'Baixar novamente' para processar instantaneamente o mesmo vídeo novamente com diferentes opções de qualidade.\n\n🔒 Nota de Privacidade: Seu histórico é armazenado localmente no seu navegador. Ninguém mais pode ver seu histórico de downloads.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Guia do Usuário: Passo 5 - 5️⃣ Gerencie seu Histórico"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "FAQ XDownloaderz",
             "content": "❓ Perguntas Frequentes\n\n🔒 Posso baixar vídeos de contas privadas/trancadas?\n\nNão. O XDownloaderz só pode baixar vídeos de postagens públicas do X (Twitter). O conteúdo em contas privadas é protegido pela API do X (Twitter) e não pode ser acessado.\n\n💡 Solução: Você pode pedir permissão ao proprietário do conteúdo."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 O Que Você Pode Fazer Com o XDownloaderz:\n\n• Baixar vídeo do X (Twitter) MP4\n• Baixar GIF do X (Twitter)\n• Baixador de vídeo do X (Twitter) online\n• Conversor de MP3 do X (Twitter)\n• Download de vídeo do X (Twitter) 1080p\n• Salvar vídeo do X (Twitter) no celular\n• Baixador do X (Twitter) grátis\n\nPara a melhor experiência de download de vídeo do X (Twitter): xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Histórico de Downloads",
+        "clearAll": "Limpar Tudo",
+        "noHistory": "Você ainda não baixou nada. Verifique nosso guia!",
+        "reDownload": "Baixar novamente",
+        "confirmClear": "Tem certeza que deseja limpar seu histórico?"
+    }
 }

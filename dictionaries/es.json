@@ -288,6 +288,13 @@
             "imageAlt": "📖 Guía del Usuario: Paso 4 - 4️⃣ Iniciar Descarga"
         },
         {
+            "id": "guide-step5",
+            "authorName": "Guía XDownloaderz",
+            "content": "📖 Guía del Usuario: Paso 5\n\n5️⃣ Gestiona tu Historial\n\nCada video que descargas se guarda automáticamente en la pestaña 'Historial' de tu dispositivo. Puedes acceder fácilmente a tus descargas anteriores en cualquier momento sin necesidad de buscar el enlace nuevamente.\n\n🔄 Función: Usa el botón 'Volver a descargar' para procesar instantáneamente el mismo video nuevamente con diferentes opciones de calidad.\n\n🔒 Nota de Privacidad: Tu historial se almacena localmente en tu navegador. Nadie más puede ver tu historial de descargas.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Guía del Usuario: Paso 5 - 5️⃣ Gestiona tu Historial"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "Preguntas Frecuentes XDownloaderz",
             "content": "❓ Preguntas Frecuentes\n\n🔒 ¿Puedo descargar vídeos de cuentas privadas/bloqueadas?\n\nNo. XDownloaderz solo puede descargar vídeos de publicaciones públicas de X (Twitter). El contenido en cuentas privadas está protegido por la API de X (Twitter) y no se puede acceder a él.\n\n💡 Solución: Puedes pedir permiso al propietario del contenido."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 Lo Que Puedes Hacer Con XDownloaderz:\n\n• Descargar vídeo de X (Twitter) MP4\n• Descargar GIF de X (Twitter)\n• Descargador de vídeos de X (Twitter) online\n• Convertidor de MP3 de X (Twitter)\n• Descarga de vídeo 1080p de X (Twitter)\n• Guardar vídeo de X (Twitter) móvil\n• Descargador de X (Twitter) gratis\n\nPara la mejor experiencia de descarga de vídeos de X (Twitter): xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Historial de descargas",
+        "clearAll": "Borrar todo",
+        "noHistory": "Aún no has descargado nada. ¡Consulta nuestra guía!",
+        "reDownload": "Volver a descargar",
+        "confirmClear": "¿Estás seguro de que quieres borrar tu historial?"
+    }
 }

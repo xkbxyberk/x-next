@@ -288,6 +288,13 @@
             "imageAlt": "📖 Guida Utente: Passo 4 - 4️⃣ Avvia Download"
         },
         {
+            "id": "guide-step5",
+            "authorName": "Guida XDownloaderz",
+            "content": "📖 Guida utente: Passo 5\n\n5️⃣ Gestisci la tua cronologia\n\nOgni video scaricato viene salvato automaticamente nella scheda 'Cronologia' del tuo dispositivo. Puoi accedere facilmente ai tuoi download passati in qualsiasi momento senza dover cercare nuovamente il link.\n\n🔄 Funzionalità: Usa il pulsante 'Scarica di nuovo' per elaborare istantaneamente lo stesso video con diverse opzioni di qualità.\n\n🔒 Nota sulla privacy: La tua cronologia è memorizzata localmente nel tuo browser. Nessun altro può vedere la tua cronologia dei download.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Guida utente: Passo 5 - 5️⃣ Gestisci la tua cronologia"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "FAQ XDownloaderz",
             "content": "❓ Domande Frequenti\n\n🔒 Posso scaricare video da account privati/bloccati?\n\nNo. XDownloaderz può scaricare video solo da post pubblici di X (Twitter). I contenuti negli account privati sono protetti dall'API di X (Twitter) e non sono accessibili.\n\n💡 Soluzione: Puoi chiedere il permesso al proprietario dei contenuti."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 Cosa puoi fare con XDownloaderz:\n\n• Scarica video X (Twitter) MP4\n• Scarica GIF X (Twitter)\n• Downloader video X (Twitter) online\n• Convertitore MP3 X (Twitter)\n• Download video X (Twitter) 1080p\n• Salva video X (Twitter) mobile\n• Downloader X (Twitter) gratuito\n\nPer la migliore esperienza di download video X (Twitter): xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Cronologia download",
+        "clearAll": "Cancella tutto",
+        "noHistory": "Non hai ancora scaricato nulla. Controlla la nostra guida!",
+        "reDownload": "Scarica di nuovo",
+        "confirmClear": "Sei sicuro di voler cancellare la cronologia?"
+    }
 }

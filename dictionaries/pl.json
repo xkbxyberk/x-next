@@ -288,6 +288,13 @@
             "imageAlt": "📖 Instrukcja użytkownika: Krok 4 - 4️⃣ Rozpocznij pobieranie"
         },
         {
+            "id": "guide-step5",
+            "authorName": "Przewodnik XDownloaderz",
+            "content": "📖 Podręcznik użytkownika: Krok 5\n\n5️⃣ Zarządzaj swoją historią\n\nKażdy pobrany film jest automatycznie zapisywany w zakładce „Historia” na Twoim urządzeniu. Możesz łatwo uzyskać dostęp do swoich poprzednich pobrań w dowolnym momencie, bez konieczności ponownego wyszukiwania linku.\n\n🔄 Funkcja: Użyj przycisku „Pobierz ponownie”, aby natychmiast przetworzyć ten sam film ponownie z różnymi opcjami jakości.\n\n🔒 Uwaga dotycząca prywatności: Twoja historia jest przechowywana lokalnie w Twojej przeglądarce. Nikt inny nie może zobaczyć Twojej historii pobierania.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Podręcznik użytkownika: Krok 5 - 5️⃣ Zarządzaj swoją historią"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "XDownloaderz FAQ",
             "content": "❓ Często zadawane pytania\n\n🔒 Czy mogę pobierać filmy z kont prywatnych/zablokowanych?\n\nNie. XDownloaderz może pobierać filmy tylko z publicznych postów X (Twitter). Treści na kontach prywatnych są chronione przez API X (Twitter) i nie można uzyskać do nich dostępu.\n\n💡 Rozwiązanie: Możesz poprosić właściciela treści o pozwolenie."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 Co możesz zrobić z XDownloaderz:\n\n• Pobierz wideo X (Twitter) MP4\n• Pobierz GIF z X (Twitter)\n• Pobieranie wideo z X (Twitter) online\n• Konwerter MP3 X (Twitter)\n• Pobieranie wideo 1080p X (Twitter)\n• Zapisz wideo X (Twitter) na telefon\n• Darmowy downloader X (Twitter)\n\nAby uzyskać najlepsze wrażenia z pobierania wideo z X (Twitter): xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Historia pobierania",
+        "clearAll": "Wyczyść wszystko",
+        "noHistory": "Jeszcze nic nie pobrałeś. Sprawdź nasz poradnik!",
+        "reDownload": "Pobierz ponownie",
+        "confirmClear": "Czy na pewno chcesz wyczyścić historię?"
+    }
 }

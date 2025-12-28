@@ -288,6 +288,13 @@
             "imageAlt": "📖 Mwongozo wa Mtumiaji: Hatua ya 4 - 4️⃣ Anza Kupakua"
         },
         {
+            "id": "guide-step5",
+            "authorName": "Mwongozo wa XDownloaderz",
+            "content": "📖 Mwongozo wa Mtumiaji: Hatua ya 5\n\n5️⃣ Dhibiti Historia Yako\n\nKila video unayopakua huhifadhiwa kiotomatiki kwenye kichupo cha 'Historia' kwenye kifaa chako. Unaweza kufikia vipakuliwa vyako vya awali kwa urahisi wakati wowote bila kuhitaji kutafuta kiungo tena.\n\n🔄 Kipengele: Tumia kitufe cha 'Pakua tena' ili kuchakata video hiyo papo hapo tena na chaguo tofauti za ubora.\n\n🔒 Dokezo la Faragha: Historia yako imehifadhiwa ndani ya kivinjari chako. Hakuna mtu mwingine anayeweza kuona historia yako ya upakuaji.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Mwongozo wa Mtumiaji: Hatua ya 5 - 5️⃣ Dhibiti Historia Yako"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "Maswali ya XDownloaderz",
             "content": "❓ Maswali Yanayoulizwa Mara kwa Mara\n\n🔒 Je, ninaweza kupakua video kutoka kwa akaunti za kibinafsi/zilizofungwa?\n\nHapana. XDownloaderz inaweza tu kupakua video kutoka kwa machapisho ya umma ya X (Twitter). Maudhui katika akaunti za kibinafsi yanalindwa na X (Twitter) API na hayawezi kufikiwa.\n\n💡 Suluhisho: Unaweza kuomba ruhusa kutoka kwa mmiliki wa maudhui."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 Unachoweza Kufanya na XDownloaderz:\n\n• Pakua video ya X (Twitter) MP4\n• Pakua GIF ya X (Twitter)\n• Kipakua video cha X (Twitter) mkondoni\n• Kigeuzi cha X (Twitter) MP3\n• Upakuaji wa video wa 1080p X (Twitter)\n• Hifadhi video ya X (Twitter) kwenye simu\n• Kipakua cha X (Twitter) cha bure\n\nKwa uzoefu bora wa upakuaji wa video wa X (Twitter): xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Historia ya Kupakua",
+        "clearAll": "Futa Yote",
+        "noHistory": "Bado hujapakua chochote. Angalia mwongozo wetu!",
+        "reDownload": "Pakua tena",
+        "confirmClear": "Je, una uhakika unataka kufuta historia?"
+    }
 }

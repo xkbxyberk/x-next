@@ -288,6 +288,13 @@
             "imageAlt": "📖 Brugervejledning: Trin 4 - 4️⃣ Start download"
         },
         {
+            "id": "guide-step5",
+            "authorName": "XDownloaderz Guide",
+            "content": "📖 Brugervejledning: Trin 5\n\n5️⃣ Administrer din historik\n\nHver video, du downloader, gemmes automatisk på fanen 'Historik' på din enhed. Du kan nemt få adgang til dine tidligere downloads når som helst uden at skulle søge efter linket igen.\n\n🔄 Funktion: Brug knappen 'Download igen' til øjeblikkeligt at behandle den samme video igen med forskellige kvalitetsindstillinger.\n\n🔒 Privatlivsbemærkning: Din historik gemmes lokalt i din browser. Ingen andre kan se din downloadhistorik.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Brugervejledning: Trin 5 - 5️⃣ Administrer din historik"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "XDownloaderz FAQ",
             "content": "❓ Ofte stillede spørgsmål\n\n🔒 Kan jeg downloade videoer fra private/låste konti?\n\nNej. XDownloaderz kan kun downloade videoer fra offentlige X (Twitter) indlæg. Indhold på private konti er beskyttet af X (Twitter) API'en og kan ikke tilgås.\n\n💡 Løsning: Du kan bede indholdsejeren om tilladelse."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 Hvad du kan gøre med XDownloaderz:\n\n• Download X (Twitter) video MP4\n• Download X (Twitter) GIF\n• X (Twitter) video downloader online\n• X (Twitter) MP3 konverter\n• 1080p X (Twitter) video download\n• Mobil X (Twitter) video gem\n• Gratis X (Twitter) downloader\n\nFor den bedste X (Twitter) video downloadoplevelse: xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Download historik",
+        "clearAll": "Ryd alt",
+        "noHistory": "Du har ikke downloadet noget endnu. Se vores guide!",
+        "reDownload": "Download igen",
+        "confirmClear": "Er du sikker på, at du vil rydde din historik?"
+    }
 }

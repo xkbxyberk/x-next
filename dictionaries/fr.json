@@ -288,6 +288,13 @@
             "imageAlt": "📖 Guide de l'utilisateur : Étape 4 - 4️⃣ Démarrer le téléchargement"
         },
         {
+            "id": "guide-step5",
+            "authorName": "Guide XDownloaderz",
+            "content": "📖 Guide de l'utilisateur : Étape 5\n\n5️⃣ Gérez votre historique\n\nChaque vidéo que vous téléchargez est automatiquement enregistrée dans l'onglet 'Historique' de votre appareil. Vous pouvez facilement accéder à vos téléchargements passés à tout moment sans avoir à rechercher le lien à nouveau.\n\n🔄 Fonctionnalité : Utilisez le bouton 'Télécharger à nouveau' pour traiter instantanément la même vidéo avec différentes options de qualité.\n\n🔒 Note de confidentialité : Votre historique est stocké localement sur votre navigateur. Personne d'autre ne peut voir votre historique de téléchargement.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Guide de l'utilisateur : Étape 5 - 5️⃣ Gérez votre historique"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "FAQ XDownloaderz",
             "content": "❓ Foire aux questions\n\n🔒 Puis-je télécharger des vidéos à partir de comptes privés/verrouillés ?\n\nNon. XDownloaderz ne peut télécharger des vidéos qu'à partir de publications publiques sur X (Twitter). Le contenu des comptes privés est protégé par l'API X (Twitter) et n'est pas accessible.\n\n💡 Solution : Vous pouvez demander l'autorisation au propriétaire du contenu."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 Ce que vous pouvez faire avec XDownloaderz :\n\n• Télécharger vidéo X (Twitter) MP4\n• Télécharger GIF X (Twitter)\n• Téléchargeur vidéo X (Twitter) en ligne\n• Convertisseur MP3 X (Twitter)\n• Téléchargement vidéo X (Twitter) 1080p\n• Enregistrer vidéo X (Twitter) mobile\n• Téléchargeur X (Twitter) gratuit\n\nPour la meilleure expérience de téléchargement de vidéos X (Twitter) : xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Historique des téléchargements",
+        "clearAll": "Tout effacer",
+        "noHistory": "Vous n'avez rien téléchargé pour l'instant. Consultez notre guide !",
+        "reDownload": "Télécharger à nouveau",
+        "confirmClear": "Êtes-vous sûr de vouloir effacer votre historique ?"
+    }
 }

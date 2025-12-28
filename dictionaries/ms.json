@@ -288,6 +288,13 @@
             "imageAlt": "📖 Panduan Pengguna: Langkah 4 - 4️⃣ Mulakan Muat Turun"
         },
         {
+            "id": "guide-step5",
+            "authorName": "Panduan XDownloaderz",
+            "content": "📖 Panduan Pengguna: Langkah 5\n\n5️⃣ Urus Sejarah Anda\n\nSetiap video yang anda muat turun disimpan secara automatik ke tab 'Sejarah' pada peranti anda. Anda boleh mengakses muat turun lalu anda dengan mudah pada bila-bila masa tanpa perlu mencari pautan itu lagi.\n\n🔄 Ciri: Gunakan butang 'Muat turun semula' untuk memproses semula video yang sama dengan serta-merta dengan pilihan kualiti yang berbeza.\n\n🔒 Nota Privasi: Sejarah anda disimpan secara setempat pada penyemak imbas anda. Tiada orang lain boleh melihat sejarah muat turun anda.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Panduan Pengguna: Langkah 5 - 5️⃣ Urus Sejarah Anda"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "Soalan Lazim XDownloaderz",
             "content": "❓ Soalan Lazim\n\n🔒 Bolehkah saya memuat turun video daripada akaun peribadi/terkunci?\n\nTidak. XDownloaderz hanya boleh memuat turun video daripada siaran X (Twitter) awam. Kandungan dalam akaun peribadi dilindungi oleh API X (Twitter) dan tidak boleh diakses.\n\n💡 Penyelesaian: Anda boleh meminta kebenaran daripada pemilik kandungan."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 Perkara Yang Anda Boleh Lakukan Dengan XDownloaderz:\n\n• Muat turun video X (Twitter) MP4\n• Muat turun GIF X (Twitter)\n• Pemuat turun video X (Twitter) dalam talian\n• Penukar MP3 X (Twitter)\n• Muat turun video 1080p X (Twitter)\n• Simpan video X (Twitter) mudah alih\n• Pemuat turun X (Twitter) percuma\n\nUntuk pengalaman muat turun video X (Twitter) terbaik: xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Sejarah Muat Turun",
+        "clearAll": "Kosongkan Semua",
+        "noHistory": "Anda belum memuat turun apa-apa. Semak panduan kami!",
+        "reDownload": "Muat turun semula",
+        "confirmClear": "Adakah anda pasti mahu memadamkan sejarah?"
+    }
 }

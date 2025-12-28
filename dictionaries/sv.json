@@ -288,6 +288,13 @@
             "imageAlt": "📖 Användarguide: Steg 4 - 4️⃣ Starta nedladdning"
         },
         {
+            "id": "guide-step5",
+            "authorName": "XDownloaderz Guide",
+            "content": "📖 Användarhandbok: Steg 5\n\n5️⃣ Hantera din historik\n\nVarje video du laddar ner sparas automatiskt på fliken 'Historik' på din enhet. Du kan enkelt komma åt dina tidigare nedladdningar när som helst utan att behöva söka efter länken igen.\n\n🔄 Funktion: Använd knappen 'Ladda ner igen' för att omedelbart bearbeta samma video igen med olika kvalitetsalternativ.\n\n🔒 Sekretessmeddelande: Din historik lagras lokalt i din webbläsare. Ingen annan kan se din nedladdningshistorik.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Användarhandbok: Steg 5 - 5️⃣ Hantera din historik"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "XDownloaderz FAQ",
             "content": "❓ Vanliga frågor\n\n🔒 Kan jag ladda ner videor från privata/låsta konton?\n\nNej. XDownloaderz kan endast ladda ner videor från offentliga X (Twitter)-inlägg. Innehåll på privata konton skyddas av X (Twitter) API och kan inte nås.\n\n💡 Lösning: Du kan be om tillstånd från innehållsägaren."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 Vad du kan göra med XDownloaderz:\n\n• Ladda ner X (Twitter) video MP4\n• Ladda ner X (Twitter) GIF\n• X (Twitter) videonedladdare online\n• X (Twitter) MP3-omvandlare\n• 1080p X (Twitter) video nedladdning\n• Mobil X (Twitter) video spara\n• Gratis X (Twitter) nedladdare\n\nFör den bästa X (Twitter) videonedladdningsupplevelsen: xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Nedladdningshistorik",
+        "clearAll": "Rensa allt",
+        "noHistory": "Du har inte laddat ner något än. Kolla vår guide!",
+        "reDownload": "Ladda ner igen",
+        "confirmClear": "Är du säker på att du vill rensa historiken?"
+    }
 }

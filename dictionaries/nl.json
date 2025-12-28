@@ -288,6 +288,13 @@
             "imageAlt": "📖 Gebruikershandleiding: Stap 4 - 4️⃣ Start download"
         },
         {
+            "id": "guide-step5",
+            "authorName": "XDownloaderz Gids",
+            "content": "📖 Gebruikershandleiding: Stap 5\n\n5️⃣ Beheer uw geschiedenis\n\nElke video die u downloadt, wordt automatisch opgeslagen op het tabblad 'Geschiedenis' op uw apparaat. U kunt uw eerdere downloads op elk moment eenvoudig openen zonder opnieuw naar de link te hoeven zoeken.\n\n🔄 Functie: Gebruik de knop 'Opnieuw downloaden' om dezelfde video direct opnieuw te verwerken met verschillende kwaliteitsopties.\n\n🔒 Privacy-opmerking: Uw geschiedenis wordt lokaal in uw browser opgeslagen. Niemand anders kan uw downloadgeschiedenis zien.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Gebruikershandleiding: Stap 5 - 5️⃣ Beheer uw geschiedenis"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "XDownloaderz FAQ",
             "content": "❓ Veelgestelde vragen\n\n🔒 Kan ik video's downloaden van privé/vergrendelde accounts?\n\nNee. XDownloaderz kan alleen video's downloaden van openbare X (Twitter) berichten. Inhoud in privéaccounts wordt beschermd door de X (Twitter) API en is niet toegankelijk.\n\n💡 Oplossing: U kunt toestemming vragen aan de eigenaar van de inhoud."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 Wat u kunt doen met XDownloaderz:\n\n• Download X (Twitter) video MP4\n• Download X (Twitter) GIF\n• X (Twitter) video downloader online\n• X (Twitter) MP3 converter\n• 1080p X (Twitter) video download\n• Mobiele X (Twitter) video opslaan\n• Gratis X (Twitter) downloader\n\nVoor de beste X (Twitter) video downloadervaring: xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Downloadgeschiedenis",
+        "clearAll": "Alles wissen",
+        "noHistory": "Je hebt nog niets gedownload. Bekijk onze gids!",
+        "reDownload": "Opnieuw downloaden",
+        "confirmClear": "Weet je zeker dat je je geschiedenis wilt wissen?"
+    }
 }

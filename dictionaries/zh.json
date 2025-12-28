@@ -288,6 +288,13 @@
             "imageAlt": "📖 用户指南：第 4 步 - 4️⃣ 开始下载"
         },
         {
+            "id": "guide-step5",
+            "authorName": "XDownloaderz 指南",
+            "content": "📖 用户指南：第5步\n\n5️⃣ 管理您的历史记录\n\n您下载的每个视频都会自动保存到设备上的“历史记录”选项卡中。您可以随时轻松访问过去的下载内容，而无需再次搜索链接。\n\n🔄 功能：使用“重新下载”按钮可以使用不同的质量选项立即再次处理同一视频。\n\n🔒 隐私说明：您的历史记录存储在本地浏览器中。没有人可以看到您的下载历史记录。",
+            "image": "history-management.avif",
+            "imageAlt": "📖 用户指南：第5步 - 5️⃣ 管理您的历史记录"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "XDownloaderz 常见问题",
             "content": "❓ 常见问题解答\n\n🔒 我可以从私人/锁定帐户下载视频吗？\n\n不可以。XDownloaderz 只能从公开的 X (Twitter) 帖子下载视频。私人帐户中的内容受 X (Twitter) API 保护，无法访问。\n\n💡 解决方案：您可以请求内容所有者的许可。"
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 您可以使用 XDownloaderz 做什么：\n\n• 下载 X (Twitter) 视频 MP4\n• 下载 X (Twitter) GIF\n• X (Twitter) 视频在线下载器\n• X (Twitter) MP3 转换器\n• 1080p X (Twitter) 视频下载\n• 手机保存 X (Twitter) 视频\n• 免费 X (Twitter) 下载器\n\n为了获得最佳的 X (Twitter) 视频下载体验：xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "下载历史",
+        "clearAll": "全部清除",
+        "noHistory": "您还没有下载任何内容。查看我们的指南！",
+        "reDownload": "重新下载",
+        "confirmClear": "您确定要清除历史记录吗？"
+    }
 }

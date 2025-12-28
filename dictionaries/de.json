@@ -288,6 +288,13 @@
             "imageAlt": "📖 Benutzerhandbuch: Schritt 4 - 4️⃣ Download starten"
         },
         {
+            "id": "guide-step5",
+            "authorName": "XDownloaderz Anleitung",
+            "content": "📖 Benutzerhandbuch: Schritt 5\n\n5️⃣ Verwalten Sie Ihren Verlauf\n\nJedes Video, das Sie herunterladen, wird automatisch im Tab 'Verlauf' auf Ihrem Gerät gespeichert. Sie können jederzeit problemlos auf Ihre vergangenen Downloads zugreifen, ohne erneut nach dem Link suchen zu müssen.\n\n🔄 Funktion: Verwenden Sie die Schaltfläche 'Erneut herunterladen', um dasselbe Video sofort mit verschiedenen Qualitätsoptionen erneut zu verarbeiten.\n\n🔒 Datenschutzhinweis: Ihr Verlauf wird lokal in Ihrem Browser gespeichert. Niemand sonst kann Ihren Download-Verlauf sehen.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Benutzerhandbuch: Schritt 5 - 5️⃣ Verwalten Sie Ihren Verlauf"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "XDownloaderz FAQ",
             "content": "❓ Häufig gestellte Fragen\n\n🔒 Kann ich Videos von privaten/gesperrten Konten herunterladen?\n\nNein. XDownloaderz kann nur Videos von öffentlichen X (Twitter) Beiträgen herunterladen. Inhalte in privaten Konten sind durch die X (Twitter) API geschützt und können nicht abgerufen werden.\n\n💡 Lösung: Sie können den Inhaltseigentümer um Erlaubnis bitten."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 Was Sie mit XDownloaderz tun können:\n\n• X (Twitter) Video Download MP4\n• X (Twitter) GIF Download\n• X (Twitter) Video Downloader online\n• X (Twitter) MP3 Konverter\n• 1080p X (Twitter) Video Download\n• Mobiles X (Twitter) Video speichern\n• Kostenloser X (Twitter) Downloader\n\nFür das beste X (Twitter) Video-Download-Erlebnis: xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Download-Verlauf",
+        "clearAll": "Alles löschen",
+        "noHistory": "Sie haben noch nichts heruntergeladen. Schauen Sie sich unsere Anleitung an!",
+        "reDownload": "Erneut herunterladen",
+        "confirmClear": "Sind Sie sicher, dass Sie Ihren Verlauf löschen möchten?"
+    }
 }

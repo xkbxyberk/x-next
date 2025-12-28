@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import PostCard from './PostCard';
 import Toast from '../ui/Toast';
-import { Music, Settings2, Moon, Sun, CloudMoon, Check, Loader2, Video, FileAudio, X, Clipboard as ClipboardIcon } from 'lucide-react';
+import { Music, Settings2, Moon, Sun, CloudMoon, Check, Loader2, Video, FileAudio, X, Clipboard as ClipboardIcon, Trash2, History } from 'lucide-react';
 import { useTheme } from '../ThemeProvider';
 import Image from 'next/image';
 import { useVideoDownload, SelectionType } from '@/lib/hooks/use-video-download';
@@ -18,6 +18,7 @@ type PostData = {
   image?: string;
   timestamp: string;
   metrics: { likes: number; reposts: number; replies: number };
+  historyMeta?: { quality: string; type: string; originalUrl: string } // Added for history
 };
 
 type FeedItem =
@@ -26,11 +27,11 @@ type FeedItem =
 
 interface MainFeedProps {
   dict: any;
-  initialItems: any[]; // Using any[] to avoid circular dependency or complex type imports, effectively FeedItem[]
+  initialItems: any[];
 }
 
 export default function MainFeed({ dict, initialItems }: MainFeedProps) {
-  const [activeTab, setActiveTab] = useState<'foryou' | 'following'>('foryou');
+  const [activeTab, setActiveTab] = useState<'foryou' | 'history'>('foryou');
   const [isFocused, setIsFocused] = useState(false);
   const [isThemeMenuOpen, setIsThemeMenuOpen] = useState(false);
   const [isSettingsMenuOpen, setIsSettingsMenuOpen] = useState(false);
@@ -44,7 +45,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
   const {
     inputUrl, setInputUrl, data, error, loading, downloading, progress,
     selection, setSelection, notification, closeNotification,
-    handleAnalyze, executeDownload, reset
+    handleAnalyze, executeDownload, reset, history, clearHistory, removeFromHistory
   } = useVideoDownload(dict);
 
   const logoSrc = theme === 'default' ? '/logo.avif' : '/logo-white.avif';
@@ -130,29 +131,56 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
     }
   }, [inputUrl]);
 
-  // Tema değiştiğinde veya data değiştiğinde displayItems'ı güncelle
+  // Handle Tab and Data Changes
   useEffect(() => {
-    if (data) {
-      const newPost: FeedItem = {
-        type: 'post',
-        data: {
-          id: data.id,
-          author: {
-            name: data.author.name,
-            handle: `@${data.author.screenName}`,
-            avatar: data.author.avatarUrl
-          },
-          content: data.text,
-          image: data.media.thumbnailUrl,
-          timestamp: 'Now',
-          metrics: { likes: data.statistics.likes || 0, reposts: 0, replies: 0 },
-        }
-      };
-      setDisplayItems([newPost, ...initialItems]);
+    if (activeTab === 'history') {
+      if (history.length > 0) {
+        // Map history to FeedItems
+        const historyFeed: FeedItem[] = history.map(h => ({
+          type: 'post',
+          data: {
+            id: h.id,
+            author: h.author,
+            content: h.content,
+            image: h.image,
+            timestamp: new Date(h.timestamp).toLocaleDateString(),
+            metrics: { likes: 0, reposts: 0, replies: 0 },
+            historyMeta: {
+              quality: h.quality,
+              type: h.type,
+              originalUrl: h.originalUrl
+            }
+          }
+        }));
+        setDisplayItems(historyFeed);
+      } else {
+        // Empty state for history handled in render
+        setDisplayItems([]);
+      }
     } else {
-      setDisplayItems(initialItems);
+      // Downloader Tab
+      if (data) {
+        const newPost: FeedItem = {
+          type: 'post',
+          data: {
+            id: data.id,
+            author: {
+              name: data.author.name,
+              handle: `@${data.author.screenName}`,
+              avatar: data.author.avatarUrl
+            },
+            content: data.text,
+            image: data.media.thumbnailUrl,
+            timestamp: 'Now',
+            metrics: { likes: data.statistics.likes || 0, reposts: 0, replies: 0 },
+          }
+        };
+        setDisplayItems([newPost, ...initialItems]);
+      } else {
+        setDisplayItems(initialItems);
+      }
     }
-  }, [theme, data]);
+  }, [theme, data, activeTab, history, initialItems]);
 
   // Click Outside
   useEffect(() => {
@@ -191,9 +219,9 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
             <span className={activeTab === 'foryou' && 'font-bold text-(--text-primary)' || 'text-(--text-secondary)'}>{dict.feed.tabs.download}</span>
             {activeTab === 'foryou' && <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1 bg-(--accent) rounded-full w-16" />}
           </button>
-          <button onClick={() => setActiveTab('following')} className="flex-1 py-4 text-center font-semibold hover:bg-(--background-secondary) relative flex items-center justify-center cursor-pointer">
-            <span className={activeTab === 'following' && 'font-bold text-(--text-primary)' || 'text-(--text-secondary)'}>{dict.feed.tabs.history}</span>
-            {activeTab === 'following' && <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1 bg-(--accent) rounded-full w-12" />}
+          <button onClick={() => setActiveTab('history')} className="flex-1 py-4 text-center font-semibold hover:bg-(--background-secondary) relative flex items-center justify-center cursor-pointer">
+            <span className={activeTab === 'history' && 'font-bold text-(--text-primary)' || 'text-(--text-secondary)'}>{dict?.history?.title || 'History'}</span>
+            {activeTab === 'history' && <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1 bg-(--accent) rounded-full w-12" />}
           </button>
         </div>
       </div>
@@ -407,10 +435,61 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
           </div>
         </div>
 
+        {activeTab === 'history' && history.length > 0 && (
+          <div className="flex items-center justify-between p-4 border-b border-(--border)">
+            <h2 className="font-bold text-xl">{dict?.history?.title || 'History'}</h2>
+            <button
+              onClick={clearHistory}
+              className="flex items-center gap-2 text-red-500 hover:bg-red-500/10 px-3 py-1.5 rounded-full font-medium transition-colors text-sm"
+            >
+              <Trash2 size={16} />
+              {dict?.history?.clearAll || 'Clear All'}
+            </button>
+          </div>
+        )}
+
+        {/* --- Empty History State --- */}
+        {activeTab === 'history' && history.length === 0 && (
+          <div className="flex flex-col items-center justify-center py-20 px-4 text-center">
+            <div className="w-20 h-20 bg-(--background-secondary) rounded-full flex items-center justify-center mb-6">
+              <History size={40} className="text-(--text-secondary)" />
+            </div>
+            <h3 className="text-xl font-bold text-(--text-primary) mb-2">
+              {dict?.history?.noHistory || "You haven't downloaded anything yet."}
+            </h3>
+            <p className="text-(--text-secondary) max-w-md mb-8">
+              X (Twitter) Video Downloader & Converter
+            </p>
+            <button
+              onClick={() => setActiveTab('foryou')}
+              className="bg-(--accent) text-white font-bold py-3 px-8 rounded-full hover:bg-(--accent-hover) transition-transform active:scale-95 shadow-lg"
+            >
+              {dict?.common?.title || dict?.sidebar?.download || 'Start Downloading'}
+            </button>
+          </div>
+        )}
+
         {/* --- DİNAMİK RENDER --- */}
         {displayItems.map((item, index) => {
           if (item.type === 'post') {
-            return <PostCard key={item.data.id} data={item.data} priority={index === 0} dict={dict} />;
+            return (
+              <PostCard
+                key={`${item.data.id}-${index}`}
+                data={item.data}
+                priority={index === 0}
+                dict={dict}
+                isHistoryItem={activeTab === 'history'}
+                qualityBadge={item.data.historyMeta ? `${item.data.historyMeta.type === 'video' ? 'MP4' : 'MP3'} • ${item.data.historyMeta.quality}` : undefined}
+                onReDownload={() => {
+                  if (item.data.historyMeta?.originalUrl) {
+                    setInputUrl(item.data.historyMeta.originalUrl);
+                    handleAnalyze(item.data.historyMeta.originalUrl);
+                    setActiveTab('foryou');
+                  }
+                }}
+                onDelete={() => removeFromHistory(item.data.id)}
+              />
+            );
           } else {
             return <AdBanner key={item.id} dict={dict} />;
           }

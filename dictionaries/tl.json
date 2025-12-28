@@ -288,6 +288,13 @@
             "imageAlt": "📖 Gabay sa Gumagamit: Hakbang 4 - 4️⃣ Simulan ang Pag-download"
         },
         {
+            "id": "guide-step5",
+            "authorName": "Gabay sa XDownloaderz",
+            "content": "📖 Gabay sa Gumagamit: Hakbang 5\n\n5️⃣ Pamahalaan ang Iyong Kasaysayan\n\nAng bawat video na iyong dina-download ay awtomatikong nai-save sa tab na 'Kasaysayan' sa iyong device. Madali mong maa-access ang iyong mga nakaraang pag-download anumang oras nang hindi na kailangang hanapin muli ang link.\n\n🔄 Tampok: Gamitin ang button na 'I-download muli' upang agad na maproseso muli ang parehong video gamit ang iba't ibang opsyon sa kalidad.\n\n🔒 Tala sa Privacy: Ang iyong kasaysayan ay lokal na nakaimbak sa iyong browser. Walang ibang makakakita ng iyong kasaysayan ng pag-download.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Gabay sa Gumagamit: Hakbang 5 - 5️⃣ Pamahalaan ang Iyong Kasaysayan"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "XDownloaderz FAQ",
             "content": "❓ Mga Madalas Itanong\n\n🔒 Maaari ba akong mag-download ng mga video mula sa mga pribado/naka-lock na account?\n\nHindi. Ang XDownloaderz ay makakapag-download lamang ng mga video mula sa mga pampublikong post sa X (Twitter). Ang nilalaman sa mga pribadong account ay protektado ng X (Twitter) API at hindi maa-access.\n\n💡 Solusyon: Maaari kang humingi ng pahintulot sa may-ari ng nilalaman."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 Ano ang Magagawa Mo Sa XDownloaderz:\n\n• Mag-download ng X (Twitter) video MP4\n• Mag-download ng X (Twitter) GIF\n• X (Twitter) video downloader online\n• X (Twitter) MP3 converter\n• 1080p X (Twitter) video download\n• Mobile X (Twitter) video save\n• Libreng X (Twitter) downloader\n\nPara sa pinakamahusay na karanasan sa pag-download ng video sa X (Twitter): xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Kasaysayan ng Download",
+        "clearAll": "I-clear Lahat",
+        "noHistory": "Wala ka pang na-download. Tingnan ang aming gabay!",
+        "reDownload": "I-download muli",
+        "confirmClear": "Sigurado ka bang gusto mong i-clear ang iyong kasaysayan?"
+    }
 }

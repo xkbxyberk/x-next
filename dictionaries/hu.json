@@ -288,6 +288,13 @@
             "imageAlt": "📖 Felhasználói útmutató: 4. lépés - 4️⃣ Letöltés indítása"
         },
         {
+            "id": "guide-step5",
+            "authorName": "XDownloaderz Útmutató",
+            "content": "📖 Felhasználói kézikönyv: 5. lépés\n\n5️⃣ Kezelje előzményeit\n\nMinden letöltött videó automatikusan mentésre kerül az eszköz 'Előzmények' lapjára. Bármikor könnyedén hozzáférhet korábbi letöltéseihez anélkül, hogy újra meg kellene keresnie a linket.\n\n🔄 Funkció: Használja az 'Újra letöltés' gombot ugyanazon videó azonnali újrafeldolgozásához különböző minőségi beállításokkal.\n\n🔒 Adatvédelmi megjegyzés: Az előzmények helyileg a böngészőben tárolódnak. Senki más nem láthatja a letöltési előzményeket.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Felhasználói kézikönyv: 5. lépés - 5️⃣ Kezelje előzményeit"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "XDownloaderz GYIK",
             "content": "❓ Gyakran Ismételt Kérdések\n\n🔒 Letölthetek videókat privát/lezárt fiókokból?\n\nNem. Az XDownloaderz csak nyilvános X (Twitter) bejegyzésekből tud videókat letölteni. A privát fiókok tartalmát az X (Twitter) API védi, és nem férhetők hozzá.\n\n💡 Megoldás: Kérhet engedélyt a tartalom tulajdonosától."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 Mit tehet az XDownloaderz segítségével:\n\n• X (Twitter) videó letöltése MP4\n• X (Twitter) GIF letöltés\n• X (Twitter) videó letöltő online\n• X (Twitter) MP3 konverter\n• 1080p X (Twitter) videó letöltés\n• Mobil X (Twitter) videó mentés\n• Ingyenes X (Twitter) letöltő\n\nA legjobb X (Twitter) videó letöltési élményért: xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Letöltési előzmények",
+        "clearAll": "Összes törlése",
+        "noHistory": "Még nem töltött le semmit. Nézze meg útmutatónkat!",
+        "reDownload": "Újra letöltés",
+        "confirmClear": "Biztosan törölni szeretné az előzményeket?"
+    }
 }

@@ -288,6 +288,13 @@
             "imageAlt": "📖 Uživatelská příručka: Krok 4 - 4️⃣ Zahájit stahování"
         },
         {
+            "id": "guide-step5",
+            "authorName": "Průvodce XDownloaderz",
+            "content": "📖 Uživatelská příručka: Krok 5\n\n5️⃣ Spravujte svou historii\n\nKaždé video, které stáhnete, se automaticky uloží na kartu 'Historie' ve vašem zařízení. Ke svým dřívějším stahováním můžete kdykoli snadno přistupovat, aniž byste museli znovu hledat odkaz.\n\n🔄 Funkce: Pomocí tlačítka 'Stáhnout znovu' můžete stejné video okamžitě znovu zpracovat s různými možnostmi kvality.\n\n🔒 Poznámka k ochraně osobních údajů: Vaše historie je uložena lokálně ve vašem prohlížeči. Nikdo jiný nevidí vaši historii stahování.",
+            "image": "history-management.avif",
+            "imageAlt": "📖 Uživatelská příručka: Krok 5 - 5️⃣ Spravujte svou historii"
+        },
+        {
             "id": "faq-private-7",
             "authorName": "XDownloaderz FAQ",
             "content": "❓ Často kladené otázky\n\n🔒 Mohu stahovat videa ze soukromých/uzamčených účtů?\n\nNe. XDownloaderz může stahovat videa pouze z veřejných příspěvků na X (Twitter). Obsah na soukromých účtech je chráněn rozhraním X (Twitter) API a nelze k němu přistupovat.\n\n💡 Řešení: Můžete požádat vlastníka obsahu o povolení."
@@ -327,5 +334,12 @@
             "authorName": "XDownloaderz",
             "content": "🔍 Co můžete dělat s XDownloaderz:\n\n• Stáhnout video z X (Twitter) MP4\n• Stáhnout GIF z X (Twitter)\n• Online stahovač videí z X (Twitter)\n• Konvertor MP3 z X (Twitter)\n• 1080p stahování videa z X (Twitter)\n• Uložení videa z X (Twitter) do mobilu\n• Bezplatný downloader pro X (Twitter)\n\nPro nejlepší zážitek ze stahování videí z X (Twitter): xdownloaderz.com"
         }
-    ]
+    ],
+    "history": {
+        "title": "Historie stahování",
+        "clearAll": "Vymazat vše",
+        "noHistory": "Zatím jste nic nestáhli. Podívejte se na náš návod!",
+        "reDownload": "Stáhnout znovu",
+        "confirmClear": "Opravdu chcete vymazat historii?"
+    }
 }
