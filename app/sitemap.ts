@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Task 4: Sitemap & lastmod Strategy
     // Hardcoded deployment date to avoid fake updates on every request
-    const DEPLOY_DATE = new Date('2025-12-28T00:00:00.000Z');
+    const DEPLOY_DATE = new Date();
 
     const languageRoutes = languages.map((lang) => ({
         url: `${baseUrl}/${lang}`,
