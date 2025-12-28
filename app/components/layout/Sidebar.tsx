@@ -1,10 +1,12 @@
 'use client';
 
-import { Home, BookOpen, Zap, CircleHelp } from 'lucide-react';
+import { Home, BookOpen, Zap, CircleHelp, X, Info, Shield, FileText, Mail } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTheme } from '../ThemeProvider';
 import { usePathname, useRouter, useParams } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 
 interface SidebarProps {
   mobile?: boolean;
@@ -16,11 +18,17 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
   const pathname = usePathname();
   const router = useRouter();
   const params = useParams();
-  const lang = (params?.lang as string) || 'tr'; // Default to tr if undefined
+  const lang = (params?.lang as string) || 'tr'; /* Default to tr if undefined */
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const logoSrc = theme === 'default' ? '/logo.avif' : '/logo-white.avif';
 
-  // Menu Items (Dynamic based on props)
+  /* Menu Items (Dynamic based on props) */
   const menuItems = [
     { icon: Home, label: dict.sidebar.download, href: '#download-area' },
     { icon: BookOpen, label: dict.sidebar.howToUse, href: '#guide-step1-4' },
@@ -31,7 +39,7 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
     e.preventDefault();
     if (pathname !== '/' && !pathname.match(/^\/(en|tr)\/?$/)) {
-      // If not on home page, push to home page with lang prefix
+      /* If not on home page, push to home page with lang prefix */
       router.push(`/${lang}${href}`);
       return;
     }
@@ -52,33 +60,121 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
     }
   };
 
+  const closeDrawer = () => setIsDrawerOpen(false);
+
   if (mobile) {
     return (
-      <div className="flex justify-around items-center h-13.25 px-2">
-        {menuItems.map((item, index) => (
-          <a
-            key={index}
-            href={item.href}
-            onClick={(e) => handleScroll(e, item.href)}
-            className="p-2 rounded-full hover:bg-(--background-secondary) text-(--text-primary)"
-            aria-label={item.label}
+      <>
+        <div className="flex justify-around items-center h-13.25 px-2">
+          {menuItems.map((item, index) => (
+            <a
+              key={index}
+              href={item.href}
+              onClick={(e) => handleScroll(e, item.href)}
+              className="p-2 rounded-full hover:bg-(--background-secondary) text-(--text-primary)"
+              aria-label={item.label}
+            >
+              <item.icon size={24} strokeWidth={2} />
+            </a>
+          ))}
+          <div
+            className="p-2 flex items-center gap-3 cursor-pointer"
+            onClick={() => setIsDrawerOpen(true)}
           >
-            <item.icon size={24} strokeWidth={2} />
-          </a>
-        ))}
-        <div className="p-2 flex items-center gap-3">
-          <div className="w-8 h-8 rounded-full overflow-hidden relative">
-            <Image
-              src={logoSrc}
-              alt="X Downloader Profil"
-              fill
-              className="object-cover"
-              sizes="32px"
-            />
+            <div className="w-8 h-8 rounded-full overflow-hidden relative">
+              <Image
+                src={logoSrc}
+                alt="X Downloader Profil"
+                fill
+                className="object-cover"
+                sizes="32px"
+              />
+            </div>
+            <h1 className="text-sm font-bold text-(--text-primary) hidden sm:block">{dict.common.title}</h1>
           </div>
-          <h1 className="text-sm font-bold text-(--text-primary) hidden sm:block">{dict.common.title}</h1>
         </div>
-      </div>
+
+        {/* Side Drawer with Portal */}
+        {isDrawerOpen && mounted && createPortal(
+          <div className="fixed inset-0 z-[100] flex justify-end text-base">
+            {/* Backdrop */}
+            <div
+              className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+              onClick={closeDrawer}
+            />
+
+            {/* Drawer Content */}
+            <div className="relative w-[75%] max-w-[300px] h-full bg-(--background) border-l border-(--border) flex flex-col p-5 shadow-2xl overflow-y-auto">
+              <div className="flex justify-between items-center mb-8 shrink-0">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 rounded-full overflow-hidden relative border border-(--border)">
+                    <Image
+                      src={logoSrc}
+                      alt="X Downloader Icon"
+                      fill
+                      className="object-cover"
+                      sizes="32px"
+                    />
+                  </div>
+                  <span className="font-bold text-lg text-(--text-primary)">XDownloaderz</span>
+                </div>
+                <button
+                  onClick={closeDrawer}
+                  className="p-2 hover:bg-(--background-secondary) rounded-full text-(--text-primary) transition-colors"
+                  aria-label="Close menu"
+                >
+                  <X size={24} />
+                </button>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <Link
+                  href={`/${lang}/about`}
+                  onClick={closeDrawer}
+                  className="flex items-center gap-4 p-3 rounded-xl hover:bg-(--background-secondary) text-(--text-primary) font-medium transition-colors"
+                >
+                  <Info size={22} className="text-(--text-secondary)" />
+                  {dict.common.about}
+                </Link>
+
+                <Link
+                  href={`/${lang}/terms`}
+                  onClick={closeDrawer}
+                  className="flex items-center gap-4 p-3 rounded-xl hover:bg-(--background-secondary) text-(--text-primary) font-medium transition-colors"
+                >
+                  <FileText size={22} className="text-(--text-secondary)" />
+                  {dict.common.termsOfService}
+                </Link>
+
+                <Link
+                  href={`/${lang}/privacy`}
+                  onClick={closeDrawer}
+                  className="flex items-center gap-4 p-3 rounded-xl hover:bg-(--background-secondary) text-(--text-primary) font-medium transition-colors"
+                >
+                  <Shield size={22} className="text-(--text-secondary)" />
+                  {dict.common.privacyPolicy}
+                </Link>
+
+                <Link
+                  href={`/${lang}/contact`}
+                  onClick={closeDrawer}
+                  className="flex items-center gap-4 p-3 rounded-xl hover:bg-(--background-secondary) text-(--text-primary) font-medium transition-colors"
+                >
+                  <Mail size={22} className="text-(--text-secondary)" />
+                  {dict.common.contact}
+                </Link>
+              </div>
+
+              <div className="mt-auto pt-6 border-t border-(--border) shrink-0">
+                <p className="text-xs text-(--text-secondary) leading-relaxed">
+                  {dict.common.footerText}
+                </p>
+              </div>
+            </div>
+          </div>,
+          document.body
+        )}
+      </>
     );
   }
 

@@ -362,7 +362,9 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                         className={`p-2 rounded-full cursor-pointer ${isThemeMenuOpen ? 'bg-(--accent)/20 text-(--accent)' : 'hover:bg-(--accent)/10 text-(--accent)'}`}
                         aria-label={dict.feed.accessibility.themeToggle}
                       >
-                        <Moon size={20} />
+                        {theme === 'default' && <Sun size={20} />}
+                        {theme === 'dim' && <CloudMoon size={20} />}
+                        {theme === 'lights-out' && <Moon size={20} />}
                       </button>
                       {isThemeMenuOpen && (
                         <div className="absolute top-full right-0 mt-2 w-64 bg-(--background) border border-(--border) rounded-xl shadow-xl p-2 z-50 animate-in fade-in zoom-in-95 duration-200">
