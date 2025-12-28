@@ -491,7 +491,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
               />
             );
           } else {
-            return <AdBanner key={item.id} dict={dict} />;
+            return null; // <AdBanner key={item.id} dict={dict} />;
           }
         })}
       </div>

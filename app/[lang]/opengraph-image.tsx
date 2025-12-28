@@ -94,6 +94,7 @@ export default async function Image({ params }: { params: Promise<{ lang: string
                     background: 'linear-gradient(to right, #fff, #888)',
                     backgroundClip: 'text',
                     color: 'transparent',
+                    display: 'flex',
                 }}>
                     XDownloaderz
                 </div>
@@ -108,6 +109,7 @@ export default async function Image({ params }: { params: Promise<{ lang: string
                     background: 'rgba(29,155,240,0.1)',
                     borderRadius: '50px',
                     border: '1px solid rgba(29,155,240,0.3)',
+                    display: 'flex',
                 }}>
                     X (Twitter) Video Downloader - {languageName}
                 </div>

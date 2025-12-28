@@ -218,6 +218,7 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
           </a>
         ))}
 
+        {/*
         <div className="hidden xl:flex w-full my-2 px-2 flex-1 min-h-75">
           <div className="w-full bg-(--background-secondary) rounded-2xl border border-(--border) h-full flex flex-col items-center justify-center relative overflow-hidden group">
             <span className="text-(--text-primary) text-[10px] font-bold tracking-widest absolute top-2 right-2">{dict.sidebar.adLabel}</span>
@@ -226,6 +227,7 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
             </div>
           </div>
         </div>
+        */}
       </div>
 
       <div className="mb-4 mt-2 p-3 hover:bg-(--background-secondary) rounded-full cursor-pointer flex items-center gap-3 shrink-0">
