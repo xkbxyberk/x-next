@@ -64,7 +64,16 @@
             "repost": "بازنشر",
             "share": "اشتراک‌گذاری"
         },
-        "pinned": "سنجاق شده"
+        "pinned": "سنجاق شده",
+        "notifications": {
+            "videoFound": "ویدیو پیدا شد. فرمت را انتخاب کنید.",
+            "downloadingVideo": "در حال دانلود ویدیو...",
+            "downloadingAudio": "در حال دانلود صدا...",
+            "downloadComplete": "دانلود کامل شد!",
+            "errorAnalyzing": "تحلیل ناموفق بود.",
+            "errorDownloading": "خطای دانلود.",
+            "invalidUrl": "فرمت لینک نامعتبر است."
+        }
     },
     "about": {
         "title": "درباره ما",

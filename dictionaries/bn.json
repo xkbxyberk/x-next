@@ -64,7 +64,16 @@
             "repost": "রিপোস্ট",
             "share": "শেয়ার"
         },
-        "pinned": "Pined"
+        "pinned": "Pined",
+        "notifications": {
+            "videoFound": "ভিডিও পাওয়া গেছে। ফরম্যাট নির্বাচন করুন।",
+            "downloadingVideo": "ভিডিও ডাউনলোড হচ্ছে...",
+            "downloadingAudio": "অডিও ডাউনলোড হচ্ছে...",
+            "downloadComplete": "ডাউনলোড সম্পন্ন!",
+            "errorAnalyzing": "বিশ্লেষণ ব্যর্থ হয়েছে।",
+            "errorDownloading": "ডাউনলোড ত্রুটি।",
+            "invalidUrl": "অকার্যকর লিঙ্ক ফরম্যাট।"
+        }
     },
     "about": {
         "title": "আমাদের সম্পর্কে",

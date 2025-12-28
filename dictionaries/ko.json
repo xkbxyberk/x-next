@@ -64,7 +64,16 @@
             "repost": "재게시",
             "share": "공유"
         },
-        "pinned": "고정됨"
+        "pinned": "고정됨",
+        "notifications": {
+            "videoFound": "동영상을 찾았습니다. 형식을 선택하세요.",
+            "downloadingVideo": "동영상 다운로드 중...",
+            "downloadingAudio": "오디오 다운로드 중...",
+            "downloadComplete": "다운로드 완료!",
+            "errorAnalyzing": "분석 실패.",
+            "errorDownloading": "다운로드 오류.",
+            "invalidUrl": "잘못된 링크 형식입니다."
+        }
     },
     "about": {
         "title": "소개",

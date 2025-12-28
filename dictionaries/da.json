@@ -64,7 +64,16 @@
             "repost": "Repost",
             "share": "Del"
         },
-        "pinned": "Fastgjort"
+        "pinned": "Fastgjort",
+        "notifications": {
+            "videoFound": "Video fundet. Vælg format.",
+            "downloadingVideo": "Downloader video...",
+            "downloadingAudio": "Downloader lyd...",
+            "downloadComplete": "Download fuldført!",
+            "errorAnalyzing": "Analyse mislykkedes.",
+            "errorDownloading": "Download fejl.",
+            "invalidUrl": "Ugyldigt linkformat."
+        }
     },
     "about": {
         "title": "Om os",

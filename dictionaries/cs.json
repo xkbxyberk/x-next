@@ -64,7 +64,16 @@
             "repost": "Repostovat",
             "share": "Sdílet"
         },
-        "pinned": "Připnuto"
+        "pinned": "Připnuto",
+        "notifications": {
+            "videoFound": "Video nalezeno. Vyberte formát.",
+            "downloadingVideo": "Stahování videa...",
+            "downloadingAudio": "Stahování zvuku...",
+            "downloadComplete": "Stahování dokončeno!",
+            "errorAnalyzing": "Analýza selhala.",
+            "errorDownloading": "Chyba stahování.",
+            "invalidUrl": "Neplatný formát odkazu."
+        }
     },
     "about": {
         "title": "O nás",

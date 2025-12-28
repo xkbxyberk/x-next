@@ -64,7 +64,16 @@
             "repost": "Ponovno objavi",
             "share": "Podijeli"
         },
-        "pinned": "Prikvačeno"
+        "pinned": "Prikvačeno",
+        "notifications": {
+            "videoFound": "Video pronađen. Odaberite format.",
+            "downloadingVideo": "Preuzimanje videa...",
+            "downloadingAudio": "Preuzimanje zvuka...",
+            "downloadComplete": "Preuzimanje završeno!",
+            "errorAnalyzing": "Analiza nije uspjela.",
+            "errorDownloading": "Greška pri preuzimanju.",
+            "invalidUrl": "Nevažeći format poveznice."
+        }
     },
     "about": {
         "title": "O nama",

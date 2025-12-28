@@ -64,7 +64,16 @@
             "repost": "Reposta",
             "share": "Dela"
         },
-        "pinned": "Fäst"
+        "pinned": "Fäst",
+        "notifications": {
+            "videoFound": "Video hittad. Välj format.",
+            "downloadingVideo": "Laddar ner video...",
+            "downloadingAudio": "Laddar ner ljud...",
+            "downloadComplete": "Nedladdning klar!",
+            "errorAnalyzing": "Analys misslyckades.",
+            "errorDownloading": "Nedladdningsfel.",
+            "invalidUrl": "Ogiltigt länkformat."
+        }
     },
     "about": {
         "title": "Om oss",

@@ -64,7 +64,16 @@
             "repost": "I-repost",
             "share": "Ibahagi"
         },
-        "pinned": "Naka-pin"
+        "pinned": "Naka-pin",
+        "notifications": {
+            "videoFound": "Natagpuan ang video. Pumili ng format.",
+            "downloadingVideo": "Dina-download ang video...",
+            "downloadingAudio": "Dina-download ang audio...",
+            "downloadComplete": "Kumpleto na ang download!",
+            "errorAnalyzing": "Nabigo ang pagsusuri.",
+            "errorDownloading": "Error sa pag-download.",
+            "invalidUrl": "Hindi wastong format ng link."
+        }
     },
     "about": {
         "title": "Tungkol sa Amin",

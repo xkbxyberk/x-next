@@ -64,7 +64,16 @@
             "repost": "Repost",
             "share": "Del"
         },
-        "pinned": "Festet"
+        "pinned": "Festet",
+        "notifications": {
+            "videoFound": "Video funnet. Velg format.",
+            "downloadingVideo": "Laster ned video...",
+            "downloadingAudio": "Laster ned lyd...",
+            "downloadComplete": "Nedlasting fullført!",
+            "errorAnalyzing": "Analyse mislyktes.",
+            "errorDownloading": "Nedlastingsfeil.",
+            "invalidUrl": "Ugyldig lenkeformat."
+        }
     },
     "about": {
         "title": "Om oss",

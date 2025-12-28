@@ -64,7 +64,16 @@
             "repost": "Hantar Semula",
             "share": "Kongsi"
         },
-        "pinned": "Disemat"
+        "pinned": "Disemat",
+        "notifications": {
+            "videoFound": "Video dijumpai. Pilih format.",
+            "downloadingVideo": "Sedang memuat turun video...",
+            "downloadingAudio": "Sedang memuat turun audio...",
+            "downloadComplete": "Muat turun selesai!",
+            "errorAnalyzing": "Analisis gagal.",
+            "errorDownloading": "Ralat muat turun.",
+            "invalidUrl": "Format pautan tidak sah."
+        }
     },
     "about": {
         "title": "Tentang Kami",

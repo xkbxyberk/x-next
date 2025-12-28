@@ -64,7 +64,16 @@
             "repost": "Репост",
             "share": "Споделяне"
         },
-        "pinned": "Закрепено"
+        "pinned": "Закрепено",
+        "notifications": {
+            "videoFound": "Видео е намерено. Изберете формат.",
+            "downloadingVideo": "Изтегляне на видео...",
+            "downloadingAudio": "Изтегляне на аудио...",
+            "downloadComplete": "Изтеглянето завърши!",
+            "errorAnalyzing": "Анализът е неуспешен.",
+            "errorDownloading": "Грешка при изтегляне.",
+            "invalidUrl": "Невалиден формат на връзката."
+        }
     },
     "about": {
         "title": "За нас",

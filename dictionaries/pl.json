@@ -64,7 +64,16 @@
             "repost": "Podaj dalej",
             "share": "Udostępnij"
         },
-        "pinned": "Przypięte"
+        "pinned": "Przypięte",
+        "notifications": {
+            "videoFound": "Znaleziono wideo. Wybierz format.",
+            "downloadingVideo": "Pobieranie wideo...",
+            "downloadingAudio": "Pobieranie audio...",
+            "downloadComplete": "Pobieranie zakończone!",
+            "errorAnalyzing": "Analiza nie powiodła się.",
+            "errorDownloading": "Błąd pobierania.",
+            "invalidUrl": "Nieprawidłowy format linku."
+        }
     },
     "about": {
         "title": "O nas",

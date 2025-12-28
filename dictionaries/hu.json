@@ -64,7 +64,16 @@
             "repost": "Megosztás",
             "share": "Küldés"
         },
-        "pinned": "Rögzített"
+        "pinned": "Rögzített",
+        "notifications": {
+            "videoFound": "Videó megtalálva. Válasszon formátumot.",
+            "downloadingVideo": "Videó letöltése...",
+            "downloadingAudio": "Hang letöltése...",
+            "downloadComplete": "Letöltés kész!",
+            "errorAnalyzing": "Az elemzés sikertelen.",
+            "errorDownloading": "Letöltési hiba.",
+            "invalidUrl": "Érvénytelen link formátum."
+        }
     },
     "about": {
         "title": "Rólunk",

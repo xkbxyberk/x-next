@@ -64,7 +64,16 @@
             "repost": "Repostează",
             "share": "Distribuie"
         },
-        "pinned": "Fixat"
+        "pinned": "Fixat",
+        "notifications": {
+            "videoFound": "Video găsit. Selectați formatul.",
+            "downloadingVideo": "Se descarcă videoclipul...",
+            "downloadingAudio": "Se descarcă sunetul...",
+            "downloadComplete": "Descărcare completă!",
+            "errorAnalyzing": "Analiza a eșuat.",
+            "errorDownloading": "Eroare la descărcare.",
+            "invalidUrl": "Format link nevalid."
+        }
     },
     "about": {
         "title": "Despre noi",

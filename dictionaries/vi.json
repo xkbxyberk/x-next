@@ -64,7 +64,16 @@
             "repost": "Đăng lại",
             "share": "Chia sẻ"
         },
-        "pinned": "Đã ghim"
+        "pinned": "Đã ghim",
+        "notifications": {
+            "videoFound": "Đã tìm thấy video. Chọn định dạng.",
+            "downloadingVideo": "Đang tải video...",
+            "downloadingAudio": "Đang tải âm thanh...",
+            "downloadComplete": "Tải xuống hoàn tất!",
+            "errorAnalyzing": "Phân tích thất bại.",
+            "errorDownloading": "Lỗi tải xuống.",
+            "invalidUrl": "Định dạng liên kết không hợp lệ."
+        }
     },
     "about": {
         "title": "Về chúng tôi",

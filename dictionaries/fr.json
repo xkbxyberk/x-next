@@ -64,7 +64,16 @@
             "repost": "Republier",
             "share": "Partager"
         },
-        "pinned": "Épinglé"
+        "pinned": "Épinglé",
+        "notifications": {
+            "videoFound": "Vidéo trouvée. Sélectionnez le format.",
+            "downloadingVideo": "Téléchargement de la vidéo...",
+            "downloadingAudio": "Téléchargement de l'audio...",
+            "downloadComplete": "Téléchargement terminé !",
+            "errorAnalyzing": "L'analyse a échoué.",
+            "errorDownloading": "Erreur de téléchargement.",
+            "invalidUrl": "Format de lien invalide."
+        }
     },
     "about": {
         "title": "À propos de nous",

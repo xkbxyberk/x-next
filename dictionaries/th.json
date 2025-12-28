@@ -64,7 +64,16 @@
             "repost": "รีโพสต์",
             "share": "แชร์"
         },
-        "pinned": "ปักหมุด"
+        "pinned": "ปักหมุด",
+        "notifications": {
+            "videoFound": "พบวิดีโอ เลือกรูปแบบ",
+            "downloadingVideo": "กำลังดาวน์โหลดวิดีโอ...",
+            "downloadingAudio": "กำลังดาวน์โหลดเสียง...",
+            "downloadComplete": "ดาวน์โหลดเสร็จสมบูรณ์!",
+            "errorAnalyzing": "การวิเคราะห์ล้มเหลว",
+            "errorDownloading": "ข้อผิดพลาดในการดาวน์โหลด",
+            "invalidUrl": "รูปแบบลิงก์ไม่ถูกต้อง"
+        }
     },
     "about": {
         "title": "เกี่ยวกับเรา",

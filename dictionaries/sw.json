@@ -64,7 +64,16 @@
             "repost": "Chapisha tena",
             "share": "Shiriki"
         },
-        "pinned": "Bandikwa"
+        "pinned": "Bandikwa",
+        "notifications": {
+            "videoFound": "Video imepatikana. Chagua umbizo.",
+            "downloadingVideo": "Inapakua video...",
+            "downloadingAudio": "Inapakua sauti...",
+            "downloadComplete": "Upakuaji umekamilika!",
+            "errorAnalyzing": "Uchambuzi umeshindwa.",
+            "errorDownloading": "Hitilafu ya kupakua.",
+            "invalidUrl": "Umbizo batili la kiungo."
+        }
     },
     "about": {
         "title": "Kutuhusu",

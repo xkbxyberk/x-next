@@ -64,7 +64,16 @@
             "repost": "ری پوسٹ",
             "share": "شیئر کریں"
         },
-        "pinned": "پن کیا گیا"
+        "pinned": "پن کیا گیا",
+        "notifications": {
+            "videoFound": "ویڈیو مل گئی۔ فارمیٹ منتخب کریں۔",
+            "downloadingVideo": "ویڈیو ڈاؤن لوڈ ہو رہی ہے...",
+            "downloadingAudio": "آڈیو ڈاؤن لوڈ ہو رہا ہے...",
+            "downloadComplete": "ڈاؤن لوڈ مکمل!",
+            "errorAnalyzing": "تجزیہ ناکام رہا۔",
+            "errorDownloading": "ڈاؤن لوڈ کی خرابی۔",
+            "invalidUrl": "غلط لنک فارمیٹ۔"
+        }
     },
     "about": {
         "title": "ہمارے بارے میں",

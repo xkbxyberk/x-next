@@ -64,7 +64,16 @@
             "repost": "Репост",
             "share": "Поделиться"
         },
-        "pinned": "Закреплено"
+        "pinned": "Закреплено",
+        "notifications": {
+            "videoFound": "Видео найдено. Выберите формат.",
+            "downloadingVideo": "Скачивание видео...",
+            "downloadingAudio": "Скачивание аудио...",
+            "downloadComplete": "Скачивание завершено!",
+            "errorAnalyzing": "Ошибка анализа.",
+            "errorDownloading": "Ошибка скачивания.",
+            "invalidUrl": "Неверный формат ссылки."
+        }
     },
     "about": {
         "title": "О нас",

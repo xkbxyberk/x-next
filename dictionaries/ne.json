@@ -64,7 +64,16 @@
             "repost": "रिपोस्ट",
             "share": "साझा गर्नुहोस्"
         },
-        "pinned": "पिन गरिएको"
+        "pinned": "पिन गरिएको",
+        "notifications": {
+            "videoFound": "भिडियो फेला पर्यो। ढाँचा चयन गर्नुहोस्।",
+            "downloadingVideo": "भिडियो डाउनलोड हुँदैछ...",
+            "downloadingAudio": "अडियो डाउनलोड हुँदैछ...",
+            "downloadComplete": "डाउनलोड पूरा भयो!",
+            "errorAnalyzing": "विश्लेषण असफल भयो।",
+            "errorDownloading": "डाउनलोड त्रुटि।",
+            "invalidUrl": "अवैध लिङ्क ढाँचा।"
+        }
     },
     "about": {
         "title": "हाम्रो बारेमा",

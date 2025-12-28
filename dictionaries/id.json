@@ -64,7 +64,16 @@
             "repost": "Repost",
             "share": "Bagikan"
         },
-        "pinned": "Disematkan"
+        "pinned": "Disematkan",
+        "notifications": {
+            "videoFound": "Video ditemukan. Pilih format.",
+            "downloadingVideo": "Mengunduh video...",
+            "downloadingAudio": "Mengunduh audio...",
+            "downloadComplete": "Unduhan selesai!",
+            "errorAnalyzing": "Analisis gagal.",
+            "errorDownloading": "Kesalahan pengunduhan.",
+            "invalidUrl": "Format tautan tidak valid."
+        }
     },
     "about": {
         "title": "Tentang Kami",

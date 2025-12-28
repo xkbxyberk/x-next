@@ -64,7 +64,16 @@
             "repost": "Ripubblica",
             "share": "Condividi"
         },
-        "pinned": "Fissato"
+        "pinned": "Fissato",
+        "notifications": {
+            "videoFound": "Video trovato. Seleziona formato.",
+            "downloadingVideo": "Scaricamento video...",
+            "downloadingAudio": "Scaricamento audio...",
+            "downloadComplete": "Download completato!",
+            "errorAnalyzing": "Analisi fallita.",
+            "errorDownloading": "Errore di download.",
+            "invalidUrl": "Formato link non valido."
+        }
     },
     "about": {
         "title": "Chi siamo",

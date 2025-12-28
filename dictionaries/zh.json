@@ -64,7 +64,16 @@
             "repost": "转发",
             "share": "分享"
         },
-        "pinned": "已置顶"
+        "pinned": "已置顶",
+        "notifications": {
+            "videoFound": "找到视频。请选择格式。",
+            "downloadingVideo": "正在下载视频...",
+            "downloadingAudio": "正在下载音频...",
+            "downloadComplete": "下载完成！",
+            "errorAnalyzing": "解析失败。",
+            "errorDownloading": "下载错误。",
+            "invalidUrl": "无效的链接格式。"
+        }
     },
     "about": {
         "title": "关于我们",

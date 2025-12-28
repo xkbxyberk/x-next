@@ -64,7 +64,16 @@
             "repost": "Uudelleenjulkaise",
             "share": "Jaa"
         },
-        "pinned": "Kiinnitetty"
+        "pinned": "Kiinnitetty",
+        "notifications": {
+            "videoFound": "Video löytyi. Valitse muoto.",
+            "downloadingVideo": "Ladataan videota...",
+            "downloadingAudio": "Ladataan ääntä...",
+            "downloadComplete": "Lataus valmis!",
+            "errorAnalyzing": "Analyysi epäonnistui.",
+            "errorDownloading": "Latausvirhe.",
+            "invalidUrl": "Virheellinen linkin muoto."
+        }
     },
     "about": {
         "title": "Tietoa meistä",

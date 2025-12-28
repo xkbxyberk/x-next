@@ -64,7 +64,16 @@
             "repost": "إعادة نشر",
             "share": "مشاركة"
         },
-        "pinned": "مثبت"
+        "pinned": "مثبت",
+        "notifications": {
+            "videoFound": "تم العثور على الفيديو. اختر الصيغة.",
+            "downloadingVideo": "جاري تنزيل الفيديو...",
+            "downloadingAudio": "جاري تنزيل الصوت...",
+            "downloadComplete": "اكتمل التنزيل!",
+            "errorAnalyzing": "فشل التحليل.",
+            "errorDownloading": "خطأ في التنزيل.",
+            "invalidUrl": "تنسيق الرابط غير صالح."
+        }
     },
     "about": {
         "title": "معلومات عنا",

@@ -64,7 +64,16 @@
             "repost": "रिपोस्ट",
             "share": "शेयर"
         },
-        "pinned": "पिन किया गया"
+        "pinned": "पिन किया गया",
+        "notifications": {
+            "videoFound": "वीडियो मिल गया। प्रारूप चुनें।",
+            "downloadingVideo": "वीडियो डाउनलोड हो रहा है...",
+            "downloadingAudio": "ऑडियो डाउनलोड हो रहा है...",
+            "downloadComplete": "डाउनलोड पूरा हुआ!",
+            "errorAnalyzing": "विश्लेषण विफल रहा।",
+            "errorDownloading": "डाउनलोड त्रुटि।",
+            "invalidUrl": "अमान्य लिंक प्रारूप।"
+        }
     },
     "about": {
         "title": "हमारे बारे में",

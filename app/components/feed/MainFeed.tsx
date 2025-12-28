@@ -45,7 +45,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
     inputUrl, setInputUrl, data, error, loading, downloading, progress,
     selection, setSelection, notification, closeNotification,
     handleAnalyze, executeDownload, reset
-  } = useVideoDownload();
+  } = useVideoDownload(dict);
 
   const logoSrc = theme === 'default' ? '/logo.avif' : '/logo-white.avif';
 

@@ -64,7 +64,16 @@
             "repost": "פרסם מחדש",
             "share": "שתף"
         },
-        "pinned": "נעוץ"
+        "pinned": "נעוץ",
+        "notifications": {
+            "videoFound": "הסרטון נמצא. בחר פורמט.",
+            "downloadingVideo": "מוריד וידאו...",
+            "downloadingAudio": "מוריד אודיו...",
+            "downloadComplete": "ההורדה הושלמה!",
+            "errorAnalyzing": "הניתוח נכשל.",
+            "errorDownloading": "שגיאת הורדה.",
+            "invalidUrl": "פורמט קישור לא חוקי."
+        }
     },
     "about": {
         "title": "אודותינו",

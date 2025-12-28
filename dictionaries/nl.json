@@ -64,7 +64,16 @@
             "repost": "Herplaatsen",
             "share": "Delen"
         },
-        "pinned": "Vastgemaakt"
+        "pinned": "Vastgemaakt",
+        "notifications": {
+            "videoFound": "Video gevonden. Kies formaat.",
+            "downloadingVideo": "Video downloaden...",
+            "downloadingAudio": "Audio downloaden...",
+            "downloadComplete": "Download voltooid!",
+            "errorAnalyzing": "Analyse mislukt.",
+            "errorDownloading": "Downloadfout.",
+            "invalidUrl": "Ongeldig linkformaat."
+        }
     },
     "about": {
         "title": "Over ons",

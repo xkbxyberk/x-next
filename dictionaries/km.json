@@ -64,7 +64,16 @@
             "repost": "បង្ហោះឡើងវិញ",
             "share": "ចែករំលែក"
         },
-        "pinned": "បានខ្ទាស់"
+        "pinned": "បានខ្ទាស់",
+        "notifications": {
+            "videoFound": "រកឃើញវីដេអូ។ ជ្រើសរើសទម្រង់។",
+            "downloadingVideo": "កំពុងទាញយកវីដេអូ...",
+            "downloadingAudio": "កំពុងទាញយកសំឡេង...",
+            "downloadComplete": "ការទាញយកបានបញ្ចប់!",
+            "errorAnalyzing": "ការវិភាគបរាជ័យ។",
+            "errorDownloading": "កំហុសក្នុងការទាញយក។",
+            "invalidUrl": "ទម្រង់តំណមិនត្រឹមត្រូវ។"
+        }
     },
     "about": {
         "title": "អំពីយើង",

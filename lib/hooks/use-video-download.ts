@@ -11,7 +11,7 @@ export type SelectionType = {
   bitrate?: number;
 };
 
-export function useVideoDownload() {
+export function useVideoDownload(dict?: any) {
   const [inputUrl, setInputUrl] = useState('');
   const [data, setData] = useState<TweetVideoEntity | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -53,7 +53,7 @@ export function useVideoDownload() {
       // TypeScript'e "Eğer success false ise bu bloğa gir" diyoruz.
       // Böylece bu bloğun içinde result.error'a erişmemize izin veriyor.
       if (!result.success) {
-        throw new Error(result.error || 'Video bulunamadı');
+        throw new Error(result.error || dict?.feed?.notifications?.errorAnalyzing || 'Video bulunamadı');
       }
 
       // Buraya geldiyse TypeScript artık başarısız olmadığını biliyor.
@@ -64,11 +64,11 @@ export function useVideoDownload() {
         console.log('⚡ Veri Cache\'den ışık hızında geldi!');
       }
 
-      showNotification('Video başarıyla bulundu. Format seçin.', 'success');
+      showNotification(dict?.feed?.notifications?.videoFound || 'Video başarıyla bulundu. Format seçin.', 'success');
       return true;
     } catch (err: any) {
       setError(err.message);
-      showNotification(err.message || 'Analiz başarısız oldu.', 'error');
+      showNotification(err.message || dict?.feed?.notifications?.errorAnalyzing || 'Analiz başarısız oldu.', 'error');
       return false;
     } finally {
       setLoading(false);
@@ -84,7 +84,10 @@ export function useVideoDownload() {
 
     try {
       if (typeof showNotification === 'function') {
-        showNotification(`${selection.type === 'audio' ? 'Ses' : 'Video'} indiriliyor...`, 'info');
+        const msg = selection.type === 'audio'
+          ? (dict?.feed?.notifications?.downloadingAudio || 'Ses indiriliyor...')
+          : (dict?.feed?.notifications?.downloadingVideo || 'Video indiriliyor...');
+        showNotification(msg, 'info');
       }
 
       let blob: Blob;
@@ -169,11 +172,12 @@ export function useVideoDownload() {
         URL.revokeObjectURL(url);
       });
 
-      showNotification('İndirme tamamlandı!', 'success');
+      showNotification(dict?.feed?.notifications?.downloadComplete || 'İndirme tamamlandı!', 'success');
 
     } catch (err: any) {
       console.error(err);
-      showNotification('İndirme hatası: ' + (err.message || 'Bilinmeyen hata'), 'error');
+      const errorTitle = dict?.feed?.notifications?.errorDownloading || 'İndirme hatası';
+      showNotification(errorTitle + ': ' + (err.message || 'Bilinmeyen hata'), 'error');
     } finally {
       setDownloading(false);
       setProgress(0);

@@ -64,7 +64,16 @@
             "repost": "Teilen",
             "share": "Senden"
         },
-        "pinned": "Angeheftet"
+        "pinned": "Angeheftet",
+        "notifications": {
+            "videoFound": "Video gefunden. Format wählen.",
+            "downloadingVideo": "Video wird heruntergeladen...",
+            "downloadingAudio": "Audio wird heruntergeladen...",
+            "downloadComplete": "Download abgeschlossen!",
+            "errorAnalyzing": "Analyse fehlgeschlagen.",
+            "errorDownloading": "Download-Fehler.",
+            "invalidUrl": "Ungültiges Link-Format."
+        }
     },
     "about": {
         "title": "Über uns",

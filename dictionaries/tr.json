@@ -64,7 +64,16 @@
             "repost": "Yeniden Gönder",
             "share": "Paylaş"
         },
-        "pinned": "Sabitlenmiş"
+        "pinned": "Sabitlenmiş",
+        "notifications": {
+            "videoFound": "Video başarıyla bulundu. Format seçin.",
+            "downloadingVideo": "Video indiriliyor...",
+            "downloadingAudio": "Ses indiriliyor...",
+            "downloadComplete": "İndirme tamamlandı!",
+            "errorAnalyzing": "Analiz başarısız oldu.",
+            "errorDownloading": "İndirme hatası.",
+            "invalidUrl": "Geçersiz link formatı."
+        }
     },
     "about": {
         "title": "Hakkımızda",

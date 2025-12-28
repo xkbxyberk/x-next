@@ -64,7 +64,16 @@
             "repost": "Αναδημοσίευση",
             "share": "Κοινοποίηση"
         },
-        "pinned": "Καρﻔιτσωμένο"
+        "pinned": "Καρﻔιτσωμένο",
+        "notifications": {
+            "videoFound": "Το βίντεο βρέθηκε. Επιλέξτε μορφή.",
+            "downloadingVideo": "Λήψη βίντεο...",
+            "downloadingAudio": "Λήψη ήχου...",
+            "downloadComplete": "Η λήψη ολοκληρώθηκε!",
+            "errorAnalyzing": "Η ανάλυση απέτυχε.",
+            "errorDownloading": "Σφάλμα λήψης.",
+            "invalidUrl": "Μη έγκυρη μορφή συνδέσμου."
+        }
     },
     "about": {
         "title": "Σχετικά με Εμάς",

@@ -64,7 +64,16 @@
             "repost": "リポスト",
             "share": "共有"
         },
-        "pinned": "固定された"
+        "pinned": "固定された",
+        "notifications": {
+            "videoFound": "動画が見つかりました。形式を選択してください。",
+            "downloadingVideo": "動画をダウンロード中...",
+            "downloadingAudio": "音声をダウンロード中...",
+            "downloadComplete": "ダウンロード完了！",
+            "errorAnalyzing": "解析に失敗しました。",
+            "errorDownloading": "ダウンロードエラー。",
+            "invalidUrl": "無効なリンク形式です。"
+        }
     },
     "about": {
         "title": "当サイトについて",

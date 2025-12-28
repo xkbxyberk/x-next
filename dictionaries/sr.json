@@ -64,7 +64,16 @@
             "repost": "Repostuj",
             "share": "Podeli"
         },
-        "pinned": "Zakačeno"
+        "pinned": "Zakačeno",
+        "notifications": {
+            "videoFound": "Видео је пронађен. Изаберите формат.",
+            "downloadingVideo": "Преузимање видео записа...",
+            "downloadingAudio": "Преузимање звука...",
+            "downloadComplete": "Преузимање завршено!",
+            "errorAnalyzing": "Анализа није успела.",
+            "errorDownloading": "Грешка при преузимању.",
+            "invalidUrl": "Неважећи формат везе."
+        }
     },
     "about": {
         "title": "О нама",

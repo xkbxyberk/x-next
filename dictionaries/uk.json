@@ -64,7 +64,16 @@
             "repost": "Репост",
             "share": "Поділитися"
         },
-        "pinned": "Закріплено"
+        "pinned": "Закріплено",
+        "notifications": {
+            "videoFound": "Відео знайдено. Оберіть формат.",
+            "downloadingVideo": "Завантаження відео...",
+            "downloadingAudio": "Завантаження аудіо...",
+            "downloadComplete": "Завантаження завершено!",
+            "errorAnalyzing": "Помилка аналізу.",
+            "errorDownloading": "Помилка завантаження.",
+            "invalidUrl": "Невірний формат посилання."
+        }
     },
     "about": {
         "title": "Про нас",

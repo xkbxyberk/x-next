@@ -64,7 +64,16 @@
             "repost": "Repost",
             "share": "Share"
         },
-        "pinned": "Pinned"
+        "pinned": "Pinned",
+        "notifications": {
+            "videoFound": "Video found. Select format.",
+            "downloadingVideo": "Downloading video...",
+            "downloadingAudio": "Downloading audio...",
+            "downloadComplete": "Download complete!",
+            "errorAnalyzing": "Analysis failed.",
+            "errorDownloading": "Download error.",
+            "invalidUrl": "Invalid link format."
+        }
     },
     "about": {
         "title": "About Us",

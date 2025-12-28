@@ -64,7 +64,16 @@
             "repost": "Republicar",
             "share": "Partilhar"
         },
-        "pinned": "Fixado"
+        "pinned": "Fixado",
+        "notifications": {
+            "videoFound": "Vídeo encontrado. Selecione o formato.",
+            "downloadingVideo": "A transferir vídeo...",
+            "downloadingAudio": "A transferir áudio...",
+            "downloadComplete": "Transferência concluída!",
+            "errorAnalyzing": "Falha na análise.",
+            "errorDownloading": "Erro na transferência.",
+            "invalidUrl": "Formato de link inválido."
+        }
     },
     "about": {
         "title": "Sobre Nós",
