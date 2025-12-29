@@ -77,10 +77,14 @@ export function useVideoDownload(dict?: any) {
     setLoading(false);
   };
 
-  // 1. ANALİZ İŞLEMİ
+  // 1. HİBRİT ANALİZ İŞLEMİ (Client-First Strategy)
   const handleAnalyze = async (urlToAnalyze?: string) => {
     const targetUrl = urlToAnalyze || inputUrl;
     if (!targetUrl.trim()) return;
+
+    // Tweet ID çıkarma (Basit regex)
+    const tweetIdMatch = targetUrl.match(/(?:twitter|x)\.com\/[^\/]+\/status\/(\d+)/);
+    const tweetId = tweetIdMatch ? tweetIdMatch[1] : null;
 
     setLoading(true);
     setData(null);
@@ -88,24 +92,36 @@ export function useVideoDownload(dict?: any) {
     setError(null);
 
     try {
-      const result = await resolveTweetAction(targetUrl);
+      let resultData: TweetVideoEntity | null = null;
 
-      // DÜZELTME BURADA:
-      // TypeScript'e "Eğer success false ise bu bloğa gir" diyoruz.
-      // Böylece bu bloğun içinde result.error'a erişmemize izin veriyor.
-      if (!result.success) {
-        throw new Error(result.error || dict?.feed?.notifications?.errorAnalyzing || 'Video bulunamadı');
+      // ADIM 1: Client-Side Denemesi (Masrafsız Yöntem)
+      if (tweetId) {
+        console.log('🚀 [Hybrid] Client-side fetch deneniyor...');
+        // Dinamik import ile client-code'u sadece ihtiyaç anında yükle
+        const { fetchTweetClientSide } = await import('@/lib/client/twitter-client-direct');
+        resultData = await fetchTweetClientSide(tweetId);
       }
 
-      // Buraya geldiyse TypeScript artık başarısız olmadığını biliyor.
-      // Dolayısıyla result.data'ya güvenle erişebiliriz.
-      setData(result.data);
+      // ADIM 2: Fallback (Server Action)
+      if (resultData) {
+        console.log('✨ [Hybrid] Veri Client tarafından başarıyla alındı!');
+        showNotification(dict?.feed?.notifications?.videoFound || 'Video başarıyla bulundu (Hızlı Mod).', 'success');
+      } else {
+        console.log('🛡️ [Hybrid] Client başarısız, Server Action devreye giriyor...');
+        const result = await resolveTweetAction(targetUrl);
 
-      if (result.fromCache) {
-        console.log('⚡ Veri Cache\'den ışık hızında geldi!');
+        if (!result.success) {
+          throw new Error(result.error || dict?.feed?.notifications?.errorAnalyzing || 'Video bulunamadı');
+        }
+        resultData = result.data;
+        showNotification(dict?.feed?.notifications?.videoFound || 'Video başarıyla bulundu.', 'success');
       }
 
-      showNotification(dict?.feed?.notifications?.videoFound || 'Video başarıyla bulundu. Format seçin.', 'success');
+      // Sonuçları işle
+      if (resultData) {
+        setData(resultData);
+      }
+
       return true;
     } catch (err: any) {
       setError(err.message);

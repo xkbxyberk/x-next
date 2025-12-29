@@ -1,6 +1,8 @@
 import { unstable_cache } from 'next/cache';
 import { TweetVideoEntity, VideoVariantEntity } from '@/lib/core/schemas';
 
+import { getRandomHeaders } from '@/lib/utils/headers';
+
 // Token hesaplama
 const getToken = (id: string) => {
   return ((Number(id) / 1e15) * Math.PI).toString(36).replace(/(0)+/g, '');
@@ -10,14 +12,14 @@ const fetchTweetDataInternal = async (tweetId: string): Promise<TweetVideoEntity
   const token = getToken(tweetId);
   const url = `https://cdn.syndication.twimg.com/tweet-result?id=${tweetId}&lang=en&token=${token}`;
 
-  console.log(`🔍 [TwitterFetch] İstek gönderiliyor: ${tweetId}`);
+  // Header rotasyonu uygulanıyor (Server Camouflage)
+  const headers = getRandomHeaders();
+  console.log(`🔍 [TwitterFetch] İstek gönderiliyor: ${tweetId} (UA: ${headers['User-Agent'].substring(0, 30)}...)`);
 
   try {
     const response = await fetch(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-      },
-      next: { revalidate: 3600 } 
+      headers: headers,
+      next: { revalidate: 3600 }
     });
 
     if (!response.ok) {
@@ -45,9 +47,9 @@ const fetchTweetDataInternal = async (tweetId: string): Promise<TweetVideoEntity
 
       // Video veya GIF ara.
       // KRİTİK GÜNCELLEME: Sadece type'a bakma, 'video_info' var mı diye de bak.
-      return candidates.find((m: any) => 
-        m.type === 'video' || 
-        m.type === 'animated_gif' || 
+      return candidates.find((m: any) =>
+        m.type === 'video' ||
+        m.type === 'animated_gif' ||
         !!m.video_info // Type 'photo' olsa bile video_info varsa videodur.
       );
     };
@@ -74,15 +76,15 @@ const fetchTweetDataInternal = async (tweetId: string): Promise<TweetVideoEntity
       // Debug için ham medyanın ilk elemanını görelim
       const debugMedia = legacy.extended_entities?.media || [];
       if (debugMedia.length > 0) {
-          console.log('Mevcut Medya (Video İçermiyor):', JSON.stringify(debugMedia[0]).substring(0, 150));
+        console.log('Mevcut Medya (Video İçermiyor):', JSON.stringify(debugMedia[0]).substring(0, 150));
       }
       return null;
     }
 
     // 3. VARYANTLARI AYIKLA
     const variants: VideoVariantEntity[] = (videoMedia.video_info?.variants || [])
-      .filter((v: any) => 
-        v.content_type === 'video/mp4' || 
+      .filter((v: any) =>
+        v.content_type === 'video/mp4' ||
         v.content_type === 'application/x-mpegURL' // m3u8 desteği (bazı durumlarda gerekebilir)
       )
       .map((v: any) => ({
@@ -97,16 +99,16 @@ const fetchTweetDataInternal = async (tweetId: string): Promise<TweetVideoEntity
 
     // 4. METADATA ÇIKARIMI
     // Hedef tweet (quoted veya original) üzerinden bilgileri al
-    const userObj = 
-      targetTweet.user || 
-      targetTweet.core?.user_results?.result?.legacy || 
+    const userObj =
+      targetTweet.user ||
+      targetTweet.core?.user_results?.result?.legacy ||
       legacy.user || // Fallback olarak ana tweet sahibini al
       {};
 
     const authorName = userObj.name || 'X Kullanıcısı';
     const authorScreenName = userObj.screen_name || 'unknown';
     const authorAvatar = userObj.profile_image_url_https || '';
-    
+
     const text = targetTweet.full_text || targetTweet.text || legacy.full_text || '';
     const createdAt = targetTweet.created_at || legacy.created_at || new Date().toISOString();
 
