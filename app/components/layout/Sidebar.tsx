@@ -193,9 +193,7 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
             width={52}
             height={52}
             className="object-contain shrink-0"
-            priority={true}
             sizes="52px"
-            fetchPriority="high"
           />
           <h1 className="hidden xl:block text-sm font-bold text-(--text-primary) leading-tight">
             {dict.common.title}

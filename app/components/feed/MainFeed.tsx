@@ -230,7 +230,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
         <div id="download-area" className="p-4 border-b border-(--border) scroll-mt-24">
           <div className="flex gap-4">
             <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 relative border border-(--border)">
-              <Image src={logoSrc} alt="XDownloaderz" fill className="object-cover" sizes="40px" priority />
+              <Image src={logoSrc} alt="XDownloaderz" fill className="object-cover" sizes="40px" />
             </div>
             <div className="flex-1 flex flex-col gap-3">
 
