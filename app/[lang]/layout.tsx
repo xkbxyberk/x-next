@@ -4,7 +4,7 @@ import Sidebar from '@/app/components/layout/Sidebar';
 import RightSection from '@/app/components/layout/RightSection';
 import { ThemeProvider } from '@/app/components/ThemeProvider';
 import type { Metadata } from 'next';
-import { getDictionary } from '@/app/get-dictionary';
+import { getDictionary, locales } from '@/app/get-dictionary';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { keywords } from '@/app/keywords';
 
@@ -45,23 +45,10 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     },
     alternates: {
       canonical: `/${lang}`,
-      languages: {
-        'en': '/en',
-        'tr': '/tr',
-        'es': '/es',
-        'fr': '/fr',
-        'de': '/de',
-        'it': '/it',
-        'pt': '/pt',
-        'ru': '/ru',
-        'ja': '/ja',
-        'ko': '/ko',
-        'ar': '/ar',
-        'hi': '/hi'
-        // Diğer diller buraya eklenebilir, fakat liste çok uzun olacağı için
-        // temel dilleri eklemek yeterli olabilir veya hepsi eklenebilir.
-        // Şimdilik ana dilleri ekliyoruz.
-      },
+      languages: locales.reduce((acc, lang) => {
+        acc[lang] = `/${lang}`;
+        return acc;
+      }, {} as Record<string, string>),
     },
     openGraph: {
       title: dict.common.social?.ogTitle || dict.common.title,
@@ -97,16 +84,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 }
 
 export async function generateStaticParams() {
-  return [
-    { lang: 'en' }, { lang: 'tr' }, { lang: 'ar' }, { lang: 'bg' }, { lang: 'bn' },
-    { lang: 'br' }, { lang: 'cs' }, { lang: 'da' }, { lang: 'de' }, { lang: 'el' },
-    { lang: 'es' }, { lang: 'fa' }, { lang: 'fi' }, { lang: 'fr' }, { lang: 'he' },
-    { lang: 'hi' }, { lang: 'hr' }, { lang: 'hu' }, { lang: 'id' }, { lang: 'it' },
-    { lang: 'ja' }, { lang: 'km' }, { lang: 'ko' }, { lang: 'ms' }, { lang: 'ne' },
-    { lang: 'nl' }, { lang: 'no' }, { lang: 'pl' }, { lang: 'pt' }, { lang: 'ro' },
-    { lang: 'ru' }, { lang: 'sr' }, { lang: 'sv' }, { lang: 'sw' }, { lang: 'th' },
-    { lang: 'tl' }, { lang: 'uk' }, { lang: 'ur' }, { lang: 'vi' }, { lang: 'zh' }
-  ];
+  return locales.map((lang) => ({ lang }));
 }
 
 export default async function RootLayout({

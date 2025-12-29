@@ -44,6 +44,8 @@ const dictionaries = {
   zh: () => import('../dictionaries/zh.json').then((module) => module.default),
 }
 
+export const locales = Object.keys(dictionaries) as Array<keyof typeof dictionaries>
+
 export const getDictionary = async (locale: keyof typeof dictionaries) => {
   return dictionaries[locale]?.() ?? dictionaries.en()
 }
