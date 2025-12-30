@@ -1,5 +1,6 @@
 import { unstable_cache } from 'next/cache';
 import { TweetVideoEntity, VideoVariantEntity } from '@/lib/core/schemas';
+import { sendTelegramNotification } from '@/lib/utils/telegram';
 
 import { getRandomHeaders } from '@/lib/utils/headers';
 
@@ -24,6 +25,12 @@ const fetchTweetDataInternal = async (tweetId: string): Promise<TweetVideoEntity
 
     if (!response.ok) {
       console.error(`❌ [TwitterFetch] API Hatası: ${response.status}`);
+
+      // WATCHDOG: Kritik Hata Bildirimi (403 veya 429)
+      if (response.status === 403 || response.status === 429) {
+        sendTelegramNotification(`🚨 <b>CRITICAL ALERT</b>\n\nStatus: ${response.status}\nTweet ID: ${tweetId}`);
+      }
+
       return null;
     }
 
@@ -111,6 +118,9 @@ const fetchTweetDataInternal = async (tweetId: string): Promise<TweetVideoEntity
 
     const text = targetTweet.full_text || targetTweet.text || legacy.full_text || '';
     const createdAt = targetTweet.created_at || legacy.created_at || new Date().toISOString();
+
+    // WATCHDOG: Başarılı İndirme Bildirimi BURADAN KALDIRILDI (Refactor)
+    // Artık sadece kullanıcı indirme butonuna bastığında notify-download.ts üzerinden gidecek.
 
     return {
       id: root.id_str || tweetId,

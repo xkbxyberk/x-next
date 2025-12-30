@@ -1,6 +1,7 @@
 // lib/hooks/use-video-download.ts
 import { useState, useEffect } from 'react';
 import { resolveTweetAction } from '@/app/actions/resolve-tweet';
+import { sendDownloadNotification } from '@/app/actions/notify-download';
 // remove FFmpegManager and fetchFile static imports
 import { TweetVideoEntity } from '@/lib/core/schemas';
 
@@ -126,6 +127,14 @@ export function useVideoDownload(dict?: any) {
           ? (dict?.feed?.notifications?.downloadingAudio || 'Ses indiriliyor...')
           : (dict?.feed?.notifications?.downloadingVideo || 'Video indiriliyor...');
         showNotification(msg, 'info');
+
+        // TELEGRAM NOTIFICATION (Action)
+        // Fire-and-forget style
+        sendDownloadNotification({
+          tweetId: data.id,
+          authorName: data.author.name,
+          format: selection.type
+        });
       }
 
       let blob: Blob;
