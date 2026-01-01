@@ -36,6 +36,15 @@ export default function PostCard({
   const [isLiked, setIsLiked] = useState(false);
   const [likeCount, setLikeCount] = useState(data.metrics.likes);
 
+  const formatContent = (text: string) => {
+    if (!text) return null;
+    return text.split(/(\*\*.*?\*\*)/g).map((part, i) =>
+      part.startsWith('**') && part.endsWith('**')
+        ? <strong key={i} className="font-bold">{part.slice(2, -2)}</strong>
+        : part
+    );
+  };
+
   const handleLike = () => {
     const newStatus = !isLiked;
     setIsLiked(newStatus);
@@ -79,7 +88,7 @@ export default function PostCard({
         </div>
 
         <p className="text-[15px] leading-normal whitespace-pre-wrap text-(--text-primary)">
-          {data.content}
+          {formatContent(data.content)}
         </p>
 
 

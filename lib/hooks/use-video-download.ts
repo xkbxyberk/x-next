@@ -6,7 +6,7 @@ import { sendDownloadNotification } from '@/app/actions/notify-download';
 import { TweetVideoEntity } from '@/lib/core/schemas';
 
 export type SelectionType = {
-  type: 'video' | 'audio';
+  type: 'video' | 'audio' | 'gif';
   url: string;
   qualityLabel?: string;
   bitrate?: number;
@@ -20,7 +20,7 @@ export type HistoryItem = {
   image?: string;
   timestamp: string;
   quality: string;
-  type: 'video' | 'audio';
+  type: 'video' | 'audio' | 'gif';
 };
 
 export function useVideoDownload(dict?: any) {
@@ -123,9 +123,10 @@ export function useVideoDownload(dict?: any) {
 
     try {
       if (typeof showNotification === 'function') {
-        const msg = selection.type === 'audio'
-          ? (dict?.feed?.notifications?.downloadingAudio || 'Ses indiriliyor...')
-          : (dict?.feed?.notifications?.downloadingVideo || 'Video indiriliyor...');
+        let msg = dict?.feed?.notifications?.downloadingVideo || 'Dosya indiriliyor...';
+        if (selection.type === 'audio') msg = dict?.feed?.notifications?.downloadingAudio || 'Ses indiriliyor...';
+        if (selection.type === 'gif') msg = 'GIF Hazırlanıyor (Bu işlem biraz sürebilir)...';
+
         showNotification(msg, 'info');
 
         // TELEGRAM NOTIFICATION (Action)
@@ -140,7 +141,7 @@ export function useVideoDownload(dict?: any) {
       let blob: Blob;
       let filename = `${data.author.screenName}-${data.id}`;
 
-      if (selection.type === 'audio') {
+      if (selection.type === 'audio' || selection.type === 'gif') {
         // Dynamic import for FFmpegManager
         const { FFmpegManager } = await import('@/lib/client/ffmpeg-manager');
         const ffmpeg = await FFmpegManager.getInstance();
@@ -149,6 +150,9 @@ export function useVideoDownload(dict?: any) {
           setProgress(Math.round(progress * 100));
         });
 
+        const targetFile = selection.type === 'audio' ? 'output.mp3' : 'output.gif';
+        const sourceFile = 'input.mp4';
+
         try {
           // fetchFile yerine manuel fetch yapıyoruz, böylece referrerPolicy ekleyebiliriz.
           const response = await fetch(selection.url, {
@@ -156,7 +160,7 @@ export function useVideoDownload(dict?: any) {
           });
 
           if (!response.ok) {
-            throw new Error(`Video indirilemedi. Status: ${response.status}`);
+            throw new Error(`Kaynak dosya indirilemedi. Status: ${response.status}`);
           }
 
           const blobData = await response.blob();
@@ -166,28 +170,41 @@ export function useVideoDownload(dict?: any) {
           // Task 5: INP Optimization - Yield to main thread
           await new Promise(resolve => setTimeout(resolve, 0)); // yieldToMain polyfill
 
-          await ffmpeg.writeFile('input.mp4', uint8Array);
+          await ffmpeg.writeFile(sourceFile, uint8Array);
 
           // Yield again before heavy processing
           await new Promise(resolve => setTimeout(resolve, 0));
 
-          await ffmpeg.exec(['-i', 'input.mp4', '-vn', '-ab', '192k', 'output.mp3']);
+          if (selection.type === 'audio') {
+            await ffmpeg.exec(['-i', sourceFile, '-vn', '-ab', '192k', targetFile]);
+          } else {
+            // GIF Conversion Command
+            // Optimize edilmiş: 12fps, genişlik 360px (daha hızlı render için)
+            // Palettegen ve paletteuse filtresi ile yüksek kalite ama yavaş işlem
+            await ffmpeg.exec([
+              '-i', sourceFile,
+              '-vf', 'fps=12,scale=360:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse',
+              '-loop', '0',
+              targetFile
+            ]);
+          }
 
           // Yield before reading result
           await new Promise(resolve => setTimeout(resolve, 0));
 
-          const fileData = await ffmpeg.readFile('output.mp3');
-          blob = new Blob([fileData as any], { type: 'audio/mp3' });
-          filename += '.mp3';
+          const fileData = await ffmpeg.readFile(targetFile);
+          blob = new Blob([fileData as any], { type: selection.type === 'audio' ? 'audio/mp3' : 'image/gif' });
+          filename += selection.type === 'audio' ? '.mp3' : '.gif';
+
         } catch (e: any) {
           console.error("FFmpeg error full object:", e);
           const errorMessage = e.message || (typeof e === 'string' ? e : JSON.stringify(e));
-          throw new Error("Ses dönüştürme hatası: " + errorMessage);
+          throw new Error("Dönüştürme hatası: " + errorMessage);
         } finally {
           // Temizlik
           try {
-            await ffmpeg.deleteFile('input.mp4');
-            await ffmpeg.deleteFile('output.mp3');
+            await ffmpeg.deleteFile(sourceFile);
+            await ffmpeg.deleteFile(targetFile);
           } catch (cleanupErr) {
             console.warn("Dosya temizleme hatası (önemsiz olabilir):", cleanupErr);
           }

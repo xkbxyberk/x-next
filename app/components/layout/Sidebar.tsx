@@ -96,15 +96,15 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
 
         {/* Side Drawer with Portal */}
         {isDrawerOpen && mounted && createPortal(
-          <div className="fixed inset-0 z-[100] flex justify-end text-base">
+          <div className="fixed inset-0 z-[100] flex justify-end text-base pointer-events-auto">
             {/* Backdrop */}
             <div
-              className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+              className="absolute inset-0 bg-black/50 backdrop-blur-sm animate-fade-in"
               onClick={closeDrawer}
             />
 
             {/* Drawer Content */}
-            <div className="relative w-[75%] max-w-[300px] h-full bg-(--background) border-l border-(--border) flex flex-col p-5 shadow-2xl overflow-y-auto">
+            <div className="relative w-[75%] max-w-[300px] h-full bg-(--background) border-l border-(--border) flex flex-col p-5 shadow-2xl overflow-y-auto animate-slide-in-right">
               <div className="flex justify-between items-center mb-8 shrink-0">
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 rounded-full overflow-hidden relative border border-(--border)">
@@ -227,6 +227,10 @@ export default function Sidebar({ mobile = false, dict }: SidebarProps) {
         </div>
         */}
       </div>
+
+      {/* --- Popular Searches (SEO) --- */}
+      {/* --- Popular Searches (SEO) - MOVED TO RIGHT SECTION --- */}
+
 
       <div className="mb-4 mt-2 p-3 hover:bg-(--background-secondary) rounded-full cursor-pointer flex items-center gap-3 shrink-0">
         <div className="w-10 h-10 rounded-full overflow-hidden relative border border-(--border)">

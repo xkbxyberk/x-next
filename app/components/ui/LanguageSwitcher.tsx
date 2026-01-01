@@ -7,7 +7,7 @@ import { Check } from 'lucide-react';
 // Dil - Bayrak Eşleşmesi (40 Dil)
 const FLAGS: Record<string, string> = {
     ar: '🇸🇦', bg: '🇧🇬', bn: '🇧🇩', br: '🇧🇷', cs: '🇨🇿', da: '🇩🇰', de: '🇩🇪', el: '🇬🇷',
-    en: '🇬🇧', es: '🇪🇸', fa: '🇮🇷', fi: '🇫🇮', fr: '🇫🇷', he: '🇮🇱', hi: '🇮🇳', hr: '🇭🇷',
+    en: '🇬🇧 🇺🇸', es: '🇪🇸', fa: '🇮🇷', fi: '🇫🇮', fr: '🇫🇷', he: '🇮🇱', hi: '🇮🇳', hr: '🇭🇷',
     hu: '🇭🇺', id: '🇮🇩', it: '🇮🇹', ja: '🇯🇵', km: '🇰🇭', ko: '🇰🇷', ms: '🇲🇾', ne: '🇳🇵',
     nl: '🇳🇱', no: '🇳🇴', pl: '🇵🇱', pt: '🇵🇹', ro: '🇷🇴', ru: '🇷🇺', sr: '🇷🇸', sv: '🇸🇪',
     sw: '🇰🇪', th: '🇹🇭', tl: '🇵🇭', tr: '🇹🇷', uk: '🇺🇦', ur: '🇵🇰', vi: '🇻🇳', zh: '🇨🇳'
@@ -49,21 +49,32 @@ export default function LanguageSwitcher() {
             newPath = `/${locale}`;
         } else {
             const segments = pathname.split("/");
-            // segments[1] is the locale because path usually starts with / (e.g., /en/about -> ["", "en", "about"])
-            // If we are at root "/", segments is ["", ""]
+            // segments: ["", "en", "about"] or ["", "en", "slug"]
+
+            // Known static routes that exist in all languages
+            const STATIC_ROUTES = ['about', 'contact', 'privacy', 'terms'];
 
             if (segments.length > 1 && FLAGS[segments[1]]) {
-                // If the second segment is a known language code, replace it
-                segments[1] = locale;
-                newPath = segments.join("/");
-            } else {
-                // If no language code present (e.g. root or unknown), prepend logic
-                // Avoid double slashes: if path is "/", result should be "/locale"
-                if (pathname === "/") {
-                    newPath = `/${locale}`;
+                // Check if we are on a sub-page
+                if (segments.length > 2) {
+                    const subPage = segments[2];
+                    if (STATIC_ROUTES.includes(subPage)) {
+                        // Preserve static route (e.g. /en/about -> /fr/about)
+                        segments[1] = locale;
+                        newPath = segments.join("/");
+                    } else {
+                        // It's a dynamic slug (e.g., /en/twitter-video-downloader)
+                        // User requested to reset to root for dynamic pages
+                        newPath = `/${locale}`;
+                    }
                 } else {
-                    newPath = `/${locale}${pathname}`;
+                    // Just the root lang (e.g. /en)
+                    segments[1] = locale;
+                    newPath = segments.join("/");
                 }
+            } else {
+                // If path has no lang prefix yet (e.g. /), just go to /locale
+                newPath = `/${locale}`;
             }
         }
 
@@ -85,6 +96,14 @@ export default function LanguageSwitcher() {
         document.addEventListener("mousedown", handleClickOutside);
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
+
+    const selectedItemRef = useRef<HTMLButtonElement>(null);
+
+    useEffect(() => {
+        if (isOpen && selectedItemRef.current) {
+            selectedItemRef.current.scrollIntoView({ block: 'center', behavior: 'instant' });
+        }
+    }, [isOpen]);
 
     // Alfabetik sıralama (Opsiyonel, şu an listeye göre)
     const sortedLangs = Object.keys(FLAGS).sort();
@@ -109,6 +128,7 @@ export default function LanguageSwitcher() {
                         {sortedLangs.map((lang) => (
                             <button
                                 key={lang}
+                                ref={currentLang === lang ? selectedItemRef : null}
                                 onClick={() => handleLanguageChange(lang)}
                                 className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg transition-colors cursor-pointer group ${currentLang === lang
                                     ? 'bg-(--accent)/10'

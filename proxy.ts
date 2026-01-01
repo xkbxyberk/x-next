@@ -1,80 +1,63 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
-import { match } from '@formatjs/intl-localematcher';
-import Negotiator from 'negotiator';
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
+import { match } from "@formatjs/intl-localematcher";
+import Negotiator from "negotiator";
 
-// --- Rate Limit Logic ---
-const rateLimitMap = new Map<string, { count: number; lastReset: number }>();
-const LIMIT = 10;
-const WINDOW = 60 * 1000;
-
-function checkRateLimit(request: NextRequest) {
-  if (request.nextUrl.pathname.startsWith('/api') || request.method === 'POST') {
-    const ip = request.headers.get('x-forwarded-for') || 'unknown';
-    const now = Date.now();
-    const record = rateLimitMap.get(ip) || { count: 0, lastReset: now };
-
-    if (now - record.lastReset > WINDOW) {
-      record.count = 0;
-      record.lastReset = now;
-    }
-
-    if (record.count >= LIMIT) {
-      return new NextResponse(
-        JSON.stringify({ error: 'Çok fazla istek gönderdiniz. Lütfen bekleyin.' }),
-        { status: 429, headers: { 'Content-Type': 'application/json' } }
-      );
-    }
-
-    record.count++;
-    rateLimitMap.set(ip, record);
-    if (rateLimitMap.size > 10000) rateLimitMap.clear();
-  }
-  return null;
-}
-
-// --- i18n Logic ---
+// Tüm desteklenen diller (40 Dil)
 const locales = [
   'en', 'tr', 'ar', 'bg', 'bn', 'br', 'cs', 'da', 'de', 'el',
   'es', 'fa', 'fi', 'fr', 'he', 'hi', 'hr', 'hu', 'id', 'it',
   'ja', 'km', 'ko', 'ms', 'ne', 'nl', 'no', 'pl', 'pt', 'ro',
   'ru', 'sr', 'sv', 'sw', 'th', 'tl', 'uk', 'ur', 'vi', 'zh'
 ];
+
 const defaultLocale = 'en';
 
 function getLocale(request: NextRequest): string {
   const headers = { 'accept-language': request.headers.get('accept-language') || '' };
   const languages = new Negotiator({ headers }).languages();
-  return match(languages, locales, defaultLocale);
+  
+  try {
+    return match(languages, locales, defaultLocale);
+  } catch (e) {
+    return defaultLocale;
+  }
 }
 
-// DİKKAT: Buradaki isim "middleware" yerine "proxy" oldu.
 export function proxy(request: NextRequest) {
-  // 1. Run Rate Limiter
-  const rateLimitResponse = checkRateLimit(request);
-  if (rateLimitResponse) return rateLimitResponse;
-
-  // 2. Run i18n Middleware
   const { pathname } = request.nextUrl;
 
-  // Skip internal paths and API (API handled by rate limit, usually doesn't need localization redirect unless specifed)
-  // Also skip images, etc matches in config but good to be safe
-  if (pathname.startsWith('/api')) return NextResponse.next();
+  // 1. Statik dosyaları, resimleri ve API yollarını yoksay
+  if (
+    pathname.startsWith('/_next') ||
+    pathname.startsWith('/api') ||
+    pathname.startsWith('/private') ||
+    pathname.match(/\.(png|jpg|jpeg|gif|ico|svg|avif|webp|css|js|txt|xml|json)$/)
+  ) {
+    return NextResponse.next();
+  }
 
-  const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+  // 2. Halihazırda bir dil parametresi var mı? (/en/..., /tr/...)
+  const pathnameIsMissingLocale = locales.every(
+    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
 
-  if (pathnameHasLocale) return NextResponse.next();
+  // 3. Dil yoksa tespit et ve yönlendir
+  if (pathnameIsMissingLocale) {
+    const locale = getLocale(request);
+    
+    // Mevcut url'i koruyarak yeni locale ekle
+    return NextResponse.redirect(
+      new URL(
+        `/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`,
+        request.url
+      )
+    );
+  }
 
-  const locale = getLocale(request);
-  request.nextUrl.pathname = `/${locale}${pathname}`;
-
-  // Create redirect response
-  return NextResponse.redirect(request.nextUrl);
+  return NextResponse.next();
 }
 
 export const config = {
-  // Combined matcher: API for rate limit + pages for i18n
-  matcher: ['/api/:path*', '/((?!_next/static|_next/image|favicon.ico|images|.*\\..*).*)'],
+  matcher: ['/((?!_next).*)'],
 };

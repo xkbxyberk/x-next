@@ -87,6 +87,8 @@ export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
 }
 
+import { getPopularKeywords } from '@/lib/seo';
+
 export default async function RootLayout({
   children,
   params,
@@ -96,6 +98,7 @@ export default async function RootLayout({
 }) {
   const { lang } = await params;
   const dict = await getDictionary(lang as "en" | "tr");
+  const popularKeywords = getPopularKeywords(lang);
 
   return (
     <html lang={lang}>
@@ -112,7 +115,7 @@ export default async function RootLayout({
             </main>
 
             <aside className="hidden lg:flex lg:w-87.5 lg:flex-col pl-8 pt-2 pb-2 h-screen sticky top-0 justify-between">
-              <RightSection dict={dict} lang={lang} />
+              <RightSection dict={dict} lang={lang} popularKeywords={popularKeywords} />
             </aside>
 
             <nav className="md:hidden fixed bottom-0 w-full bg-(--background)/90 backdrop-blur-md border-t border-(--border) z-50">

@@ -311,54 +311,59 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                         </div>
 
                         <div className="p-2 flex flex-col gap-1 max-h-80 overflow-y-auto custom-scrollbar">
-                          <button
-                            onClick={() => handleSelectFormat({
-                              type: 'audio',
-                              url: data.media.variants[0].url
-                            })}
-                            className={`flex items-center justify-between p-3 rounded-lg group cursor-pointer w-full text-left
-                                        ${selection?.type === 'audio' ? 'bg-pink-500/10 border border-pink-500/20' : 'hover:bg-(--background-secondary)'}
-                                    `}
-                          >
-                            <div className="flex items-center gap-3">
-                              <div className={`w-8 h-8 rounded flex items-center justify-center font-bold text-xs
-                                            ${selection?.type === 'audio' ? 'bg-pink-500 text-white' : 'bg-pink-500/10 text-pink-500'}
-                                        `}>
-                                MP3
-                              </div>
-                              <div className="flex flex-col">
-                                <span className={`font-semibold text-sm ${selection?.type === 'audio' ? 'text-pink-500' : 'text-(--text-primary)'}`}>
-                                  {dict.feed.settings.audio}
-                                </span>
-                                <span className="text-xs text-(--text-secondary)">{dict.feed.settings.autoConvert}</span>
-                              </div>
-                            </div>
-                            {selection?.type === 'audio' && <Check size={16} className="text-pink-500" />}
-                          </button>
-                          <div className="h-px bg-(--border) my-1 mx-2"></div>
+                          {!data.media.variants.some(v => v.quality === 'GIF') && (
+                            <>
+                              <button
+                                onClick={() => handleSelectFormat({
+                                  type: 'audio',
+                                  url: data.media.variants[0].url
+                                })}
+                                className={`flex items-center justify-between p-3 rounded-lg group cursor-pointer w-full text-left
+                                            ${selection?.type === 'audio' ? 'bg-pink-500/10 border border-pink-500/20' : 'hover:bg-(--background-secondary)'}
+                                        `}
+                              >
+                                <div className="flex items-center gap-3">
+                                  <div className={`w-8 h-8 rounded flex items-center justify-center font-bold text-xs
+                                                ${selection?.type === 'audio' ? 'bg-pink-500 text-white' : 'bg-pink-500/10 text-pink-500'}
+                                            `}>
+                                    MP3
+                                  </div>
+                                  <div className="flex flex-col">
+                                    <span className={`font-semibold text-sm ${selection?.type === 'audio' ? 'text-pink-500' : 'text-(--text-primary)'}`}>
+                                      {dict.feed.settings.audio}
+                                    </span>
+                                    <span className="text-xs text-(--text-secondary)">{dict.feed.settings.autoConvert}</span>
+                                  </div>
+                                </div>
+                                {selection?.type === 'audio' && <Check size={16} className="text-pink-500" />}
+                              </button>
+                              <div className="h-px bg-(--border) my-1 mx-2"></div>
+                            </>
+                          )}
                           {data.media.variants.map((variant, idx) => {
                             const qualityLabel = variant.quality || (variant.bitrate ? `${Math.round(variant.bitrate / 1000)}kbps` : dict.feed.settings.standard);
-                            const isSelected = selection?.type === 'video' && selection.url === variant.url;
+                            const isSelected = (selection?.type === 'video' || selection?.type === 'gif') && selection.url === variant.url;
+                            const isGif = qualityLabel.toLowerCase() === 'gif';
                             return (
                               <button
                                 key={idx}
                                 onClick={() => handleSelectFormat({
-                                  type: 'video',
+                                  type: isGif ? 'gif' : 'video',
                                   url: variant.url,
                                   qualityLabel: qualityLabel
                                 })}
                                 className={`flex items-center justify-between p-3 rounded-lg group cursor-pointer w-full text-left
-                                                ${isSelected ? 'bg-blue-500/10 border border-blue-500/20' : 'hover:bg-(--background-secondary)'}
+                                                ${isSelected ? (isGif ? 'bg-purple-500/10 border border-purple-500/20' : 'bg-blue-500/10 border border-blue-500/20') : 'hover:bg-(--background-secondary)'}
                                             `}
                               >
                                 <div className="flex items-center gap-3">
                                   <div className={`w-8 h-8 rounded flex items-center justify-center font-bold text-xs
-                                                    ${isSelected ? 'bg-blue-500 text-white' : 'bg-blue-500/10 text-blue-500'}
+                                                    ${isSelected ? (isGif ? 'bg-purple-500 text-white' : 'bg-blue-500 text-white') : (isGif ? 'bg-purple-500/10 text-purple-500' : 'bg-blue-500/10 text-blue-500')}
                                                 `}>
-                                    MP4
+                                    {isGif ? 'GIF' : 'MP4'}
                                   </div>
                                   <div className="flex flex-col">
-                                    <span className={`font-semibold text-sm ${isSelected ? 'text-blue-500' : 'text-(--text-primary)'}`}>
+                                    <span className={`font-semibold text-sm ${isSelected ? (isGif ? 'text-purple-500' : 'text-blue-500') : 'text-(--text-primary)'}`}>
                                       {qualityLabel}
                                     </span>
                                     <span className="text-xs text-(--text-secondary)">
@@ -366,7 +371,7 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
                                     </span>
                                   </div>
                                 </div>
-                                {isSelected && <Check size={16} className="text-blue-500" />}
+                                {isSelected && <Check size={16} className={isGif ? "text-purple-500" : "text-blue-500"} />}
                               </button>
                             );
                           })}

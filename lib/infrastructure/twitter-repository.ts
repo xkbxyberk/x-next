@@ -88,17 +88,29 @@ const fetchTweetDataInternal = async (tweetId: string): Promise<TweetVideoEntity
       return null;
     }
 
+    // Helper to guess resolution from bitrate
+    const getQualityLabel = (bitrate: number): string => {
+      if (bitrate === 0) return 'GIF';        // 0 bitrate = GIF (backend MP4 source)
+      if (bitrate >= 2000000) return '1080p'; // ~2176k
+      if (bitrate >= 1200000) return '720p';  // ~1280k
+      if (bitrate >= 800000) return '540p';   // ~832k
+      if (bitrate >= 400000) return '360p';   // ~460k
+      return '240p';                          // ~256k
+    };
+
+    const isAnimatedGif = videoMedia.type === 'animated_gif';
+
     // 3. VARYANTLARI AYIKLA
     const variants: VideoVariantEntity[] = (videoMedia.video_info?.variants || [])
       .filter((v: any) =>
-        v.content_type === 'video/mp4' ||
-        v.content_type === 'application/x-mpegURL' // m3u8 desteği (bazı durumlarda gerekebilir)
+        (v.content_type === 'video/mp4' || v.content_type === 'application/x-mpegURL') &&
+        (v.bitrate > 0 || isAnimatedGif) // Bitrate 0 olanları sadece GIF ise kabul et
       )
       .map((v: any) => ({
         bitrate: v.bitrate || 0,
         contentType: v.content_type,
         url: v.url,
-        quality: v.bitrate ? `${Math.round(v.bitrate / 1000)}k` : 'Gif'
+        quality: getQualityLabel(v.bitrate || 0)
       }))
       .sort((a: VideoVariantEntity, b: VideoVariantEntity) => b.bitrate - a.bitrate);
 
