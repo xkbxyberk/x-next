@@ -88,14 +88,27 @@ const fetchTweetDataInternal = async (tweetId: string): Promise<TweetVideoEntity
       return null;
     }
 
-    // Helper to guess resolution from bitrate
+    // Helper to guess resolution from bitrate with granular ranges and "Plus" tiers
     const getQualityLabel = (bitrate: number): string => {
-      if (bitrate === 0) return 'GIF';        // 0 bitrate = GIF (backend MP4 source)
-      if (bitrate >= 2000000) return '1080p'; // ~2176k
-      if (bitrate >= 1200000) return '720p';  // ~1280k
-      if (bitrate >= 800000) return '540p';   // ~832k
-      if (bitrate >= 400000) return '360p';   // ~460k
-      return '240p';                          // ~256k
+      if (bitrate === 0) return 'GIF';
+
+      // 1080p & 1080p+
+      if (bitrate >= 4000000) return '1080p+';
+      if (bitrate >= 2000000) return '1080p';
+
+      // 720p & 720p+
+      if (bitrate >= 1800000) return '720p+';
+      if (bitrate >= 1200000) return '720p';
+
+      // 540p & 480p
+      if (bitrate >= 900000) return '540p';
+      if (bitrate >= 600000) return '480p';
+
+      // 360p
+      if (bitrate >= 350000) return '360p';
+
+      // 240p (Low data)
+      return '240p';
     };
 
     const isAnimatedGif = videoMedia.type === 'animated_gif';
