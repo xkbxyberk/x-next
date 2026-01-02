@@ -270,21 +270,21 @@
             "id": "guide-step2",
             "authorName": "Průvodce XDownloaderz",
             "content": "📖 Uživatelská příručka: Krok 2\n\n2️⃣ Vložte odkaz do XDownloaderz\n\nOtevřete xdownloaderz.com. Vložte zkopírovaný odkaz na video z X (Twitter) do textového pole v horní části stránky.\n\nNáš systém automaticky detekuje odkaz a okamžitě načte informace o videu.",
-            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "image": "x-twitter-video-downloader-step2-paste-link.avif",
             "imageAlt": "📖 Uživatelská příručka: Krok 2 - 2️⃣ Vložte odkaz do XDownloaderz"
         },
         {
             "id": "guide-step3",
             "authorName": "Průvodce XDownloaderz",
             "content": "📖 Uživatelská příručka: Krok 3\n\n3️⃣ Vyberte kvalitu a formát\n\nPo analýze videa vyberte požadovanou kvalitu z nabídky nastavení (ikona ⚙️):\n\n• 1080p / 720p / 480p (MP4 video)\n• MP3 (Pouze zvuk)\n\nVyšší rozlišení = Lepší kvalita obrazu, ale větší velikost souboru.",
-            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "image": "x-twitter-video-download-step3-choose-quality-1080p.avif",
             "imageAlt": "📖 Uživatelská příručka: Krok 3 - 3️⃣ Vyberte kvalitu a formát"
         },
         {
             "id": "guide-step4",
             "authorName": "Průvodce XDownloaderz",
             "content": "📖 Uživatelská příručka: Krok 4\n\n4️⃣ Zahájit stahování\n\nPo výběru formátu a kvality klikněte na modré tlačítko 'Stáhnout'. Váš video nebo audio soubor se automaticky stáhne do vašeho zařízení.\n\n⚡ Rychlost stahování závisí na vašem internetovém připojení a velikosti videa.",
-            "image": "x-video-download-step4-start-download.avif",
+            "image": "x-twitter-video-download-step4-start-download.avif",
             "imageAlt": "📖 Uživatelská příručka: Krok 4 - 4️⃣ Zahájit stahování"
         },
         {

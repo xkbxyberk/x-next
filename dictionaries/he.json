@@ -270,21 +270,21 @@
             "id": "guide-step2",
             "authorName": "מדריך XDownloaderz",
             "content": "📖 מדריך למשתמש: שלב 2\n\n2️⃣ הדבק קישור ב-XDownloaderz\n\nפתח את xdownloaderz.com. הדבק את קישור הווידאו מ-X (Twitter) שהועתק בתיבת הטקסט בראש הדף.\n\nהמערכת שלנו תזהה אוטומטית את הקישור ותטען את פרטי הווידאו באופן מיידי.",
-            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "image": "x-twitter-video-downloader-step2-paste-link.avif",
             "imageAlt": "📖 מדריך למשתמש: שלב 2 - 2️⃣ הדבק קישור ב-XDownloaderz"
         },
         {
             "id": "guide-step3",
             "authorName": "מדריך XDownloaderz",
             "content": "📖 מדריך למשתמש: שלב 3\n\n3️⃣ בחר איכות ופורמט\n\nלאחר ניתוח הסרטון, בחר את האיכות הרצויה מתפריט ההגדרות (סמל ⚙️):\n\n• 1080p / 720p / 480p (וידאו MP4)\n• MP3 (שמע בלבד)\n\nרזולוציה גבוהה יותר = איכות תמונה טובה יותר אך גודל קובץ גדול יותר.",
-            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "image": "x-twitter-video-download-step3-choose-quality-1080p.avif",
             "imageAlt": "📖 מדריך למשתמש: שלב 3 - 3️⃣ בחר איכות ופורמט"
         },
         {
             "id": "guide-step4",
             "authorName": "מדריך XDownloaderz",
             "content": "📖 מדריך למשתמש: שלב 4\n\n4️⃣ התחל הורדה\n\nלאחר בחירת הפורמט והאיכות, לחץ על הכפתור הכחול 'הורד'. קובץ הווידאו או השמע שלך יורד אוטומטית למכשיר שלך.\n\n⚡ מהירות ההורדה תלויה בחיבור האינטרנט שלך ובגודל הווידאו.",
-            "image": "x-video-download-step4-start-download.avif",
+            "image": "x-twitter-video-download-step4-start-download.avif",
             "imageAlt": "📖 מדריך למשתמש: שלב 4 - 4️⃣ התחל הורדה"
         },
         {

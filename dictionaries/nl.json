@@ -270,21 +270,21 @@
             "id": "guide-step2",
             "authorName": "XDownloaderz Gids",
             "content": "📖 Gebruikershandleiding: Stap 2\n\n2️⃣ Plak link in XDownloaderz\n\nOpen xdownloaderz.com. Plak de gekopieerde X (Twitter) videolink in het tekstvak bovenaan de pagina.\n\nOns systeem detecteert de link automatisch en laadt de video-informatie direct.",
-            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "image": "x-twitter-video-downloader-step2-paste-link.avif",
             "imageAlt": "📖 Gebruikershandleiding: Stap 2 - 2️⃣ Plak link in XDownloaderz"
         },
         {
             "id": "guide-step3",
             "authorName": "XDownloaderz Gids",
             "content": "📖 Gebruikershandleiding: Stap 3\n\n3️⃣ Selecteer kwaliteit en formaat\n\nNadat de video is geanalyseerd, selecteert u uw gewenste kwaliteit in het instellingenmenu (⚙️ pictogram):\n\n• 1080p / 720p / 480p (MP4 Video)\n• MP3 (Alleen audio)\n\nHogere resolutie = Betere beeldkwaliteit maar grotere bestandsgrootte.",
-            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "image": "x-twitter-video-download-step3-choose-quality-1080p.avif",
             "imageAlt": "📖 Gebruikershandleiding: Stap 3 - 3️⃣ Selecteer kwaliteit en formaat"
         },
         {
             "id": "guide-step4",
             "authorName": "XDownloaderz Gids",
             "content": "📖 Gebruikershandleiding: Stap 4\n\n4️⃣ Start download\n\nNadat u het formaat en de kwaliteit hebt geselecteerd, klikt u op de blauwe knop 'Downloaden'. Uw video- of audiobestand wordt automatisch naar uw apparaat gedownload.\n\n⚡ De downloadsnelheid is afhankelijk van uw internetverbinding en de grootte van de video.",
-            "image": "x-video-download-step4-start-download.avif",
+            "image": "x-twitter-video-download-step4-start-download.avif",
             "imageAlt": "📖 Gebruikershandleiding: Stap 4 - 4️⃣ Start download"
         },
         {

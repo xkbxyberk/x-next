@@ -270,21 +270,21 @@
             "id": "guide-step2",
             "authorName": "Poradnik XDownloaderz",
             "content": "📖 Instrukcja użytkownika: Krok 2\n\n2️⃣ Wklej link w XDownloaderz\n\nOtwórz xdownloaderz.com. Wklej skopiowany link do wideo X (Twitter) w polu tekstowym na górze strony.\n\nNasz system automatycznie wykryje link i natychmiast załaduje informacje o wideo.",
-            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "image": "x-twitter-video-downloader-step2-paste-link.avif",
             "imageAlt": "📖 Instrukcja użytkownika: Krok 2 - 2️⃣ Wklej link w XDownloaderz"
         },
         {
             "id": "guide-step3",
             "authorName": "Poradnik XDownloaderz",
             "content": "📖 Instrukcja użytkownika: Krok 3\n\n3️⃣ Wybierz jakość i format\n\nPo przeanalizowaniu wideo wybierz żądaną jakość z menu ustawień (ikona ⚙️):\n\n• 1080p / 720p / 480p (Wideo MP4)\n• MP3 (Tylko dźwięk)\n\nWyższa rozdzielczość = Lepsza jakość obrazu, ale większy rozmiar pliku.",
-            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "image": "x-twitter-video-download-step3-choose-quality-1080p.avif",
             "imageAlt": "📖 Instrukcja użytkownika: Krok 3 - 3️⃣ Wybierz jakość i format"
         },
         {
             "id": "guide-step4",
             "authorName": "Poradnik XDownloaderz",
             "content": "📖 Instrukcja użytkownika: Krok 4\n\n4️⃣ Rozpocznij pobieranie\n\nPo wybraniu formatu i jakości kliknij niebieski przycisk „Pobierz”. Twój plik wideo lub audio zostanie automatycznie pobrany na Twoje urządzenie.\n\n⚡ Prędkość pobierania zależy od Twojego połączenia internetowego i rozmiaru wideo.",
-            "image": "x-video-download-step4-start-download.avif",
+            "image": "x-twitter-video-download-step4-start-download.avif",
             "imageAlt": "📖 Instrukcja użytkownika: Krok 4 - 4️⃣ Rozpocznij pobieranie"
         },
         {

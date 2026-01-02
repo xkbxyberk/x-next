@@ -270,21 +270,21 @@
             "id": "guide-step2",
             "authorName": "XDownloaderz 가이드",
             "content": "📖 사용자 가이드: 2단계\n\n2️⃣ XDownloaderz에 링크 붙여넣기\n\nxdownloaderz.com을 엽니다. 복사한 X (Twitter) 비디오 링크를 페이지 상단의 텍스트 상자에 붙여넣으세요.\n\n시스템이 자동으로 링크를 감지하고 비디오 정보를 즉시 로드합니다.",
-            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "image": "x-twitter-video-downloader-step2-paste-link.avif",
             "imageAlt": "📖 사용자 가이드: 2단계 - 2️⃣ XDownloaderz에 링크 붙여넣기"
         },
         {
             "id": "guide-step3",
             "authorName": "XDownloaderz 가이드",
             "content": "📖 사용자 가이드: 3단계\n\n3️⃣ 화질 및 형식 선택\n\n비디오 분석이 완료되면 설정 메뉴(⚙️ 아이콘)에서 원하는 화질을 선택하세요:\n\n• 1080p / 720p / 480p (MP4 비디오)\n• MP3 (오디오만)\n\n해상도가 높을수록 화질은 좋지만 파일 크기가 커집니다.",
-            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "image": "x-twitter-video-download-step3-choose-quality-1080p.avif",
             "imageAlt": "📖 사용자 가이드: 3단계 - 3️⃣ 화질 및 형식 선택"
         },
         {
             "id": "guide-step4",
             "authorName": "XDownloaderz 가이드",
             "content": "📖 사용자 가이드: 4단계\n\n4️⃣ 다운로드 시작\n\n형식과 화질을 선택한 후 파란색 '다운로드' 버튼을 클릭하세요. 비디오 또는 오디오 파일이 자동으로 기기에 다운로드됩니다.\n\n⚡ 다운로드 속도는 인터넷 연결과 비디오 크기에 따라 다릅니다.",
-            "image": "x-video-download-step4-start-download.avif",
+            "image": "x-twitter-video-download-step4-start-download.avif",
             "imageAlt": "📖 사용자 가이드: 4단계 - 4️⃣ 다운로드 시작"
         },
         {

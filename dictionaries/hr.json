@@ -270,21 +270,21 @@
             "id": "guide-step2",
             "authorName": "Vodič za XDownloaderz",
             "content": "📖 Korisnički priručnik: Korak 2\n\n2️⃣ Zalijepite poveznicu u XDownloaderz\n\nOtvorite xdownloaderz.com. Zalijepite kopiranu poveznicu na X (Twitter) video u okvir za tekst na vrhu stranice.\n\nNaš sustav će automatski detektirati poveznicu i odmah učitati informacije o videu.",
-            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "image": "x-twitter-video-downloader-step2-paste-link.avif",
             "imageAlt": "📖 Korisnički priručnik: Korak 2 - 2️⃣ Zalijepite poveznicu u XDownloaderz"
         },
         {
             "id": "guide-step3",
             "authorName": "Vodič za XDownloaderz",
             "content": "📖 Korisnički priručnik: Korak 3\n\n3️⃣ Odaberite kvalitetu i format\n\nNakon što se video analizira, odaberite željenu kvalitetu iz izbornika postavki (ikona ⚙️):\n\n• 1080p / 720p / 480p (MP4 Video)\n• MP3 (Samo zvuk)\n\nViša rezolucija = bolja kvaliteta slike, ali veća veličina datoteke.",
-            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "image": "x-twitter-video-download-step3-choose-quality-1080p.avif",
             "imageAlt": "📖 Korisnički priručnik: Korak 3 - 3️⃣ Odaberite kvalitetu i format"
         },
         {
             "id": "guide-step4",
             "authorName": "Vodič za XDownloaderz",
             "content": "📖 Korisnički priručnik: Korak 4\n\n4️⃣ Pokreni preuzimanje\n\nNakon odabira formata i kvalitete, kliknite plavi gumb 'Preuzmi'. Vaša video ili audio datoteka automatski će se preuzeti na vaš uređaj.\n\n⚡ Brzina preuzimanja ovisi o vašoj internetskoj vezi i veličini videa.",
-            "image": "x-video-download-step4-start-download.avif",
+            "image": "x-twitter-video-download-step4-start-download.avif",
             "imageAlt": "📖 Korisnički priručnik: Korak 4 - 4️⃣ Pokreni preuzimanje"
         },
         {

@@ -270,21 +270,21 @@
             "id": "guide-step2",
             "authorName": "XDownloaderz Rehber",
             "content": "📖 Kullanım Kılavuzu: Adım 2\n\n2️⃣ Linki XDownloaderz'e Yapıştırın\n\nxdownloaderz.com sayfasını açın. Sayfanın üst kısmındaki metin kutusuna kopyaladığınız X (Twitter) video linkini yapıştırın.\n\nSistemimiz linki otomatik olarak algılayacak ve video bilgilerini anında yükleyecektir.",
-            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "image": "x-twitter-video-downloader-step2-paste-link.avif",
             "imageAlt": "📖 Kullanım Kılavuzu: Adım 2 - 2️⃣ Linki XDownloaderz'e Yapıştırın"
         },
         {
             "id": "guide-step3",
             "authorName": "XDownloaderz Rehber",
             "content": "📖 Kullanım Kılavuzu: Adım 3\n\n3️⃣ Kalite ve Format Seçin\n\nVideo analiz edildikten sonra, ayarlar menüsünden (⚙️ ikonu) istediğiniz kaliteyi seçin:\n\n• 1080p / 720p / 480p (MP4 Video)\n• MP3 (Sadece Ses)\n\nDaha yüksek çözünürlük = Daha iyi görüntü kalitesi ancak büyük dosya boyutu.",
-            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "image": "x-twitter-video-download-step3-choose-quality-1080p.avif",
             "imageAlt": "📖 Kullanım Kılavuzu: Adım 3 - 3️⃣ Kalite ve Format Seçin"
         },
         {
             "id": "guide-step4",
             "authorName": "XDownloaderz Rehber",
             "content": "📖 Kullanım Kılavuzu: Adım 4\n\n4️⃣ İndirme İşlemini Başlatın\n\nFormat ve kalite seçiminizi yaptıktan sonra mavi 'İndir' butonuna tıklayın. Video veya ses dosyanız otomatik olarak cihazınıza indirilecektir.\n\n⚡ İndirme hızı internet bağlantınıza ve video boyutuna bağlıdır.",
-            "image": "x-video-download-step4-start-download.avif",
+            "image": "x-twitter-video-download-step4-start-download.avif",
             "imageAlt": "📖 Kullanım Kılavuzu: Adım 4 - 4️⃣ İndirme İşlemini Başlatın"
         },
         {

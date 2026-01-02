@@ -270,21 +270,21 @@
             "id": "guide-step2",
             "authorName": "Οδηγός XDownloaderz",
             "content": "📖 Οδηγός Χρήσης: Βήμα 2\n\n2️⃣ Επικόλληση Συνδέσμου στο XDownloaderz\n\nΑνοίξτε το xdownloaderz.com. Επικολλήστε τον αντιγραμμένο σύνδεσμο βίντεο X (Twitter) στο πλαίσιο κειμένου στο επάνω μέρος της σελίδας.\n\nΤο σύστημά μας θα εντοπίσει αυτόματα τον σύνδεσμο και θα φορτώσει τις πληροφορίες του βίντεο αμέσως.",
-            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "image": "x-twitter-video-downloader-step2-paste-link.avif",
             "imageAlt": "📖 Οδηγός Χρήσης: Βήμα 2 - 2️⃣ Επικόλληση Συνδέσμου στο XDownloaderz"
         },
         {
             "id": "guide-step3",
             "authorName": "Οδηγός XDownloaderz",
             "content": "📖 Οδηγός Χρήσης: Βήμα 3\n\n3️⃣ Επιλογή Ποιότητας και Μορφής\n\nΑφού αναλυθεί το βίντεο, επιλέξτε την επιθυμητή ποιότητα από το μενού ρυθμίσεων (εικονίδιο ⚙️):\n\n• 1080p / 720p / 480p (Βίντεο MP4)\n• MP3 (Μόνο Ήχος)\n\nΥψηλότερη ανάλυση = Καλύτερη ποιότητα εικόνας αλλά μεγαλύτερο μέγεθος αρχείου.",
-            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "image": "x-twitter-video-download-step3-choose-quality-1080p.avif",
             "imageAlt": "📖 Οδηγός Χρήσης: Βήμα 3 - 3️⃣ Επιλογή Ποιότητας και Μορφής"
         },
         {
             "id": "guide-step4",
             "authorName": "Οδηγός XDownloaderz",
             "content": "📖 Οδηγός Χρήσης: Βήμα 4\n\n4️⃣ Έναρξη Λήψης\n\nΑφού επιλέξετε τη μορφή και την ποιότητα, κάντε κλικ στο μπλε κουμπί «Λήψη». Το αρχείο βίντεο ή ήχου θα ληφθεί αυτόματα στη συσκευή σας.\n\n⚡ Η ταχύτητα λήψης εξαρτάται από τη σύνδεσή σας στο διαδίκτυο και το μέγεθος του βίντεο.",
-            "image": "x-video-download-step4-start-download.avif",
+            "image": "x-twitter-video-download-step4-start-download.avif",
             "imageAlt": "📖 Οδηγός Χρήσης: Βήμα 4 - 4️⃣ Έναρξη Λήψης"
         },
         {

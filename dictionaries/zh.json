@@ -270,21 +270,21 @@
             "id": "guide-step2",
             "authorName": "XDownloaderz 指南",
             "content": "📖 用户指南：第 2 步\n\n2️⃣ 将链接粘贴到 XDownloaderz\n\n打开 xdownloaderz.com。将复制的 X (Twitter) 视频链接粘贴到页面顶部的文本框中。\n\n我们的系统将自动检测链接并立即加载视频信息。",
-            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "image": "x-twitter-video-downloader-step2-paste-link.avif",
             "imageAlt": "📖 用户指南：第 2 步 - 2️⃣ 将链接粘贴到 XDownloaderz"
         },
         {
             "id": "guide-step3",
             "authorName": "XDownloaderz 指南",
             "content": "📖 用户指南：第 3 步\n\n3️⃣ 选择质量和格式\n\n视频分析完成后，从设置菜单（⚙️ 图标）中选择您想要的质量：\n\n• 1080p / 720p / 480p (MP4 视频)\n• MP3 (仅音频)\n\n更高的分辨率 = 更好的图像质量，但文件更大。",
-            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "image": "x-twitter-video-download-step3-choose-quality-1080p.avif",
             "imageAlt": "📖 用户指南：第 3 步 - 3️⃣ 选择质量和格式"
         },
         {
             "id": "guide-step4",
             "authorName": "XDownloaderz 指南",
             "content": "📖 用户指南：第 4 步\n\n4️⃣ 开始下载\n\n选择格式和质量后，点击蓝色的“下载”按钮。您的视频或音频文件将自动下载到您的设备。\n\n⚡ 下载速度取决于您的互联网连接和视频大小。",
-            "image": "x-video-download-step4-start-download.avif",
+            "image": "x-twitter-video-download-step4-start-download.avif",
             "imageAlt": "📖 用户指南：第 4 步 - 4️⃣ 开始下载"
         },
         {

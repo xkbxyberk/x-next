@@ -270,21 +270,21 @@
             "id": "guide-step2",
             "authorName": "XDownloaderz Guide",
             "content": "📖 Användarguide: Steg 2\n\n2️⃣ Klistra in länk i XDownloaderz\n\nÖppna xdownloaderz.com. Klistra in den kopierade X (Twitter)-videolänken i textrutan högst upp på sidan.\n\nVårt system kommer automatiskt att upptäcka länken och ladda videoinformationen omedelbart.",
-            "image": "twitter-video-downloader-step2-paste-link.avif",
+            "image": "x-twitter-video-downloader-step2-paste-link.avif",
             "imageAlt": "📖 Användarguide: Steg 2 - 2️⃣ Klistra in länk i XDownloaderz"
         },
         {
             "id": "guide-step3",
             "authorName": "XDownloaderz Guide",
             "content": "📖 Användarguide: Steg 3\n\n3️⃣ Välj kvalitet och format\n\nNär videon har analyserats, välj önskad kvalitet från inställningsmenyn (⚙️ ikon):\n\n• 1080p / 720p / 480p (MP4 Video)\n• MP3 (Endast ljud)\n\nHögre upplösning = Bättre bildkvalitet men större filstorlek.",
-            "image": "twitter-video-download-step3-choose-quality-1080p.avif",
+            "image": "x-twitter-video-download-step3-choose-quality-1080p.avif",
             "imageAlt": "📖 Användarguide: Steg 3 - 3️⃣ Välj kvalitet och format"
         },
         {
             "id": "guide-step4",
             "authorName": "XDownloaderz Guide",
             "content": "📖 Användarguide: Steg 4\n\n4️⃣ Starta nedladdning\n\nEfter att ha valt format och kvalitet, klicka på den blå knappen 'Ladda ner'. Din video- eller ljudfil laddas automatiskt ner till din enhet.\n\n⚡ Nedladdningshastigheten beror på din internetanslutning och videostorlek.",
-            "image": "x-video-download-step4-start-download.avif",
+            "image": "x-twitter-video-download-step4-start-download.avif",
             "imageAlt": "📖 Användarguide: Steg 4 - 4️⃣ Starta nedladdning"
         },
         {
