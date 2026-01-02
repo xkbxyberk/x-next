@@ -16,7 +16,7 @@ const defaultLocale = 'en';
 function getLocale(request: NextRequest): string {
   const headers = { 'accept-language': request.headers.get('accept-language') || '' };
   const languages = new Negotiator({ headers }).languages();
-  
+
   try {
     return match(languages, locales, defaultLocale);
   } catch (e) {
@@ -27,12 +27,19 @@ function getLocale(request: NextRequest): string {
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  if (
+    pathname === '/sitemap.xml' ||
+    pathname === '/robots.txt' ||
+    pathname.startsWith('/sitemap/')
+  ) {
+    return NextResponse.next();
+  }
   // 1. Statik dosyaları, resimleri ve API yollarını yoksay
   if (
     pathname.startsWith('/_next') ||
     pathname.startsWith('/api') ||
     pathname.startsWith('/private') ||
-    pathname.match(/\.(png|jpg|jpeg|gif|ico|svg|avif|webp|css|js|txt|xml|json)$/)
+    pathname.match(/\.(png|jpg|jpeg|gif|ico|svg|avif|webp|css|js|txt|xml|json|webmanifest)$/)
   ) {
     return NextResponse.next();
   }
@@ -45,7 +52,7 @@ export function proxy(request: NextRequest) {
   // 3. Dil yoksa tespit et ve yönlendir
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request);
-    
+
     // Mevcut url'i koruyarak yeni locale ekle
     return NextResponse.redirect(
       new URL(
