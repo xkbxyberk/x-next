@@ -3,6 +3,8 @@ import '@/app/globals.css';
 import Sidebar from '@/app/components/layout/Sidebar';
 import RightSection from '@/app/components/layout/RightSection';
 import { ThemeProvider } from '@/app/components/ThemeProvider';
+import CookieConsent from '@/app/components/ui/CookieConsent';
+import AntiAdblockModal from '@/app/components/ui/AntiAdblockModal';
 import type { Metadata } from 'next';
 import { getDictionary, locales } from '@/app/get-dictionary';
 import { GoogleAnalytics } from '@next/third-parties/google';
@@ -87,8 +89,6 @@ export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
 }
 
-import { getPopularKeywords } from '@/lib/seo';
-
 export default async function RootLayout({
   children,
   params,
@@ -98,10 +98,17 @@ export default async function RootLayout({
 }) {
   const { lang } = await params;
   const dict = await getDictionary(lang as "en" | "tr");
-  const popularKeywords = getPopularKeywords(lang);
 
   return (
     <html lang={lang}>
+      <head>
+        <script
+          id="gtag-consent-init"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){window.dataLayer.push(arguments);}gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});(function(){try{var s=localStorage.getItem('xdz_consent');if(s==='granted'||s==='denied'){gtag('consent','update',{analytics_storage:s,ad_storage:s,ad_user_data:s,ad_personalization:s});}}catch(e){}})();`,
+          }}
+        />
+      </head>
       <body className={`${inter.className} ${inter.variable} font-sans min-h-screen overflow-x-hidden`}>
         <ThemeProvider>
           <div className="mx-auto max-w-325 flex justify-center">
@@ -115,13 +122,15 @@ export default async function RootLayout({
             </main>
 
             <aside className="hidden lg:flex lg:w-87.5 lg:flex-col pl-8 pt-2 pb-2 h-screen sticky top-0 justify-between">
-              <RightSection dict={dict} lang={lang} popularKeywords={popularKeywords} />
+              <RightSection dict={dict} lang={lang} />
             </aside>
 
             <nav className="md:hidden fixed bottom-0 w-full bg-(--background)/90 backdrop-blur-md border-t border-(--border) z-50">
               <Sidebar mobile dict={dict} />
             </nav>
           </div>
+          <CookieConsent lang={lang} />
+          <AntiAdblockModal />
         </ThemeProvider>
         <GoogleAnalytics gaId="G-Q3CFQW96JD" />
       </body>

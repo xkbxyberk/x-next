@@ -17,8 +17,7 @@ type PostData = {
   content: string;
   image?: string;
   timestamp: string;
-  metrics: { likes: number; reposts: number; replies: number };
-  historyMeta?: { quality: string; type: string; originalUrl: string } // Added for history
+  historyMeta?: { quality: string; type: string; originalUrl: string };
 };
 
 type FeedItem =
@@ -144,7 +143,6 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
             content: h.content,
             image: h.image,
             timestamp: new Date(h.timestamp).toLocaleDateString(),
-            metrics: { likes: 0, reposts: 0, replies: 0 },
             historyMeta: {
               quality: h.quality,
               type: h.type,
@@ -172,7 +170,6 @@ export default function MainFeed({ dict, initialItems }: MainFeedProps) {
             content: data.text,
             image: data.media.thumbnailUrl,
             timestamp: 'Now',
-            metrics: { likes: data.statistics.likes || 0, reposts: 0, replies: 0 },
           }
         };
         setDisplayItems([newPost, ...initialItems]);

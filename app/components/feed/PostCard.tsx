@@ -1,9 +1,6 @@
 'use client';
 
-import { useState } from 'react';
-import { Heart, MessageCircle, Repeat2, Share, RefreshCw, Trash2, BadgeCheck } from 'lucide-react';
-
-
+import { RefreshCw, Trash2, BadgeCheck } from 'lucide-react';
 import Image from 'next/image';
 
 interface PostProps {
@@ -14,7 +11,6 @@ interface PostProps {
     image?: string;
     imageAlt?: string;
     timestamp: string;
-    metrics: { likes: number; reposts: number; replies: number };
   };
   priority?: boolean;
   dict?: any;
@@ -33,9 +29,6 @@ export default function PostCard({
   onReDownload,
   onDelete
 }: PostProps) {
-  const [isLiked, setIsLiked] = useState(false);
-  const [likeCount, setLikeCount] = useState(data.metrics.likes);
-
   const formatContent = (text: string) => {
     if (!text) return null;
     return text.split(/(\*\*.*?\*\*)/g).map((part, i) =>
@@ -45,19 +38,11 @@ export default function PostCard({
     );
   };
 
-  const handleLike = () => {
-    const newStatus = !isLiked;
-    setIsLiked(newStatus);
-    setLikeCount((prev) => (newStatus ? prev + 1 : prev - 1));
-  };
-
   return (
-    // BURASI DEĞİŞTİ: id prop'u eklendi, Wrapper Div Flattened
     <article
       id={data.id}
       className="border-b border-(--border) p-4 hover:bg-(--background-secondary) cursor-pointer scroll-mt-20 flex gap-4"
     >
-      {/* Wrapper removed, styles moved up */}
       <div className="shrink-0 relative w-10 h-10">
         <Image
           src={data.author.avatar}
@@ -91,8 +76,6 @@ export default function PostCard({
           {formatContent(data.content)}
         </p>
 
-
-
         {data.image && (
           <div className="mt-3 rounded-2xl overflow-hidden border border-(--border) w-full relative">
             <Image
@@ -113,7 +96,7 @@ export default function PostCard({
           </div>
         )}
 
-        {isHistoryItem ? (
+        {isHistoryItem && (
           <div className="flex items-center gap-3 mt-4">
             <button
               onClick={(e) => {
@@ -137,59 +120,8 @@ export default function PostCard({
               <Trash2 size={20} />
             </button>
           </div>
-        ) : (
-          <div className="flex justify-between mt-3 text-(--text-secondary) max-w-100">
-            <button
-              className="group flex items-center gap-2 hover:text-blue-400"
-              aria-label={dict?.feed?.accessibility?.reply || "Reply"}
-            >
-              <div className="p-2 rounded-full group-hover:bg-blue-400/10">
-                <MessageCircle size={18} />
-              </div>
-              <span className="text-xs">{data.metrics.replies}</span>
-            </button>
-
-            <button
-              className="group flex items-center gap-2 hover:text-green-400"
-              aria-label={dict?.feed?.accessibility?.repost || "Repost"}
-            >
-              <div className="p-2 rounded-full group-hover:bg-green-400/10">
-                <Repeat2 size={18} />
-              </div>
-              <span className="text-xs">{data.metrics.reposts}</span>
-            </button>
-
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                handleLike();
-              }}
-              className={`group flex items-center gap-2 ${isLiked ? 'text-pink-600' : 'hover:text-pink-600'
-                }`}
-              aria-label={dict?.feed?.accessibility?.like || "Like"}
-            >
-              <div className="p-2 rounded-full group-hover:bg-pink-600/10 relative">
-                <Heart
-                  size={18}
-                  fill={isLiked ? 'currentColor' : 'none'}
-                  className={`transition-transform duration-200 ${isLiked ? 'scale-110' : 'scale-100'
-                    }`}
-                />
-              </div>
-              <span className="text-xs">{likeCount}</span>
-            </button>
-
-            <button
-              className="group flex items-center gap-2 hover:text-blue-400"
-              aria-label={dict?.feed?.accessibility?.share || "Share"}
-            >
-              <div className="p-2 rounded-full group-hover:bg-blue-400/10">
-                <Share size={18} />
-              </div>
-            </button>
-          </div>
         )}
       </div>
-    </article >
+    </article>
   );
 }
