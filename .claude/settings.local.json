@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(node -e \"const d=require\\('./dictionaries/en.json'\\); console.log\\(Object.keys\\(d\\)\\); console.log\\('common keys:', Object.keys\\(d.common||{}\\)\\); console.log\\('has about?', !!d.about, 'has contact?', !!d.contact, 'has privacy?', !!d.privacy, 'has terms?', !!d.terms\\);\")",
+      "Bash(node *)",
+      "Bash(python3 *)"
     ]
   }
 }

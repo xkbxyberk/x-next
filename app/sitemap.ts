@@ -3,7 +3,8 @@ import { MetadataRoute } from 'next';
 const BASE_URL = 'https://xdownloaderz.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const DEPLOY_DATE = new Date();
+    // Sabit tarih: her build'de lastmod sıfırlanmasın (Google güven sinyali)
+    const DEPLOY_DATE = new Date('2026-06-18');
 
     const languages = [
         'en', 'tr', 'ar', 'bg', 'bn', 'br', 'cs', 'da', 'de', 'el',
@@ -22,12 +23,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     const routes: MetadataRoute.Sitemap = [];
 
-    routes.push({
-        url: BASE_URL,
-        lastModified: DEPLOY_DATE,
-        changeFrequency: 'daily',
-        priority: 1,
-    });
+    // Not: Dilsiz kök URL (BASE_URL) bilinçli olarak eklenmiyor.
+    // proxy.ts onu Accept-Language'e göre /{locale}'e 307 yönlendiriyor;
+    // sitemap'e konulursa "Sayfa yönlendirmeli" hatası üretir.
+    // Ana sayfalar zaten aşağıdaki döngüde /en, /tr ... olarak listeleniyor.
 
     languages.forEach(lang => {
         staticRoutes.forEach(route => {

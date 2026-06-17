@@ -1,6 +1,26 @@
 import Link from 'next/link';
 import { ArrowLeft, Mail } from 'lucide-react';
-import { getDictionary } from '@/app/get-dictionary';
+import type { Metadata } from 'next';
+import { getDictionary, locales } from '@/app/get-dictionary';
+
+export async function generateMetadata(
+  { params }: { params: Promise<{ lang: string }> }
+): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = await getDictionary(lang as "en" | "tr");
+  const slug = '/contact';
+  return {
+    title: dict.contact.title,
+    description: dict.contact.description ?? dict.common.description,
+    alternates: {
+      canonical: `/${lang}${slug}`,
+      languages: {
+        ...locales.reduce((acc, l) => { acc[l] = `/${l}${slug}`; return acc; }, {} as Record<string, string>),
+        'x-default': `/en${slug}`,
+      },
+    },
+  };
+}
 
 export default async function ContactPage({
   params,

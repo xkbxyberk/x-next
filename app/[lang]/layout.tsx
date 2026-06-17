@@ -47,10 +47,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     },
     alternates: {
       canonical: `/${lang}`,
-      languages: locales.reduce((acc, lang) => {
-        acc[lang] = `/${lang}`;
-        return acc;
-      }, {} as Record<string, string>),
+      languages: {
+        ...locales.reduce((acc, l) => {
+          acc[l] = `/${l}`;
+          return acc;
+        }, {} as Record<string, string>),
+        'x-default': '/en',
+      },
     },
     openGraph: {
       title: dict.common.social?.ogTitle || dict.common.title,
@@ -84,6 +87,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     },
   };
 }
+
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
