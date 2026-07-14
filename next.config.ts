@@ -1,27 +1,23 @@
 import type { NextConfig } from "next";
 
-// Dev (next dev) needs 'unsafe-inline'/'unsafe-eval' for React Fast Refresh + HMR.
-// Production uses a strict CSP with no 'unsafe-inline'.
+// Dev (next dev) needs 'unsafe-eval' for React Fast Refresh + HMR.
 const isDev = process.env.NODE_ENV !== 'production';
-
-// SHA-256 of the inline consent-init script in app/[lang]/layout.tsx.
-// If that inline script's bytes change, recompute and update this value:
-//   printf '%s' '<exact script content>' | openssl dgst -sha256 -binary | openssl base64 -A
-const CONSENT_INIT_HASH = "'sha256-9SaqIzS0u8CwrRcDR+7y7ki7U3Z0DeXe/NMqdXCOs7Q='";
 
 // Third-party script origins that must stay allow-listed by host.
 const SCRIPT_HOSTS =
   'https://*.twitter.com https://static.cloudflareinsights.com https://cloudflareinsights.com https://www.googletagmanager.com https://www.google-analytics.com';
 
-// Production script-src:
-//  - no 'unsafe-inline' (injected inline scripts can no longer run)
-//  - 'wasm-unsafe-eval' only (ffmpeg-core WASM; the core JS uses no eval/new Function)
-//  - the consent-init inline script is allow-listed by its hash
-//  - Next's own inline scripts (RSC payload, next/script, @next/third-parties)
-//    are covered by experimental.sri below, so static rendering is preserved.
+// script-src:
+//  - 'wasm-unsafe-eval' only in production (ffmpeg-core WASM; the core JS uses
+//    no eval/new Function), narrowed from the original broad 'unsafe-eval'.
+//  - 'unsafe-inline' is retained: dropping it requires build-time script
+//    hashing (experimental.sri), which OOMs the ~200-page static build on this
+//    4GB box. The real XSS vectors are already closed (framework upgrade +
+//    escaped JSON-LD + safe rich-text renderer), so this is defense-in-depth
+//    only. Revisit strict inline hardening when building on a higher-RAM host.
 const scriptSrc = isDev
   ? `'self' 'unsafe-inline' 'unsafe-eval' blob: ${SCRIPT_HOSTS}`
-  : `'self' 'wasm-unsafe-eval' ${CONSENT_INIT_HASH} blob: ${SCRIPT_HOSTS}`;
+  : `'self' 'unsafe-inline' 'wasm-unsafe-eval' blob: ${SCRIPT_HOSTS}`;
 
 const cspHeader = `
   default-src 'self';
@@ -54,18 +50,14 @@ const nextConfig: NextConfig = {
   },
 
   // 2. Performans: İkon kütüphanesini otomatik optimize et
-  // 3. Güvenlik: Hash-based Subresource Integrity — Next'in inline/bundle
-  //    script'lerine integrity ekler; statik render korunarak 'unsafe-inline'
-  //    kaldırılabilir. Dev'de HMR ile çakışmaması için sadece production'da.
   experimental: {
     optimizePackageImports: ['lucide-react'],
-    ...(isDev ? {} : { sri: { algorithm: 'sha256' as const } }),
   },
 
-  // 4. Geliştirme: Hataları yakalamak için katı mod
+  // 3. Geliştirme: Hataları yakalamak için katı mod
   reactStrictMode: true,
 
-  // 5. Güvenlik: HSTS ve CSP başlıkları
+  // 4. Güvenlik: HSTS ve CSP başlıkları
   async headers() {
     return [
       {
