@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import type { Metadata } from 'next';
 import { getDictionary, locales } from '@/app/get-dictionary';
+import { renderRichText } from '@/lib/utils/rich-text';
 
 export async function generateMetadata(
   { params }: { params: Promise<{ lang: string }> }
@@ -62,7 +63,7 @@ export default async function PrivacyPage({
 
           <div className="mb-4">
             <h3 className="font-bold mb-2">{p.collection.personal.title}</h3>
-            <p className="mb-2 text-[15px] text-(--text-secondary)" dangerouslySetInnerHTML={{ __html: p.collection.personal.desc }} />
+            <p className="mb-2 text-[15px] text-(--text-secondary)">{renderRichText(p.collection.personal.desc)}</p>
             <ul className="list-disc pl-5 space-y-1 text-[15px] text-(--text-secondary)">
               {p.collection.personal.list.map((item: string, i: number) => (
                 <li key={i}>{item}</li>
@@ -104,12 +105,12 @@ export default async function PrivacyPage({
 
         <section className="mb-8">
           <h2 className="text-lg font-bold mb-3 border-b border-(--border) pb-2">{p.thirdParty.title}</h2>
-          <p className="text-[15px] leading-relaxed text-(--text-secondary)" dangerouslySetInnerHTML={{ __html: p.thirdParty.desc }} />
+          <p className="text-[15px] leading-relaxed text-(--text-secondary)">{renderRichText(p.thirdParty.desc)}</p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-lg font-bold mb-3 border-b border-(--border) pb-2">{p.gdpr.title}</h2>
-          <p className="text-[15px] leading-relaxed text-(--text-secondary)" dangerouslySetInnerHTML={{ __html: p.gdpr.desc }} />
+          <p className="text-[15px] leading-relaxed text-(--text-secondary)">{renderRichText(p.gdpr.desc)}</p>
         </section>
 
         <section>

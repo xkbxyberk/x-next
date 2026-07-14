@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ArrowLeft, Zap, ShieldCheck, Download } from 'lucide-react';
 import type { Metadata } from 'next';
 import { getDictionary, locales } from '@/app/get-dictionary';
+import { renderRichText } from '@/lib/utils/rich-text';
 
 export async function generateMetadata(
   { params }: { params: Promise<{ lang: string }> }
@@ -55,7 +56,7 @@ export default async function AboutPage({
           <p className="text-[15px] leading-relaxed text-(--text-secondary) mb-4">
             {a.whatWeDo.p1}
           </p>
-          <p className="text-[15px] leading-relaxed text-(--text-secondary)" dangerouslySetInnerHTML={{ __html: a.whatWeDo.p2 }} />
+          <p className="text-[15px] leading-relaxed text-(--text-secondary)">{renderRichText(a.whatWeDo.p2)}</p>
         </section>
 
         <section className="mb-10">
