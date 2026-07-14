@@ -1,8 +1,17 @@
 import { unstable_cache } from 'next/cache';
 import { TweetVideoEntity, VideoVariantEntity } from '@/lib/core/schemas';
 import { sendTelegramNotification } from '@/lib/utils/telegram';
+import { rateLimit } from '@/lib/utils/rate-limit';
 
 import { getRandomHeaders } from '@/lib/utils/headers';
+
+// Collapse repeated upstream-error alerts into at most one per window, so a
+// flood of failing requests can't be amplified into Telegram alert spam.
+const WATCHDOG_ALERT_WINDOW_MS = 5 * 60_000; // 5 minutes
+
+// Verbose request/response logging (incl. raw upstream media) only in dev.
+// Real errors still log unconditionally below.
+const DEBUG = process.env.NODE_ENV !== 'production';
 
 // Token hesaplama
 const getToken = (id: string) => {
@@ -15,7 +24,7 @@ const fetchTweetDataInternal = async (tweetId: string): Promise<TweetVideoEntity
 
   // Header rotasyonu uygulanıyor (Server Camouflage)
   const headers = getRandomHeaders();
-  console.log(`🔍 [TwitterFetch] İstek gönderiliyor: ${tweetId} (UA: ${headers['User-Agent'].substring(0, 30)}...)`);
+  if (DEBUG) console.log(`🔍 [TwitterFetch] İstek gönderiliyor: ${tweetId} (UA: ${headers['User-Agent'].substring(0, 30)}...)`);
 
   try {
     const response = await fetch(url, {
@@ -27,8 +36,11 @@ const fetchTweetDataInternal = async (tweetId: string): Promise<TweetVideoEntity
       console.error(`❌ [TwitterFetch] API Hatası: ${response.status}`);
 
       // WATCHDOG: Kritik Hata Bildirimi (403 veya 429)
+      // Cooldown: en fazla 5 dakikada bir alert (amplification/spam önlemi).
       if (response.status === 403 || response.status === 429) {
-        sendTelegramNotification(`🚨 <b>CRITICAL ALERT</b>\n\nStatus: ${response.status}\nTweet ID: ${tweetId}`);
+        if (rateLimit('watchdog:upstream-error', 1, WATCHDOG_ALERT_WINDOW_MS).allowed) {
+          sendTelegramNotification(`🚨 <b>CRITICAL ALERT</b>\n\nStatus: ${response.status}\nTweet ID: ${tweetId}`);
+        }
       }
 
       return null;
@@ -67,7 +79,7 @@ const fetchTweetDataInternal = async (tweetId: string): Promise<TweetVideoEntity
 
     // Eğer ana tweette video yoksa, ALINTILANMIŞ (Quoted) tweet'e bak
     if (!videoMedia && (root.quoted_status || root.quoted_status_result)) {
-      console.log('🔄 [TwitterFetch] Ana tweette video yok, alıntılanan tweet kontrol ediliyor...');
+      if (DEBUG) console.log('🔄 [TwitterFetch] Ana tweette video yok, alıntılanan tweet kontrol ediliyor...');
       const quoted = root.quoted_status || root.quoted_status_result?.result;
       if (quoted) {
         const quotedLegacy = quoted.legacy || quoted;
@@ -82,7 +94,7 @@ const fetchTweetDataInternal = async (tweetId: string): Promise<TweetVideoEntity
       console.error('⚠️ [TwitterFetch] Video objesi hiçbir yerde bulunamadı.');
       // Debug için ham medyanın ilk elemanını görelim
       const debugMedia = legacy.extended_entities?.media || [];
-      if (debugMedia.length > 0) {
+      if (DEBUG && debugMedia.length > 0) {
         console.log('Mevcut Medya (Video İçermiyor):', JSON.stringify(debugMedia[0]).substring(0, 150));
       }
       return null;
@@ -127,7 +139,7 @@ const fetchTweetDataInternal = async (tweetId: string): Promise<TweetVideoEntity
       }))
       .sort((a: VideoVariantEntity, b: VideoVariantEntity) => b.bitrate - a.bitrate);
 
-    console.log(`✅ [TwitterFetch] Başarılı! ${variants.length} varyant bulundu.`);
+    if (DEBUG) console.log(`✅ [TwitterFetch] Başarılı! ${variants.length} varyant bulundu.`);
 
     // 4. METADATA ÇIKARIMI
     // Hedef tweet (quoted veya original) üzerinden bilgileri al

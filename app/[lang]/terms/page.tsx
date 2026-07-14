@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import type { Metadata } from 'next';
 import { getDictionary, locales } from '@/app/get-dictionary';
+import { renderRichText } from '@/lib/utils/rich-text';
 
 export async function generateMetadata(
   { params }: { params: Promise<{ lang: string }> }
@@ -55,7 +56,7 @@ export default async function TermsPage({
         {t.sections.slice(0, 2).map((section: any, i: number) => (
           <section key={i} className="mb-8">
             <h2 className="text-lg font-bold mb-3 border-b border-(--border) pb-2">{section.title}</h2>
-            <p className="text-[15px] leading-relaxed text-(--text-secondary)" dangerouslySetInnerHTML={{ __html: section.content }} />
+            <p className="text-[15px] leading-relaxed text-(--text-secondary)">{renderRichText(section.content)}</p>
           </section>
         ))}
 
@@ -87,7 +88,7 @@ export default async function TermsPage({
         {t.sections.slice(3).map((section: any, i: number) => (
           <section key={i} className="mb-8">
             <h2 className="text-lg font-bold mb-3 border-b border-(--border) pb-2">{section.title}</h2>
-            <p className="text-[15px] leading-relaxed text-(--text-secondary) mb-3" dangerouslySetInnerHTML={{ __html: section.content }} />
+            <p className="text-[15px] leading-relaxed text-(--text-secondary) mb-3">{renderRichText(section.content)}</p>
           </section>
         ))}
       </div>
